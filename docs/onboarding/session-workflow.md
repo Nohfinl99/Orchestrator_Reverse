@@ -23,6 +23,8 @@ Ghi objective, scope/exclusions, owner hiện hữu, input path/digest/revision,
 
 Đường dẫn stack/protocol ở [index](../../prompt_stacks/README.md). Chỉ đọc khi liên quan; tên file hoặc retrieval plan không chứng minh nội dung đã được đọc.
 
+Với task W4, dùng [readiness/gap register](../planning/w4-readiness-plan.md) để xét I01–I05 và dependency hiện tại trước khi làm; các template không là task READY.
+
 ## Kiểm tra và kết thúc
 
 Với IA, chạy verifier read/hash/navigation từ repository root. Với thay đổi nghiệp vụ, áp task, packet R4a trước attempt và R4b sau attempt theo contract; không lấy kiểm link thay behavioral test. Báo kết quả cùng phạm vi và phần chưa chứng minh. Bàn giao theo [mẫu](../../context/handoff.md), cập nhật view context chỉ khi có nguồn mới; report đã freeze giữ nguyên.

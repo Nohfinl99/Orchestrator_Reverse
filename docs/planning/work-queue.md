@@ -9,6 +9,7 @@
 | P1K B4 | V3 FAIL được giữ; catalog/oracle inconsistency đã mô tả | Correction candidate revision riêng và review exact digest | Trước caller-boundary implementation phụ thuộc; owner contract/oracle hiện hữu |
 | Knowledge bundle | Protocol và gap rights/admission/ACK | Xác minh quyền, source/applicability, retrieval và ACK của consumer thật | G2 chưa đóng; curator/consumer theo trách nhiệm hiện hữu |
 | State/compatibility | Protocol immutable history/retry/invalidation | Proposal riêng cho rev/revision, RETRY/caller-halt khi được giao | Không sửa source hoặc chạy fixture từ task IA |
+| W4 readiness | W4 plan run42, I05 verified non-target run43 và readiness reconcile blocked run44 | Xem [W4 gap register](w4-readiness-plan.md); đóng gate đúng thứ tự, map I01–I05 và source/state compatibility; runtime chưa đủ điều kiện | G1/G2 incomplete, G3 not run, G4 blocked; profile/cap chưa chọn |
 | Runtime / pilot | Design và prerequisite | Chọn consumer LLM thật, profile/target/authority/numeric budget, applicable pair/gates; R4a trước attempt | BLOCKED/NOT_RUN theo dependency; không thay Stage1 parser bằng LLM ngầm |
 | Training | Guide/checklist có điều kiện | Chứng minh observed need, rights/ground truth/splits, model eligibility và explicit job scope | NOT_RUN; training không sửa parser/broker hoặc tự tạo quyền |
 

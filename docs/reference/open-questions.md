@@ -16,6 +16,8 @@ Sổ IA dẫn lại vấn đề đã có nguồn; không là quyết định s�
 | TECH-06 | rev/revision và RETRY/caller-halt compatibility còn mở | Source repair/proposal riêng; fixture nghiệp vụ cần R4a/R4b |
 | TECH-07 | Không có authentic full-flow pair hoặc W4 run; gate snapshot | G3/G4 NOT_RUN, W4 NOT_RUN_BLOCKED, v3 OFF; active runtime/session chưa được kiểm lại trong IA |
 | TECH-08 | Verifier cũ nhận manifest thiếu/rỗng; LOGIC_REVIEW đã có v2 | Workspace dùng v2 theo entry local; giữ code cũ có pin, không gọi custody là semantic acceptance |
+| W4-01 | I01–I04 chưa đủ G1/G2/G3 hoặc model/budget prerequisite; G4 blocked trong run44 | Giữ I01–I04 ineligible và runtime NOT_RUN; xem [W4 gap register](../planning/w4-readiness-plan.md) |
+| W4-02 | Template I01–I05 ghi A0/A1/A4; A0–A7 không phải identity đã đăng ký. State review ghi rev/revision, Verified/revalidation và RETRY/caller-halt mapping chưa được resolve | Không dispatch từ template hoặc tự đổi field/owner; source-map caller/state, compatibility và G1 review trước branch phụ thuộc |
 
 Tài liệu fine-tuning chứa thông tin sản phẩm theo thời điểm đã ghi. Lượt IA giữ nguyên nội dung đó; mọi quyết định model/provider/eligibility mới phải kiểm lại nguồn chính thức khi có task liên quan.
 

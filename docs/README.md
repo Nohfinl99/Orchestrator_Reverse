@@ -7,6 +7,7 @@
 | Thành phần và trách nhiệm | [System](architecture/system.md), [sáu agent](architecture/agents.md) |
 | Vì sao file ở từng nơi | [Information architecture](architecture/information-architecture.md) |
 | Phase, thứ tự và việc tiếp theo | [Phase map](planning/phase-map.md), [work queue](planning/work-queue.md) |
+| W4 thiếu điều kiện gì | [W4 readiness và I01–I05](planning/w4-readiness-plan.md) |
 | Source nào quyết định claim | [Source map](reference/source-map.md), [validation](reference/validation-status.md) |
 | Mâu thuẫn hoặc thiếu điều kiện | [Open questions](reference/open-questions.md) |
 | Chọn instruction cho task | [Prompt stack index](../prompt_stacks/README.md) |

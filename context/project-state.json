@@ -19,6 +19,12 @@
     "G3": "NOT_RUN",
     "G4": "NOT_RUN",
     "W4_runtime": "NOT_RUN_BLOCKED",
+    "W4_readiness_run44": "RECONCILED_BLOCKED_RUNTIME",
+    "I01": "INELIGIBLE_G1_G2_G3",
+    "I02": "INELIGIBLE_G1_PROVIDER_MODEL_UNRESOLVED",
+    "I03": "INELIGIBLE_I02_NUMERIC_BUDGET_UNRESOLVED",
+    "I04": "INELIGIBLE_G1_G3",
+    "I05": "VERIFIED_NON_TARGET_PREPARATION_RUN43",
     "v3": "OFF"
   },
   "registered_identities": [

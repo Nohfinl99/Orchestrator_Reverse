@@ -29,8 +29,8 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 2526,
-      "sha256": "6dd9a5c21edf274d6c5d1b2076258c1b77b0fcba64bf590ec518a0340a8f26e9"
+      "bytes": 2755,
+      "sha256": "0362462bf430ee9bf946c69f9017bba76e32d45bbb261a484af81ae14482c3b6"
     },
     {
       "path": "CITATION.cff",
@@ -39,18 +39,18 @@
     },
     {
       "path": "context/current.md",
-      "bytes": 2949,
-      "sha256": "281435ffa9f590ab3585c60a6ca2154d04675ce3bc51319a0355639f6a328406"
+      "bytes": 2991,
+      "sha256": "8a26affb8e1ae973b361fa0612fc521988f6cf516547cf7c9abd587862c4530f"
     },
     {
       "path": "context/handoff.md",
-      "bytes": 2418,
-      "sha256": "22d771ae8cb1ba9e73e7d8050e5eaf1f9924f40e1693feb61ad4b021343d6bd1"
+      "bytes": 2858,
+      "sha256": "4fc54d1ebf1b6248569c679fafcfb7ea5f52fd2117b551f066ac3d1ca0c93324"
     },
     {
       "path": "context/project-state.json",
-      "bytes": 2551,
-      "sha256": "e32a5cfd9794ea46309ff4e71e5c840318a617ca31f70b9cf8c3a5194b5f28b7"
+      "bytes": 2833,
+      "sha256": "06883b3435e2623f7041bcfdbdc52c69b300ee339595c2b2cb2dd309dda82fb3"
     },
     {
       "path": "CONTEXT_VI.md",
@@ -88,6 +88,11 @@
       "sha256": "ef3cc9bec65006ce8e35bd3d2466d467e3a8a413da2a8aaf842df6bec963048f"
     },
     {
+      "path": "docs/changes/2026-10-21-w4-readiness.md",
+      "bytes": 1122,
+      "sha256": "e42109299bb1cd04568ae077698b61e368c8e54076409a301496f353dd97dceb"
+    },
+    {
       "path": "docs/FINE_TUNING.md",
       "bytes": 272,
       "sha256": "ec981804e339c8489880889d18fe30a80a9fafde9f3d2820018e8cd508f5cb67"
@@ -99,8 +104,8 @@
     },
     {
       "path": "docs/onboarding/session-workflow.md",
-      "bytes": 2350,
-      "sha256": "fe2512f5e85535e5bbdf20a48f1fd885c5f5cf148259c8cd1f27faddb86c37d2"
+      "bytes": 2536,
+      "sha256": "cdbddccb7b02cca500991d1f0c4831961cabfc44dd13ffbf766375be545775c2"
     },
     {
       "path": "docs/onboarding/start-here.md",
@@ -109,28 +114,33 @@
     },
     {
       "path": "docs/planning/phase-map.md",
-      "bytes": 5446,
-      "sha256": "562b52511a1902ce74bdd01fe3a5b6e0ffc2f13fd8b8b6c217682d76828471c6"
+      "bytes": 5493,
+      "sha256": "7764356a0f401344ac0c6fd3b7d0100bbbe683921250b0c5830311f6fa482ae1"
+    },
+    {
+      "path": "docs/planning/w4-readiness-plan.md",
+      "bytes": 13348,
+      "sha256": "572244740e5c1adfaed3bcab7b02b25a457f5ee7bfd7a01c17774a65cbe101a5"
     },
     {
       "path": "docs/planning/work-queue.md",
-      "bytes": 2553,
-      "sha256": "887c8140773b42fc8b8cf741d0dc72cc48ce7bdcf97c2fa55c29fa0180d6f9ff"
+      "bytes": 2883,
+      "sha256": "d2ca6044e8a9f45127c14d909ab54e05ea8c85b1eafb042516150ca5007950b7"
     },
     {
       "path": "docs/README.md",
-      "bytes": 1411,
-      "sha256": "4618e6ffceb497adbf8e5c7cfb5f3eb46e119800236bae6af6e5d04863f459ee"
+      "bytes": 1507,
+      "sha256": "cea6d1c632f8b3d2926176e178e1649f8b655678e0c41133e421413b537ae14d"
     },
     {
       "path": "docs/reference/open-questions.md",
-      "bytes": 3208,
-      "sha256": "cce49b12a8c9073bd639f4aad800c2b8f7f5ca82f588389569941a4d7c736830"
+      "bytes": 3760,
+      "sha256": "0e0bbdcc94ecac13698efb24b24e7299cf79ceff3db73c5d85b4b650af2f5828"
     },
     {
       "path": "docs/reference/source-map.md",
-      "bytes": 4755,
-      "sha256": "70b56d09d784e449b4c3002970c5e252944705b9809725b0c3d18546d9730094"
+      "bytes": 5546,
+      "sha256": "88f916fa9c22882105c32d81af7517f669704205818e294ef6bd7123d5b8d971"
     },
     {
       "path": "docs/reference/validation-status.md",
@@ -149,8 +159,8 @@
     },
     {
       "path": "metadata/navigation.json",
-      "bytes": 2773,
-      "sha256": "98dc4f2d68bb969b3bb0c7de93d507c8562f6de490ea436d234eb2494ea9e692"
+      "bytes": 2963,
+      "sha256": "303158b042080fe74faf62661f2c7e0813b0b7d003d582059119ba8a97f4e9f9"
     },
     {
       "path": "metadata/preservation.json",
@@ -264,13 +274,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 8708,
-      "sha256": "3a11db9c632e7263d83f28d65adbbfec96e81c371234caa5375f60b007810425"
+      "bytes": 8811,
+      "sha256": "b9301551874b8e70b5dce072877502b4ab6e770a3e9aa5e412ccdcc2c76e0519"
     },
     {
       "path": "scripts/verify_ia.py",
-      "bytes": 6786,
-      "sha256": "1563c81c0bd395512aaabae3260b5510edc496cdcff020c1c804b7e0c48ae65f"
+      "bytes": 7263,
+      "sha256": "9143ce78700ed815397ced2040b94ea055ca14fb4edc4f704b4c6b1f6f07d470"
     },
     {
       "path": "SECURITY.md",

@@ -9,6 +9,7 @@ Chỉ thị hợp lệ hiện hành quyết định task/scope. Với claim kỹ
 | Mục tiêu/nguyên lý | [CONTEXT_VI.md](../../CONTEXT_VI.md) | Văn bản gốc public, giữ nguyên bytes |
 | Thành phần và boundary | [System](../architecture/system.md) | Tài liệu gốc được di chuyển nguyên byte; mô hình đích |
 | Gate tại thời điểm đóng gói | [Validation status](validation-status.md) | Snapshot lịch sử, không xác nhận runtime hiện tại |
+| W4 I01–I05 readiness | [W4 gap register](../planning/w4-readiness-plan.md) | Đối chiếu run44 và template nguồn; run I05 chỉ là non-target preparation |
 | Instruction từng phase | [Prompt stack index](../../prompt_stacks/README.md) | Mười overlay/protocol nguyên bản; chưa nối loader |
 | Hiện đang làm gì / tiếp theo | [Context](../../context/current.md), [work queue](../planning/work-queue.md) | View IA kế thừa nguồn, không là accepted task packet |
 | Tiếp nhận và tìm tài liệu | [Navigation manifest](../../metadata/navigation.json) | Map canonical theo task; không chứng nhận các section đã được đọc |
@@ -27,6 +28,8 @@ Locator sau tính từ root workspace **cha**, không phải link local trong cl
 | `evidence/agent_alignment/20261021_01/next_atomic_task.json` | Exact proposal ID và PROPOSED_NOT_DISPATCHED | LOCAL_ONLY_NOT_DISTRIBUTED |
 | `evidence/orchestrator_meetings/20261021_logic_audit_01/report.md` | Logic findings, verifier v2 và admission gap | LOCAL_ONLY_NOT_DISTRIBUTED |
 | `evidence/orchestrator_meetings/20261021_logic_audit_01/candidate/proposal_admission.json` | Field thiếu trước dispatch | LOCAL_ONLY_NOT_DISTRIBUTED |
+| `archive/RE-Decom/02_workspaces/AI_REA_SI_Engineer/04_artifacts/implementation_runs/20261020_gate_closure_meeting_44/W4_gate_readiness.json` (SHA-256 `1d5e1fad56b1990239151e3b15ca773c16a9e15005fab615e097d284cbb7aa3e`) | Gate run44 và I01–I05 readiness | LOCAL_ONLY_NOT_DISTRIBUTED; workspace manifest pin match |
+| `archive/RE-Decom/02_workspaces/AI_REA_SI_Engineer/01_control_plane/prompt_stacks/handoff_atomic_v1/05_W4_integration.md` (SHA-256 `1e2eef0e0bf02e41f65c68f2af43c6f077ff608d9fd4c5e0b512324fc9e3d562`) | I01–I05 objectives/dependencies/outputs | LOCAL_ONLY_NOT_DISTRIBUTED; workspace manifest pin match |
 | `prompt_stacks/offline_revision_20261021/source_pins.json` | Source pins mà public overlay nhắc tới | LOCAL_ONLY_NOT_DISTRIBUTED |
 | Cùng gói local: `authority_binding.json`, `boundary_preservation.json`, `criterion_crosswalk.json`, `decision_appendix.json`, `future_cases_design_only.json`, `legacy_roles.json`, `task_disposition.json` | Contract worksheet và disposition của delivery gốc | LOCAL_ONLY_NOT_DISTRIBUTED |
 | `archive/RE-Decom/` và các manifests/raw tương ứng | Source/case/oracle/attempt lịch sử, exact gate custody | LOCAL_ONLY_NOT_DISTRIBUTED |

@@ -106,8 +106,16 @@ def verify():
     state = load("context/project-state.json")
     gates = {"P1K_B4": "FAIL", "G1": "INCOMPLETE", "G2": "INCOMPLETE", "G3": "NOT_RUN",
              "G4": "NOT_RUN", "W4_runtime": "NOT_RUN_BLOCKED", "v3": "OFF"}
-    if state["gates"] != gates or state["gate_promotion_from_ia"] is not False:
+    if {key: state["gates"].get(key) for key in gates} != gates or state["gate_promotion_from_ia"] is not False:
         errors.append("GATE_VIEW_CHANGED")
+    w4 = {"W4_readiness_run44": "RECONCILED_BLOCKED_RUNTIME",
+          "I01": "INELIGIBLE_G1_G2_G3",
+          "I02": "INELIGIBLE_G1_PROVIDER_MODEL_UNRESOLVED",
+          "I03": "INELIGIBLE_I02_NUMERIC_BUDGET_UNRESOLVED",
+          "I04": "INELIGIBLE_G1_G3",
+          "I05": "VERIFIED_NON_TARGET_PREPARATION_RUN43"}
+    if any(state["gates"].get(key) != value for key, value in w4.items()):
+        errors.append("W4_READINESS_VIEW_CHANGED")
     if state["phase_systems"]["W"] != ["W" + str(n) for n in range(8)] or state["phase_systems"]["R"] != ["R" + str(n) for n in range(7)]:
         errors.append("PHASE_IDENTIFIERS_CHANGED")
     stacks = list((ROOT / "prompt_stacks").glob("[0-9][0-9]_*.md"))
