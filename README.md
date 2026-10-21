@@ -60,7 +60,7 @@ Orchestrator_Reverse/
         └── handoff_protocol.md
 ```
 
-Khi tạo repository GitHub tên `Orchestrator_Reverse`, dùng **nội dung bên trong folder này** làm repository root. Không upload hoặc push folder cha `Orchestrator`, vì folder đó còn workspace archive và evidence riêng. Bản hiện tại được chuẩn bị local; remote GitHub chưa được tạo hoặc cập nhật.
+Repository công khai [Nohfinl99/Orchestrator_Reverse](https://github.com/Nohfinl99/Orchestrator_Reverse) được tạo từ **nội dung bên trong folder này** làm repository root. Không upload hoặc push folder cha `Orchestrator`, vì folder đó còn workspace archive và evidence riêng.
 
 ## Mười Prompt Stack
 
@@ -105,3 +105,4 @@ Quyền của corpus nguồn chưa được xác nhận đủ để gán một l
 ## Đóng góp và báo lỗi
 
 Xem [CONTRIBUTING.md](CONTRIBUTING.md) và [SECURITY.md](SECURITY.md). Mọi thay đổi phải giữ provenance, phân biệt thiết kế với execution, và không sửa lịch sử để biến FAIL/NOT_RUN thành PASS.
+
