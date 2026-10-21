@@ -1,0 +1,107 @@
+# Orchestrator_Reverse
+
+**Bộ tài liệu thiết kế và điều phối agent cho công việc reverse engineering có ranh giới bằng chứng REA–IDA.** Thư mục này được chuẩn bị thành một gói public độc lập trong workspace Orchestrator. Nội dung gồm bối cảnh dự án, kiến trúc, quy ước đóng góp và mười Prompt Stack offline.
+
+> Trạng thái hiện tại: **tài liệu thiết kế / offline**. Đây chưa phải orchestrator tích hợp production. Các prompt và protocol mô tả yêu cầu và cách làm; chúng chưa được nối vào loader/runtime và không cấp quyền cho công cụ.
+
+## Mục tiêu
+
+Orchestrator_Reverse hướng tới điều phối các bước từ ý định đến kết quả có thể kiểm chứng: làm rõ mục tiêu và phạm vi, kiểm capability và evidence, lập dependency DAG, chọn đúng role hiện có, giữ checkpoint/attempt, đánh giá theo testcase và chuyển tiếp hoặc dừng có lý do.
+
+Nguyên tắc xuyên suốt là **bảo toàn REA–IDA qua mọi cấu trúc và boundary**:
+
+- REA giữ workflow, evidence/provenance và ledger.
+- IDA giữ phân tích native/decompiler và trạng thái IDB trong capability thực tế được cấp.
+- Khi task tiêu thụ target evidence, pair phải cùng target/component/slice/IDA state, có producer/session/revision/custody/freshness, và mỗi consumer tham gia phải kiểm tính liên quan, xác thực và ACK riêng.
+- Chuẩn bị tài liệu ngoài target được ghi `NON_TARGET_PREPARATION`, pair `null`, trạng thái `NOT_RUN`; không tạo target claim hoặc target-consumption ACK.
+- Prompt, hash file hoặc sự tồn tại của IDA không tự chứng minh tool đã nối, evidence authentic, quyền hành động hoặc kết quả đã chạy.
+
+## Bắt đầu
+
+1. Đọc [bối cảnh và phạm vi](CONTEXT_VI.md).
+2. Xem [kiến trúc và ranh giới](docs/ARCHITECTURE.md) cùng [trạng thái nghiệm thu](docs/VALIDATION_STATUS.md).
+3. Chọn stack theo mục tiêu tại [mục lục Prompt Stack](prompt_stacks/README.md).
+4. Nếu cần tinh chỉnh model, đọc [hướng dẫn fine-tuning](docs/FINE_TUNING.md); training không thay thế tool authority hay các gate REA–IDA.
+5. Trước khi áp dụng vào hệ đang chạy, kiểm quyền, source binding, consumer và các gate liên quan. Mọi execution cần bộ pre-run R4a được review/freeze trước attempt và R4b độc lập sau khi thu raw evidence.
+
+## Cấu trúc
+
+```text
+Orchestrator_Reverse/
+├── README.md
+├── CONTEXT_VI.md
+├── CONTRIBUTING.md
+├── SECURITY.md
+├── LICENSE_STATUS.md
+├── CITATION.cff
+├── .gitignore
+├── .gitattributes
+├── .github/
+│   ├── PULL_REQUEST_TEMPLATE.md
+│   └── ISSUE_TEMPLATE/
+├── CONTEXT_VI.md
+├── docs/
+│   ├── ARCHITECTURE.md
+│   ├── FINE_TUNING.md
+│   └── VALIDATION_STATUS.md
+└── prompt_stacks/
+    ├── README.md
+    ├── 00_bootstrap.md ... 09_review_gate_handoff.md
+    └── protocols/
+        ├── intake_protocol.md
+        ├── routing_protocol.md
+        ├── knowledge_protocol.md
+        ├── pair_protocol.md
+        ├── state_protocol.md
+        ├── evaluation_protocol.md
+        ├── pilot_protocol.md
+        ├── training_protocol.md
+        ├── baseline_protocol.md
+        └── handoff_protocol.md
+```
+
+Khi tạo repository GitHub tên `Orchestrator_Reverse`, dùng **nội dung bên trong folder này** làm repository root. Không upload hoặc push folder cha `Orchestrator`, vì folder đó còn workspace archive và evidence riêng. Bản hiện tại được chuẩn bị local; remote GitHub chưa được tạo hoặc cập nhật.
+
+## Mười Prompt Stack
+
+| Stack | Vai trò của stack |
+|---|---|
+| `00_bootstrap` | Tiếp nhận mục tiêu, làm rõ điểm thiếu trọng yếu, lập DAG và handoff atomic. |
+| `01_W0_context_baseline` | Ghi baseline, scope, revision và khả năng phục hồi. |
+| `02_W1_masters_prompts` | Quy tắc routing, owner, no-match, conflict và stop. |
+| `03_W2_knowledge_transfer` | Nguồn tri thức, quyền, applicability và ACK riêng của consumer. |
+| `04_W3_REA_IDA` | Bảo toàn trách nhiệm và evidence qua boundary REA–IDA. |
+| `05_W4_integration` | Checkpoint, history, resume, invalidation và retry. |
+| `06_W5_evaluation` | R4a trước chạy; R4b grading độc lập sau attempt. |
+| `07_W6_pilot_release` | Điều kiện pilot, phạm vi phát hành và rollback. |
+| `08_W7_training_conditional` | Training là nhánh tùy điều kiện, yêu cầu dữ liệu/quyền/eval. |
+| `09_review_gate_handoff` | Review theo digest, tổng hợp gate và chuyển giao context. |
+
+Mỗi stack có protocol chuyên trách trong `prompt_stacks/protocols/`. Xem [mục lục chi tiết](prompt_stacks/README.md).
+
+## Agent và trách nhiệm
+
+| Agent | Trách nhiệm chính | Bàn giao tiêu biểu |
+|---|---|---|
+| Prompt-Master | Tiếp nhận mục tiêu, scope, dependency và điều phối prompt. | Task DAG/prompt cho owner chuyên trách. |
+| Triage-Sentinel | Reconnaissance tĩnh, format/layout và ưu tiên phân tích. | Triage evidence cho Prompt-Master/Decomp-Analyst. |
+| Decomp-Analyst | Phân tích sâu disassembly/decompiler trong state đã binding. | Phân tích có locator và proposal; Crypto khi evidence phù hợp. |
+| Crypto-Logic-Specialist | Phân tích logic thuật toán có bằng chứng. | Claim/hypothesis và phản chứng cho Evidence-Synthesizer. |
+| Evidence-Synthesizer | Kiểm provenance, support, conflict và handoff. | Report/receipt hoặc unresolved findings cho owner/HITL. |
+| Product-Evolution-Architect | Phân tích product gap từ goal và evidence được chấp nhận. | Feature/acceptance proposal về Prompt-Master. |
+
+HITL giữ approval/action theo quyền được cấp. Debate là review service có điều kiện. Orchestrator là chức năng điều phối, không phải identity thứ bảy.
+
+## Phạm vi và giới hạn
+
+Gói này chứa instruction overlay và tài liệu mô tả. Nó không chứa RE-Decom archive đầy đủ, raw capture, target/binary, database IDA, local config/credential, snapshot backup, output fine-tuning hoặc các artefact riêng của máy.
+
+Mười stack là bộ tài liệu, không có nghĩa toàn bộ task đã chạy. Mười protocol không chứng nhận code thực thi. Coverage design, hash/locator checks, benchmark execution và review độc lập là những loại bằng chứng khác nhau. Xem [trạng thái nghiệm thu](docs/VALIDATION_STATUS.md).
+
+## Quyền và giấy phép
+
+Quyền của corpus nguồn chưa được xác nhận đủ để gán một license mở cho mọi nội dung. Theo mặc định không cấp quyền sao chép, sửa đổi hoặc phân phối vượt quá các quyền hiện có. Xem [LICENSE_STATUS.md](LICENSE_STATUS.md) trước khi tái sử dụng hoặc thêm code/asset bên thứ ba.
+
+## Đóng góp và báo lỗi
+
+Xem [CONTRIBUTING.md](CONTRIBUTING.md) và [SECURITY.md](SECURITY.md). Mọi thay đổi phải giữ provenance, phân biệt thiết kế với execution, và không sửa lịch sử để biến FAIL/NOT_RUN thành PASS.
