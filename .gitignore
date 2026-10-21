@@ -1,0 +1,30 @@
+# Local data and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+*.idb
+*.i64
+*.id0
+*.id1
+*.id2
+*.nam
+*.til
+*.sqlite
+*.db
+targets/
+private-data/
+local-config/
+
+# Tool and training output
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+node_modules/
+checkpoints/
+training-outputs/
+model-weights/

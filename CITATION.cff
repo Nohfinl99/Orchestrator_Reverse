@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use Orchestrator_Reverse, cite the repository and the exact commit or release you used."
+title: "Orchestrator_Reverse"
+abstract: >-
+  Documentation and offline prompt-stack design for evidence-aware orchestration
+  of reverse-engineering workflows with explicit REA–IDA boundary preservation.
+type: software
+license: NONE
+version: "0.1.0-docs"
+date-released: 2026-10-21
