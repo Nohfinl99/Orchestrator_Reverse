@@ -1,7 +1,13 @@
 {
   "schema": "orchestrator.navigation.v1",
   "scope": "PUBLIC_DOCUMENT_NAVIGATION_ONLY",
-  "default_read_order": ["AGENTS.md", "context/current.md", "docs/planning/phase-map.md", "docs/planning/work-queue.md", "docs/reference/source-map.md"],
+  "default_read_order": [
+    "AGENTS.md",
+    "context/current.md",
+    "docs/planning/phase-map.md",
+    "docs/planning/work-queue.md",
+    "docs/reference/source-map.md"
+  ],
   "canonical": {
     "principles": "CONTEXT_VI.md",
     "current": "context/current.md",
@@ -23,7 +29,10 @@
     "fine_tuning": "docs/guides/fine-tuning.md",
     "change_record": "docs/changes/2026-10-21-information-architecture.md",
     "prompt_index": "prompt_stacks/README.md",
-    "preservation": "metadata/preservation.json"
+    "preservation": "metadata/preservation.json",
+    "knowledge_index": "docs/knowledge/README.md",
+    "knowledge_cards": "docs/knowledge/prompt-orchestration/knowledge.json",
+    "external_source_catalog": "docs/knowledge/prompt-orchestration/sources.json"
   },
   "compatibility_routes": {
     "docs/ARCHITECTURE.md": "docs/architecture/system.md",
@@ -31,18 +40,62 @@
     "docs/VALIDATION_STATUS.md": "docs/reference/validation-status.md"
   },
   "task_routes": {
-    "navigation": ["docs/architecture/information-architecture.md", "docs/reference/source-map.md"],
-    "intake": ["prompt_stacks/00_bootstrap.md", "prompt_stacks/protocols/intake_protocol.md"],
-    "baseline": ["prompt_stacks/01_W0_context_baseline.md", "prompt_stacks/protocols/baseline_protocol.md"],
-    "routing": ["prompt_stacks/02_W1_masters_prompts.md", "prompt_stacks/protocols/routing_protocol.md"],
-    "knowledge": ["prompt_stacks/03_W2_knowledge_transfer.md", "prompt_stacks/protocols/knowledge_protocol.md"],
-    "pair": ["prompt_stacks/04_W3_REA_IDA.md", "prompt_stacks/protocols/pair_protocol.md"],
-    "state": ["prompt_stacks/05_W4_integration.md", "prompt_stacks/protocols/state_protocol.md"],
-    "w4_readiness": ["docs/planning/w4-readiness-plan.md", "docs/reference/source-map.md"],
-    "evaluation": ["prompt_stacks/06_W5_evaluation.md", "prompt_stacks/protocols/evaluation_protocol.md"],
-    "pilot": ["prompt_stacks/07_W6_pilot_release.md", "prompt_stacks/protocols/pilot_protocol.md"],
-    "training": ["prompt_stacks/08_W7_training_conditional.md", "prompt_stacks/protocols/training_protocol.md", "docs/guides/fine-tuning.md"],
-    "handoff": ["prompt_stacks/09_review_gate_handoff.md", "prompt_stacks/protocols/handoff_protocol.md", "context/handoff.md"]
+    "navigation": [
+      "docs/architecture/information-architecture.md",
+      "docs/reference/source-map.md"
+    ],
+    "intake": [
+      "prompt_stacks/00_bootstrap.md",
+      "prompt_stacks/protocols/intake_protocol.md"
+    ],
+    "baseline": [
+      "prompt_stacks/01_W0_context_baseline.md",
+      "prompt_stacks/protocols/baseline_protocol.md"
+    ],
+    "routing": [
+      "prompt_stacks/02_W1_masters_prompts.md",
+      "prompt_stacks/protocols/routing_protocol.md"
+    ],
+    "knowledge": [
+      "prompt_stacks/03_W2_knowledge_transfer.md",
+      "prompt_stacks/protocols/knowledge_protocol.md",
+      "docs/knowledge/README.md"
+    ],
+    "pair": [
+      "prompt_stacks/04_W3_REA_IDA.md",
+      "prompt_stacks/protocols/pair_protocol.md"
+    ],
+    "state": [
+      "prompt_stacks/05_W4_integration.md",
+      "prompt_stacks/protocols/state_protocol.md"
+    ],
+    "w4_readiness": [
+      "docs/planning/w4-readiness-plan.md",
+      "docs/reference/source-map.md"
+    ],
+    "evaluation": [
+      "prompt_stacks/06_W5_evaluation.md",
+      "prompt_stacks/protocols/evaluation_protocol.md"
+    ],
+    "pilot": [
+      "prompt_stacks/07_W6_pilot_release.md",
+      "prompt_stacks/protocols/pilot_protocol.md"
+    ],
+    "training": [
+      "prompt_stacks/08_W7_training_conditional.md",
+      "prompt_stacks/protocols/training_protocol.md",
+      "docs/guides/fine-tuning.md"
+    ],
+    "handoff": [
+      "prompt_stacks/09_review_gate_handoff.md",
+      "prompt_stacks/protocols/handoff_protocol.md",
+      "context/handoff.md"
+    ],
+    "external_knowledge": [
+      "docs/knowledge/README.md",
+      "docs/knowledge/prompt-orchestration/retrieval-guide.md",
+      "docs/knowledge/prompt-orchestration/application-map.md"
+    ]
   },
   "local_sources": "docs/reference/source-map.md",
   "retrieval_status": "PLAN_ONLY_DOES_NOT_PROVE_CONTENT_READ"

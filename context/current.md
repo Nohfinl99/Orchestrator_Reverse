@@ -2,7 +2,7 @@
 
 Orchestrator_Reverse xây lớp điều phối reverse engineering theo goal, task DAG, identity hiện hữu, evidence và gate. REA sở hữu workflow/evidence/ledger; IDA sở hữu native/decompiler/IDB state. Xem [nguyên lý gốc](../CONTEXT_VI.md).
 
-**Lượt công việc gần nhất:** đã tổ chức IA và lập [W4 readiness/gap register](../docs/planning/w4-readiness-plan.md). W4 vẫn runtime `NOT_RUN_BLOCKED`; I01–I04 không eligible ở readiness run44, I05 chỉ verified non-target preparation. Nhánh nghiệp vụ tiếp theo vẫn là proposal consumer, chưa dispatch. Prompt/protocol chưa nối loader/runtime.
+**Lượt công việc gần nhất:** đã trích xuất [12 knowledge card cho điều phối](../docs/knowledge/README.md) từ ba nguồn GitHub, có source pins, WHAT/WHY/HOW, retrieval và giới hạn; đây là candidate reference, chưa admitted KB/ACK. [W4 readiness/gap register](../docs/planning/w4-readiness-plan.md) giữ runtime `NOT_RUN_BLOCKED`; I01–I04 không eligible ở run44, I05 chỉ verified non-target preparation. Nhánh nghiệp vụ tiếp theo vẫn là proposal consumer, chưa dispatch. Prompt/protocol chưa nối loader/runtime.
 
 | Đã có | Giới hạn cần giữ |
 |---|---|

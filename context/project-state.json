@@ -3,12 +3,29 @@
   "record_type": "DERIVED_DOCUMENT_VIEW_NOT_RUNTIME_STATE",
   "snapshot_date": "2026-10-21",
   "project": "Orchestrator_Reverse",
-  "current_work": "IA document organization delivered; next consumer packet remains proposed, not dispatched",
+  "current_work": "Three external repositories extracted into 12 source-linked reference cards; consumer packet still proposed, not dispatched",
   "operational_maturity": "DESIGN_OFFLINE_NOT_INTEGRATED",
   "runtime_revalidated_by_ia": false,
   "phase_systems": {
-    "W": ["W0", "W1", "W2", "W3", "W4", "W5", "W6", "W7"],
-    "R": ["R0", "R1", "R2", "R3", "R4", "R5", "R6"],
+    "W": [
+      "W0",
+      "W1",
+      "W2",
+      "W3",
+      "W4",
+      "W5",
+      "W6",
+      "W7"
+    ],
+    "R": [
+      "R0",
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "R5",
+      "R6"
+    ],
     "mapping": "DISTINCT_SYSTEMS_NO_AUTOMATIC_EQUIVALENCE",
     "status": "DOCUMENTS_AND_PREPARATION_DO_NOT_CLOSE_MILESTONES"
   },
@@ -39,21 +56,63 @@
     "id": "SELECTED_TRIAGE_CONSUMER_ADAPTER_COMPATIBILITY_PROPOSAL_01",
     "status": "PROPOSED_NOT_DISPATCHED",
     "objective": "Complete one existing consumer/call-site proposal packet without replacing the direct Stage1 parser",
-    "missing_admission": ["input path/digest/revision", "one actual caller/action", "output", "budget", "exact acceptance and dependencies"],
+    "missing_admission": [
+      "input path/digest/revision",
+      "one actual caller/action",
+      "output",
+      "budget",
+      "exact acceptance and dependencies"
+    ],
     "b4": "SEPARATE_CORRECTION_BEFORE_DEPENDENT_IMPLEMENTATION",
     "authority": "NO_DISPATCH_GRANTED_BY_NAVIGATION"
   },
   "sources": [
-    {"path": "CONTEXT_VI.md", "availability": "PUBLIC", "kind": "ORIGINAL_PRINCIPLES"},
-    {"path": "docs/reference/validation-status.md", "availability": "PUBLIC", "kind": "PRESERVED_STATUS_SNAPSHOT"},
-    {"workspace_path": "docs/roadmap-reading-companion.md", "availability": "LOCAL_ONLY_NOT_DISTRIBUTED", "kind": "ROADMAP_REVISION_3"},
-    {"workspace_path": "evidence/agent_alignment/20261021_01/report.md", "availability": "LOCAL_ONLY_NOT_DISTRIBUTED", "kind": "ALIGNMENT_REPORT"},
-    {"workspace_path": "evidence/agent_alignment/20261021_01/next_atomic_task.json", "availability": "LOCAL_ONLY_NOT_DISTRIBUTED", "kind": "PROPOSAL"},
-    {"workspace_path": "evidence/orchestrator_meetings/20261021_logic_audit_01/report.md", "availability": "LOCAL_ONLY_NOT_DISTRIBUTED", "kind": "LOGIC_REVIEW"}
+    {
+      "path": "CONTEXT_VI.md",
+      "availability": "PUBLIC",
+      "kind": "ORIGINAL_PRINCIPLES"
+    },
+    {
+      "path": "docs/reference/validation-status.md",
+      "availability": "PUBLIC",
+      "kind": "PRESERVED_STATUS_SNAPSHOT"
+    },
+    {
+      "workspace_path": "docs/roadmap-reading-companion.md",
+      "availability": "LOCAL_ONLY_NOT_DISTRIBUTED",
+      "kind": "ROADMAP_REVISION_3"
+    },
+    {
+      "workspace_path": "evidence/agent_alignment/20261021_01/report.md",
+      "availability": "LOCAL_ONLY_NOT_DISTRIBUTED",
+      "kind": "ALIGNMENT_REPORT"
+    },
+    {
+      "workspace_path": "evidence/agent_alignment/20261021_01/next_atomic_task.json",
+      "availability": "LOCAL_ONLY_NOT_DISTRIBUTED",
+      "kind": "PROPOSAL"
+    },
+    {
+      "workspace_path": "evidence/orchestrator_meetings/20261021_logic_audit_01/report.md",
+      "availability": "LOCAL_ONLY_NOT_DISTRIBUTED",
+      "kind": "LOGIC_REVIEW"
+    }
   ],
   "gate_promotion_from_ia": false,
   "runtime_calls_from_ia": 0,
   "project_fixtures_run_from_ia": 0,
   "training_jobs_from_ia": 0,
-  "independent_review_from_ia": "NOT_PERFORMED"
+  "independent_review_from_ia": "NOT_PERFORMED",
+  "external_reference_knowledge": {
+    "bundle": "PROMPT_ORCHESTRATION_REFERENCES_20261021_01",
+    "revision": 1,
+    "index": "docs/knowledge/README.md",
+    "catalog": "docs/knowledge/prompt-orchestration/knowledge.json",
+    "status": "CANDIDATE_REFERENCE_NOT_ADMITTED",
+    "source_snapshot_files": 22,
+    "cards": 12,
+    "independent_review": "NOT_PERFORMED",
+    "consumer_ack": "NOT_REQUESTED_NOT_ISSUED",
+    "gate_promotion": false
+  }
 }

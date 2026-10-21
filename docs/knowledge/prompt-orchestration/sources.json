@@ -1,0 +1,472 @@
+{
+  "schema": "orchestrator.reference-source-catalog.v1",
+  "bundle": "PROMPT_ORCHESTRATION_REFERENCES_20261021_01",
+  "retrieved_at_utc": "2026-10-21 14:57:32 UTC",
+  "status": "DOCUMENT_REFERENCE_ONLY_NOT_ADMITTED",
+  "local_snapshot_locator": "evidence/upstream_review/20261021_prompt_knowledge_01",
+  "local_snapshot_availability": "LOCAL_ONLY_NOT_DISTRIBUTED",
+  "repositories": [
+    {
+      "id": "S1",
+      "repository": "hesreallyhim-forks/awesome-claude-prompts-fork",
+      "commit": "2be4e1085e8c026cd12ad67fdd2ce61c1c42b2d6",
+      "default_branch": "main",
+      "tree_truncated": false,
+      "inventory_blob_count": 10,
+      "github_license_metadata": "UNKNOWN",
+      "rights_status": "UNKNOWN_CATALOG_METADATA_ONLY"
+    },
+    {
+      "id": "S2",
+      "repository": "dukeluo/awesome-awesome-ai",
+      "commit": "03173a28827eb48d6d5577421825b2e1f06639db",
+      "default_branch": "main",
+      "tree_truncated": false,
+      "inventory_blob_count": 6,
+      "github_license_metadata": "MIT",
+      "rights_status": "DECLARED_MIT_READ_FOR_SELECTED_FILES_NOT_G2_ADMISSION"
+    },
+    {
+      "id": "S3",
+      "repository": "f/prompts.chat",
+      "commit": "f8fe2385244a6188c976e352ea7ca849e3d20b1e",
+      "default_branch": "main",
+      "tree_truncated": false,
+      "inventory_blob_count": 1574,
+      "github_license_metadata": "NOASSERTION",
+      "rights_status": "DECLARED_MIT_FOR_SELECTED_BOOK_CODE_DOCS_CC0_FOR_PROMPT_DATA_NOT_INGESTED"
+    }
+  ],
+  "files": [
+    {
+      "source": "S1",
+      "path": "README.md",
+      "git_blob_sha": "7bf8992402c4850a7b1040b4063e958d6a7ef092",
+      "url": "https://github.com/hesreallyhim-forks/awesome-claude-prompts-fork/blob/2be4e1085e8c026cd12ad67fdd2ce61c1c42b2d6/README.md",
+      "read_scope": [
+        [
+          1,
+          155
+        ],
+        [
+          823,
+          1015
+        ],
+        [
+          1325,
+          1504
+        ],
+        [
+          1567,
+          1628
+        ],
+        [
+          1904,
+          1912
+        ],
+        [
+          2089,
+          2110
+        ],
+        [
+          2238,
+          2252
+        ],
+        [
+          2412,
+          2423
+        ]
+      ],
+      "id": "S1-RM",
+      "bytes": 145980,
+      "sha256": "7ffab331e89a914dc6c56f530d9c8aaf606588ef460adf09bdcbec7f52564451",
+      "line_count": 2934,
+      "snapshot_availability": "LOCAL_ONLY_NOT_DISTRIBUTED",
+      "snapshot_git_blob_verified_at_intake": true
+    },
+    {
+      "source": "S2",
+      "path": "README.md",
+      "git_blob_sha": "5f76f51240eef38fab6fad4bb2fdf4ba29baea74",
+      "url": "https://github.com/dukeluo/awesome-awesome-ai/blob/03173a28827eb48d6d5577421825b2e1f06639db/README.md",
+      "read_scope": "FULL_TEXT",
+      "id": "S2-RM",
+      "bytes": 10007,
+      "sha256": "1bd2270a7b9a6ea3f42a454168d6fb730f41336d728eacb3d924e97d149bda60",
+      "line_count": 76,
+      "snapshot_availability": "LOCAL_ONLY_NOT_DISTRIBUTED",
+      "snapshot_git_blob_verified_at_intake": true
+    },
+    {
+      "source": "S3",
+      "path": "README.md",
+      "git_blob_sha": "1f6950b9e0387c6fd92cd1ef003e422e67f2f53f",
+      "url": "https://github.com/f/prompts.chat/blob/f8fe2385244a6188c976e352ea7ca849e3d20b1e/README.md",
+      "read_scope": [
+        [
+          59,
+          178
+        ],
+        [
+          260,
+          268
+        ]
+      ],
+      "id": "S3-RM",
+      "bytes": 11382,
+      "sha256": "02747c003e45fd275c0ebd8093e00f4d2a063feade7853a86bd7e0973739e9e5",
+      "line_count": 268,
+      "snapshot_availability": "LOCAL_ONLY_NOT_DISTRIBUTED",
+      "snapshot_git_blob_verified_at_intake": true
+    },
+    {
+      "source": "S2",
+      "path": "LICENSE",
+      "git_blob_sha": "1ada92e76a490ddbbe20a2c7fda4fbfea72806f6",
+      "url": "https://github.com/dukeluo/awesome-awesome-ai/blob/03173a28827eb48d6d5577421825b2e1f06639db/LICENSE",
+      "read_scope": "FULL_TEXT",
+      "id": "S2-LICENSE",
+      "bytes": 1065,
+      "sha256": "e2c2d695c8ddfdf582cae871b9b3b8b9a413cf0c3870de8ca3b25df15abee44c",
+      "line_count": 21,
+      "snapshot_availability": "LOCAL_ONLY_NOT_DISTRIBUTED",
+      "snapshot_git_blob_verified_at_intake": true
+    },
+    {
+      "source": "S2",
+      "path": "CLAUDE.md",
+      "git_blob_sha": "0c660c1178bb75cc38bc60d7a100cbabd0b0df54",
+      "url": "https://github.com/dukeluo/awesome-awesome-ai/blob/03173a28827eb48d6d5577421825b2e1f06639db/CLAUDE.md",
+      "read_scope": "FULL_TEXT",
+      "id": "S2-GUIDANCE",
+      "bytes": 3959,
+      "sha256": "be1fcded6993c94c3a195bf255c3b523d732e00bf5f3c53bf578bc501422e690",
+      "line_count": 50,
+      "snapshot_availability": "LOCAL_ONLY_NOT_DISTRIBUTED",
+      "snapshot_git_blob_verified_at_intake": true
+    },
+    {
+      "source": "S2",
+      "path": ".github/workflows/weekly-audit.yml",
+      "git_blob_sha": "53b8348b093b8d155b99c989d52c43bf21267d4f",
+      "url": "https://github.com/dukeluo/awesome-awesome-ai/blob/03173a28827eb48d6d5577421825b2e1f06639db/.github/workflows/weekly-audit.yml",
+      "read_scope": "FULL_TEXT",
+      "id": "S2-AUDIT",
+      "bytes": 4983,
+      "sha256": "1ce98f632e2652f321d476334224ff9ec2e4bbcfa13cfeaf49dd645b3afa2b12",
+      "line_count": 150,
+      "snapshot_availability": "LOCAL_ONLY_NOT_DISTRIBUTED",
+      "snapshot_git_blob_verified_at_intake": true
+    },
+    {
+      "source": "S3",
+      "path": "LICENSE",
+      "git_blob_sha": "0530e3c4f3f41ffa61250dd612510e9affa3d1c7",
+      "url": "https://github.com/f/prompts.chat/blob/f8fe2385244a6188c976e352ea7ca849e3d20b1e/LICENSE",
+      "read_scope": "FULL_TEXT",
+      "id": "S3-LICENSE",
+      "bytes": 596,
+      "sha256": "82201d04d22eea74216fcacc9bc9e695184aef435a415e3564cf806c962854f8",
+      "line_count": 14,
+      "snapshot_availability": "LOCAL_ONLY_NOT_DISTRIBUTED",
+      "snapshot_git_blob_verified_at_intake": true
+    },
+    {
+      "source": "S3",
+      "path": "LICENSE-MIT",
+      "git_blob_sha": "9da04208808b1b5cf030f3c03cbb58cd4817efd9",
+      "url": "https://github.com/f/prompts.chat/blob/f8fe2385244a6188c976e352ea7ca849e3d20b1e/LICENSE-MIT",
+      "read_scope": "FULL_TEXT",
+      "id": "S3-MIT",
+      "bytes": 1098,
+      "sha256": "ac6e7a00981f0ce529d30c96fca2583d7baaf7a08589920a2c28fb54725efcda",
+      "line_count": 21,
+      "snapshot_availability": "LOCAL_ONLY_NOT_DISTRIBUTED",
+      "snapshot_git_blob_verified_at_intake": true
+    },
+    {
+      "source": "S3",
+      "path": "LICENSE-CC0",
+      "git_blob_sha": "0e259d42c996742e9e3cba14c677129b2c1b6311",
+      "url": "https://github.com/f/prompts.chat/blob/f8fe2385244a6188c976e352ea7ca849e3d20b1e/LICENSE-CC0",
+      "read_scope": "FULL_TEXT",
+      "id": "S3-CC0",
+      "bytes": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+      "line_count": 121,
+      "snapshot_availability": "LOCAL_ONLY_NOT_DISTRIBUTED",
+      "snapshot_git_blob_verified_at_intake": true
+    },
+    {
+      "source": "S3",
+      "path": "src/content/book/02-anatomy-of-effective-prompt.mdx",
+      "git_blob_sha": "03cd23d2a0a4cc4debf89b453b2e4dd662a17ca5",
+      "url": "https://github.com/f/prompts.chat/blob/f8fe2385244a6188c976e352ea7ca849e3d20b1e/src/content/book/02-anatomy-of-effective-prompt.mdx",
+      "read_scope": [
+        [
+          1,
+          265
+        ],
+        [
+          265,
+          320
+        ]
+      ],
+      "id": "S3-ANATOMY",
+      "bytes": 11044,
+      "sha256": "4709a4c907921455979ebde485b2e8977384975e7dab4e22de49bfd658d41d62",
+      "line_count": 343,
+      "snapshot_availability": "LOCAL_ONLY_NOT_DISTRIBUTED",
+      "snapshot_git_blob_verified_at_intake": true
+    },
+    {
+      "source": "S3",
+      "path": "src/content/book/05-structured-output.mdx",
+      "git_blob_sha": "8236abee1ec2cf3ccff821d2d0de61a5054c14bc",
+      "url": "https://github.com/f/prompts.chat/blob/f8fe2385244a6188c976e352ea7ca849e3d20b1e/src/content/book/05-structured-output.mdx",
+      "read_scope": [
+        [
+          150,
+          172
+        ],
+        [
+          354,
+          392
+        ]
+      ],
+      "id": "S3-OUTPUT",
+      "bytes": 14093,
+      "sha256": "5a3ce0317e74aeef0cf18734bdb2e2cdc4fed6c7ff61cedec5e723664265adb5",
+      "line_count": 411,
+      "snapshot_availability": "LOCAL_ONLY_NOT_DISTRIBUTED",
+      "snapshot_git_blob_verified_at_intake": true
+    },
+    {
+      "source": "S3",
+      "path": "src/content/book/11-prompt-chaining.mdx",
+      "git_blob_sha": "9f54da52871245217d4dc63b09dc9d042d141b74",
+      "url": "https://github.com/f/prompts.chat/blob/f8fe2385244a6188c976e352ea7ca849e3d20b1e/src/content/book/11-prompt-chaining.mdx",
+      "read_scope": [
+        [
+          1,
+          191
+        ],
+        [
+          273,
+          328
+        ]
+      ],
+      "id": "S3-CHAIN",
+      "bytes": 21345,
+      "sha256": "d480e2543a76fb4523aa11f2b3a76a29acc6ca52df124a696589788a663bfe39",
+      "line_count": 379,
+      "snapshot_availability": "LOCAL_ONLY_NOT_DISTRIBUTED",
+      "snapshot_git_blob_verified_at_intake": true
+    },
+    {
+      "source": "S3",
+      "path": "src/content/book/12-handling-edge-cases.mdx",
+      "git_blob_sha": "4708ee3cac83cd2fdcc5219904692a25c7f1f62d",
+      "url": "https://github.com/f/prompts.chat/blob/f8fe2385244a6188c976e352ea7ca849e3d20b1e/src/content/book/12-handling-edge-cases.mdx",
+      "read_scope": [
+        [
+          65,
+          115
+        ],
+        [
+          143,
+          195
+        ],
+        [
+          257,
+          293
+        ],
+        [
+          332,
+          486
+        ]
+      ],
+      "id": "S3-EDGE",
+      "bytes": 24984,
+      "sha256": "ec66678adb7270758b1c5fbc445844353b110a81b7f8ff820e616a6ccaac769c",
+      "line_count": 580,
+      "snapshot_availability": "LOCAL_ONLY_NOT_DISTRIBUTED",
+      "snapshot_git_blob_verified_at_intake": true
+    },
+    {
+      "source": "S3",
+      "path": "src/content/book/14-context-engineering.mdx",
+      "git_blob_sha": "b9c69b6d30761423b3e634d0a8ac42d70608d984",
+      "url": "https://github.com/f/prompts.chat/blob/f8fe2385244a6188c976e352ea7ca849e3d20b1e/src/content/book/14-context-engineering.mdx",
+      "read_scope": [
+        [
+          1,
+          287
+        ]
+      ],
+      "id": "S3-CONTEXT",
+      "bytes": 12639,
+      "sha256": "9213b658ac8c9d4c356fe370fa61c63cfef76125de6b50085e80735ba53fc6a8",
+      "line_count": 287,
+      "snapshot_availability": "LOCAL_ONLY_NOT_DISTRIBUTED",
+      "snapshot_git_blob_verified_at_intake": true
+    },
+    {
+      "source": "S3",
+      "path": "src/content/book/14a-loop-engineering.mdx",
+      "git_blob_sha": "4b192b7bb57c2a561b9eacfddd4be295d9a15101",
+      "url": "https://github.com/f/prompts.chat/blob/f8fe2385244a6188c976e352ea7ca849e3d20b1e/src/content/book/14a-loop-engineering.mdx",
+      "read_scope": [
+        [
+          1,
+          332
+        ]
+      ],
+      "id": "S3-LOOP",
+      "bytes": 20139,
+      "sha256": "b8d7931163995741a6ad66ffc8be4f9f6e749b8896d415583b6246bbfd323866",
+      "line_count": 405,
+      "snapshot_availability": "LOCAL_ONLY_NOT_DISTRIBUTED",
+      "snapshot_git_blob_verified_at_intake": true
+    },
+    {
+      "source": "S3",
+      "path": "src/content/book/25-agents-and-skills.mdx",
+      "git_blob_sha": "ba355859282b926961f63cbb23686490c1d520aa",
+      "url": "https://github.com/f/prompts.chat/blob/f8fe2385244a6188c976e352ea7ca849e3d20b1e/src/content/book/25-agents-and-skills.mdx",
+      "read_scope": [
+        [
+          69,
+          228
+        ],
+        [
+          333,
+          444
+        ],
+        [
+          497,
+          551
+        ]
+      ],
+      "id": "S3-SKILLS",
+      "bytes": 25244,
+      "sha256": "99453ff4ab9389aeb7b66f41ea669117dcc30cd1c0da3d9e32eea4a379c9b145",
+      "line_count": 551,
+      "snapshot_availability": "LOCAL_ONLY_NOT_DISTRIBUTED",
+      "snapshot_git_blob_verified_at_intake": true
+    },
+    {
+      "source": "S3",
+      "path": "src/content/book/26-the-harnesses.mdx",
+      "git_blob_sha": "4f93edef8a2c48ed90bb0c4bb4073172ed21b8ba",
+      "url": "https://github.com/f/prompts.chat/blob/f8fe2385244a6188c976e352ea7ca849e3d20b1e/src/content/book/26-the-harnesses.mdx",
+      "read_scope": [
+        [
+          1,
+          70
+        ],
+        [
+          137,
+          235
+        ]
+      ],
+      "id": "S3-HARNESS",
+      "bytes": 13831,
+      "sha256": "c6bc30bf84dae6474e19d6d4909dbfba072eda7b25016a6c78c1bae596b38f51",
+      "line_count": 235,
+      "snapshot_availability": "LOCAL_ONLY_NOT_DISTRIBUTED",
+      "snapshot_git_blob_verified_at_intake": true
+    },
+    {
+      "source": "S3",
+      "path": "plugins/claude/prompts.chat/agents/prompt-manager.md",
+      "git_blob_sha": "a0c0b04d79574127a431527ba4a0d51a112987a0",
+      "url": "https://github.com/f/prompts.chat/blob/f8fe2385244a6188c976e352ea7ca849e3d20b1e/plugins/claude/prompts.chat/agents/prompt-manager.md",
+      "read_scope": "FULL_TEXT",
+      "id": "S3-MANAGER",
+      "bytes": 2326,
+      "sha256": "9f57a352428b064dc5e6b2cf612a26231d6a9bdef30b747af18f3bc94b4f4220",
+      "line_count": 67,
+      "snapshot_availability": "LOCAL_ONLY_NOT_DISTRIBUTED",
+      "snapshot_git_blob_verified_at_intake": true
+    },
+    {
+      "source": "S3",
+      "path": "plugins/claude/prompts.chat/skills/prompt-lookup/SKILL.md",
+      "git_blob_sha": "dc04ac1dbf9a72eaad7c88ae764df46e6c13a43e",
+      "url": "https://github.com/f/prompts.chat/blob/f8fe2385244a6188c976e352ea7ca849e3d20b1e/plugins/claude/prompts.chat/skills/prompt-lookup/SKILL.md",
+      "read_scope": "FULL_TEXT",
+      "id": "S3-LOOKUP",
+      "bytes": 2109,
+      "sha256": "3b0097f8f23cb98662550b30768a8c00e68e47b0a422c3aeb0d778460ac39359",
+      "line_count": 68,
+      "snapshot_availability": "LOCAL_ONLY_NOT_DISTRIBUTED",
+      "snapshot_git_blob_verified_at_intake": true
+    },
+    {
+      "source": "S3",
+      "path": "packages/prompts.chat/src/quality/index.ts",
+      "git_blob_sha": "08de2ab81486c64e383c89ae42595b65e50b61a8",
+      "url": "https://github.com/f/prompts.chat/blob/f8fe2385244a6188c976e352ea7ca849e3d20b1e/packages/prompts.chat/src/quality/index.ts",
+      "read_scope": [
+        [
+          1,
+          254
+        ]
+      ],
+      "id": "S3-QUALITY",
+      "bytes": 8097,
+      "sha256": "afbe496f0446f583a3074ec205605735199989ccbe6794c4228a46b4aefb0cae",
+      "line_count": 307,
+      "snapshot_availability": "LOCAL_ONLY_NOT_DISTRIBUTED",
+      "snapshot_git_blob_verified_at_intake": true
+    },
+    {
+      "source": "S3",
+      "path": "packages/prompts.chat/src/variables/index.ts",
+      "git_blob_sha": "c84a3d9457e5a30606eeed90fde1ce7db9bacce5",
+      "url": "https://github.com/f/prompts.chat/blob/f8fe2385244a6188c976e352ea7ca849e3d20b1e/packages/prompts.chat/src/variables/index.ts",
+      "read_scope": [
+        [
+          259,
+          297
+        ]
+      ],
+      "id": "S3-VARIABLES",
+      "bytes": 9331,
+      "sha256": "a984278e758bf0de627927555fb51780939828ff235e11c3f65f975ab7a3570a",
+      "line_count": 297,
+      "snapshot_availability": "LOCAL_ONLY_NOT_DISTRIBUTED",
+      "snapshot_git_blob_verified_at_intake": true
+    },
+    {
+      "source": "S3",
+      "path": "prisma/schema.prisma",
+      "git_blob_sha": "b58dfe55795f226175f4ce8700d133263c6892f9",
+      "url": "https://github.com/f/prompts.chat/blob/f8fe2385244a6188c976e352ea7ca849e3d20b1e/prisma/schema.prisma",
+      "read_scope": [
+        [
+          93,
+          184
+        ],
+        [
+          380,
+          396
+        ]
+      ],
+      "id": "S3-SCHEMA",
+      "bytes": 13842,
+      "sha256": "3a849ddc7c0d4bef484426df9900c01ebe80778277c6fb9c2ca933f9f0f74482",
+      "line_count": 462,
+      "snapshot_availability": "LOCAL_ONLY_NOT_DISTRIBUTED",
+      "snapshot_git_blob_verified_at_intake": true
+    }
+  ],
+  "reading_limits": [
+    "Tree inventory is not full semantic review.",
+    "S1: selected README sections only; images and copied system-prompt section not reviewed or adopted.",
+    "S2: README/guidance/audit workflow/license read; linked repositories not opened.",
+    "S3: selected chapters/sections and source excerpts only; prompt corpus, translations, all application code and linked primary references not audited.",
+    "Acquiring a file is not proof every line was read; read_scope records the inspected scope."
+  ]
+}

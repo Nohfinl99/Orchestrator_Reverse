@@ -24,6 +24,7 @@ Nguyên tắc xuyên suốt là **bảo toàn REA–IDA qua mọi cấu trúc v�
 - [Nguồn chính và mức truy cập](docs/reference/source-map.md); một số worksheet/pins chỉ có trong workspace local.
 - [Kiến trúc thông tin](docs/architecture/information-architecture.md), [sáu role](docs/architecture/agents.md) và [vấn đề mở](docs/reference/open-questions.md).
 - [W4: gate còn thiếu, trạng thái I01–I05 và dependency](docs/planning/w4-readiness-plan.md).
+- [Kiến thức tham khảo cho điều phối](docs/knowledge/README.md): 12 card từ ba nguồn GitHub, source pins và cách chọn theo task; chưa admitted KB.
 - Gate kế thừa: **P1K B4 FAIL; G1/G2 INCOMPLETE; G3/G4 NOT_RUN; W4 NOT_RUN_BLOCKED; v3 OFF**. IA không đổi trạng thái nghiệm thu.
 
 Các phần bên dưới giữ mục tiêu, nguyên lý và phạm vi gốc; ba đường dẫn docs cũ vẫn chuyển tới bản canonical mới. [Bản ghi IA](docs/changes/2026-10-21-information-architecture.md) nêu phạm vi và cách kiểm bảo toàn.

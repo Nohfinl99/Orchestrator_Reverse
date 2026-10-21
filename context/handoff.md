@@ -13,6 +13,8 @@ Xem [bản ghi thay đổi IA](../docs/changes/2026-10-21-information-architectu
 
 **Bổ sung W4 ngày 21/10/2026:** đọc [readiness/gap register](../docs/planning/w4-readiness-plan.md). Run42 là W4 plan offline; I05 run43 là non-target preparation; run44 reconcile runtime blocked. I01–I04 chưa đủ điều kiện. Gate G4 aggregate `NOT_RUN`, W4 readiness `NOT_RUN_BLOCKED`; cả hai chưa PASS. Hai concern state là finding tĩnh. Không dispatch template hoặc sửa source trong lượt tổ chức này.
 
+Bổ sung lượt knowledge 21/10/2026: đọc [knowledge index](../docs/knowledge/README.md), rồi chọn card bằng retrieval guide. Ba nguồn đã pin; 22 file snapshot local, 12 card và 11 disposition. S1 chỉ catalog metadata vì rights UNKNOWN. Đây là self-reviewed reference, chưa independent review, admitted KB, consumer ACK, TRANSFER evaluation hoặc runtime. Khi muốn dùng cho consumer phải kiểm exact bundle/context/digest và prerequisite hiện hữu; không ingest lại corpus hoặc tự dispatch.
+
 ## Mẫu ghi cuối phiên
 
 Ghi record mới trong thư mục công việc được task cho phép; report đã freeze dùng revision mới. Khi được phép công khai một record bàn giao, đặt trong `docs/changes/` theo ngày và chủ đề. Không đặt raw/target/private-data vào đây.

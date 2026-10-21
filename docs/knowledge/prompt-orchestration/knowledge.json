@@ -1,0 +1,451 @@
+{
+  "schema": "orchestrator.reference-knowledge.v1",
+  "record_type": "REFERENCE_WORKSHEET_NOT_RUNTIME_SCHEMA",
+  "bundle": "PROMPT_ORCHESTRATION_REFERENCES_20261021_01",
+  "revision": 1,
+  "status": "CANDIDATE_REFERENCE_NOT_ADMITTED",
+  "source_catalog": "sources.json",
+  "compiled_by": "CURRENT_SESSION_SINGLE_AGENT",
+  "independent_review": "NOT_PERFORMED",
+  "consumer_ack": "NOT_REQUESTED_NOT_ISSUED",
+  "target_pair": null,
+  "target_evidence_status": "NOT_RUN",
+  "gates_promoted": false,
+  "execution_permission_granted": false,
+  "source_assertion_policy": "What is source guidance/static observation; how/check are project-specific proposals, not observed outcomes or new contract.",
+  "cards": [
+    {
+      "id": "K01",
+      "title": "Task có đầu ra và tiêu chí kiểm được",
+      "what": "Nguồn tách role, bối cảnh, task, ràng buộc, định dạng và ví dụ khi cần.",
+      "why": "Giúp người nhận biết phải tạo artifact nào và căn cứ nào đủ để bàn giao.",
+      "how": "Dùng như checklist soạn proposal: chốt một objective; map owner hiện hữu; nêu input/revision, output, acceptance và phần còn thiếu. Các field authority/budget/dependency phải lấy từ contract project.",
+      "roles": [
+        "Prompt-Master"
+      ],
+      "phases": [
+        "W0",
+        "W1"
+      ],
+      "refs": [
+        {
+          "document_id": "S3-ANATOMY",
+          "start_line": 7,
+          "end_line": 181
+        }
+      ],
+      "limits": "Cấu trúc câu lệnh không chứng minh capability, quyền hoặc task đã admitted; không thay schema hiện hữu.",
+      "check": "Người nhận chỉ ra được output và acceptance; field thiếu vẫn ghi UNKNOWN, không tự điền.",
+      "tags": [
+        "intake",
+        "task",
+        "acceptance"
+      ],
+      "status": "CANDIDATE_REFERENCE_NOT_ADMITTED",
+      "source_support": "SOURCE_AUTHORED_GUIDANCE_NOT_EMPIRICAL_VALIDATION"
+    },
+    {
+      "id": "K02",
+      "title": "Nạp context theo câu hỏi và giữ locator",
+      "what": "Nguồn mô tả retrieval phần liên quan và tóm tắt quyết định, mục tiêu, câu hỏi còn mở để quản lý context.",
+      "why": "Giảm việc nạp nguyên corpus hoặc mất quyết định sau khi chuyển phiên.",
+      "how": "Bắt đầu từ current/source map; chọn phần đúng role/task; tóm tắt trạng thái và giữ đường dẫn/revision/digest để mở lại nguồn. Ghi cả nguồn không chọn và lý do.",
+      "roles": [
+        "Prompt-Master",
+        "Evidence-Synthesizer"
+      ],
+      "phases": [
+        "W0",
+        "W2"
+      ],
+      "refs": [
+        {
+          "document_id": "S3-CONTEXT",
+          "start_line": 49,
+          "end_line": 94
+        },
+        {
+          "document_id": "S3-CONTEXT",
+          "start_line": 155,
+          "end_line": 237
+        },
+        {
+          "document_id": "S3-CONTEXT",
+          "start_line": 259,
+          "end_line": 273
+        }
+      ],
+      "limits": "Tóm tắt có thể bỏ sót chi tiết. Ngưỡng token trong ví dụ không trở thành budget project; chưa triển khai RAG/embedding.",
+      "check": "Mỗi trạng thái quan trọng truy về nguồn; phần chưa đọc hoặc thiếu nguồn không biến thành fact.",
+      "tags": [
+        "context",
+        "retrieval",
+        "resume"
+      ],
+      "status": "CANDIDATE_REFERENCE_NOT_ADMITTED",
+      "source_support": "SOURCE_AUTHORED_GUIDANCE_NOT_EMPIRICAL_VALIDATION"
+    },
+    {
+      "id": "K03",
+      "title": "Chọn dạng dependency trước khi chọn agent",
+      "what": "Nguồn phân biệt chain tuần tự, song song, có điều kiện và lặp.",
+      "why": "Làm rõ bước nào cần kết quả trước, bước nào độc lập, và bước nào chỉ mở khi có predicate.",
+      "how": "Đánh dấu dependency và predicate trong proposal DAG. Chỉ cân nhắc song song khi input/state không xung đột và execution đã được cấp đúng phạm vi; route vẫn theo sáu identity hiện hữu.",
+      "roles": [
+        "Prompt-Master"
+      ],
+      "phases": [
+        "W1",
+        "W4"
+      ],
+      "refs": [
+        {
+          "document_id": "S3-CHAIN",
+          "start_line": 66,
+          "end_line": 131
+        }
+      ],
+      "limits": "Lượt trích xuất không dispatch agent. Ví dụ routing theo confidence không thay integrity/capability/gate checks; Crypto vẫn có điều kiện riêng.",
+      "check": "Không có node dùng output chưa được kiểm; mỗi nhánh conditional có nguồn predicate và owner hợp lệ.",
+      "tags": [
+        "routing",
+        "dag",
+        "dependencies"
+      ],
+      "status": "CANDIDATE_REFERENCE_NOT_ADMITTED",
+      "source_support": "SOURCE_AUTHORED_GUIDANCE_NOT_EMPIRICAL_VALIDATION"
+    },
+    {
+      "id": "K04",
+      "title": "Kiểm artifact trước khi chuyển giao",
+      "what": "Nguồn yêu cầu kiểm intermediate output và quy định dữ liệu thiếu thay vì bịa giá trị.",
+      "why": "Một output sai có thể lan sang mọi bước sau dù định dạng nhìn hợp lệ.",
+      "how": "Ở bước chuẩn bị, liệt kê check cú pháp, schema và đối chiếu source; khi có execution được phép, consumer kiểm artifact/revision/dependency trước dùng và ACK theo contract gốc.",
+      "roles": [
+        "Evidence-Synthesizer",
+        "Prompt-Master"
+      ],
+      "phases": [
+        "W2",
+        "W4",
+        "W5"
+      ],
+      "refs": [
+        {
+          "document_id": "S3-CHAIN",
+          "start_line": 273,
+          "end_line": 293
+        },
+        {
+          "document_id": "S3-OUTPUT",
+          "start_line": 150,
+          "end_line": 161
+        },
+        {
+          "document_id": "S3-OUTPUT",
+          "start_line": 371,
+          "end_line": 391
+        }
+      ],
+      "limits": "JSON parse được không chứng minh semantics, provenance hay authority. null của ví dụ không thay enum UNKNOWN/CONFLICT/WAIT trong project.",
+      "check": "Có check nguồn và semantics bên cạnh parse; không phát ACK thay consumer.",
+      "tags": [
+        "handoff",
+        "validation",
+        "schema"
+      ],
+      "status": "CANDIDATE_REFERENCE_NOT_ADMITTED",
+      "source_support": "SOURCE_AUTHORED_GUIDANCE_NOT_EMPIRICAL_VALIDATION"
+    },
+    {
+      "id": "K05",
+      "title": "Vòng lặp có tiêu chí thành công, lỗi và hết ngân sách",
+      "what": "Nguồn đề nghị contract gồm goal, state, action, observation, evaluator, success/failure và budget; so bằng chứng với tiêu chí rồi quyết định bước sau.",
+      "why": "Giúp phát hiện retry vô hạn, drift mục tiêu và dừng do hết budget nhưng báo nhầm thành công.",
+      "how": "Đối chiếu packet với ba điều kiện dừng và số attempt/time/token/cost được phép. Trước retry phải giữ kết quả attempt và nguyên nhân đổi chiến lược; số vòng lấy từ contract hiện hành.",
+      "roles": [
+        "Prompt-Master",
+        "Evidence-Synthesizer"
+      ],
+      "phases": [
+        "W4",
+        "W5"
+      ],
+      "refs": [
+        {
+          "document_id": "S3-LOOP",
+          "start_line": 26,
+          "end_line": 37
+        },
+        {
+          "document_id": "S3-LOOP",
+          "start_line": 165,
+          "end_line": 183
+        },
+        {
+          "document_id": "S3-LOOP",
+          "start_line": 289,
+          "end_line": 332
+        }
+      ],
+      "limits": "Không nhận giới hạn 3–5 vòng của chương chaining làm mặc định; không tự giải quyết RETRY/caller-halt gap của project.",
+      "check": "Mỗi quyết định tiếp tục/dừng có observation, predicate và budget còn lại; hết budget không mang verdict PASS.",
+      "tags": [
+        "retry",
+        "budget",
+        "stop"
+      ],
+      "status": "CANDIDATE_REFERENCE_NOT_ADMITTED",
+      "source_support": "SOURCE_AUTHORED_GUIDANCE_NOT_EMPIRICAL_VALIDATION"
+    },
+    {
+      "id": "K06",
+      "title": "State để tiếp tục phiên là record quyết định và bằng chứng",
+      "what": "Nguồn phân biệt context của một lượt với state giữ mục tiêu, attempt, artifact/version, verdict, gap và budget giữa các lượt.",
+      "why": "Để agent sau tiếp tục đúng vị trí và tránh lặp lại việc đã thực hiện.",
+      "how": "Bổ sung vào handoff view đường dẫn artifact, revision, check đã chạy, unresolved issues và next action. Khi resume, đọc record và đối chiếu nguồn/binding trước kế thừa.",
+      "roles": [
+        "Prompt-Master",
+        "Evidence-Synthesizer"
+      ],
+      "phases": [
+        "W4"
+      ],
+      "refs": [
+        {
+          "document_id": "S3-LOOP",
+          "start_line": 248,
+          "end_line": 261
+        },
+        {
+          "document_id": "S3-HARNESS",
+          "start_line": 214,
+          "end_line": 224
+        }
+      ],
+      "limits": "Đây là checklist tài liệu, không thay runtime state schema; checkpoint đọc được chưa chứng minh binding còn hợp lệ. Không lưu private reasoning.",
+      "check": "Người nhận phân biệt được proposed/attempted/verified và nguồn nào cần revalidation.",
+      "tags": [
+        "state",
+        "checkpoint",
+        "resume"
+      ],
+      "status": "CANDIDATE_REFERENCE_NOT_ADMITTED",
+      "source_support": "SOURCE_AUTHORED_GUIDANCE_NOT_EMPIRICAL_VALIDATION"
+    },
+    {
+      "id": "K07",
+      "title": "Bằng chứng từ môi trường và vai trò người kiểm",
+      "what": "Nguồn dùng observation thực, evaluator có rubric và tách người tạo khỏi người kiểm trong công việc quan trọng.",
+      "why": "Giảm khả năng tự đánh giá một câu trả lời hợp lý thành kết quả đã được chứng minh.",
+      "how": "Trong proposal, ghi observable cần thu và evaluator. Tuân thủ R4a trước attempt, raw sau attempt và R4b độc lập theo project; review tài liệu một người chỉ được ghi self-review.",
+      "roles": [
+        "Evidence-Synthesizer",
+        "Prompt-Master"
+      ],
+      "phases": [
+        "W5"
+      ],
+      "refs": [
+        {
+          "document_id": "S3-LOOP",
+          "start_line": 185,
+          "end_line": 246
+        }
+      ],
+      "limits": "Confidence, số reviewer đồng ý, hash hay source popularity không đủ để đóng gate. Lượt này không thực hiện R4b độc lập hoặc fixture nghiệp vụ.",
+      "check": "Verdict gắn exact artifact/revision và evidence thực; nguồn hướng dẫn không bị dùng làm bằng chứng runtime.",
+      "tags": [
+        "evidence",
+        "review",
+        "evaluation"
+      ],
+      "status": "CANDIDATE_REFERENCE_NOT_ADMITTED",
+      "source_support": "SOURCE_AUTHORED_GUIDANCE_NOT_EMPIRICAL_VALIDATION"
+    },
+    {
+      "id": "K08",
+      "title": "Version prompt và kiểm biến chưa được điền",
+      "what": "Source schema lưu PromptVersion/ChangeRequest; hàm compile giữ nguyên placeholder nếu không có giá trị hoặc default.",
+      "why": "Prompt có thể đúng bản trước nhưng sai sau sửa, hoặc đi qua pipeline với biến vẫn chưa điền.",
+      "how": "Giữ prompt/template revision, input bindings và assembled digest trong proposal theo manifest gốc. Ghi rõ missing required variables; thay đổi tạo revision mới và review lại đúng digest.",
+      "roles": [
+        "Prompt-Master",
+        "Evidence-Synthesizer"
+      ],
+      "phases": [
+        "W1",
+        "W4"
+      ],
+      "refs": [
+        {
+          "document_id": "S3-SCHEMA",
+          "start_line": 147,
+          "end_line": 183
+        },
+        {
+          "document_id": "S3-VARIABLES",
+          "start_line": 259,
+          "end_line": 297
+        }
+      ],
+      "limits": "Đây là quan sát tĩnh trên repo khác, chưa chạy code; không import compiler/schema hoặc đưa default tự chọn vào field authority/target/budget.",
+      "check": "Phát hiện unresolved placeholders trước dispatch; reviewer thấy được exact assembled revision và nguồn biến.",
+      "tags": [
+        "prompt",
+        "version",
+        "variables"
+      ],
+      "status": "CANDIDATE_REFERENCE_NOT_ADMITTED",
+      "source_support": "STATIC_CODE_OBSERVATION"
+    },
+    {
+      "id": "K09",
+      "title": "Danh mục discovery tách khỏi nguồn đã kiểm",
+      "what": "Danh mục AI chia tài nguyên theo loại; guidance yêu cầu link canonical và workflow có bước kiểm HTTP/archived.",
+      "why": "Giúp chọn nơi tìm tiếp và phát hiện nguồn đổi tên/hỏng mà không hiểu nhầm một danh sách là knowledge đã xác thực.",
+      "how": "Catalog ghi category, URL, commit đã đọc, read scope, quyền và ngày kiểm. Nguồn ngoài danh mục chưa mở vẫn ghi DISCOVERY_ONLY. Khi drift tạo revision mới; giữ pin lịch sử.",
+      "roles": [
+        "Prompt-Master",
+        "Evidence-Synthesizer"
+      ],
+      "phases": [
+        "W0",
+        "W2"
+      ],
+      "refs": [
+        {
+          "document_id": "S2-RM",
+          "start_line": 19,
+          "end_line": 64
+        },
+        {
+          "document_id": "S2-GUIDANCE",
+          "start_line": 10,
+          "end_line": 49
+        },
+        {
+          "document_id": "S2-AUDIT",
+          "start_line": 49,
+          "end_line": 86
+        }
+      ],
+      "limits": "Stars/last commit và HTTP 200 không chứng minh chất lượng hoặc source rights. Không sao chép quy tắc xóa row lỗi; giữ tombstone/locator lịch sử nếu cần.",
+      "check": "Không có claim phương pháp lấy từ một link chưa mở; link nguồn và link pin cùng đúng repository.",
+      "tags": [
+        "catalog",
+        "sources",
+        "discovery"
+      ],
+      "status": "CANDIDATE_REFERENCE_NOT_ADMITTED",
+      "source_support": "CATALOG_AND_CURATION_GUIDANCE"
+    },
+    {
+      "id": "K10",
+      "title": "Thiết kế ca biên và no-match từ trước",
+      "what": "Nguồn liệt kê input trống/dài/sai dạng, giới hạn, adversarial và domain cases; mỗi case có expected behavior và failure indicator.",
+      "why": "Giúp thấy trường hợp thiếu dữ liệu hoặc ngoài scope thay vì chỉ kiểm happy path.",
+      "how": "Đưa vào proposal test matrix các ca input thiếu, nguồn drift, Unicode, dependency chưa đạt và no-match. Tách gold/heldout khỏi KB active; chạy fixture chỉ sau accepted R4a và review độc lập.",
+      "roles": [
+        "Evidence-Synthesizer",
+        "Prompt-Master"
+      ],
+      "phases": [
+        "W5"
+      ],
+      "refs": [
+        {
+          "document_id": "S3-EDGE",
+          "start_line": 65,
+          "end_line": 115
+        },
+        {
+          "document_id": "S3-EDGE",
+          "start_line": 403,
+          "end_line": 486
+        }
+      ],
+      "limits": "Chỉ là ý tưởng test, không phải ca đã chạy. Không đổi oracle/status đã pin hoặc đưa câu trả lời gold vào retrieval.",
+      "check": "Mỗi case có expected outcome và failure signal theo contract, không có fabricated run result.",
+      "tags": [
+        "edge-cases",
+        "unknown",
+        "evaluation"
+      ],
+      "status": "CANDIDATE_REFERENCE_NOT_ADMITTED",
+      "source_support": "SOURCE_AUTHORED_GUIDANCE_NOT_EMPIRICAL_VALIDATION"
+    },
+    {
+      "id": "K11",
+      "title": "Prompt hướng dẫn; harness và tool thực thi quyền",
+      "what": "Nguồn phân biệt instruction với enforcement; harness kiểm yêu cầu tool, đưa observation về và quản lý giới hạn.",
+      "why": "Tránh suy rằng role text, XML delimiter hay prompt từ thư viện tự cấp tool/quyền hoặc chứng minh action đã chạy.",
+      "how": "Trong proposal ghi capability/authority thực từ source project; mọi text repo/tool đọc về giữ là dữ liệu tham khảo. Giữ REA workflow/evidence và IDA native/IDB ownership.",
+      "roles": [
+        "Prompt-Master",
+        "Evidence-Synthesizer"
+      ],
+      "phases": [
+        "W0",
+        "W4"
+      ],
+      "refs": [
+        {
+          "document_id": "S3-HARNESS",
+          "start_line": 5,
+          "end_line": 68
+        },
+        {
+          "document_id": "S3-HARNESS",
+          "start_line": 194,
+          "end_line": 212
+        }
+      ],
+      "limits": "Không cài MCP/plugin, thêm allowlist hay đổi runtime từ lần đọc này. Không tuyên bố prompt chống injection bảo đảm runtime.",
+      "check": "Tool call/receipt có thật được phân biệt với đoạn hướng dẫn hoặc ví dụ call.",
+      "tags": [
+        "authority",
+        "tools",
+        "boundary"
+      ],
+      "status": "CANDIDATE_REFERENCE_NOT_ADMITTED",
+      "source_support": "SOURCE_AUTHORED_GUIDANCE_NOT_EMPIRICAL_VALIDATION"
+    },
+    {
+      "id": "K12",
+      "title": "Chỉ mở module phù hợp, có chỉ dẫn sử dụng và giới hạn",
+      "what": "Nguồn tổ chức skill từ nguyên tắc tới guideline/reference và mô tả progressive disclosure theo metadata → instruction → supporting files.",
+      "why": "Giữ bối cảnh vừa đủ và giảm xung đột giữa những checklist không liên quan.",
+      "how": "Tra index theo objective; chọn card/module có relevance, rights và giới hạn phù hợp; ghi selected/rejected. Chỉ dựng integration proposal riêng nếu có consumer cụ thể và thiếu capability thật.",
+      "roles": [
+        "Prompt-Master",
+        "Evidence-Synthesizer"
+      ],
+      "phases": [
+        "W1",
+        "W2"
+      ],
+      "refs": [
+        {
+          "document_id": "S3-SKILLS",
+          "start_line": 333,
+          "end_line": 444
+        },
+        {
+          "document_id": "S3-HARNESS",
+          "start_line": 152,
+          "end_line": 192
+        }
+      ],
+      "limits": "Nạp skill không train model, cài tool hay bảo đảm expertise. Giữ thứ tự quyền và conflict unresolved; không biến role nhãn thành identity mới.",
+      "check": "Mỗi module được chọn có lý do dùng và lý do không dùng các item gần giống.",
+      "tags": [
+        "modules",
+        "skills",
+        "retrieval"
+      ],
+      "status": "CANDIDATE_REFERENCE_NOT_ADMITTED",
+      "source_support": "SOURCE_AUTHORED_GUIDANCE_NOT_EMPIRICAL_VALIDATION"
+    }
+  ]
+}
