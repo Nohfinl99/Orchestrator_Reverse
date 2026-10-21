@@ -16,48 +16,46 @@ Nguyên tắc xuyên suốt là **bảo toàn REA–IDA qua mọi cấu trúc v�
 - Chuẩn bị tài liệu ngoài target được ghi `NON_TARGET_PREPARATION`, pair `null`, trạng thái `NOT_RUN`; không tạo target claim hoặc target-consumption ACK.
 - Prompt, hash file hoặc sự tồn tại của IDA không tự chứng minh tool đã nối, evidence authentic, quyền hành động hoặc kết quả đã chạy.
 
+## Tiếp nhận theo IA — 21/10/2026
+
+**Đọc trước:** [context hiện tại](context/current.md) → [bản đồ phase](docs/planning/phase-map.md) → [việc tiếp theo](docs/planning/work-queue.md). AI đọc [AGENTS.md](AGENTS.md); khi đổi phiên dùng [handoff](context/handoff.md).
+
+- [Mục lục theo nhu cầu](docs/README.md) và [start here](docs/onboarding/start-here.md).
+- [Nguồn chính và mức truy cập](docs/reference/source-map.md); một số worksheet/pins chỉ có trong workspace local.
+- [Kiến trúc thông tin](docs/architecture/information-architecture.md), [sáu role](docs/architecture/agents.md) và [vấn đề mở](docs/reference/open-questions.md).
+- Gate kế thừa: **P1K B4 FAIL; G1/G2 INCOMPLETE; G3/G4 NOT_RUN; W4 NOT_RUN_BLOCKED; v3 OFF**. IA không đổi trạng thái nghiệm thu.
+
+Các phần bên dưới giữ mục tiêu, nguyên lý và phạm vi gốc; ba đường dẫn docs cũ vẫn chuyển tới bản canonical mới. [Bản ghi IA](docs/changes/2026-10-21-information-architecture.md) nêu phạm vi và cách kiểm bảo toàn.
+
 ## Bắt đầu
 
 1. Đọc [bối cảnh và phạm vi](CONTEXT_VI.md).
-2. Xem [kiến trúc và ranh giới](docs/ARCHITECTURE.md) cùng [trạng thái nghiệm thu](docs/VALIDATION_STATUS.md).
+2. Xem [kiến trúc và ranh giới](docs/architecture/system.md) cùng [trạng thái nghiệm thu](docs/reference/validation-status.md).
 3. Chọn stack theo mục tiêu tại [mục lục Prompt Stack](prompt_stacks/README.md).
-4. Nếu cần tinh chỉnh model, đọc [hướng dẫn fine-tuning](docs/FINE_TUNING.md); training không thay thế tool authority hay các gate REA–IDA.
+4. Nếu cần tinh chỉnh model, đọc [hướng dẫn fine-tuning](docs/guides/fine-tuning.md); training không thay thế tool authority hay các gate REA–IDA.
 5. Trước khi áp dụng vào hệ đang chạy, kiểm quyền, source binding, consumer và các gate liên quan. Mọi execution cần bộ pre-run R4a được review/freeze trước attempt và R4b độc lập sau khi thu raw evidence.
 
 ## Cấu trúc
 
 ```text
 Orchestrator_Reverse/
-├── README.md
-├── CONTEXT_VI.md
-├── CONTRIBUTING.md
-├── SECURITY.md
-├── LICENSE_STATUS.md
-├── CITATION.cff
-├── .gitignore
-├── .gitattributes
+├── README.md / AGENTS.md / CONTEXT_VI.md
+├── CONTRIBUTING.md / SECURITY.md / LICENSE_STATUS.md / CITATION.cff
 ├── .github/
-│   ├── PULL_REQUEST_TEMPLATE.md
-│   └── ISSUE_TEMPLATE/
-├── CONTEXT_VI.md
+├── context/                     # Current view, handoff, project-state.json
 ├── docs/
-│   ├── ARCHITECTURE.md
-│   ├── FINE_TUNING.md
-│   └── VALIDATION_STATUS.md
-└── prompt_stacks/
-    ├── README.md
-    ├── 00_bootstrap.md ... 09_review_gate_handoff.md
-    └── protocols/
-        ├── intake_protocol.md
-        ├── routing_protocol.md
-        ├── knowledge_protocol.md
-        ├── pair_protocol.md
-        ├── state_protocol.md
-        ├── evaluation_protocol.md
-        ├── pilot_protocol.md
-        ├── training_protocol.md
-        ├── baseline_protocol.md
-        └── handoff_protocol.md
+│   ├── README.md                 # Navigation by question
+│   ├── onboarding/              # Start here and session workflow
+│   ├── architecture/            # System, agents, information architecture
+│   ├── planning/                # Phase map and work queue
+│   ├── reference/               # Sources, validation, open questions
+│   ├── guides/                  # Conditional fine-tuning guide
+│   ├── changes/                 # Revision-scoped change records
+│   └── ARCHITECTURE.md ...       # Compatibility redirects
+├── prompt_stacks/               # Ten unchanged stacks
+│   └── protocols/               # Ten unchanged protocols
+├── metadata/                    # Navigation, preservation, content inventory
+└── scripts/verify_ia.py          # Read/hash/link verification only
 ```
 
 Repository công khai [Nohfinl99/Orchestrator_Reverse](https://github.com/Nohfinl99/Orchestrator_Reverse) được tạo từ **nội dung bên trong folder này** làm repository root. Không upload hoặc push folder cha `Orchestrator`, vì folder đó còn workspace archive và evidence riêng.
@@ -96,7 +94,7 @@ HITL giữ approval/action theo quyền được cấp. Debate là review servic
 
 Gói này chứa instruction overlay và tài liệu mô tả. Nó không chứa RE-Decom archive đầy đủ, raw capture, target/binary, database IDA, local config/credential, snapshot backup, output fine-tuning hoặc các artefact riêng của máy.
 
-Mười stack là bộ tài liệu, không có nghĩa toàn bộ task đã chạy. Mười protocol không chứng nhận code thực thi. Coverage design, hash/locator checks, benchmark execution và review độc lập là những loại bằng chứng khác nhau. Xem [trạng thái nghiệm thu](docs/VALIDATION_STATUS.md).
+Mười stack là bộ tài liệu, không có nghĩa toàn bộ task đã chạy. Mười protocol không chứng nhận code thực thi. Coverage design, hash/locator checks, benchmark execution và review độc lập là những loại bằng chứng khác nhau. Xem [trạng thái nghiệm thu](docs/reference/validation-status.md).
 
 ## Quyền và giấy phép
 
@@ -105,4 +103,3 @@ Quyền của corpus nguồn chưa được xác nhận đủ để gán một l
 ## Đóng góp và báo lỗi
 
 Xem [CONTRIBUTING.md](CONTRIBUTING.md) và [SECURITY.md](SECURITY.md). Mọi thay đổi phải giữ provenance, phân biệt thiết kế với execution, và không sửa lịch sử để biến FAIL/NOT_RUN thành PASS.
-

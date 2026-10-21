@@ -1,0 +1,254 @@
+{
+  "schema": "orchestrator.ia-preservation.v1",
+  "baseline_date": "2026-10-21",
+  "scope": "All 35 pre-IA public package files; only README navigation and Git attributes may change; topic relocation preserves exact bytes",
+  "files": [
+    {
+      "original_path": ".gitattributes",
+      "path": ".gitattributes",
+      "bytes": 85,
+      "sha256": "383f36ac1dd464a759615fb80667a9e3f3941c5b119d67f26e3c0b6de476fade",
+      "policy": "NAVIGATION_EDIT_ALLOWED",
+      "reason": "Retain original content and add IA navigation; Git attributes preserve frozen instruction bytes."
+    },
+    {
+      "original_path": ".gitignore",
+      "path": ".gitignore",
+      "bytes": 296,
+      "sha256": "c8bafc4e2e1486cc29e9de1a9cfe03edb32162824255750f201ddc59d5554e84",
+      "policy": "BYTE_IDENTICAL"
+    },
+    {
+      "original_path": "CITATION.cff",
+      "path": "CITATION.cff",
+      "bytes": 408,
+      "sha256": "35ce12bdeafd3deca1ec5bbd1a25e1e646fda6bbf1fbdc79f71a4bc13b916ec2",
+      "policy": "BYTE_IDENTICAL"
+    },
+    {
+      "original_path": "CONTEXT_VI.md",
+      "path": "CONTEXT_VI.md",
+      "bytes": 3074,
+      "sha256": "b4ebee74d4d491c4c8fe60fe1614d73603bda57b7704a919883c967b49d0383f",
+      "policy": "BYTE_IDENTICAL"
+    },
+    {
+      "original_path": "CONTRIBUTING.md",
+      "path": "CONTRIBUTING.md",
+      "bytes": 1042,
+      "sha256": "076e2e8cfbd556c7f6c0503506f973d42a723dcb3ba013134bfdaa2650c405ee",
+      "policy": "BYTE_IDENTICAL"
+    },
+    {
+      "original_path": "LICENSE_STATUS.md",
+      "path": "LICENSE_STATUS.md",
+      "bytes": 875,
+      "sha256": "3dc381e26be4e5a6e9c93a043cc8e874d2b16ba4a403af02b775c4909df60689",
+      "policy": "BYTE_IDENTICAL"
+    },
+    {
+      "original_path": "README.md",
+      "path": "README.md",
+      "bytes": 7380,
+      "sha256": "52e7c53835b62e90311d2be09f3bf48c818df84aec68b3ce6aec812ce7f059c0",
+      "policy": "NAVIGATION_EDIT_ALLOWED",
+      "reason": "Retain original content and add IA navigation; Git attributes preserve frozen instruction bytes."
+    },
+    {
+      "original_path": "SECURITY.md",
+      "path": "SECURITY.md",
+      "bytes": 673,
+      "sha256": "9b6e68af774faf8c4a955acf2983b0a8e6fb7e6e46b5b52a84eae16a95fcee66",
+      "policy": "BYTE_IDENTICAL"
+    },
+    {
+      "original_path": ".github/PULL_REQUEST_TEMPLATE.md",
+      "path": ".github/PULL_REQUEST_TEMPLATE.md",
+      "bytes": 562,
+      "sha256": "27c163a5f859a5d8bb620b3c5751c2dde79da26ab592003712cb6e709cb2057f",
+      "policy": "BYTE_IDENTICAL"
+    },
+    {
+      "original_path": ".github/ISSUE_TEMPLATE/bug_report.md",
+      "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+      "bytes": 375,
+      "sha256": "53f6c9195a98a8553ddd3be8b16cd0301d1da97e4d644eb1560b7cbdb8dab4d4",
+      "policy": "BYTE_IDENTICAL"
+    },
+    {
+      "original_path": ".github/ISSUE_TEMPLATE/feature_request.md",
+      "path": ".github/ISSUE_TEMPLATE/feature_request.md",
+      "bytes": 288,
+      "sha256": "da643cd82521e4bb032ad4642c9a0f3092049d139fb51681b461380e5cbd2a6b",
+      "policy": "BYTE_IDENTICAL"
+    },
+    {
+      "original_path": "docs/ARCHITECTURE.md",
+      "path": "docs/architecture/system.md",
+      "bytes": 4465,
+      "sha256": "7d70449b504fa848528bf717581ef4a487d59be39c0df44160569e19d24f53b9",
+      "policy": "RELOCATED_BYTE_IDENTICAL"
+    },
+    {
+      "original_path": "docs/FINE_TUNING.md",
+      "path": "docs/guides/fine-tuning.md",
+      "bytes": 6150,
+      "sha256": "f95bffb9f9e56894da815979bb7017d06a8717998a74769b48db0ad6170d0d29",
+      "policy": "RELOCATED_BYTE_IDENTICAL"
+    },
+    {
+      "original_path": "docs/VALIDATION_STATUS.md",
+      "path": "docs/reference/validation-status.md",
+      "bytes": 1240,
+      "sha256": "8ef2b32107d3493dd550565c14205f433eca41abe75f24916e5c219df6815cca",
+      "policy": "RELOCATED_BYTE_IDENTICAL"
+    },
+    {
+      "original_path": "prompt_stacks/00_bootstrap.md",
+      "path": "prompt_stacks/00_bootstrap.md",
+      "bytes": 3795,
+      "sha256": "80abba2d67f362dd970bd2ced653eca199caedd6f0ba90be0578e68a619bbceb",
+      "policy": "BYTE_IDENTICAL"
+    },
+    {
+      "original_path": "prompt_stacks/01_W0_context_baseline.md",
+      "path": "prompt_stacks/01_W0_context_baseline.md",
+      "bytes": 3512,
+      "sha256": "d42231a618b6e8f21104ff8c26c74c48a4115aea3bccd26ea8a3113df275a619",
+      "policy": "BYTE_IDENTICAL"
+    },
+    {
+      "original_path": "prompt_stacks/02_W1_masters_prompts.md",
+      "path": "prompt_stacks/02_W1_masters_prompts.md",
+      "bytes": 4116,
+      "sha256": "d27337858ce6ff2dead549e4bdfde3262b8e235f7185b06c1d6ed3bc5b480105",
+      "policy": "BYTE_IDENTICAL"
+    },
+    {
+      "original_path": "prompt_stacks/03_W2_knowledge_transfer.md",
+      "path": "prompt_stacks/03_W2_knowledge_transfer.md",
+      "bytes": 3822,
+      "sha256": "5abea16a96ee303b3266179e8f5909f4034a219deaf311bb51c6ac1771d1269d",
+      "policy": "BYTE_IDENTICAL"
+    },
+    {
+      "original_path": "prompt_stacks/04_W3_REA_IDA.md",
+      "path": "prompt_stacks/04_W3_REA_IDA.md",
+      "bytes": 3745,
+      "sha256": "92549c692ca9044b15f3e1743585b516646e1de387e2ddbc63f3cb23784fd8dd",
+      "policy": "BYTE_IDENTICAL"
+    },
+    {
+      "original_path": "prompt_stacks/05_W4_integration.md",
+      "path": "prompt_stacks/05_W4_integration.md",
+      "bytes": 4104,
+      "sha256": "b57ce7f12d444a42a8539c335552db4c544aab6ffc2abddf4dc15631f37c7083",
+      "policy": "BYTE_IDENTICAL"
+    },
+    {
+      "original_path": "prompt_stacks/06_W5_evaluation.md",
+      "path": "prompt_stacks/06_W5_evaluation.md",
+      "bytes": 3816,
+      "sha256": "d853b161550c70a88b95efcde8854c5afa5506f174a1043ce4a7a7446695d84e",
+      "policy": "BYTE_IDENTICAL"
+    },
+    {
+      "original_path": "prompt_stacks/07_W6_pilot_release.md",
+      "path": "prompt_stacks/07_W6_pilot_release.md",
+      "bytes": 3652,
+      "sha256": "636d287354d829812e51b371cb4e0ea54900ea6effcca2a4cf9eb3d62f371ab3",
+      "policy": "BYTE_IDENTICAL"
+    },
+    {
+      "original_path": "prompt_stacks/08_W7_training_conditional.md",
+      "path": "prompt_stacks/08_W7_training_conditional.md",
+      "bytes": 3400,
+      "sha256": "b367f955cd2c755c7de16e3099cccc782efdec3ce8eb2e3033404a0ecaf4be4d",
+      "policy": "BYTE_IDENTICAL"
+    },
+    {
+      "original_path": "prompt_stacks/09_review_gate_handoff.md",
+      "path": "prompt_stacks/09_review_gate_handoff.md",
+      "bytes": 3756,
+      "sha256": "7fc0a1093e92a3326d26a3fae9f13c889b8bf27a235c54aafbd14b2f91e51e15",
+      "policy": "BYTE_IDENTICAL"
+    },
+    {
+      "original_path": "prompt_stacks/README.md",
+      "path": "prompt_stacks/README.md",
+      "bytes": 2056,
+      "sha256": "3cbf949b9a98c4489f7e9d0664dfeaa02b93a94b884c7c9115bd9df1c30e9f72",
+      "policy": "BYTE_IDENTICAL"
+    },
+    {
+      "original_path": "prompt_stacks/protocols/baseline_protocol.md",
+      "path": "prompt_stacks/protocols/baseline_protocol.md",
+      "bytes": 3021,
+      "sha256": "25dc36fcda5483ff86a4fe38f2920dc0b210345d0ea1431062525bc24ea8c1df",
+      "policy": "BYTE_IDENTICAL"
+    },
+    {
+      "original_path": "prompt_stacks/protocols/evaluation_protocol.md",
+      "path": "prompt_stacks/protocols/evaluation_protocol.md",
+      "bytes": 3322,
+      "sha256": "8a5232dc901d8f47c339cae074eafa378143ca77a8c468ef0bf3d46a5cd2fd00",
+      "policy": "BYTE_IDENTICAL"
+    },
+    {
+      "original_path": "prompt_stacks/protocols/handoff_protocol.md",
+      "path": "prompt_stacks/protocols/handoff_protocol.md",
+      "bytes": 3259,
+      "sha256": "7877dcc078adefdff8e2ca34342937576c7e8b6a6ba30cf2e0bfdbb01607e032",
+      "policy": "BYTE_IDENTICAL"
+    },
+    {
+      "original_path": "prompt_stacks/protocols/intake_protocol.md",
+      "path": "prompt_stacks/protocols/intake_protocol.md",
+      "bytes": 3316,
+      "sha256": "0ae76a3d4d61150f668b5bab3e3c4fbdcfa5ff6b2ac0467ab9624e4fc7ff9225",
+      "policy": "BYTE_IDENTICAL"
+    },
+    {
+      "original_path": "prompt_stacks/protocols/knowledge_protocol.md",
+      "path": "prompt_stacks/protocols/knowledge_protocol.md",
+      "bytes": 3321,
+      "sha256": "a0c923dd64283b4fa437f16bfc23f502f1b25abf74c1ede5f1db25ac9dd84158",
+      "policy": "BYTE_IDENTICAL"
+    },
+    {
+      "original_path": "prompt_stacks/protocols/pair_protocol.md",
+      "path": "prompt_stacks/protocols/pair_protocol.md",
+      "bytes": 3260,
+      "sha256": "9fde10e5fd3d685238bf3fb73100385aefe07e8abf0827afee3483c71f8d046d",
+      "policy": "BYTE_IDENTICAL"
+    },
+    {
+      "original_path": "prompt_stacks/protocols/pilot_protocol.md",
+      "path": "prompt_stacks/protocols/pilot_protocol.md",
+      "bytes": 3167,
+      "sha256": "2b3ed60ce5d5c4ad555cbfe19e61d21b3955f03a90c05cf57a0e7558aedf70e0",
+      "policy": "BYTE_IDENTICAL"
+    },
+    {
+      "original_path": "prompt_stacks/protocols/routing_protocol.md",
+      "path": "prompt_stacks/protocols/routing_protocol.md",
+      "bytes": 3627,
+      "sha256": "6b4e6d6e791c454e126dbf4781cefeee187e5ac6d0a71dfddcd0ba9271c3c5a4",
+      "policy": "BYTE_IDENTICAL"
+    },
+    {
+      "original_path": "prompt_stacks/protocols/state_protocol.md",
+      "path": "prompt_stacks/protocols/state_protocol.md",
+      "bytes": 3621,
+      "sha256": "710ab42b2d0c15f000e1bb219aece89e25f08a141a39c6562788da783fa4c0c3",
+      "policy": "BYTE_IDENTICAL"
+    },
+    {
+      "original_path": "prompt_stacks/protocols/training_protocol.md",
+      "path": "prompt_stacks/protocols/training_protocol.md",
+      "bytes": 2905,
+      "sha256": "c577724389cdc71dd3c560d9d7aaf46669bba505f39997e20f0afab8e4c5b39c",
+      "policy": "BYTE_IDENTICAL"
+    }
+  ]
+}
