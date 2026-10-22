@@ -6,3 +6,6 @@
 
 # Frozen instruction bytes already published with CRLF; keep their exact digests.
 prompt_stacks/** -text
+
+# Reviewed proposal revisions and fixtures retain their authored byte digests.
+docs/proposals/agent-office-3d/** -text

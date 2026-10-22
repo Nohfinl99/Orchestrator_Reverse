@@ -17,6 +17,8 @@ Bổ sung lượt knowledge 21/10/2026: đọc [knowledge index](../docs/knowled
 
 ## Mẫu ghi cuối phiên
 
+Bàn giao riêng nhánh office 3D ngày 22/10/2026: [Muse takeover](../docs/onboarding/muse-takeover-2026-10-22.md) và [manifest exact inputs](../metadata/muse-knowledge-transfer-2026-10-22.json). Dùng trạng thái candidate/review được dẫn ở đó; các snapshot IA phía trên giữ mốc lịch sử. Clone public không chứa workspace cha.
+
 Ghi record mới trong thư mục công việc được task cho phép; report đã freeze dùng revision mới. Khi được phép công khai một record bàn giao, đặt trong `docs/changes/` theo ngày và chủ đề. Không đặt raw/target/private-data vào đây.
 
 ```text

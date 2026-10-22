@@ -4,8 +4,8 @@
   "files": [
     {
       "path": ".gitattributes",
-      "bytes": 198,
-      "sha256": "6afcf0dc50bf621c829326d6cc01e890e25bf15290e75363b59497c777cc4d52"
+      "bytes": 318,
+      "sha256": "62b43cc4adbf2fa3b452600dd65d118feca5f63f99d220327157f99ac0756087"
     },
     {
       "path": ".github/ISSUE_TEMPLATE/bug_report.md",
@@ -44,8 +44,8 @@
     },
     {
       "path": "context/handoff.md",
-      "bytes": 3391,
-      "sha256": "2ff769157aa6096b2930a9aa9b765c28fd71b17cc4c5ddfc0f0109b88e4acaea"
+      "bytes": 3748,
+      "sha256": "b3d6d8b9e6777c1f538ccc35b1caf68387152a1c6604ef6d20bff7968324b22d"
     },
     {
       "path": "context/project-state.json",
@@ -69,8 +69,8 @@
     },
     {
       "path": "docs/architecture/information-architecture.md",
-      "bytes": 4886,
-      "sha256": "041779feff35cb227fa3d2ebd6a11d71a8e629d682c6303690cbe1dfd4929227"
+      "bytes": 5102,
+      "sha256": "52796caa9a88a4d1d334f88fa975bb6b738b4f5ce77356954239d305313118e6"
     },
     {
       "path": "docs/architecture/system.md",
@@ -96,6 +96,41 @@
       "path": "docs/changes/2026-10-21-w4-readiness.md",
       "bytes": 1122,
       "sha256": "e42109299bb1cd04568ae077698b61e368c8e54076409a301496f353dd97dceb"
+    },
+    {
+      "path": "docs/changes/2026-10-22-agent-office-ai-judges.md",
+      "bytes": 1869,
+      "sha256": "5d6ebf50bf66ab65b54b3c6d9039f44cf7ae014db705b80b34ef48bceab733b5"
+    },
+    {
+      "path": "docs/changes/2026-10-22-agent-office-preflight.md",
+      "bytes": 2022,
+      "sha256": "eeb8b5323421449e85c95811ed011dffd360913867cc63765e9759a4586ea0b9"
+    },
+    {
+      "path": "docs/changes/2026-10-22-agent-office-profile.md",
+      "bytes": 3381,
+      "sha256": "784f4248083f4088a4e8a18d60326e72216e4a7fb9c7f1e71ebaa51380e6e0ae"
+    },
+    {
+      "path": "docs/changes/2026-10-22-agent-office-review.md",
+      "bytes": 1905,
+      "sha256": "d1ef46a079e90895949f8fe99d35691a2ec897b0e8d7ee6a31d0d708044f50d6"
+    },
+    {
+      "path": "docs/changes/2026-10-22-agent-office-roadmap.md",
+      "bytes": 2071,
+      "sha256": "ed128eba9487364ec87c7ab3a0284d7ea4d4c08f9cdf311a85ce643ed9b005b8"
+    },
+    {
+      "path": "docs/changes/2026-10-22-agent-office-visual.md",
+      "bytes": 1578,
+      "sha256": "1534f48d2a295fa1e606698300b913561966aa819fd78a6eee76093e99318491"
+    },
+    {
+      "path": "docs/changes/2026-10-22-muse-handoff.md",
+      "bytes": 2680,
+      "sha256": "025f07f7c61d319bdd48c3c4c6d91b132c83534987427ebf083be21fb46302f5"
     },
     {
       "path": "docs/FINE_TUNING.md",
@@ -143,6 +178,11 @@
       "sha256": "ec918a562fba58b175b12c3f4bc6c07ceae4e0145e7ae0dfba3a1d6a10deaee5"
     },
     {
+      "path": "docs/onboarding/muse-takeover-2026-10-22.md",
+      "bytes": 12251,
+      "sha256": "e4540087ff180f3ad75aaad4241633119dda84e50fefc23662eed0e7d4c4c87e"
+    },
+    {
       "path": "docs/onboarding/session-workflow.md",
       "bytes": 2536,
       "sha256": "cdbddccb7b02cca500991d1f0c4831961cabfc44dd13ffbf766375be545775c2"
@@ -164,23 +204,258 @@
     },
     {
       "path": "docs/planning/work-queue.md",
-      "bytes": 3035,
-      "sha256": "9cd6affd2567fbe20570134b0c80931b8a24b92b85ef187272d6f692d4b3ce0a"
+      "bytes": 4328,
+      "sha256": "4b003b1494960b2b918be4ee279128033698b4b79bd2bec884806d1b1efc3b44"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/ai-judges-review-2026-10-22-01.md",
+      "bytes": 7799,
+      "sha256": "e2206c0c82275fcb27354f3f2b1ace17e386130cc8c216d233e981355c5cfd93"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/ao-1-agent-support-coordination-2026-10-22.md",
+      "bytes": 2840,
+      "sha256": "a4542727cee573ecdecd7471874b4f6a9f0657b9b931d3f990bd6c6ce467a5f7"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/ao-1-event-v2.schema.json",
+      "bytes": 6173,
+      "sha256": "776d85fdca11ffbb5175e302ac64afffbc2b8aa6a7d49a6e52067b7673894446"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/ao-1-event-v3.schema.json",
+      "bytes": 7265,
+      "sha256": "852a7cab1414fe9f2c715ac559353e07665bb6d60a2220da818cae692a244324"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/ao-1-event-v4.schema.json",
+      "bytes": 7264,
+      "sha256": "5555a8d8bb5983403bbca61a5e619f59807a2333f91ce45fb016febc3f0b3a40"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/ao-1-event-v5.schema.json",
+      "bytes": 7354,
+      "sha256": "43b492384d5128ccc487d29822827957d84cc1a1189b17dfc67c312b61c0f44f"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/ao-1-event-v6.schema.json",
+      "bytes": 7354,
+      "sha256": "bbff2735db48e79ad969e29c5d040ae1a02cd341453bd996014a1dd11738fcea"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/ao-1-event.schema.json",
+      "bytes": 5800,
+      "sha256": "db1ab070cd03d5593b952deee61a50bac0a85a76fa967296b0b068210b63cea3"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/ao-1-fixture-v2.jsonl",
+      "bytes": 15350,
+      "sha256": "5ef7a51b75733a621165facf8d570973386c1c60e6b6e8cd780c1ad56601316d"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/ao-1-fixture-v3.jsonl",
+      "bytes": 16375,
+      "sha256": "462361227510cedcb4c9514c1e4c4456b5b6d6e46dae76fdfc40547af4c2ff0f"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/ao-1-fixture-v4.jsonl",
+      "bytes": 16400,
+      "sha256": "0301783aa45d7f92b8880d05ebb4e8830a677c381500c614014ced4fab3ba824"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/ao-1-fixture-v5.jsonl",
+      "bytes": 16417,
+      "sha256": "646086985ca2cd523b3d8b18cc39419e800bd4c94cef2f549029963823bc71c4"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/ao-1-fixture-v6.jsonl",
+      "bytes": 16417,
+      "sha256": "03c4c66e7d1eb9f7b10af19987cacb5f88799a001386bd83d13ec2680a50068c"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/ao-1-fixture.jsonl",
+      "bytes": 7625,
+      "sha256": "739da7739b9e5f574e5361a44c956c0e327e8d975ec115cb583de5dbd7f56ab6"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/ao-1-offline-replay-packet-01.md",
+      "bytes": 15555,
+      "sha256": "faee649e7e80a0454ffc65b6d0a8354251adfa5be431e6fb9701279ceef7b68f"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/ao-1-offline-replay-packet-02.md",
+      "bytes": 9819,
+      "sha256": "e0ba3171ae3325ab08097810457f99ee33a8ceb2a763eca02a1204334211fdf6"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/ao-1-offline-replay-packet-03.md",
+      "bytes": 10543,
+      "sha256": "8fb68fb74b761614320225b9d7d8ebd9b18708a9a6aa5a8514bd81f714e0ce6c"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/ao-1-offline-replay-packet-04.md",
+      "bytes": 10734,
+      "sha256": "51dd83d27fca11129fc8c224a17323d266ff24cef1d35c7aeefe3b1dc08f0d6b"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/ao-1-offline-replay-packet-05.md",
+      "bytes": 10716,
+      "sha256": "856cdb38fcda24b71a1ad1fae046fa69329224d0cc002c82eb4c1e29ca1f016f"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/ao-1-offline-replay-packet-06.md",
+      "bytes": 10792,
+      "sha256": "bab94f99d1170793dcadb625a2a537cc9e0ddef05779a7336d37c9d7e0848d92"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/ao-1-review-2026-10-22-01.md",
+      "bytes": 5808,
+      "sha256": "ff735207ffa2f6ad8263053174e3869947bf073c49ceb56b3672aa7bdb2ef08f"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/ao-1-review-2026-10-22-02.md",
+      "bytes": 2473,
+      "sha256": "4618e4a0d63f3d2ed8f07a0e2df52cde0107f6ed2932cdb887befa05a7b6fd67"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/ao-1-review-2026-10-22-03.md",
+      "bytes": 2295,
+      "sha256": "f04a1211c4a09fa4d94829fe31d2548c98fba8c5125d582fc636768f907bfffc"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/ao-1-review-2026-10-22-04.md",
+      "bytes": 2102,
+      "sha256": "0652f35c96f886084f38c8fb6e6928614f4a49778ef5216e06ac7906ddb66921"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/ao-1-review-2026-10-22-05.md",
+      "bytes": 1629,
+      "sha256": "d6ff42d8b3a0b826886baac90df26efb095f0925cdac11a3d96129244b289843"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/ao-1-review-2026-10-22-06.md",
+      "bytes": 1803,
+      "sha256": "1a1dd8455be02885d74f56a21ce2a4a7c568ea4c61409653dee1f9b1979283d0"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/ao-1-test-matrix-v2.md",
+      "bytes": 10228,
+      "sha256": "400f19870282d667ee48108aa79e4e6bca1fec75ef486d4278273a206c6c5153"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/ao-1-test-matrix-v3.md",
+      "bytes": 10683,
+      "sha256": "4b10a4923724ec9b0d8c18684150df9a751d351c8d1bc12e9270e7e429f5c028"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/ao-1-test-matrix-v4.md",
+      "bytes": 10742,
+      "sha256": "eb3fc8a8f55e43450ab656fa4234eb821e2e1769d1b2421369202a1e3e917408"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/ao-1-test-matrix-v5.md",
+      "bytes": 10853,
+      "sha256": "2c07a1b0a4dc636b1b32d34455eee58ade20f1d65ba18ae26344a3c457fd18f0"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/ao-1-test-matrix-v6.md",
+      "bytes": 10868,
+      "sha256": "37013b825b1080d8c206255a372dbcb7cd088a82142f354e0e3fd4ab892ddde8"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/ao-pentest-case-01.jsonl",
+      "bytes": 4073,
+      "sha256": "115ea818206e38b873267a1f64c5dc1bbea7dc509c5019f167735c32ed158a7b"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/ao-pentest-case-01.md",
+      "bytes": 6520,
+      "sha256": "d60fd906dfc9bdb907b7720d13d62d0167bce9a9ce6a613dec3e5cd5c7f520b0"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/architecture.md",
+      "bytes": 6402,
+      "sha256": "c56e4f7462835d7f1aa6c2f85e629f5cea4879ac3ccc8fdd7366ef29eafbc08b"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/competitor-review.md",
+      "bytes": 6817,
+      "sha256": "1e55ef8e7bbc39f0fed089e37456748c1fa643a255a76006da10924f5045a404"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/context-handoff-implementation-2026-10-22.md",
+      "bytes": 6558,
+      "sha256": "71ecea8e9cca0eb67127f6bffd6339b2f1304d716605c582df29e6d51ee3b846"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/execution-runbook.md",
+      "bytes": 4087,
+      "sha256": "d19fbf9ffeb987734bfc7145ea7ad0e890fdc2a511e3ebc3dd357032152b5e44"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/handoff.md",
+      "bytes": 5435,
+      "sha256": "2bcadbaa439d3898d51e9949a166a8cb1466400241d743c93323fa71d2f7b056"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/knowledge-and-tools.md",
+      "bytes": 4553,
+      "sha256": "65c64bff76e7acfce09ab957a57bb34e967dddd084f8c02702fdaafc5f5d62fc"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/meeting-review-2026-10-22-01.md",
+      "bytes": 13088,
+      "sha256": "c40734cc5e98e65b45325bc3e6bea636da87f1c611509d594ec64044f7486a55"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/preflight-knowledge-and-benchmark.md",
+      "bytes": 13316,
+      "sha256": "86cb75bac120d68c1879271baec25e8390df8df2912a6a369649ed51156efc6d"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/preflight-meeting-2026-10-22-01.md",
+      "bytes": 5101,
+      "sha256": "5219b4070af82e1cb86a7ad2ffe8eb124f7922357c60c36255b06aba2b334644"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/README.md",
+      "bytes": 7521,
+      "sha256": "ee6ab278250f02ef8e98e03cf6c126aa3c2396c0353b4f2707377c63050688f6"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/roadmap-review-2026-10-22-01.md",
+      "bytes": 5504,
+      "sha256": "828ce09e622853e3d5fdd9fbcd58cf7e2cef7a5f3076e17a2eb9e46fde627c1e"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/roadmap.md",
+      "bytes": 10390,
+      "sha256": "d77360a4e86b6c2b5d433ee8a99904f83e89789987c86c0a0604824ee74df9d4"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/verification-plan.md",
+      "bytes": 5240,
+      "sha256": "4ca43f8e58596f1b659971f7a631d23ffc29ea298241b8f51da672c98551ec7a"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/visual-review-2026-10-22-01.md",
+      "bytes": 5401,
+      "sha256": "2de71abc996897175a53cef831a489edd9714580c4e6a99e860d310f195110bb"
     },
     {
       "path": "docs/README.md",
-      "bytes": 1679,
-      "sha256": "44d440298fb9cd8455aff70052124a1426f7260efe6c4f838a242fef82e03a4d"
+      "bytes": 3065,
+      "sha256": "ef3b4d26f5e99438c0330119ba415d527dbc0df942e805f4bdc23faa406be47a"
     },
     {
       "path": "docs/reference/open-questions.md",
-      "bytes": 4308,
-      "sha256": "f033768d5614517f9a58ce54eb0f32a4cdd007dfdc38b1d6981ec3e3317cfa8d"
+      "bytes": 5658,
+      "sha256": "a5eeb76a3c95fba8344da137a345aac42ed2222ec26bc3bfd594d8ca1ad2149d"
     },
     {
       "path": "docs/reference/source-map.md",
-      "bytes": 5842,
-      "sha256": "857807e25531e4831e5e41bfb8186882d39054ae9c63776050875dbdec8183ac"
+      "bytes": 6098,
+      "sha256": "d31cd4b8d0debbd9f38fc76f43bbf118d59df6517c686eddc9317ec678e0ba77"
     },
     {
       "path": "docs/reference/validation-status.md",
@@ -198,9 +473,14 @@
       "sha256": "3dc381e26be4e5a6e9c93a043cc8e874d2b16ba4a403af02b775c4909df60689"
     },
     {
+      "path": "metadata/muse-knowledge-transfer-2026-10-22.json",
+      "bytes": 13262,
+      "sha256": "fbbc5f91d553f3bc07155a60e9e545b51e65a400eeee4275f1dc077a72ec712a"
+    },
+    {
       "path": "metadata/navigation.json",
-      "bytes": 3656,
-      "sha256": "84476cba3f8e468bc0cdd447ebf00b4537bdc959577ac3bbaa6782ebe58e8591"
+      "bytes": 6579,
+      "sha256": "04155cde6030bf2a5e904b63f726d8d55e5616f20336e1aaf3d41a3b0ce63c5c"
     },
     {
       "path": "metadata/preservation.json",
@@ -314,8 +594,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 8978,
-      "sha256": "80f8015f434ed9ad9230f6fb2c1ba50dca7de465a668487b4c4b702df8fc5adc"
+      "bytes": 9479,
+      "sha256": "de37be4a9e00ba1887eb5e70b5d34fab397f2c9e37badf615470ba43cbe1349a"
     },
     {
       "path": "scripts/verify_ia.py",
