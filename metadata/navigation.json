@@ -46,7 +46,10 @@
     "agent_office_3d_change_record": "docs/changes/2026-10-22-agent-office-profile.md",
     "agent_office_3d_review_change_record": "docs/changes/2026-10-22-agent-office-review.md",
     "muse_takeover": "docs/onboarding/muse-takeover-2026-10-22.md",
-    "muse_knowledge_transfer": "metadata/muse-knowledge-transfer-2026-10-22.json"
+    "muse_knowledge_transfer": "metadata/muse-knowledge-transfer-2026-10-22.json",
+    "muse_roadmap_guide": "docs/onboarding/muse-roadmap-guide-2026-10-22.md",
+    "muse_gate_recheck": "docs/proposals/agent-office-3d/gate-recheck-2026-10-22.md",
+    "muse_knowledge_transfer_v2": "metadata/muse-knowledge-transfer-2026-10-22-v2.json"
   },
   "compatibility_routes": {
     "docs/ARCHITECTURE.md": "docs/architecture/system.md",
@@ -131,11 +134,12 @@
       "docs/proposals/agent-office-3d/ao-pentest-case-01.md"
     ],
     "muse_takeover": [
-      "docs/onboarding/muse-takeover-2026-10-22.md",
-      "metadata/muse-knowledge-transfer-2026-10-22.json",
+      "docs/onboarding/muse-roadmap-guide-2026-10-22.md",
+      "metadata/muse-knowledge-transfer-2026-10-22-v2.json",
+      "docs/proposals/agent-office-3d/gate-recheck-2026-10-22.md",
       "docs/proposals/agent-office-3d/ao-1-offline-replay-packet-06.md",
       "docs/proposals/agent-office-3d/ao-1-review-2026-10-22-06.md",
-      "docs/proposals/agent-office-3d/ao-pentest-case-01.md",
+      "docs/proposals/agent-office-3d/context-handoff-implementation-2026-10-22.md",
       "docs/reference/open-questions.md"
     ]
   },

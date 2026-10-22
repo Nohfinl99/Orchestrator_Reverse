@@ -44,8 +44,8 @@
     },
     {
       "path": "context/handoff.md",
-      "bytes": 3748,
-      "sha256": "b3d6d8b9e6777c1f538ccc35b1caf68387152a1c6604ef6d20bff7968324b22d"
+      "bytes": 4169,
+      "sha256": "03df63edb9fb9d60ef10a7afd829d8eec9fba398798659e95fbe0bfe1b4dbd91"
     },
     {
       "path": "context/project-state.json",
@@ -128,6 +128,11 @@
       "sha256": "1534f48d2a295fa1e606698300b913561966aa819fd78a6eee76093e99318491"
     },
     {
+      "path": "docs/changes/2026-10-22-muse-gate-recheck.md",
+      "bytes": 2252,
+      "sha256": "f7ae46916648a0b2f9807c09f2a014160cec12a1d01f18e0224e82c96532cb22"
+    },
+    {
       "path": "docs/changes/2026-10-22-muse-handoff.md",
       "bytes": 2680,
       "sha256": "025f07f7c61d319bdd48c3c4c6d91b132c83534987427ebf083be21fb46302f5"
@@ -176,6 +181,11 @@
       "path": "docs/knowledge/README.md",
       "bytes": 2124,
       "sha256": "ec918a562fba58b175b12c3f4bc6c07ceae4e0145e7ae0dfba3a1d6a10deaee5"
+    },
+    {
+      "path": "docs/onboarding/muse-roadmap-guide-2026-10-22.md",
+      "bytes": 11344,
+      "sha256": "4aacfa2e89ed21f5f2266cf9f716300744947a9f9337bfee1ef11181a396d1c9"
     },
     {
       "path": "docs/onboarding/muse-takeover-2026-10-22.md",
@@ -393,6 +403,11 @@
       "sha256": "d19fbf9ffeb987734bfc7145ea7ad0e890fdc2a511e3ebc3dd357032152b5e44"
     },
     {
+      "path": "docs/proposals/agent-office-3d/gate-recheck-2026-10-22.md",
+      "bytes": 5831,
+      "sha256": "0fc5c2c2c848609224400be5bd60a9e6bee25dfbd5f6c6d1d84742b8ec31f0d0"
+    },
+    {
       "path": "docs/proposals/agent-office-3d/handoff.md",
       "bytes": 5435,
       "sha256": "2bcadbaa439d3898d51e9949a166a8cb1466400241d743c93323fa71d2f7b056"
@@ -419,8 +434,8 @@
     },
     {
       "path": "docs/proposals/agent-office-3d/README.md",
-      "bytes": 7521,
-      "sha256": "ee6ab278250f02ef8e98e03cf6c126aa3c2396c0353b4f2707377c63050688f6"
+      "bytes": 7780,
+      "sha256": "755fb48afc84effeb18d89c71238f85f56d4bbe31170c065e138228ef19fe353"
     },
     {
       "path": "docs/proposals/agent-office-3d/roadmap-review-2026-10-22-01.md",
@@ -444,13 +459,13 @@
     },
     {
       "path": "docs/README.md",
-      "bytes": 3065,
-      "sha256": "ef3b4d26f5e99438c0330119ba415d527dbc0df942e805f4bdc23faa406be47a"
+      "bytes": 3137,
+      "sha256": "7b86602039281b17afdb5433b4e71c6a196d413a00b0c02188c671614b334f7a"
     },
     {
       "path": "docs/reference/open-questions.md",
-      "bytes": 5658,
-      "sha256": "a5eeb76a3c95fba8344da137a345aac42ed2222ec26bc3bfd594d8ca1ad2149d"
+      "bytes": 6743,
+      "sha256": "61c31b1e5c5d368c23dd5a29fbe25ac10d9a587bd4d24d06402e0b4877ed8947"
     },
     {
       "path": "docs/reference/source-map.md",
@@ -473,14 +488,19 @@
       "sha256": "3dc381e26be4e5a6e9c93a043cc8e874d2b16ba4a403af02b775c4909df60689"
     },
     {
+      "path": "metadata/muse-knowledge-transfer-2026-10-22-v2.json",
+      "bytes": 16237,
+      "sha256": "2f44e082bd9d96c54c4d793cd4edcd0e0366af3a082a50da5850ef84bbd8d2d8"
+    },
+    {
       "path": "metadata/muse-knowledge-transfer-2026-10-22.json",
       "bytes": 13262,
       "sha256": "fbbc5f91d553f3bc07155a60e9e545b51e65a400eeee4275f1dc077a72ec712a"
     },
     {
       "path": "metadata/navigation.json",
-      "bytes": 6579,
-      "sha256": "04155cde6030bf2a5e904b63f726d8d55e5616f20336e1aaf3d41a3b0ce63c5c"
+      "bytes": 6930,
+      "sha256": "9caf20bbc96dde44ace94549f421318ab9943d523b12fa0e29e86625d66ee79d"
     },
     {
       "path": "metadata/preservation.json",
@@ -594,8 +614,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 9479,
-      "sha256": "de37be4a9e00ba1887eb5e70b5d34fab397f2c9e37badf615470ba43cbe1349a"
+      "bytes": 9543,
+      "sha256": "c6433ef4a07bae5e88f01057d8ca34ab5539671afa9c109a8786910fbdf6ef63"
     },
     {
       "path": "scripts/verify_ia.py",

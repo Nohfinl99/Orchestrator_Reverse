@@ -4,7 +4,7 @@
 |---|---|
 | Project làm gì, đang ở đâu | [Context](../context/current.md), [nguyên lý](../CONTEXT_VI.md) |
 | AI mới tiếp nhận | [Start here](onboarding/start-here.md), [workflow phiên](onboarding/session-workflow.md) |
-| Muse tiếp tục office 3D | [Handoff và prompt tiếp quản](onboarding/muse-takeover-2026-10-22.md), [publication record](changes/2026-10-22-muse-handoff.md) |
+| Muse tiếp tục office 3D | [Hướng dẫn roadmap và prompt](onboarding/muse-roadmap-guide-2026-10-22.md), [gate recheck](proposals/agent-office-3d/gate-recheck-2026-10-22.md), [handoff v1](onboarding/muse-takeover-2026-10-22.md) |
 | Thành phần và trách nhiệm | [System](architecture/system.md), [sáu agent](architecture/agents.md) |
 | Vì sao file ở từng nơi | [Information architecture](architecture/information-architecture.md) |
 | Phase, thứ tự và việc tiếp theo | [Phase map](planning/phase-map.md), [work queue](planning/work-queue.md) |

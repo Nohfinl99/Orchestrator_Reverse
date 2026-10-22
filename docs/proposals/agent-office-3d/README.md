@@ -55,6 +55,7 @@ Phòng 3D là cách nhìn vào trạng thái điều phối. Orchestrator và ev
 27. [AO-1 review report 06](ao-1-review-2026-10-22-06.md): candidate 6 chờ coordinator decision; chưa phải R4a hay test result
 28. [AO-3 offline pentest case 01](ao-pentest-case-01.md) và [JSONL cases](ao-pentest-case-01.jsonl): authority-spoof case cùng năm benign controls; advisory reviewed, chờ coordinator decision, `NOT_RUN`
 29. [Muse takeover](../../onboarding/muse-takeover-2026-10-22.md): điểm tiếp nhận mới, current candidate pointers, Prompt-Master knowledge transfer và source/digest manifest; publication không thay acceptance.
+30. [Gate recheck](gate-recheck-2026-10-22.md) và [Muse roadmap guide](../../onboarding/muse-roadmap-guide-2026-10-22.md): điểm vào sau recheck, điều kiện pre-AO2/R4a và cách tận dụng artifact/knowledge; dùng manifest v2, không đổi gate.
 
 ## Kết luận hiện tại
 
