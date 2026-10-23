@@ -29,8 +29,8 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 3095,
-      "sha256": "e5a1ef8a1e32da578590317a50f5545b5d80ed8be05bb0242369403bb4cc8666"
+      "bytes": 3646,
+      "sha256": "ff9e152dcea93261b648943f917bd8a7891f618681831eeb9df0b886d0ceb579"
     },
     {
       "path": "CITATION.cff",
@@ -39,13 +39,13 @@
     },
     {
       "path": "context/current.md",
-      "bytes": 3579,
-      "sha256": "300baf4b85cce6f32673b12289c5b1e26efca1c6f883a92519ba1a27ed473c69"
+      "bytes": 4012,
+      "sha256": "944c2bdc2f37277a822d72cc17a4bc047694027ed85ee955859d417afdd27e92"
     },
     {
       "path": "context/handoff.md",
-      "bytes": 4734,
-      "sha256": "ceb882209cbde7a63fd7498ec99bd1441f47ea718f62b90266c8a881e2166ed4"
+      "bytes": 5110,
+      "sha256": "4e05f1e403eac1833b4506bf328d28e4af4ab91dae72ac971a9471e025a43442"
     },
     {
       "path": "context/project-state.json",
@@ -143,6 +143,11 @@
       "sha256": "32fea067c57df353363b30c96cf3eaa4e487cb9c5eabc82be9a36b09412ea262"
     },
     {
+      "path": "docs/changes/2026-10-23-neutral-knowledge.md",
+      "bytes": 2141,
+      "sha256": "9ea8721fd52ea2eab029cd24b9c971f0f9017f7bd3ec737656cce5b2b6957ce0"
+    },
+    {
       "path": "docs/FINE_TUNING.md",
       "bytes": 272,
       "sha256": "ec981804e339c8489880889d18fe30a80a9fafde9f3d2820018e8cd508f5cb67"
@@ -151,6 +156,11 @@
       "path": "docs/guides/fine-tuning.md",
       "bytes": 6150,
       "sha256": "f95bffb9f9e56894da815979bb7017d06a8717998a74769b48db0ad6170d0d29"
+    },
+    {
+      "path": "docs/knowledge/knowledge-policy-v2.md",
+      "bytes": 6601,
+      "sha256": "89318cd773b0e273caf6b6828be7da4a7913312a6fa3e9f74e29ff33ebaada79"
     },
     {
       "path": "docs/knowledge/prompt-orchestration/application-map.md",
@@ -169,8 +179,8 @@
     },
     {
       "path": "docs/knowledge/prompt-orchestration/retrieval-guide.md",
-      "bytes": 3634,
-      "sha256": "921c9b5305dd457a0abf1270775e47fb2d0ddc1723e99e466192bf950bccd624"
+      "bytes": 3935,
+      "sha256": "35cbbb6f73180fdaf5e4fa1bc6634b2d8f0ac9e53e903918a88f921c289de7b2"
     },
     {
       "path": "docs/knowledge/prompt-orchestration/sources.json",
@@ -184,8 +194,8 @@
     },
     {
       "path": "docs/knowledge/README.md",
-      "bytes": 2388,
-      "sha256": "6a9a8dd08a19d1e05920f17a02fa7f180d1bf7e89e0e28acd88e44ff572b7cd8"
+      "bytes": 2993,
+      "sha256": "e3ad4cd9ce4537e44653d6f17482b0045712a0e8920359290be7fda7953a77c5"
     },
     {
       "path": "docs/onboarding/muse-roadmap-guide-2026-10-22.md",
@@ -464,8 +474,8 @@
     },
     {
       "path": "docs/proposals/knowledge-foundation/operating-guide.md",
-      "bytes": 4671,
-      "sha256": "6db56bc9b11d08f844c9d6de0d63fd8b5a8675e93de199d715325f2b7b857873"
+      "bytes": 5030,
+      "sha256": "0dc6b472867115f608f7826fdca30d69e11cf33fefc627291df4161b75ebb67e"
     },
     {
       "path": "docs/proposals/knowledge-foundation/packet-template.md",
@@ -474,18 +484,18 @@
     },
     {
       "path": "docs/proposals/knowledge-foundation/progress.md",
-      "bytes": 2840,
-      "sha256": "b75cb3b8430b0e6e7b7a077514fdb0e13b52797f48608c899132cfa9ff31f5c4"
+      "bytes": 3302,
+      "sha256": "95c05335528d14df213458f7cbb8c8816d7679c688526644294a3e00829d96a6"
     },
     {
       "path": "docs/proposals/knowledge-foundation/README.md",
-      "bytes": 5851,
-      "sha256": "9fde95048fd10e643c5a1d327f59533b77a6726d371982b98847e9c4d01263c8"
+      "bytes": 6310,
+      "sha256": "0ae38270554957858aa5aa9349a5163a92b69692355a98cce392a083e9e0fcd0"
     },
     {
       "path": "docs/proposals/knowledge-foundation/reuse-map.md",
-      "bytes": 3607,
-      "sha256": "473bb9e47cc7d3864c676abffb680dbac6d362ff31371b5fa48fa8df9b8aecfb"
+      "bytes": 4097,
+      "sha256": "04641b559f82add3b0aa1e550e1f38375f20d8d0786eee63a441403a1f75edfa"
     },
     {
       "path": "docs/README.md",
@@ -494,8 +504,8 @@
     },
     {
       "path": "docs/reference/open-questions.md",
-      "bytes": 8227,
-      "sha256": "861748ecb1f83192530554075fb09f07b073d8b6f88f1044515a2650ba35f7e9"
+      "bytes": 8708,
+      "sha256": "8dd5b41c6a8c4adec72e1db16b223d84f1d2a1ca44601547eb81986f977df82a"
     },
     {
       "path": "docs/reference/source-map.md",
@@ -534,8 +544,8 @@
     },
     {
       "path": "metadata/navigation.json",
-      "bytes": 7429,
-      "sha256": "c2506659f1ee0d63cb23f2fbeeb75f4a18d245740362476135bc80d315f0257d"
+      "bytes": 7588,
+      "sha256": "b63f45f32605736a9bbbb1b06c60bb511771bda1ab2aa70c4024d85adbeb747c"
     },
     {
       "path": "metadata/preservation.json",
@@ -649,8 +659,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 9739,
-      "sha256": "83ee957d9cf588dc415acf0f39a7ef06a13a203dbc409e16fe340205f51c19d6"
+      "bytes": 9978,
+      "sha256": "a031a7c170fe600804ee9ea4a4811f5bc8031c9b2be8564f967ed83d8816d7c2"
     },
     {
       "path": "scripts/verify_ia.py",

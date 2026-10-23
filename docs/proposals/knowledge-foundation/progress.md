@@ -20,3 +20,7 @@ Hoàn thiện `SELECTED_TRIAGE_CONSUMER_ADAPTER_COMPATIBILITY_PROPOSAL_01` từ 
 Chưa chọn source/call site/reviewer cụ thể cho task sau nên giữ PROPOSED_NOT_DISPATCHED. Correction B4 là nhánh riêng trước implementation caller phụ thuộc. Chỉ có clone public thì dependent raw/caller sources vẫn LOCAL_ONLY. Không bịa source pins hoặc consumer ACK.
 
 Gate: P1K B4 FAIL; G1/G2 INCOMPLETE; G3/G4 NOT_RUN; W4 NOT_RUN_BLOCKED; v3 OFF. Ghi nhận document improvement không đóng các gate này. Lịch sử trước đó và manifests đã freeze giữ nguyên.
+
+## Cập nhật knowledge trung lập — revision 2
+
+Đã thêm [policy hiện hành](../../knowledge/knowledge-policy-v2.md), diễn giải lại D01–D11 theo hướng không cấm chủ đề và cập nhật entry/handoff. DAN và các chủ đề tương tự được catalog/đọc/nghiên cứu theo objective; chưa ingest corpus mới. Bảo toàn REA–IDA qua revision và mọi nguồn/frozen history. Publication theo commit/remote của PR #2.

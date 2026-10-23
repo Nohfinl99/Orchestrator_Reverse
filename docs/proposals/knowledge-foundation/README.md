@@ -40,3 +40,7 @@ Budget của lượt tài liệu này: tối đa 2 vòng sửa sau tự review, 
 [Progress](progress.md) ghi trạng thái artifact, review, gap và next task. Artifact mới sau review có digest/revision mới; inventory hiện hành ghi hash tài liệu, không cấp admission. Clone public thiếu raw/local reports giữ là LOCAL_ONLY theo source map.
 
 P1K B4 FAIL; G1/G2 INCOMPLETE; G3/G4 NOT_RUN; W4 NOT_RUN_BLOCKED; v3 OFF. Task tài liệu này không nâng gate. Dự kiến tiếp theo là một consumer packet hoàn chỉnh; chưa dispatch hoặc tạo ACK thay consumer.
+
+## Điều chỉnh theo chỉ thị tiếp theo của người dùng
+
+[Policy knowledge revision 2](../../knowledge/knowledge-policy-v2.md) là hướng dẫn hiện hành về tiếp nhận kiến thức trung lập. DAN và chủ đề tương tự không bị loại khỏi phạm vi nghiên cứu theo nhãn; D01–D11 cũ giữ lịch sử, quyền thực thi và support của claim được xét riêng. REA–IDA được bảo toàn qua các vòng.

@@ -38,3 +38,7 @@ Record giữ source fact, inference, hypothesis, conflict và unknown. Ghi decis
 Sửa tài liệu navigation: review diff, cập nhật inventory có chủ đích và chạy verifier IA. Sửa integration: chọn một source/caller và compatibility scope; B4 correction riêng trước implementation phụ thuộc; R4a được review/freeze trước fixture, raw sau attempt, R4b độc lập rồi mới xét acceptance. Retry cần revision/attempt mới, budget còn và bằng chứng tiến triển.
 
 Public chỉ lấy nội dung root Orchestrator_Reverse. Report local dùng locator LOCAL_ONLY hoặc bản tóm tắt public đã review; không tạo link thoát root. Chuẩn bị diff và publication branch cụ thể, giữ attribution và frozen pins. Handoff ghi artifact/revision, tiến độ, check đã chạy, gap và next action; không suy runtime PASS từ verifier tài liệu.
+
+## Knowledge trung lập qua vòng mới
+
+Áp dụng [policy revision 2](../../knowledge/knowledge-policy-v2.md). Tiếp nhận DAN/jailbreak/AutoGPT và các kiến thức tương tự theo objective; ghi claims/evidence thay vì loại theo tên chủ đề. Kế thừa đầy đủ REA–IDA, frozen artifacts và lịch sử qua mọi handoff/revision.

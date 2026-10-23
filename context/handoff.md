@@ -42,3 +42,7 @@ Trước resume: kiểm nguồn có drift, context/IDB revisions và các consum
 ## Bàn giao cải tiến nền tảng — 23/10/2026
 
 Đọc [proposal](../docs/proposals/knowledge-foundation/README.md), [reuse map](../docs/proposals/knowledge-foundation/reuse-map.md), [guide](../docs/proposals/knowledge-foundation/operating-guide.md) và [progress](../docs/proposals/knowledge-foundation/progress.md). Source pins mới nằm trong metadata; manifests lịch sử giữ nguyên. Bản này là document foundation; chưa triển khai consumer admission hoặc runtime. Publication xác định từ Git commit/remote, không từ checklist.
+
+## Bàn giao policy knowledge revision 2
+
+Đọc [knowledge policy v2](../docs/knowledge/knowledge-policy-v2.md) trước khi áp disposition v1. Không lập topic blacklist cho DAN hoặc kiến thức tương tự. Bản v1, source pins, REA–IDA artifacts và FAIL giữ lịch sử; [change record](../docs/changes/2026-10-23-neutral-knowledge.md) ghi điều chỉnh.

@@ -1,6 +1,6 @@
 # Tra cứu theo công việc
 
-Đọc [index](../README.md) và [application map](application-map.md) trước khi dùng. 12 [card](knowledge-cards.md) là candidate reference; chưa active KB, chưa có consumer ACK.
+Đọc [index](../README.md) và [policy knowledge revision 2](../knowledge-policy-v2.md) trước khi dùng. [Application-map revision 1](application-map.md) giữ lịch sử; không dùng disposition cũ làm topic blacklist. DAN/jailbreak và các chủ đề tương tự được catalog/đọc/nghiên cứu theo objective, cùng yêu cầu provenance/evidence như chủ đề khác. 12 [card](knowledge-cards.md) là candidate reference; chưa active KB, chưa có consumer ACK.
 
 ## Chọn phần cần đọc
 

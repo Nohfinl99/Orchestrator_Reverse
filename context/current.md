@@ -39,3 +39,7 @@ Nguồn: [validation snapshot gốc](../docs/reference/validation-status.md); lo
 ## Bổ sung tài liệu 23/10/2026
 
 [Đề xuất cải tiến nền tảng](../docs/proposals/knowledge-foundation/README.md) đưa knowledge card có sẵn vào guide/worksheet; [progress](../docs/proposals/knowledge-foundation/progress.md) ghi việc đã viết và nhánh integration còn đề xuất. Đây là cập nhật documentation, không thay gate snapshot 21/10 hoặc tạo admission/ACK.
+
+## Chỉ thị knowledge trung lập — 23/10/2026
+
+[Policy revision 2](../docs/knowledge/knowledge-policy-v2.md) thay cách hiểu loại trừ chủ đề từ D01–D11: DAN/jailbreak/AutoGPT và các kiến thức tương tự được tiếp nhận để catalog/đọc/nghiên cứu theo objective. Giữ REA–IDA xuyên suốt revision, evidence và quyền thực thi theo task; không xóa lịch sử hoặc nâng gate.

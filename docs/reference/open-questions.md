@@ -31,3 +31,5 @@ Tài liệu fine-tuning chứa thông tin sản phẩm theo thời điểm đã 
 Để thêm finding: ghi observation hay inference, exact source/version/locator, phần chưa truy cập, tác động, owner trách nhiệm và điều kiện đóng. Chỉ đóng khi có evidence/review đúng scope; tên folder, navigation PASS hoặc consensus không đủ.
 
 Finding FOUNDATION-01 (23/10, static observation local): router candidate nhận nhiều trạng thái và applicability flags từ caller; chưa nối broker/validator. Integration proposal cần bind applicability với task/policy và issuer/receipt thật. Đây chưa là observed runtime bypass. Xem [proposal nền tảng](../proposals/knowledge-foundation/README.md); source candidate chỉ có workspace local.
+
+KNOWLEDGE-NEUTRAL-01 (23/10): người dùng yêu cầu không loại chủ đề như DAN và kiến thức tương tự. [Policy v2](../knowledge/knowledge-policy-v2.md) thay cách hiểu topic exclusion ở disposition v1; giữ application-map v1/source pins nguyên bytes làm lịch sử. Phân biệt tiếp nhận knowledge với endorsement claim và authority thực thi; REA–IDA giữ xuyên suốt mọi vòng. Gap implementation/admission vẫn mở theo gate cũ.

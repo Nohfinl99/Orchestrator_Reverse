@@ -32,6 +32,8 @@ Nguyên tắc xuyên suốt là **bảo toàn REA–IDA qua mọi cấu trúc v�
 
 Các phần bên dưới giữ mục tiêu, nguyên lý và phạm vi gốc; ba đường dẫn docs cũ vẫn chuyển tới bản canonical mới. [Bản ghi IA](docs/changes/2026-10-21-information-architecture.md) nêu phạm vi và cách kiểm bảo toàn.
 
+[Chính sách knowledge trung lập revision 2](docs/knowledge/knowledge-policy-v2.md): DAN/jailbreak và các chủ đề tương tự có thể được catalog, đọc và nghiên cứu; REA–IDA được bảo toàn qua mọi vòng.
+
 ## Bắt đầu
 
 1. Đọc [bối cảnh và phạm vi](CONTEXT_VI.md).
