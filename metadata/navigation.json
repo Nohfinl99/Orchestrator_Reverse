@@ -55,7 +55,8 @@
     "knowledge_policy": "docs/knowledge/knowledge-policy-v2.md",
     "rea_knowledge_refresh": "docs/knowledge/rea-update-2026-10-24.md",
     "input_support_checkpoints": "docs/proposals/input-support-gates/README.md",
-    "input_support_status": "docs/proposals/input-support-gates/status.json"
+    "input_support_status": "docs/proposals/input-support-gates/status-v2.json",
+    "input_support_pentest": "docs/proposals/input-support-gates/pentest-2026-10-24.md"
   },
   "compatibility_routes": {
     "docs/ARCHITECTURE.md": "docs/architecture/system.md",
@@ -166,7 +167,9 @@
       "docs/proposals/input-support-gates/README.md",
       "docs/proposals/input-support-gates/packet.md",
       "docs/proposals/input-support-gates/benchmark-plan.md",
-      "docs/proposals/input-support-gates/status.json"
+      "docs/proposals/input-support-gates/status.json",
+      "docs/proposals/input-support-gates/pentest-2026-10-24.md",
+      "docs/proposals/input-support-gates/status-v2.json"
     ]
   },
   "local_sources": "docs/reference/source-map.md",

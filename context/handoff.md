@@ -50,3 +50,7 @@ Trước resume: kiểm nguồn có drift, context/IDB revisions và các consum
 ## Handoff input support — 24/10/2026
 
 Đọc [packet](../docs/proposals/input-support-gates/packet.md), [benchmark plan](../docs/proposals/input-support-gates/benchmark-plan.md) và [status](../docs/proposals/input-support-gates/status.json). Scope offline, provider/target/fixture calls mới bằng 0. Ground truth seeds giữ local ngoài active KB, chưa review độc lập. Cần user chốt criteria/threshold và scope source-only benchmark trước khi mở nhánh mới.
+
+## Handoff sau bounded pentest
+
+Xem [report](../docs/proposals/input-support-gates/pentest-2026-10-24.md) và [status v2](../docs/proposals/input-support-gates/status-v2.json). Ưu tiên candidate revision sửa missing import ROLE_SCOPE rồi review/retest trước forged-decision probes. Giữ runner/oracle/freeze/attempt histories; không thêm attempt dưới acceptance cũ.

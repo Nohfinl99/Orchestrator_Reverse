@@ -39,13 +39,13 @@
     },
     {
       "path": "context/current.md",
-      "bytes": 4513,
-      "sha256": "ccb476adcffe2ef9c7bbc86a76ec0a40cbadcc8409364835c2b8a830c96fa327"
+      "bytes": 4930,
+      "sha256": "bea99a00442728150a2144318e842e7e67b43903422cdf7c315ac9753a381e85"
     },
     {
       "path": "context/handoff.md",
-      "bytes": 5595,
-      "sha256": "2d7e73314e559d8f7e8220993cec6f305d24a4b9ebacb24fce9d5623452687cd"
+      "bytes": 5978,
+      "sha256": "363a4d2899196e1841c7d7636199813e210165d66a6a20f1d541e2de4be798eb"
     },
     {
       "path": "context/project-state.json",
@@ -146,6 +146,11 @@
       "path": "docs/changes/2026-10-23-neutral-knowledge.md",
       "bytes": 2141,
       "sha256": "9ea8721fd52ea2eab029cd24b9c971f0f9017f7bd3ec737656cce5b2b6957ce0"
+    },
+    {
+      "path": "docs/changes/2026-10-24-four-checkpoint-pentest.md",
+      "bytes": 2366,
+      "sha256": "e7c9b76f658fa7a8d90d02f241e697b8bb7125b2b163b1f973dd205abff4ad8d"
     },
     {
       "path": "docs/changes/2026-10-24-input-support-checkpoints.md",
@@ -484,8 +489,8 @@
     },
     {
       "path": "docs/proposals/input-support-gates/benchmark-plan.md",
-      "bytes": 3707,
-      "sha256": "1372fb707cf7b37fb83312af40641d60df8cb2d72bbb660232600ae301f24d90"
+      "bytes": 4023,
+      "sha256": "3b174cb2757c85ebceaa5c791148bdc8db241d80ff02741bba9667eb60d4bf31"
     },
     {
       "path": "docs/proposals/input-support-gates/packet.md",
@@ -493,9 +498,19 @@
       "sha256": "dfe465b97341ff0ef32fdbd1e4904f4842afbbaaaf0f2081eda23c85b038dba7"
     },
     {
+      "path": "docs/proposals/input-support-gates/pentest-2026-10-24.md",
+      "bytes": 7258,
+      "sha256": "8eb966cc3c522c66978ca7c25adbd0203b7bd69619a365da2cf9403e213a6893"
+    },
+    {
       "path": "docs/proposals/input-support-gates/README.md",
-      "bytes": 6206,
-      "sha256": "332ad0319fcde2a2e81679f5145453713556b0d1d107246d94c488f38a17dc87"
+      "bytes": 6574,
+      "sha256": "97b8e304e9ea4300aa2b43c2019f4c604c2799e93b82e948ecbd7bc46a2ef54f"
+    },
+    {
+      "path": "docs/proposals/input-support-gates/status-v2.json",
+      "bytes": 9585,
+      "sha256": "a3f67fe4c8ea9f945c9d4d280489016bc3c329e2805290c49f11ad886d46b464"
     },
     {
       "path": "docs/proposals/input-support-gates/status.json",
@@ -534,8 +549,8 @@
     },
     {
       "path": "docs/reference/open-questions.md",
-      "bytes": 9322,
-      "sha256": "77cfa2ae4ce4c2e9c1bc56b46daa7aedff999a0b5087214aa47abf12e80a7074"
+      "bytes": 9749,
+      "sha256": "f8c12981ff766b6b1e74f4f56a3230fdfa9a478c0e22959e38bc717348706448"
     },
     {
       "path": "docs/reference/source-map.md",
@@ -574,8 +589,8 @@
     },
     {
       "path": "metadata/navigation.json",
-      "bytes": 8245,
-      "sha256": "88b330740a818e0b3dac5f67cee121a62f389e1773f1d29d27d162cdc1d40cc4"
+      "bytes": 8462,
+      "sha256": "61647aae0319ae093a92dd2535da4794a46472d18d60bbd13ec1bcca1d886c7c"
     },
     {
       "path": "metadata/preservation.json",

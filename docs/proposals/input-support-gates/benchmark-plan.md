@@ -30,3 +30,7 @@ Trước run phải kiểm original input/source digest, rubric không đòi hid
 - Báo riêng source-citation accuracy, unsupported claims và tool/provider failures. Không cộng output dài, JSON parse hay self-score vào semantic correctness.
 
 Threshold là proposal, chưa được anh chấp nhận. Chưa có model attempt/R4a accepted/R4b mới; phần trăm thực nghiệm của nhánh input-support hiện NOT_RUN. Benchmark khó sẽ được phân tích sâu và kiểm từng claim; chọn model theo profile thực ở thời điểm được giao run, không suy model capability từ tên thương mại.
+
+## Bổ sung sau pentest candidate
+
+[Report 24/10](pentest-2026-10-24.md) ghi28case function-test với oracle freeze riêng; đây không phải run của sáu seed source-comprehension phía trên hoặc benchmark model. Không suy sáu seed đã adjudicate từ sự tồn tại của R4a cho một suite khác.

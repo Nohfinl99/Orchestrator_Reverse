@@ -37,3 +37,7 @@ Khi được giao run thật, chọn model hiện có theo context/tool support,
 ## Trạng thái dự án kế thừa
 
 P1K B4 FAIL; G1/G2 INCOMPLETE; G3/G4 NOT_RUN; W4 NOT_RUN_BLOCKED; v3 OFF. Snapshot kết quả từng checkpoint ở status.json và báo cáo phiên; current worksheet chưa được anh chấp nhận nên mọi checkpoint giữ DECISION_PENDING ngay cả khi có tiêu chí đã verify.
+
+## Pentest có execution thực
+
+[Biên bản pentest 24/10](pentest-2026-10-24.md) và [status revision 2](status-v2.json) tách case match rate khỏi criterion coverage. Hai bounded attempts giữ raw/R4a/R4b riêng; candidate composition có lỗi quan sát được, chưa có model/REA target benchmark. [Status revision 1](status.json) giữ làm lịch sử.

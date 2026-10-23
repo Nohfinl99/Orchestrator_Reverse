@@ -47,3 +47,7 @@ Nguồn: [validation snapshot gốc](../docs/reference/validation-status.md); lo
 ## Input support theo checkpoint — 24/10/2026
 
 Người dùng chọn chuẩn bị/verify packet offline và giao chọn model theo độ khó cho run tương lai. [Bốn checkpoint đề xuất](../docs/proposals/input-support-gates/README.md) có mẫu số cố định và [status](../docs/proposals/input-support-gates/status.json); criteria/threshold chờ user quyết định, chưa đóng gate dự án. Nguồn và raw lịch sử được recheck riêng; chưa có benchmark model mới.
+
+## Bounded pentest bốn checkpoint — 24/10/2026
+
+[Biên bản có execution](../docs/proposals/input-support-gates/pentest-2026-10-24.md): hai attempt có reviewer/executor riêng, final23/28case match; năm prompt-composition paths crash vì ROLE_SCOPE chưa import. [Status v2](../docs/proposals/input-support-gates/status-v2.json) vẫn50/50/0/0 criterion coverage; chưa closure hoặc model/REA runtime run.
