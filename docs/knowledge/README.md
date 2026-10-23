@@ -6,6 +6,10 @@
 
 [Knowledge trung lập — revision 2](knowledge-policy-v2.md) tiếp nhận DAN, jailbreak, AutoGPT và các chủ đề tương tự để catalog/đọc/nghiên cứu; không loại theo nhãn chủ đề. D01–D11 revision 1 giữ làm lịch sử; quyền thực thi và evidence được xét theo task. REA–IDA được bảo toàn qua các revision.
 
+## Kiến thức REA mới được đối chiếu
+
+[REA/input audit 24/10](rea-update-2026-10-24.md): kiểm đường input/handoff, đính chính scope sanitizer trong archive và thêm 6 candidate notes từ upstream đã pin. Đây là tài liệu tham khảo trong folder; chưa nâng cấp skill/runtime hoặc tạo consumer ACK.
+
 ## Bộ đã trích xuất
 
 | Bundle | Nội dung | Trạng thái |

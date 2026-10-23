@@ -52,7 +52,8 @@
     "muse_knowledge_transfer_v2": "metadata/muse-knowledge-transfer-2026-10-22-v2.json",
     "knowledge_foundation": "docs/proposals/knowledge-foundation/README.md",
     "knowledge_foundation_progress": "docs/proposals/knowledge-foundation/progress.md",
-    "knowledge_policy": "docs/knowledge/knowledge-policy-v2.md"
+    "knowledge_policy": "docs/knowledge/knowledge-policy-v2.md",
+    "rea_knowledge_refresh": "docs/knowledge/rea-update-2026-10-24.md"
   },
   "compatibility_routes": {
     "docs/ARCHITECTURE.md": "docs/architecture/system.md",
@@ -153,6 +154,11 @@
       "docs/proposals/knowledge-foundation/operating-guide.md",
       "docs/proposals/knowledge-foundation/packet-template.md",
       "docs/proposals/knowledge-foundation/progress.md"
+    ],
+    "rea_knowledge_refresh": [
+      "docs/knowledge/rea-update-2026-10-24.md",
+      "docs/knowledge/knowledge-policy-v2.md",
+      "docs/reference/source-map.md"
     ]
   },
   "local_sources": "docs/reference/source-map.md",

@@ -193,9 +193,14 @@
       "sha256": "4f1aff30125ae47be502d610e7f8348a63daeefafebc7f28c2f0e1479c20adee"
     },
     {
+      "path": "docs/knowledge/rea-update-2026-10-24.md",
+      "bytes": 7993,
+      "sha256": "6364b9151cc5713ceec0fcb41c10e5d65df7183a4bbb072e3c3ff5b8c65abf72"
+    },
+    {
       "path": "docs/knowledge/README.md",
-      "bytes": 2993,
-      "sha256": "e3ad4cd9ce4537e44653d6f17482b0045712a0e8920359290be7fda7953a77c5"
+      "bytes": 3332,
+      "sha256": "b013a628e3e78eaab4013324b356c2731cd689eded799276a6476b2f7ae585f4"
     },
     {
       "path": "docs/onboarding/muse-roadmap-guide-2026-10-22.md",
@@ -504,8 +509,8 @@
     },
     {
       "path": "docs/reference/open-questions.md",
-      "bytes": 8708,
-      "sha256": "8dd5b41c6a8c4adec72e1db16b223d84f1d2a1ca44601547eb81986f977df82a"
+      "bytes": 9322,
+      "sha256": "77cfa2ae4ce4c2e9c1bc56b46daa7aedff999a0b5087214aa47abf12e80a7074"
     },
     {
       "path": "docs/reference/source-map.md",
@@ -544,8 +549,8 @@
     },
     {
       "path": "metadata/navigation.json",
-      "bytes": 7588,
-      "sha256": "b63f45f32605736a9bbbb1b06c60bb511771bda1ab2aa70c4024d85adbeb747c"
+      "bytes": 7831,
+      "sha256": "8d033ed570cb952667d95b9305a770d515debe1dfb3b276585b3824bf0fe3b37"
     },
     {
       "path": "metadata/preservation.json",
