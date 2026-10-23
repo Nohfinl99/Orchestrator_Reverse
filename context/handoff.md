@@ -38,3 +38,7 @@ Git commit / branch / remote nếu có:
 ```
 
 Trước resume: kiểm nguồn có drift, context/IDB revisions và các consumer ACK liên quan theo contract gốc. View IA không tự chuyển task sang READY. Thiếu nguồn chỉ chặn claim/nhánh phụ thuộc; tiếp tục phần độc lập đúng scope.
+
+## Bàn giao cải tiến nền tảng — 23/10/2026
+
+Đọc [proposal](../docs/proposals/knowledge-foundation/README.md), [reuse map](../docs/proposals/knowledge-foundation/reuse-map.md), [guide](../docs/proposals/knowledge-foundation/operating-guide.md) và [progress](../docs/proposals/knowledge-foundation/progress.md). Source pins mới nằm trong metadata; manifests lịch sử giữ nguyên. Bản này là document foundation; chưa triển khai consumer admission hoặc runtime. Publication xác định từ Git commit/remote, không từ checklist.

@@ -35,3 +35,7 @@ Nguồn: [validation snapshot gốc](../docs/reference/validation-status.md); lo
 ## Khi đổi phiên
 
 Đọc [handoff](handoff.md), kiểm scope và revision theo [source map](../docs/reference/source-map.md), rồi chỉ nạp stack/protocol cần thiết. Không lấy README lịch sử hoặc mtime làm bằng chứng trạng thái mới. Nếu chỉ có clone public, các report local chưa có được giữ là `LOCAL_ONLY`, không coi là đã đọc hay xác thực.
+
+## Bổ sung tài liệu 23/10/2026
+
+[Đề xuất cải tiến nền tảng](../docs/proposals/knowledge-foundation/README.md) đưa knowledge card có sẵn vào guide/worksheet; [progress](../docs/proposals/knowledge-foundation/progress.md) ghi việc đã viết và nhánh integration còn đề xuất. Đây là cập nhật documentation, không thay gate snapshot 21/10 hoặc tạo admission/ACK.

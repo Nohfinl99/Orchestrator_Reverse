@@ -1,0 +1,100 @@
+{
+  "kind": "DOCUMENT_REFERENCE_SOURCE_PINS",
+  "revision": 1,
+  "date": "2026-10-23",
+  "github_main": "1f9445f8d8c9ef13fd51c499c9df8003e1f9a9f1",
+  "github_card_blob_verified": "4f8f57f1456ce6444fd4e8b2f08fc786824f5d17",
+  "scope": "Public project sources; upstream read scopes/rights inherited from existing source catalog, no raw copied",
+  "files": [
+    {
+      "path": "CONTEXT_VI.md",
+      "revision": "a69d9c030b7533df4779bfa198025abec13a42e0",
+      "git_blob": "789a0cf2dcd63e575d68d288611549e98764b765",
+      "sha256": "b4ebee74d4d491c4c8fe60fe1614d73603bda57b7704a919883c967b49d0383f",
+      "bytes": 3074,
+      "read_scope": "DOCUMENT_REFERENCE; no runtime validation"
+    },
+    {
+      "path": "docs/architecture/system.md",
+      "revision": "a69d9c030b7533df4779bfa198025abec13a42e0",
+      "git_blob": "d0c55d7ece20038a9c192a64da2ea8cbb179c912",
+      "sha256": "7d70449b504fa848528bf717581ef4a487d59be39c0df44160569e19d24f53b9",
+      "bytes": 4465,
+      "read_scope": "DOCUMENT_REFERENCE; no runtime validation"
+    },
+    {
+      "path": "docs/planning/w4-readiness-plan.md",
+      "revision": "a69d9c030b7533df4779bfa198025abec13a42e0",
+      "git_blob": "fa61e5a2d030dd7a78004de75e948a79592ecf6b",
+      "sha256": "572244740e5c1adfaed3bcab7b02b25a457f5ee7bfd7a01c17774a65cbe101a5",
+      "bytes": 13348,
+      "read_scope": "DOCUMENT_REFERENCE; no runtime validation"
+    },
+    {
+      "path": "docs/knowledge/prompt-orchestration/knowledge-cards.md",
+      "revision": "a69d9c030b7533df4779bfa198025abec13a42e0",
+      "git_blob": "4f8f57f1456ce6444fd4e8b2f08fc786824f5d17",
+      "sha256": "f62c0f07b5d3eeba3a3131c6063393820027244f5b97a32a35af123930f6d782",
+      "bytes": 16087,
+      "read_scope": "DOCUMENT_REFERENCE; no runtime validation"
+    },
+    {
+      "path": "docs/knowledge/prompt-orchestration/application-map.md",
+      "revision": "a69d9c030b7533df4779bfa198025abec13a42e0",
+      "git_blob": "533f29b045b07ec386ebaaa89407c2cd33538423",
+      "sha256": "c51f22337191b4df759741b573739e6de2cc0a2c3f8db362b7e60a46db8b7b4f",
+      "bytes": 6598,
+      "read_scope": "DOCUMENT_REFERENCE; no runtime validation"
+    },
+    {
+      "path": "docs/knowledge/prompt-orchestration/sources.json",
+      "revision": "a69d9c030b7533df4779bfa198025abec13a42e0",
+      "git_blob": "752ac44454e041bbb2041fcf220d0c46fc6d0596",
+      "sha256": "e4215f3314a6afb3865aef672c8f6effbb43e11460588958ddf2a8387ac7ab1f",
+      "bytes": 16268,
+      "read_scope": "DOCUMENT_REFERENCE; no runtime validation"
+    },
+    {
+      "path": "docs/knowledge/prompt-orchestration/third-party-notices.md",
+      "revision": "a69d9c030b7533df4779bfa198025abec13a42e0",
+      "git_blob": "1be32da40d6df6758b0cb2abebca3a5b34025674",
+      "sha256": "4f1aff30125ae47be502d610e7f8348a63daeefafebc7f28c2f0e1479c20adee",
+      "bytes": 2916,
+      "read_scope": "DOCUMENT_REFERENCE; no runtime validation"
+    },
+    {
+      "path": "prompt_stacks/protocols/knowledge_protocol.md",
+      "revision": "a69d9c030b7533df4779bfa198025abec13a42e0",
+      "git_blob": "c00848d66d0216b8074fce954c049f2c3fbc5843",
+      "sha256": "a0c923dd64283b4fa437f16bfc23f502f1b25abf74c1ede5f1db25ac9dd84158",
+      "bytes": 3321,
+      "read_scope": "DOCUMENT_REFERENCE; no runtime validation"
+    },
+    {
+      "path": "prompt_stacks/protocols/pair_protocol.md",
+      "revision": "a69d9c030b7533df4779bfa198025abec13a42e0",
+      "git_blob": "4b91de41fe41735cbdae3bffb301af00dbde7b7b",
+      "sha256": "9fde10e5fd3d685238bf3fb73100385aefe07e8abf0827afee3483c71f8d046d",
+      "bytes": 3260,
+      "read_scope": "DOCUMENT_REFERENCE; no runtime validation"
+    },
+    {
+      "path": "prompt_stacks/protocols/intake_protocol.md",
+      "revision": "a69d9c030b7533df4779bfa198025abec13a42e0",
+      "git_blob": "f2d443b978aa7c75408f82401590bd3866cd76d7",
+      "sha256": "0ae76a3d4d61150f668b5bab3e3c4fbdcfa5ff6b2ac0467ab9624e4fc7ff9225",
+      "bytes": 3316,
+      "read_scope": "DOCUMENT_REFERENCE; no runtime validation"
+    },
+    {
+      "path": "prompt_stacks/protocols/handoff_protocol.md",
+      "revision": "a69d9c030b7533df4779bfa198025abec13a42e0",
+      "git_blob": "ee403cd51c65df6e2a857c85ec505fb231aa715a",
+      "sha256": "7877dcc078adefdff8e2ca34342937576c7e8b6a6ba30cf2e0bfdbb01607e032",
+      "bytes": 3259,
+      "read_scope": "DOCUMENT_REFERENCE; no runtime validation"
+    }
+  ],
+  "consumer_ack": "NOT_ISSUED",
+  "runtime_admission": false
+}

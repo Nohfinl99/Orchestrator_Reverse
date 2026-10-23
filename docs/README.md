@@ -2,6 +2,7 @@
 
 | Cần biết | Đọc |
 |---|---|
+| Cải tiến từ nền tảng và giao việc cụ thể | [Đề xuất](proposals/knowledge-foundation/README.md), [guide](proposals/knowledge-foundation/operating-guide.md), [worksheet](proposals/knowledge-foundation/packet-template.md), [tiến trình](proposals/knowledge-foundation/progress.md) |
 | Project làm gì, đang ở đâu | [Context](../context/current.md), [nguyên lý](../CONTEXT_VI.md) |
 | AI mới tiếp nhận | [Start here](onboarding/start-here.md), [workflow phiên](onboarding/session-workflow.md) |
 | Muse tiếp tục office 3D | [Hướng dẫn roadmap và prompt](onboarding/muse-roadmap-guide-2026-10-22.md), [gate recheck](proposals/agent-office-3d/gate-recheck-2026-10-22.md), [handoff v1](onboarding/muse-takeover-2026-10-22.md) |

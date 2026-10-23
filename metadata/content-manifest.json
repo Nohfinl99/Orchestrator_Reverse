@@ -39,13 +39,13 @@
     },
     {
       "path": "context/current.md",
-      "bytes": 3171,
-      "sha256": "bbf242f4eaad8c9178d1fa21dfd0412a4c875933e3279cee9430f7b42560a80e"
+      "bytes": 3579,
+      "sha256": "300baf4b85cce6f32673b12289c5b1e26efca1c6f883a92519ba1a27ed473c69"
     },
     {
       "path": "context/handoff.md",
-      "bytes": 4169,
-      "sha256": "03df63edb9fb9d60ef10a7afd829d8eec9fba398798659e95fbe0bfe1b4dbd91"
+      "bytes": 4734,
+      "sha256": "ceb882209cbde7a63fd7498ec99bd1441f47ea718f62b90266c8a881e2166ed4"
     },
     {
       "path": "context/project-state.json",
@@ -138,6 +138,11 @@
       "sha256": "025f07f7c61d319bdd48c3c4c6d91b132c83534987427ebf083be21fb46302f5"
     },
     {
+      "path": "docs/changes/2026-10-23-knowledge-foundation.md",
+      "bytes": 2835,
+      "sha256": "32fea067c57df353363b30c96cf3eaa4e487cb9c5eabc82be9a36b09412ea262"
+    },
+    {
       "path": "docs/FINE_TUNING.md",
       "bytes": 272,
       "sha256": "ec981804e339c8489880889d18fe30a80a9fafde9f3d2820018e8cd508f5cb67"
@@ -179,8 +184,8 @@
     },
     {
       "path": "docs/knowledge/README.md",
-      "bytes": 2124,
-      "sha256": "ec918a562fba58b175b12c3f4bc6c07ceae4e0145e7ae0dfba3a1d6a10deaee5"
+      "bytes": 2388,
+      "sha256": "6a9a8dd08a19d1e05920f17a02fa7f180d1bf7e89e0e28acd88e44ff572b7cd8"
     },
     {
       "path": "docs/onboarding/muse-roadmap-guide-2026-10-22.md",
@@ -214,8 +219,8 @@
     },
     {
       "path": "docs/planning/work-queue.md",
-      "bytes": 4328,
-      "sha256": "4b003b1494960b2b918be4ee279128033698b4b79bd2bec884806d1b1efc3b44"
+      "bytes": 4791,
+      "sha256": "53741907b4064de9c56b51977b3518b6af56cdd824ee24f8c4ca1449f3e4dd54"
     },
     {
       "path": "docs/proposals/agent-office-3d/ai-judges-review-2026-10-22-01.md",
@@ -458,14 +463,39 @@
       "sha256": "2de71abc996897175a53cef831a489edd9714580c4e6a99e860d310f195110bb"
     },
     {
+      "path": "docs/proposals/knowledge-foundation/operating-guide.md",
+      "bytes": 4671,
+      "sha256": "6db56bc9b11d08f844c9d6de0d63fd8b5a8675e93de199d715325f2b7b857873"
+    },
+    {
+      "path": "docs/proposals/knowledge-foundation/packet-template.md",
+      "bytes": 2824,
+      "sha256": "c597eb35c049a3fe4079611440ef5c07a3f5d65e5d0153501add7aa9c7317b7b"
+    },
+    {
+      "path": "docs/proposals/knowledge-foundation/progress.md",
+      "bytes": 2840,
+      "sha256": "b75cb3b8430b0e6e7b7a077514fdb0e13b52797f48608c899132cfa9ff31f5c4"
+    },
+    {
+      "path": "docs/proposals/knowledge-foundation/README.md",
+      "bytes": 5851,
+      "sha256": "9fde95048fd10e643c5a1d327f59533b77a6726d371982b98847e9c4d01263c8"
+    },
+    {
+      "path": "docs/proposals/knowledge-foundation/reuse-map.md",
+      "bytes": 3607,
+      "sha256": "473bb9e47cc7d3864c676abffb680dbac6d362ff31371b5fa48fa8df9b8aecfb"
+    },
+    {
       "path": "docs/README.md",
-      "bytes": 3137,
-      "sha256": "7b86602039281b17afdb5433b4e71c6a196d413a00b0c02188c671614b334f7a"
+      "bytes": 3443,
+      "sha256": "da90d42ca3bdc7091eac97c17af687695aa407953865a76c627cfaa7a3d51251"
     },
     {
       "path": "docs/reference/open-questions.md",
-      "bytes": 6743,
-      "sha256": "61c31b1e5c5d368c23dd5a29fbe25ac10d9a587bd4d24d06402e0b4877ed8947"
+      "bytes": 8227,
+      "sha256": "861748ecb1f83192530554075fb09f07b073d8b6f88f1044515a2650ba35f7e9"
     },
     {
       "path": "docs/reference/source-map.md",
@@ -488,6 +518,11 @@
       "sha256": "3dc381e26be4e5a6e9c93a043cc8e874d2b16ba4a403af02b775c4909df60689"
     },
     {
+      "path": "metadata/knowledge-foundation-source-pins.json",
+      "bytes": 4448,
+      "sha256": "afd881c42ecc50f011d349eee80f0bdfbc4471ff8c5f0fff8dd209f75011d283"
+    },
+    {
       "path": "metadata/muse-knowledge-transfer-2026-10-22-v2.json",
       "bytes": 16237,
       "sha256": "2f44e082bd9d96c54c4d793cd4edcd0e0366af3a082a50da5850ef84bbd8d2d8"
@@ -499,8 +534,8 @@
     },
     {
       "path": "metadata/navigation.json",
-      "bytes": 6930,
-      "sha256": "9caf20bbc96dde44ace94549f421318ab9943d523b12fa0e29e86625d66ee79d"
+      "bytes": 7429,
+      "sha256": "c2506659f1ee0d63cb23f2fbeeb75f4a18d245740362476135bc80d315f0257d"
     },
     {
       "path": "metadata/preservation.json",
@@ -614,8 +649,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 9543,
-      "sha256": "c6433ef4a07bae5e88f01057d8ca34ab5539671afa9c109a8786910fbdf6ef63"
+      "bytes": 9739,
+      "sha256": "83ee957d9cf588dc415acf0f39a7ef06a13a203dbc409e16fe340205f51c19d6"
     },
     {
       "path": "scripts/verify_ia.py",

@@ -10,6 +10,8 @@
 
 Chọn theo [retrieval guide](prompt-orchestration/retrieval-guide.md), rồi đọc [application map và phần loại trừ](prompt-orchestration/application-map.md). AI có thể tra [knowledge.json](prompt-orchestration/knowledge.json) và [sources.json](prompt-orchestration/sources.json); hai file là worksheet tài liệu, không phải runtime API/schema.
 
+[Áp dụng card vào quy trình làm việc](../proposals/knowledge-foundation/reuse-map.md) và [hướng dẫn thao tác](../proposals/knowledge-foundation/operating-guide.md) được viết thêm ngày 23/10; đây là document use, chưa admission runtime.
+
 ## Cách tiếp nhận
 
 1. Chốt objective và phạm vi do người dùng giao; đọc current và nguồn project trước.

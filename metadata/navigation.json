@@ -49,7 +49,9 @@
     "muse_knowledge_transfer": "metadata/muse-knowledge-transfer-2026-10-22.json",
     "muse_roadmap_guide": "docs/onboarding/muse-roadmap-guide-2026-10-22.md",
     "muse_gate_recheck": "docs/proposals/agent-office-3d/gate-recheck-2026-10-22.md",
-    "muse_knowledge_transfer_v2": "metadata/muse-knowledge-transfer-2026-10-22-v2.json"
+    "muse_knowledge_transfer_v2": "metadata/muse-knowledge-transfer-2026-10-22-v2.json",
+    "knowledge_foundation": "docs/proposals/knowledge-foundation/README.md",
+    "knowledge_foundation_progress": "docs/proposals/knowledge-foundation/progress.md"
   },
   "compatibility_routes": {
     "docs/ARCHITECTURE.md": "docs/architecture/system.md",
@@ -141,6 +143,13 @@
       "docs/proposals/agent-office-3d/ao-1-review-2026-10-22-06.md",
       "docs/proposals/agent-office-3d/context-handoff-implementation-2026-10-22.md",
       "docs/reference/open-questions.md"
+    ],
+    "knowledge_foundation": [
+      "docs/proposals/knowledge-foundation/README.md",
+      "docs/proposals/knowledge-foundation/reuse-map.md",
+      "docs/proposals/knowledge-foundation/operating-guide.md",
+      "docs/proposals/knowledge-foundation/packet-template.md",
+      "docs/proposals/knowledge-foundation/progress.md"
     ]
   },
   "local_sources": "docs/reference/source-map.md",

@@ -25,6 +25,7 @@ Nguyên tắc xuyên suốt là **bảo toàn REA–IDA qua mọi cấu trúc v�
 - [Kiến trúc thông tin](docs/architecture/information-architecture.md), [sáu role](docs/architecture/agents.md) và [vấn đề mở](docs/reference/open-questions.md).
 - [W4: gate còn thiếu, trạng thái I01–I05 và dependency](docs/planning/w4-readiness-plan.md).
 - [Kiến thức tham khảo cho điều phối](docs/knowledge/README.md): 12 card từ ba nguồn GitHub, source pins và cách chọn theo task; chưa admitted KB.
+- [Cải tiến nền tảng 23/10](docs/proposals/knowledge-foundation/README.md): biên bản đề xuất, phần knowledge tận dụng, hướng dẫn thao tác, worksheet và tiến trình.
 - [Profile IA văn phòng agent 3D](docs/proposals/agent-office-3d/README.md): proposal offline-first, so sánh mã nguồn tương tự, meeting model và acceptance; chưa có UI/runtime.
 - [Muse đi theo roadmap office 3D](docs/onboarding/muse-roadmap-guide-2026-10-22.md): điểm vào sau recheck gate, cách tận dụng artifact/knowledge, điều kiện trước AO-2 và prompt bàn giao; [handoff v1](docs/onboarding/muse-takeover-2026-10-22.md) giữ lịch sử.
 - Gate kế thừa: **P1K B4 FAIL; G1/G2 INCOMPLETE; G3/G4 NOT_RUN; W4 NOT_RUN_BLOCKED; v3 OFF**. IA không đổi trạng thái nghiệm thu.

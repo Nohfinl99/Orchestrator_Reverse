@@ -19,3 +19,7 @@
 Nhánh consumer packet là đề xuất offline gần nhất sau logic review. Không lặp lại selected-consumer projection như chưa tồn tại; dùng nguồn đã pin và kiểm lại drift. B4 là một task độc lập, không lồng correction vào thay đổi IA hoặc tự gọi PASS sau sửa một case.
 
 Các câu hỏi cần quyền hoặc dữ kiện mới được giữ trong [open questions](../reference/open-questions.md). Phần độc lập đã được giao có thể tiếp tục khi nhánh khác thiếu prerequisite.
+
+## Nhánh cải tiến nền tảng — 23/10/2026
+
+[Proposal](../proposals/knowledge-foundation/README.md) đã chuyển các card hữu ích thành guide và worksheet; [progress](../proposals/knowledge-foundation/progress.md) tách tài liệu đã viết khỏi integration chưa triển khai. Next task vẫn hoàn thiện một consumer/call-site packet từ projection hiện có, PROPOSED_NOT_DISPATCHED; không tạo một luồng runtime cạnh tranh.
