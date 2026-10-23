@@ -1,0 +1,206 @@
+{
+  "kind": "PROPOSED_WORK_CHECKPOINTS_NOT_RUNTIME_GATES",
+  "date": "2026-10-24",
+  "baseline": "82242c9f492fc20b636fb7504ade0fb4409962cb",
+  "criteria_revision": 1,
+  "threshold_decision": "PENDING_USER_DECISION",
+  "percent_means": "Verified named criteria divided by six; not probability, benchmark accuracy or project completion",
+  "acceptance": "NO_CHECKPOINT_ACCEPTED",
+  "new_model_calls": 0,
+  "new_target_calls": 0,
+  "new_fixture_runs": 0,
+  "checkpoints": [
+    {
+      "id": "INPUT-A",
+      "verified": 3,
+      "total": 6,
+      "percent": 50.0,
+      "unverified": 3,
+      "failed": 0,
+      "decision": "PENDING",
+      "evidence_review": "SELF_REVIEW_AND_READ_HASH_METADATA_ONLY",
+      "criteria": [
+        {
+          "id": "A1",
+          "criterion": "Scope and user choices recorded",
+          "status": "VERIFIED_IN_DECLARED_SCOPE",
+          "evidence": "user-decisions.json"
+        },
+        {
+          "id": "A2",
+          "criterion": "One selected call site and source pins",
+          "status": "VERIFIED_IN_DECLARED_SCOPE",
+          "evidence": "source-pins.json; packet.md"
+        },
+        {
+          "id": "A3",
+          "criterion": "Input/cases/oracle independently reviewed",
+          "status": "PENDING_OR_NOT_RUN",
+          "evidence": "benchmark-seeds.json: review pending"
+        },
+        {
+          "id": "A4",
+          "criterion": "Offline actions/outputs/numeric budget/stop recorded",
+          "status": "VERIFIED_IN_DECLARED_SCOPE",
+          "evidence": "packet.md; user-decisions.json"
+        },
+        {
+          "id": "A5",
+          "criterion": "Actual model-refusal raw or explicit source-only benchmark decision",
+          "status": "PENDING_OR_NOT_RUN",
+          "evidence": "User decision pending on limited source-comprehension scope"
+        },
+        {
+          "id": "A6",
+          "criterion": "Criteria and thresholds accepted by user",
+          "status": "PENDING_OR_NOT_RUN",
+          "evidence": "Decision pending"
+        }
+      ]
+    },
+    {
+      "id": "KNOWLEDGE-B",
+      "verified": 3,
+      "total": 6,
+      "percent": 50.0,
+      "unverified": 3,
+      "failed": 0,
+      "decision": "PENDING",
+      "evidence_review": "SELF_REVIEW_AND_READ_HASH_METADATA_ONLY",
+      "criteria": [
+        {
+          "id": "B1",
+          "criterion": "Source captures match declared SHA/bytes",
+          "status": "VERIFIED_IN_DECLARED_SCOPE",
+          "evidence": "verification.json: 13 captures"
+        },
+        {
+          "id": "B2",
+          "criterion": "Release/package/skill versions distinguished by source metadata",
+          "status": "VERIFIED_IN_DECLARED_SCOPE",
+          "evidence": "verification.json: version_checks"
+        },
+        {
+          "id": "B3",
+          "criterion": "Session capability metadata captured and internally checked",
+          "status": "VERIFIED_IN_DECLARED_SCOPE",
+          "evidence": "capability-observed.json; verification.json"
+        },
+        {
+          "id": "B4",
+          "criterion": "Bundle rights/applicability reviewed",
+          "status": "PENDING_OR_NOT_RUN",
+          "evidence": "Not performed for concrete consumer"
+        },
+        {
+          "id": "B5",
+          "criterion": "Actual consumer context/bundle/digest ACK",
+          "status": "PENDING_OR_NOT_RUN",
+          "evidence": "Not received"
+        },
+        {
+          "id": "B6",
+          "criterion": "Independent review/admission",
+          "status": "PENDING_OR_NOT_RUN",
+          "evidence": "Not performed"
+        }
+      ]
+    },
+    {
+      "id": "IMPLEMENTATION-C",
+      "verified": 0,
+      "total": 6,
+      "percent": 0.0,
+      "unverified": 6,
+      "failed": 0,
+      "decision": "PENDING",
+      "evidence_review": "SELF_REVIEW_AND_READ_HASH_METADATA_ONLY",
+      "criteria": [
+        {
+          "id": "C1",
+          "criterion": "Bound caller integration",
+          "status": "PENDING_OR_NOT_RUN",
+          "evidence": "NOT_IMPLEMENTED_NOT_RUN"
+        },
+        {
+          "id": "C2",
+          "criterion": "Original input storage and revision/digest",
+          "status": "PENDING_OR_NOT_RUN",
+          "evidence": "NOT_IMPLEMENTED_NOT_RUN"
+        },
+        {
+          "id": "C3",
+          "criterion": "Layer-correct rejection taxonomy",
+          "status": "PENDING_OR_NOT_RUN",
+          "evidence": "NOT_IMPLEMENTED_NOT_RUN"
+        },
+        {
+          "id": "C4",
+          "criterion": "Diff-visible intent-preserving normalization",
+          "status": "PENDING_OR_NOT_RUN",
+          "evidence": "NOT_IMPLEMENTED_NOT_RUN"
+        },
+        {
+          "id": "C5",
+          "criterion": "2-3 clarification questions as implemented behavior",
+          "status": "PENDING_OR_NOT_RUN",
+          "evidence": "NOT_IMPLEMENTED_NOT_RUN"
+        },
+        {
+          "id": "C6",
+          "criterion": "Behavioral raw and independent review",
+          "status": "PENDING_OR_NOT_RUN",
+          "evidence": "NOT_IMPLEMENTED_NOT_RUN"
+        }
+      ]
+    },
+    {
+      "id": "EVALUATION-D",
+      "verified": 0,
+      "total": 6,
+      "percent": 0.0,
+      "unverified": 6,
+      "failed": 0,
+      "decision": "PENDING",
+      "evidence_review": "SELF_REVIEW_AND_READ_HASH_METADATA_ONLY",
+      "criteria": [
+        {
+          "id": "D1",
+          "criterion": "Concrete model/provider/data/budget profile",
+          "status": "PENDING_OR_NOT_RUN",
+          "evidence": "NOT_RUN"
+        },
+        {
+          "id": "D2",
+          "criterion": "Reviewed frozen cases/oracle R4a",
+          "status": "PENDING_OR_NOT_RUN",
+          "evidence": "NOT_RUN"
+        },
+        {
+          "id": "D3",
+          "criterion": "Capability/authority/applicable pair",
+          "status": "PENDING_OR_NOT_RUN",
+          "evidence": "NOT_RUN"
+        },
+        {
+          "id": "D4",
+          "criterion": "Captured model/REA attempt",
+          "status": "PENDING_OR_NOT_RUN",
+          "evidence": "NOT_RUN"
+        },
+        {
+          "id": "D5",
+          "criterion": "Independent R4b",
+          "status": "PENDING_OR_NOT_RUN",
+          "evidence": "NOT_RUN"
+        },
+        {
+          "id": "D6",
+          "criterion": "Accepted metrics and continuation/rollback",
+          "status": "PENDING_OR_NOT_RUN",
+          "evidence": "NOT_RUN"
+        }
+      ]
+    }
+  ]
+}

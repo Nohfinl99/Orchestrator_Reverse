@@ -18,6 +18,15 @@
 - Task W4 đi từ [readiness/gap register](docs/planning/w4-readiness-plan.md), không dispatch trực tiếp template I01–I05; kiểm W4 run44, gate từng nhánh và source mapping của role/state trước khi chọn task.
 - Khi task cần phương pháp soạn yêu cầu, context, routing hoặc handoff, tra [knowledge index](docs/knowledge/README.md) theo objective; đây là candidate reference có nguồn/giới hạn, chưa admitted KB hoặc consumer ACK. Giữ instruction/nguồn project làm căn cứ; không nạp prompt corpus theo mặc định.
 
+## Điều phối theo evidence và checkpoint — 24/10/2026
+
+- Đọc [input-support checkpoints](docs/proposals/input-support-gates/README.md) và [status theo tiêu chí](docs/proposals/input-support-gates/status.json) khi task liên quan input/model rejection. Đây là checkpoint đề xuất riêng, không thay G1–G4.
+- Phát biểu người dùng có thể là objective, decision hoặc claim; không mặc định claim là fact. Đối chiếu ngữ cảnh, nguồn và phản chứng; giữ UNKNOWN/CONFLICT khi thiếu evidence.
+- Nạp nguồn/knowledge tham khảo trong scope được giao; phân biệt đọc context với training, provider upload và runtime consumer ACK. Model/provider thực chọn theo capability và độ khó tại thời điểm run, ghi exact profile/data/budget trước attempt.
+- Mục tiêu chưa rõ thì hỏi tối đa 2–3 câu trọng yếu; có thể chuẩn bị phần độc lập trong lúc chờ. Giữ original input, scope và thuật ngữ có nguồn; proposal diễn đạt lại cần diff và kiểm giữ nghĩa.
+- Chưa verify không gán hoàn tất/PASS. Báo n/N criterion đã verify, chưa kiểm, fail, raw/review scope và quyết định còn chờ user; không dùng số lượng tài liệu hoặc self-score làm gate.
+- Tác vụ khó cần phân tích phương án/phản chứng/dependency sâu hơn; tác vụ hẹp rõ dùng kiểm trực tiếp. Không suy rằng thời gian dài, tên model hay reasoning effort tự chứng minh correctness.
+
 ## Thực hiện và bàn giao
 
 Chốt một objective với scope, nguồn/revision, output và tiêu chí; tra [workflow phiên](docs/onboarding/session-workflow.md). Phát hiện logic mâu thuẫn thì thêm locator/gap vào [open questions](docs/reference/open-questions.md), không sửa nguyên lý trong task IA.

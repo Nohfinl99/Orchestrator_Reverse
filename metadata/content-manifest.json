@@ -29,8 +29,8 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 3646,
-      "sha256": "ff9e152dcea93261b648943f917bd8a7891f618681831eeb9df0b886d0ceb579"
+      "bytes": 5185,
+      "sha256": "0092537e9e8238c358ee09a8c99049539c3e0224a103466eee513f52d70a6628"
     },
     {
       "path": "CITATION.cff",
@@ -39,13 +39,13 @@
     },
     {
       "path": "context/current.md",
-      "bytes": 4012,
-      "sha256": "944c2bdc2f37277a822d72cc17a4bc047694027ed85ee955859d417afdd27e92"
+      "bytes": 4513,
+      "sha256": "ccb476adcffe2ef9c7bbc86a76ec0a40cbadcc8409364835c2b8a830c96fa327"
     },
     {
       "path": "context/handoff.md",
-      "bytes": 5110,
-      "sha256": "4e05f1e403eac1833b4506bf328d28e4af4ab91dae72ac971a9471e025a43442"
+      "bytes": 5595,
+      "sha256": "2d7e73314e559d8f7e8220993cec6f305d24a4b9ebacb24fce9d5623452687cd"
     },
     {
       "path": "context/project-state.json",
@@ -148,6 +148,11 @@
       "sha256": "9ea8721fd52ea2eab029cd24b9c971f0f9017f7bd3ec737656cce5b2b6957ce0"
     },
     {
+      "path": "docs/changes/2026-10-24-input-support-checkpoints.md",
+      "bytes": 3114,
+      "sha256": "11e1d189bc289b6291874503ca043446f35eda3d85c01795f84b8cc45db4ce91"
+    },
+    {
       "path": "docs/FINE_TUNING.md",
       "bytes": 272,
       "sha256": "ec981804e339c8489880889d18fe30a80a9fafde9f3d2820018e8cd508f5cb67"
@@ -214,8 +219,8 @@
     },
     {
       "path": "docs/onboarding/session-workflow.md",
-      "bytes": 2536,
-      "sha256": "cdbddccb7b02cca500991d1f0c4831961cabfc44dd13ffbf766375be545775c2"
+      "bytes": 3669,
+      "sha256": "54841259bf401f0d9e4a726c8c9137df0249014433f04c9b2b7b3d1f4f635def"
     },
     {
       "path": "docs/onboarding/start-here.md",
@@ -234,8 +239,8 @@
     },
     {
       "path": "docs/planning/work-queue.md",
-      "bytes": 4791,
-      "sha256": "53741907b4064de9c56b51977b3518b6af56cdd824ee24f8c4ca1449f3e4dd54"
+      "bytes": 5236,
+      "sha256": "792524facdae07de47c57e123638c7a38d81817910cc3e46ee08d73f78dc3678"
     },
     {
       "path": "docs/proposals/agent-office-3d/ai-judges-review-2026-10-22-01.md",
@@ -478,6 +483,26 @@
       "sha256": "2de71abc996897175a53cef831a489edd9714580c4e6a99e860d310f195110bb"
     },
     {
+      "path": "docs/proposals/input-support-gates/benchmark-plan.md",
+      "bytes": 3707,
+      "sha256": "1372fb707cf7b37fb83312af40641d60df8cb2d72bbb660232600ae301f24d90"
+    },
+    {
+      "path": "docs/proposals/input-support-gates/packet.md",
+      "bytes": 3534,
+      "sha256": "dfe465b97341ff0ef32fdbd1e4904f4842afbbaaaf0f2081eda23c85b038dba7"
+    },
+    {
+      "path": "docs/proposals/input-support-gates/README.md",
+      "bytes": 6206,
+      "sha256": "332ad0319fcde2a2e81679f5145453713556b0d1d107246d94c488f38a17dc87"
+    },
+    {
+      "path": "docs/proposals/input-support-gates/status.json",
+      "bytes": 6377,
+      "sha256": "dbd6f4bf32d13ddd12e135c08a4f66e2e7f99e77b1d9b85e5171b49af5443664"
+    },
+    {
       "path": "docs/proposals/knowledge-foundation/operating-guide.md",
       "bytes": 5030,
       "sha256": "0dc6b472867115f608f7826fdca30d69e11cf33fefc627291df4161b75ebb67e"
@@ -504,8 +529,8 @@
     },
     {
       "path": "docs/README.md",
-      "bytes": 3443,
-      "sha256": "da90d42ca3bdc7091eac97c17af687695aa407953865a76c627cfaa7a3d51251"
+      "bytes": 3747,
+      "sha256": "bf1ce5ddc9a44ab0b1c187991986501a7b8372be6ef0fb0ab917ba4fbbb578bf"
     },
     {
       "path": "docs/reference/open-questions.md",
@@ -549,8 +574,8 @@
     },
     {
       "path": "metadata/navigation.json",
-      "bytes": 7831,
-      "sha256": "8d033ed570cb952667d95b9305a770d515debe1dfb3b276585b3824bf0fe3b37"
+      "bytes": 8245,
+      "sha256": "88b330740a818e0b3dac5f67cee121a62f389e1773f1d29d27d162cdc1d40cc4"
     },
     {
       "path": "metadata/preservation.json",

@@ -23,3 +23,7 @@ Các câu hỏi cần quyền hoặc dữ kiện mới được giữ trong [ope
 ## Nhánh cải tiến nền tảng — 23/10/2026
 
 [Proposal](../proposals/knowledge-foundation/README.md) đã chuyển các card hữu ích thành guide và worksheet; [progress](../proposals/knowledge-foundation/progress.md) tách tài liệu đã viết khỏi integration chưa triển khai. Next task vẫn hoàn thiện một consumer/call-site packet từ projection hiện có, PROPOSED_NOT_DISPATCHED; không tạo một luồng runtime cạnh tranh.
+
+## Input support checkpoints — 24/10/2026
+
+[Packet mới](../proposals/input-support-gates/packet.md) chọn một archived generated-prompt builder để source-map, không thay Stage1 parser. [Bốn checkpoint](../proposals/input-support-gates/README.md) báo criterion coverage ở status.json; chưa được user nhận. Next: review sáu seed oracle local và chốt tiêu chí, rồi xét implementation/benchmark đúng prerequisite.

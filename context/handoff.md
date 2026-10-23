@@ -46,3 +46,7 @@ Trước resume: kiểm nguồn có drift, context/IDB revisions và các consum
 ## Bàn giao policy knowledge revision 2
 
 Đọc [knowledge policy v2](../docs/knowledge/knowledge-policy-v2.md) trước khi áp disposition v1. Không lập topic blacklist cho DAN hoặc kiến thức tương tự. Bản v1, source pins, REA–IDA artifacts và FAIL giữ lịch sử; [change record](../docs/changes/2026-10-23-neutral-knowledge.md) ghi điều chỉnh.
+
+## Handoff input support — 24/10/2026
+
+Đọc [packet](../docs/proposals/input-support-gates/packet.md), [benchmark plan](../docs/proposals/input-support-gates/benchmark-plan.md) và [status](../docs/proposals/input-support-gates/status.json). Scope offline, provider/target/fixture calls mới bằng 0. Ground truth seeds giữ local ngoài active KB, chưa review độc lập. Cần user chốt criteria/threshold và scope source-only benchmark trước khi mở nhánh mới.

@@ -43,3 +43,7 @@ Nguồn: [validation snapshot gốc](../docs/reference/validation-status.md); lo
 ## Chỉ thị knowledge trung lập — 23/10/2026
 
 [Policy revision 2](../docs/knowledge/knowledge-policy-v2.md) thay cách hiểu loại trừ chủ đề từ D01–D11: DAN/jailbreak/AutoGPT và các kiến thức tương tự được tiếp nhận để catalog/đọc/nghiên cứu theo objective. Giữ REA–IDA xuyên suốt revision, evidence và quyền thực thi theo task; không xóa lịch sử hoặc nâng gate.
+
+## Input support theo checkpoint — 24/10/2026
+
+Người dùng chọn chuẩn bị/verify packet offline và giao chọn model theo độ khó cho run tương lai. [Bốn checkpoint đề xuất](../docs/proposals/input-support-gates/README.md) có mẫu số cố định và [status](../docs/proposals/input-support-gates/status.json); criteria/threshold chờ user quyết định, chưa đóng gate dự án. Nguồn và raw lịch sử được recheck riêng; chưa có benchmark model mới.
