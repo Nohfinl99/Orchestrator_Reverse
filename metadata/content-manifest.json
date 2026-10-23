@@ -29,8 +29,8 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 5185,
-      "sha256": "0092537e9e8238c358ee09a8c99049539c3e0224a103466eee513f52d70a6628"
+      "bytes": 5559,
+      "sha256": "2b4e850051f8cfe764cd3e52a9f978a4cb53f3c3ab995b95f48acbbc6df2d95e"
     },
     {
       "path": "CITATION.cff",
@@ -39,13 +39,13 @@
     },
     {
       "path": "context/current.md",
-      "bytes": 4930,
-      "sha256": "bea99a00442728150a2144318e842e7e67b43903422cdf7c315ac9753a381e85"
+      "bytes": 5492,
+      "sha256": "086ac8e98b30a7272faf3d46289a3f9106087d90489b7b934990670a4099374a"
     },
     {
       "path": "context/handoff.md",
-      "bytes": 5978,
-      "sha256": "363a4d2899196e1841c7d7636199813e210165d66a6a20f1d541e2de4be798eb"
+      "bytes": 6669,
+      "sha256": "2175477cd937c8fa7b206065e46c5c92952281f7d7dc9c70436dccc3bd35b831"
     },
     {
       "path": "context/project-state.json",
@@ -244,8 +244,8 @@
     },
     {
       "path": "docs/planning/work-queue.md",
-      "bytes": 5236,
-      "sha256": "792524facdae07de47c57e123638c7a38d81817910cc3e46ee08d73f78dc3678"
+      "bytes": 5698,
+      "sha256": "5b44922911f66b29031c74b9b605772d2574bb9b9472d882d98ef262e90bd107"
     },
     {
       "path": "docs/proposals/agent-office-3d/ai-judges-review-2026-10-22-01.md",
@@ -498,19 +498,44 @@
       "sha256": "dfe465b97341ff0ef32fdbd1e4904f4842afbbaaaf0f2081eda23c85b038dba7"
     },
     {
+      "path": "docs/proposals/input-support-gates/patches/evidence-checker-v2.diff",
+      "bytes": 9674,
+      "sha256": "4bbb49a6b9a46a7dc3ec4afd706406db89b8db318fa68060537850fca5e73a83"
+    },
+    {
+      "path": "docs/proposals/input-support-gates/patches/prompt-contract-v2.diff",
+      "bytes": 1819,
+      "sha256": "64b42299f414d0e1d555d5c00e7ef6b3eae79472b657696f22a0718d640f3ea3"
+    },
+    {
+      "path": "docs/proposals/input-support-gates/patches/README.md",
+      "bytes": 1238,
+      "sha256": "3e46e25f3f0993e32e9a9e062de5f2fc0a84ede9940c75d25db33e35157cd71e"
+    },
+    {
       "path": "docs/proposals/input-support-gates/pentest-2026-10-24.md",
       "bytes": 7258,
       "sha256": "8eb966cc3c522c66978ca7c25adbd0203b7bd69619a365da2cf9403e213a6893"
     },
     {
       "path": "docs/proposals/input-support-gates/README.md",
-      "bytes": 6574,
-      "sha256": "97b8e304e9ea4300aa2b43c2019f4c604c2799e93b82e948ecbd7bc46a2ef54f"
+      "bytes": 6953,
+      "sha256": "14945d1e0327be448f00d8216d746fede8d659dbd422a8524b12096c7d7d6665"
+    },
+    {
+      "path": "docs/proposals/input-support-gates/repair-2026-10-24.md",
+      "bytes": 6655,
+      "sha256": "65ecaf3376b84d615ab5097583f70564e338b4e84168296fd3c7862ddaf9defd"
     },
     {
       "path": "docs/proposals/input-support-gates/status-v2.json",
       "bytes": 9585,
       "sha256": "a3f67fe4c8ea9f945c9d4d280489016bc3c329e2805290c49f11ad886d46b464"
+    },
+    {
+      "path": "docs/proposals/input-support-gates/status-v3.json",
+      "bytes": 9017,
+      "sha256": "7ad7b0300ca7a973a5d87ff0ff5eaa2e91386c04f88bed5a2d07d488c368d40b"
     },
     {
       "path": "docs/proposals/input-support-gates/status.json",
@@ -549,8 +574,8 @@
     },
     {
       "path": "docs/reference/open-questions.md",
-      "bytes": 9749,
-      "sha256": "f8c12981ff766b6b1e74f4f56a3230fdfa9a478c0e22959e38bc717348706448"
+      "bytes": 10319,
+      "sha256": "2b3f94c8ac5b7cb0e039b47413695dde772e12fc5e5bc6c9bccd49178ed1f398"
     },
     {
       "path": "docs/reference/source-map.md",

@@ -41,3 +41,7 @@ P1K B4 FAIL; G1/G2 INCOMPLETE; G3/G4 NOT_RUN; W4 NOT_RUN_BLOCKED; v3 OFF. Snapsh
 ## Pentest có execution thực
 
 [Biên bản pentest 24/10](pentest-2026-10-24.md) và [status revision 2](status-v2.json) tách case match rate khỏi criterion coverage. Hai bounded attempts giữ raw/R4a/R4b riêng; candidate composition có lỗi quan sát được, chưa có model/REA target benchmark. [Status revision 1](status.json) giữ làm lịch sử.
+
+## Sau sửa candidate
+
+[Biên bản sửa/kiểm lại](repair-2026-10-24.md), [status revision 3](status-v3.json) và [hai diff code](patches/README.md) là điểm tiếp tục:42/42 bounded cases ở revision mới, lịch sử lỗi giữ nguyên. Coverage criteria50/50/0/0 và các project gates chưa thay đổi; không dùng tỷ lệ ca test để nhận checkpoint.

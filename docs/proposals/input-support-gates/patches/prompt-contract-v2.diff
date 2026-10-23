@@ -1,0 +1,33 @@
+--- src/candidates/prompt_contract.py
++++ src/candidates/revision_2/prompt_contract.py
+@@ -11,7 +11,7 @@
+ from dataclasses import asdict, dataclass
+ from typing import Optional, Tuple
+ 
+-from .role_router import Role, RouteDecision, RouteRequest, TaskKind, _canonical_request
++from .role_router import Role, RouteDecision, RouteRequest, TaskKind, ROLE_SCOPE, _canonical_request, route_one
+ 
+ 
+ PROMPT_SCHEMA = "orchestrator.role-prompt.v1"
+@@ -174,6 +174,8 @@
+ 
+ def compose_role_prompt(request: RouteRequest, decision: RouteDecision) -> RolePrompt:
+     """Build a versioned prompt packet for one role, without dispatching it."""
++    if not isinstance(request, RouteRequest) or not isinstance(decision, RouteDecision):
++        raise PromptContractError("Expected typed request and route decision")
+     if decision.status != "READY_FOR_HANDOFF" or not decision.selected_role:
+         raise PromptContractError("A role prompt requires READY_FOR_HANDOFF with one selected role")
+     if decision.dispatch_status != "NOT_IMPLEMENTED":
+@@ -181,6 +183,12 @@
+     request_digest = hashlib.sha256(_canonical_request(request)).hexdigest()
+     if decision.task_id != request.task_id or decision.input_digest != request_digest:
+         raise PromptContractError("Route decision is stale or belongs to a different task packet")
++    # Recompute candidate eligibility; never trust a replaced READY flag or owner.
++    expected = route_one(request)
++    if expected.status != "READY_FOR_HANDOFF":
++        raise PromptContractError("Current request is not eligible for prompt assembly")
++    if decision.selected_role != expected.selected_role:
++        raise PromptContractError("Selected owner disagrees with current routing predicates")
+     try:
+         role = Role(decision.selected_role)
+     except ValueError as exc:

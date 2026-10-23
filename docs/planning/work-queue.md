@@ -27,3 +27,5 @@ Các câu hỏi cần quyền hoặc dữ kiện mới được giữ trong [ope
 ## Input support checkpoints — 24/10/2026
 
 [Packet mới](../proposals/input-support-gates/packet.md) chọn một archived generated-prompt builder để source-map, không thay Stage1 parser. [Bốn checkpoint](../proposals/input-support-gates/README.md) báo criterion coverage ở status.json; chưa được user nhận. Next: review sáu seed oracle local và chốt tiêu chí, rồi xét implementation/benchmark đúng prerequisite.
+
+[Candidate repair](../proposals/input-support-gates/repair-2026-10-24.md) đã kiểm42/42 component cases; [status v3](../proposals/input-support-gates/status-v3.json) giữ coverage50/50/0/0. Next atomic proposal: bind một caller với revision_2 source, original input/diff/taxonomy/clarification và acceptance/budget; compatibility phụ thuộc B4 giữ blocked. Component predicates chưa xác thực issuer/ACK/pair thực; model/target chưa chạy.

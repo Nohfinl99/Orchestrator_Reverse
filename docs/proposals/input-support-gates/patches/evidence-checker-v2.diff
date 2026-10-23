@@ -1,0 +1,181 @@
+--- evidence/orchestrator_meetings/20261024_input_support_gates_01/verify_recorded_evidence.py
++++ src/candidates/revision_2/verify_recorded_evidence.py
+@@ -15,81 +15,104 @@
+     return json.loads(path.read_text(encoding="utf-8-sig"))
+ 
+ 
+-upstream = ROOT / "evidence/upstream_review/20261024_rea_input_audit_01"
+-captures = load(upstream / "source-captures.json")
+-capture_checks = []
+-for row in captures:
+-    suffix = ".json" if row["id"].startswith(("npm-", "github-")) else ".txt"
+-    path = upstream / row.get("local", row["id"] + suffix)
+-    capture_checks.append({"id": row["id"], "verified": (
+-        path.is_file() and path.stat().st_size == row["bytes"]
+-        and digest(path) == row["sha256"]
+-    )})
++def verify():
++    upstream = ROOT / "evidence/upstream_review/20261024_rea_input_audit_01"
++    captures = load(upstream / "source-captures.json")
++    capture_checks = []
++    for row in captures:
++        suffix = ".json" if row["id"].startswith(("npm-", "github-")) else ".txt"
++        path = upstream / row.get("local", row["id"] + suffix)
++        capture_checks.append({"id": row["id"], "verified": (
++            path.is_file() and path.stat().st_size == row["bytes"]
++            and digest(path) == row["sha256"]
++        )})
++    
++    installed = OUT / "installed-skill-observed.md"
++    main_skill = (upstream / "main-skill.txt").read_text(encoding="utf-8")
++    release_skill = (upstream / "release-skill.txt").read_text(encoding="utf-8")
++    version_checks = {
++        "installed_skill_42": 'version: "42"' in installed.read_text(encoding="utf-8"),
++        "main_skill_45": 'version: "45"' in main_skill,
++        "release_skill_42": 'version: "42"' in release_skill,
++        "npm_6_7_0": load(upstream / "npm-latest.json")["version"] == "6.7.0",
++        "release_6_7_0": load(upstream / "github-release.json")["tag_name"] == "rea-agents-6.7.0",
++    }
++    
++    capability = load(OUT / "capability-observed.json")
++    tools = capability["tools"]
++    capability_check = (len(tools) == 207 and len(set(tools)) == len(tools)
++                        and len(capability["selected"]) == 9 and all(
++                            row["advertised"] == (row["name"] in tools)
++                            for row in capability["selected"]))
++    
++    old = ROOT / "evidence/orchestrator_meetings/20261021_logic_audit_01"
++    plan_path = old / "candidate/test_plan.json"
++    code_path = old / "candidate/verify_repository_v2.py"
++    plan = load(plan_path)
++    attempt = old / "execution/attempt_01"
++    freeze = load(attempt / "freeze.json")
++    freeze_check = (digest(plan_path) == freeze["pins"]["plan"]
++                    and digest(code_path) == freeze["pins"]["candidate"])
++    case_checks = []
++    for case in plan["cases"]:
++        directory = attempt / case["id"]
++        receipt = load(directory / "receipt.json")
++        stdout = directory / "stdout.bin"
++        stderr = directory / "stderr.bin"
++        observed = json.loads(stdout.read_bytes())
++        matches = (receipt["expected"] == case and receipt["exit"] == case["exit"]
++                   and receipt["observed"] == observed
++                   and receipt["stdout_sha256"] == digest(stdout)
++                   and receipt["stderr_sha256"] == digest(stderr)
++                   and stderr.read_bytes() == b"" and not receipt["timed_out"]
++                   and receipt["candidate_sha256"] == freeze["pins"]["candidate"]
++                   and receipt["plan_sha256"] == freeze["pins"]["plan"]
++                   and observed.get("workloads_rerun") == 0)
++        for key, value in case.items():
++            if key not in ("id", "mutation", "exit"):
++                matches = matches and observed.get(key) == value
++        case_checks.append({"id": case["id"], "recorded_evidence_matches": bool(matches)})
++    
++    result = {
++        "scope": "READBACK_OF_RECORDED_BYTES_AND_DECLARED_METADATA_ONLY",
++        "capture_checks": capture_checks,
++        "version_checks": version_checks,
++        "capability_metadata_consistent": capability_check,
++        "historical_freeze_matches": freeze_check,
++        "historical_cases": case_checks,
++        "new_fixture_runs": 0, "new_model_calls": 0, "new_target_calls": 0,
++        "historical_result_is_target_pentest": False,
++        "independent_review_of_this_readback": "NOT_PERFORMED",
++    }
++    result["passed_readback"] = (all(r["verified"] for r in capture_checks)
++                                 and all(version_checks.values()) and capability_check
++                                 and freeze_check and all(r["recorded_evidence_matches"]
++                                                          for r in case_checks))
++    result["status"] = "VALID_RECORDED_EVIDENCE" if result["passed_readback"] else "RECORDED_EVIDENCE_MISMATCH"
++    (OUT / "verification.json").write_text(
++        json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
++    print(json.dumps({"status": result["status"], "passed_readback": result["passed_readback"],
++                      "captures": len(capture_checks), "historical_cases": len(case_checks),
++                      "new_workload_runs": 0}))
++    return 0 if result["passed_readback"] else 1
+ 
+-installed = OUT / "installed-skill-observed.md"
+-main_skill = (upstream / "main-skill.txt").read_text(encoding="utf-8")
+-release_skill = (upstream / "release-skill.txt").read_text(encoding="utf-8")
+-version_checks = {
+-    "installed_skill_42": 'version: "42"' in installed.read_text(encoding="utf-8"),
+-    "main_skill_45": 'version: "45"' in main_skill,
+-    "release_skill_42": 'version: "42"' in release_skill,
+-    "npm_6_7_0": load(upstream / "npm-latest.json")["version"] == "6.7.0",
+-    "release_6_7_0": load(upstream / "github-release.json")["tag_name"] == "rea-agents-6.7.0",
+-}
+ 
+-capability = load(OUT / "capability-observed.json")
+-tools = capability["tools"]
+-capability_check = (len(tools) == 207 and len(set(tools)) == len(tools)
+-                    and len(capability["selected"]) == 9 and all(
+-                        row["advertised"] == (row["name"] in tools)
+-                        for row in capability["selected"]))
++def main():
++    try:
++        return verify()
++    except (OSError, ValueError, KeyError, TypeError) as exc:
++        result = {"status": "INVALID_RECORDED_EVIDENCE", "passed_readback": False,
++                  "error_type": type(exc).__name__, "error": str(exc),
++                  "scope": "RECORDED_EVIDENCE_READBACK_ONLY", "new_fixture_runs": 0,
++                  "new_model_calls": 0, "new_target_calls": 0}
++        try:
++            (OUT / "verification.json").write_text(
++                json.dumps(result, indent=2) + "\n", encoding="utf-8", newline="\n")
++        except OSError as write_error:
++            result["receipt_write_error"] = type(write_error).__name__
++        print(json.dumps(result, ensure_ascii=True))
++        return 2
+ 
+-old = ROOT / "evidence/orchestrator_meetings/20261021_logic_audit_01"
+-plan_path = old / "candidate/test_plan.json"
+-code_path = old / "candidate/verify_repository_v2.py"
+-plan = load(plan_path)
+-attempt = old / "execution/attempt_01"
+-freeze = load(attempt / "freeze.json")
+-freeze_check = (digest(plan_path) == freeze["pins"]["plan"]
+-                and digest(code_path) == freeze["pins"]["candidate"])
+-case_checks = []
+-for case in plan["cases"]:
+-    directory = attempt / case["id"]
+-    receipt = load(directory / "receipt.json")
+-    stdout = directory / "stdout.bin"
+-    stderr = directory / "stderr.bin"
+-    observed = json.loads(stdout.read_bytes())
+-    matches = (receipt["expected"] == case and receipt["exit"] == case["exit"]
+-               and receipt["observed"] == observed
+-               and receipt["stdout_sha256"] == digest(stdout)
+-               and receipt["stderr_sha256"] == digest(stderr)
+-               and stderr.read_bytes() == b"" and not receipt["timed_out"]
+-               and receipt["candidate_sha256"] == freeze["pins"]["candidate"]
+-               and receipt["plan_sha256"] == freeze["pins"]["plan"]
+-               and observed.get("workloads_rerun") == 0)
+-    for key, value in case.items():
+-        if key not in ("id", "mutation", "exit"):
+-            matches = matches and observed.get(key) == value
+-    case_checks.append({"id": case["id"], "recorded_evidence_matches": bool(matches)})
+ 
+-result = {
+-    "scope": "READBACK_OF_RECORDED_BYTES_AND_DECLARED_METADATA_ONLY",
+-    "capture_checks": capture_checks,
+-    "version_checks": version_checks,
+-    "capability_metadata_consistent": capability_check,
+-    "historical_freeze_matches": freeze_check,
+-    "historical_cases": case_checks,
+-    "new_fixture_runs": 0, "new_model_calls": 0, "new_target_calls": 0,
+-    "historical_result_is_target_pentest": False,
+-    "independent_review_of_this_readback": "NOT_PERFORMED",
+-}
+-result["passed_readback"] = (all(r["verified"] for r in capture_checks)
+-                             and all(version_checks.values()) and capability_check
+-                             and freeze_check and all(r["recorded_evidence_matches"]
+-                                                      for r in case_checks))
+-(OUT / "verification.json").write_text(
+-    json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
+-print(json.dumps({"passed_readback": result["passed_readback"],
+-                  "captures": len(capture_checks), "historical_cases": len(case_checks),
+-                  "new_workload_runs": 0}))
+-raise SystemExit(0 if result["passed_readback"] else 1)
++if __name__ == "__main__":
++    raise SystemExit(main())

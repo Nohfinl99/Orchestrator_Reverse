@@ -21,6 +21,7 @@
 ## Điều phối theo evidence và checkpoint — 24/10/2026
 
 - Đọc [input-support checkpoints](docs/proposals/input-support-gates/README.md) và [status theo tiêu chí](docs/proposals/input-support-gates/status.json) khi task liên quan input/model rejection. Đây là checkpoint đề xuất riêng, không thay G1–G4.
+- Sau vòng sửa 24/10, dùng [status revision 3](docs/proposals/input-support-gates/status-v3.json) và [repair report](docs/proposals/input-support-gates/repair-2026-10-24.md) làm view mới nhất trong nhánh này; status v1/v2 giữ lịch sử.42/42 component cases không đóng checkpoint hoặc runtime gates; local candidate revision_2 chưa tích hợp caller.
 - Phát biểu người dùng có thể là objective, decision hoặc claim; không mặc định claim là fact. Đối chiếu ngữ cảnh, nguồn và phản chứng; giữ UNKNOWN/CONFLICT khi thiếu evidence.
 - Nạp nguồn/knowledge tham khảo trong scope được giao; phân biệt đọc context với training, provider upload và runtime consumer ACK. Model/provider thực chọn theo capability và độ khó tại thời điểm run, ghi exact profile/data/budget trước attempt.
 - Mục tiêu chưa rõ thì hỏi tối đa 2–3 câu trọng yếu; có thể chuẩn bị phần độc lập trong lúc chờ. Giữ original input, scope và thuật ngữ có nguồn; proposal diễn đạt lại cần diff và kiểm giữ nghĩa.

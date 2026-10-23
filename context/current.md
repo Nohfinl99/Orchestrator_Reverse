@@ -51,3 +51,7 @@ Người dùng chọn chuẩn bị/verify packet offline và giao chọn model t
 ## Bounded pentest bốn checkpoint — 24/10/2026
 
 [Biên bản có execution](../docs/proposals/input-support-gates/pentest-2026-10-24.md): hai attempt có reviewer/executor riêng, final23/28case match; năm prompt-composition paths crash vì ROLE_SCOPE chưa import. [Status v2](../docs/proposals/input-support-gates/status-v2.json) vẫn50/50/0/0 criterion coverage; chưa closure hoặc model/REA runtime run.
+
+## Sửa và kiểm lại candidate — 24/10/2026
+
+[Biên bản sửa](../docs/proposals/input-support-gates/repair-2026-10-24.md) và [status v3](../docs/proposals/input-support-gates/status-v3.json): revision 2 sửa import, recompute eligibility/owner và structured evidence errors; suite mới42/42 có R4a/executor/R4b riêng. [Diff code](../docs/proposals/input-support-gates/patches/README.md) để review; bản gốc và FAIL vẫn giữ. Criterion coverage50/50/0/0; chưa caller integration, authentic ACK/authority hoặc model/target benchmark.

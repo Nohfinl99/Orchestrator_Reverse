@@ -54,3 +54,7 @@ Trước resume: kiểm nguồn có drift, context/IDB revisions và các consum
 ## Handoff sau bounded pentest
 
 Xem [report](../docs/proposals/input-support-gates/pentest-2026-10-24.md) và [status v2](../docs/proposals/input-support-gates/status-v2.json). Ưu tiên candidate revision sửa missing import ROLE_SCOPE rồi review/retest trước forged-decision probes. Giữ runner/oracle/freeze/attempt histories; không thêm attempt dưới acceptance cũ.
+
+## Handoff sau sửa candidate
+
+Ưu tiên sửa ở đoạn trước đã được thực hiện trong [revision mới và biên bản](../docs/proposals/input-support-gates/repair-2026-10-24.md):42/42 bounded case match, review trước/sau độc lập theo session. [Status v3](../docs/proposals/input-support-gates/status-v3.json) kế thừa50/50/0/0 criteria. Tiếp tục từ local `src/candidates/revision_2/`, giữ gốc freeze nguyên byte; public có hai patch reviewable. Next là packet tích hợp một caller đúng dependency, chưa dispatch hoặc bật W4; authentic source/authority/knowledge ACK vẫn thiếu. Automation 10h không được tạo trong phiên này.
