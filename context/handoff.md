@@ -17,6 +17,10 @@ Bổ sung lượt knowledge 21/10/2026: đọc [knowledge index](../docs/knowled
 
 ## Mẫu ghi cuối phiên
 
+Bàn giao riêng nhánh office 3D ngày 22/10/2026: [Muse takeover](../docs/onboarding/muse-takeover-2026-10-22.md) và [manifest exact inputs](../metadata/muse-knowledge-transfer-2026-10-22.json). Dùng trạng thái candidate/review được dẫn ở đó; các snapshot IA phía trên giữ mốc lịch sử. Clone public không chứa workspace cha.
+
+Sau recheck gate cùng ngày, điểm vào hiện hành là [Muse roadmap guide](../docs/onboarding/muse-roadmap-guide-2026-10-22.md), [gate report](../docs/proposals/agent-office-3d/gate-recheck-2026-10-22.md) và [manifest v2](../metadata/muse-knowledge-transfer-2026-10-22-v2.json). Manifest v1 giữ binding với commit xuất bản `155866c9077315433bd3f0a11021ab874b2b7a93`; không repin nó theo checkout mới.
+
 Ghi record mới trong thư mục công việc được task cho phép; report đã freeze dùng revision mới. Khi được phép công khai một record bàn giao, đặt trong `docs/changes/` theo ngày và chủ đề. Không đặt raw/target/private-data vào đây.
 
 ```text

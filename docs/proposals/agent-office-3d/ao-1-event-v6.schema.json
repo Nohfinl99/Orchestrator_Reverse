@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://orchestrator.local/schemas/agent-office/ao-1-event-v6.schema.json",
+  "title": "AO-1 simulated event envelope candidate v3",
+  "description": "Offline proposal only; not an Orchestrator runtime contract. Unknown event and unsupported schema-version handling is deferred to AO-3 and is not exercised in this AO-1 fixture. Exact same-ID duplicates are idempotent; same-ID events with differing content are quarantined without state mutation.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "scenario_id", "event_id", "seq", "occurred_at", "event_type", "simulation_label", "source_revision", "provenance", "payload"],
+  "properties": {
+    "schema_version": {"const": "ao1.event.v6"},
+    "scenario_id": {"enum": ["AO1-CASE-01", "AO1-CASE-02", "AO1-CASE-03"]},
+    "event_id": {"type": "string", "pattern": "^evt-[0-9]{3}$"},
+    "seq": {"type": "integer", "minimum": 1},
+    "occurred_at": {"type": "string", "format": "date-time"},
+    "event_type": {"enum": ["scenario.seeded", "task.assigned", "task.status_changed", "meeting.proposed", "meeting.invited", "meeting.deferred", "meeting.accepted", "meeting.joined", "meeting.contribution_submitted", "meeting.objection_submitted", "meeting.synthesis_submitted", "meeting.budget_preflight_blocked", "meeting.cancelled", "meeting.closed", "presence.stale", "presence.heartbeat"]},
+    "simulation_label": {"const": "SIMULATED"},
+    "source_revision": {"const": "AGENT_OFFICE_OFFLINE_REPLAY_PACKET_01:6-candidate"},
+    "caused_by": {"type": "string", "pattern": "^evt-[0-9]{3}$"},
+    "provenance": {"type": "object", "additionalProperties": false, "required": ["kind", "locator"], "properties": {"kind": {"const": "synthetic_fixture"}, "locator": {"type": "string", "minLength": 1}}},
+    "payload": {"type": "object", "minProperties": 1}
+  },
+  "$defs": {
+    "agentId": {"enum": ["Prompt-Master", "Triage-Sentinel", "Decomp-Analyst", "Crypto-Logic-Specialist", "Evidence-Synthesizer", "Product-Evolution-Architect"]}
+  },
+  "allOf": [
+    {"if": {"properties": {"event_type": {"const": "scenario.seeded"}}, "required": ["event_type"]}, "then": {"properties": {"payload": {"type": "object", "required": ["roster", "simulation_note"], "properties": {"roster": {"type": "array", "minItems": 6, "maxItems": 6, "uniqueItems": true, "items": {"$ref": "#/$defs/agentId"}}, "simulation_note": {"type": "string"}}}}}},
+    {"if": {"properties": {"event_type": {"const": "task.assigned"}}, "required": ["event_type"]}, "then": {"properties": {"payload": {"type": "object", "required": ["task_id", "agent_id", "work_status", "location"], "properties": {"task_id": {"type": "string"}, "agent_id": {"$ref": "#/$defs/agentId"}, "work_status": {"const": "assigned"}, "location": {"enum": ["desk", "meeting_room", "waiting_area", "corridor", "offscreen"]}}}}}},
+    {"if": {"properties": {"event_type": {"const": "task.status_changed"}}, "required": ["event_type"]}, "then": {"properties": {"payload": {"type": "object", "required": ["task_id", "agent_id", "work_status"], "properties": {"task_id": {"type": "string"}, "agent_id": {"$ref": "#/$defs/agentId"}, "work_status": {"enum": ["working", "waiting", "blocked", "completed", "failed", "cancelled"]}}}}}},
+    {"if": {"properties": {"event_type": {"enum": ["meeting.proposed", "meeting.invited", "meeting.deferred", "meeting.accepted", "meeting.joined", "meeting.cancelled", "meeting.closed"]}}, "required": ["event_type"]}, "then": {"properties": {"payload": {"type": "object", "required": ["meeting_id"], "properties": {"meeting_id": {"type": "string"}, "agent_id": {"$ref": "#/$defs/agentId"}, "status": {"type": "string"}, "reason": {"type": "string"}, "last_turn": {"type": "integer", "minimum": 0}, "turn": {"type": "integer", "minimum": 0}, "turn_limit": {"type": "integer", "minimum": 1}, "stop_reason": {"enum": ["turn_limit", "budget_limit", "cancelled"]}, "synthetic_budget_used": {"type": "integer", "minimum": 0}, "synthetic_budget_estimate": {"type": "integer", "minimum": 0}, "synthetic_budget_limit": {"type": "integer", "minimum": 1}, "approval": {"type": "boolean"}}}}}},
+    {"if": {"properties": {"event_type": {"const": "meeting.contribution_submitted"}}, "required": ["event_type"]}, "then": {"properties": {"payload": {"type": "object", "required": ["meeting_id", "agent_id", "contribution_id", "turn", "position", "claims", "questions"], "properties": {"meeting_id": {"type": "string"}, "agent_id": {"$ref": "#/$defs/agentId"}, "contribution_id": {"type": "string"}, "turn": {"type": "integer", "minimum": 1}, "position": {"type": "string"}, "claims": {"type": "array", "items": {"type": "object", "required": ["claim_id", "text", "evidence_refs"], "properties": {"claim_id": {"type": "string"}, "text": {"type": "string"}, "evidence_refs": {"type": "array", "items": {"type": "string"}}}}}, "questions": {"type": "array", "items": {"type": "string"}}}}}}},
+    {"if": {"properties": {"event_type": {"const": "meeting.objection_submitted"}}, "required": ["event_type"]}, "then": {"properties": {"payload": {"type": "object", "required": ["meeting_id", "agent_id", "objection_id", "claim_id", "text", "evidence_refs"], "properties": {"meeting_id": {"type": "string"}, "agent_id": {"$ref": "#/$defs/agentId"}, "objection_id": {"type": "string"}, "claim_id": {"type": "string"}, "text": {"type": "string"}, "evidence_refs": {"type": "array", "items": {"type": "string"}}}}}}},
+    {"if": {"properties": {"event_type": {"const": "meeting.synthesis_submitted"}}, "required": ["event_type"]}, "then": {"properties": {"payload": {"type": "object", "required": ["meeting_id", "agreements", "dissent", "unsupported_claims", "open_questions", "decision_candidate", "approval"], "properties": {"meeting_id": {"type": "string"}, "agreements": {"type": "array", "items": {"type": "string"}}, "dissent": {"type": "array", "items": {"type": "string"}}, "unsupported_claims": {"type": "array", "items": {"type": "string"}}, "open_questions": {"type": "array", "items": {"type": "string"}}, "decision_candidate": {"type": "string"}, "approval": {"const": false}}}}}},
+    {"if": {"properties": {"event_type": {"enum": ["presence.stale", "presence.heartbeat"]}}, "required": ["event_type"]}, "then": {"properties": {"payload": {"type": "object", "required": ["agent_id", "presence"], "properties": {"agent_id": {"$ref": "#/$defs/agentId"}, "presence": {"enum": ["live", "stale"]}}}}}},
+    {"if":{"properties":{"event_type":{"enum":["meeting.invited","meeting.deferred","meeting.accepted","meeting.joined"]}},"required":["event_type"]},"then":{"properties":{"payload":{"required":["meeting_id","agent_id"],"properties":{"agent_id":{"$ref":"#/$defs/agentId"}}}}}},
+    {"if":{"properties":{"event_type":{"const":"meeting.budget_preflight_blocked"}},"required":["event_type"]},"then":{"properties":{"payload":{"type":"object","required":["meeting_id","budget_owner_id","phase","execution_started","synthetic_budget_estimate","synthetic_budget_limit"],"properties":{"meeting_id":{"type":"string"},"budget_owner_id":{"$ref":"#/$defs/agentId"},"phase":{"const":"pre_invocation"},"execution_started":{"const":false},"synthetic_budget_estimate":{"type":"integer","minimum":0},"synthetic_budget_limit":{"type":"integer","minimum":1}}}}}}
+  ]
+}

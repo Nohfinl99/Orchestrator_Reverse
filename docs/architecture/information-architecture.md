@@ -13,6 +13,7 @@ IA tổ chức cách tìm hiểu và tiếp tục project; các nguyên lý, pha
 | `docs/planning/` | Phase/dependency và công việc nào? | Tách W, R và gate; đề xuất khác dispatch |
 | `docs/reference/` | Nguồn nào chính, còn thiếu gì? | Provenance, availability, validation và câu hỏi mở |
 | `docs/guides/` | Hướng dẫn chuyên đề nào? | Chỉ mở khi task cần; nội dung phụ thuộc thời gian phải kiểm lại lúc dùng |
+| `docs/proposals/` | Proposal sản phẩm/kiến trúc nào đang được xem xét? | Ghi status proposal, source/revision, giới hạn và acceptance đề xuất; không là runtime contract hoặc dispatch. |
 | `docs/changes/` | Lượt thay đổi nào đã làm gì? | Record theo revision, không thay raw/frozen history |
 | `prompt_stacks/` | Hợp đồng instruction nào? | Giữ nguyên mười stack/protocol, tên và bytes |
 | `metadata/` | File nào có digest và mapping? | Navigation/relocation/custody, không chứng minh semantic support |

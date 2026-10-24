@@ -11,6 +11,7 @@ Chỉ thị hợp lệ hiện hành quyết định task/scope. Với claim kỹ
 | Gate tại thời điểm đóng gói | [Validation status](validation-status.md) | Snapshot lịch sử, không xác nhận runtime hiện tại |
 | W4 I01–I05 readiness | [W4 gap register](../planning/w4-readiness-plan.md) | Đối chiếu run44 và template nguồn; run I05 chỉ là non-target preparation |
 | Phương pháp điều phối tham khảo từ bên ngoài | [Knowledge index](../knowledge/README.md), [source catalog pin commit](../knowledge/prompt-orchestration/sources.json) | 12 candidate reference; source guidance/static observation, chưa admitted KB/consumer ACK; S1 rights UNKNOWN |
+| Văn phòng 3D / họp agent | [Profile và source review](../proposals/agent-office-3d/README.md) | Repo/commit và file đã đọc có liệt kê; static review có chọn lọc, proposal offline-only, không chứng minh tích hợp hoặc runtime |
 | Instruction từng phase | [Prompt stack index](../../prompt_stacks/README.md) | Mười overlay/protocol nguyên bản; chưa nối loader |
 | Hiện đang làm gì / tiếp theo | [Context](../../context/current.md), [work queue](../planning/work-queue.md) | View IA kế thừa nguồn, không là accepted task packet |
 | Tiếp nhận và tìm tài liệu | [Navigation manifest](../../metadata/navigation.json) | Map canonical theo task; không chứng nhận các section đã được đọc |

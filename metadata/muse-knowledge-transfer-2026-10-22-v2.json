@@ -1,0 +1,332 @@
+{
+  "format": "orchestrator.muse-document-transfer.v1",
+  "status": "DOCUMENT_HANDOFF_CANDIDATE_NOT_RUNTIME_KB_ADMISSION",
+  "date": "2026-10-22",
+  "repository": "https://github.com/Nohfinl99/Orchestrator_Reverse",
+  "branch": "codex/agent-office-3d-muse-handoff",
+  "base_commit": "155866c9077315433bd3f0a11021ab874b2b7a93",
+  "publication_commit_binding": "Receiver records actual publication HEAD and SHA256 of this v2 manifest; preserved v1 has its own earlier publication binding.",
+  "objective": "Receive current gate recheck, reuse office artifacts, and prepare exact AO-1 decision plus AO-2/R4a readiness in roadmap order without execution.",
+  "producer_responsibility": "Prompt-Master documentation handoff; Evidence-Synthesizer source/review responsibility",
+  "receiver": "Muse receiving development session; no new Orchestrator identity",
+  "consumer_ack": "NOT_RECEIVED",
+  "kb_admission": "NOT_ADMITTED",
+  "target_pair": null,
+  "target_evidence_status": "NOT_RUN",
+  "authority": "User authorized publishing the public package to a GitHub branch and preparing Muse takeover instructions; this manifest grants no execution authority.",
+  "read_scope": "selected_inputs is a retrieval plan, not proof the receiver has read them; evaluation references are separate and not active KB.",
+  "selected_cards": [
+    "K01",
+    "K02",
+    "K03",
+    "K04",
+    "K06",
+    "K07",
+    "K10",
+    "K11"
+  ],
+  "selected_inputs": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 3095,
+      "sha256": "e5a1ef8a1e32da578590317a50f5545b5d80ed8be05bb0242369403bb4cc8666",
+      "revision_binding": "exact bytes at publication checkout; preserve named candidate revisions",
+      "purpose": "Package instructions and applicable boundaries"
+    },
+    {
+      "path": "CONTEXT_VI.md",
+      "bytes": 3074,
+      "sha256": "b4ebee74d4d491c4c8fe60fe1614d73603bda57b7704a919883c967b49d0383f",
+      "revision_binding": "exact bytes at publication checkout; preserve named candidate revisions",
+      "purpose": "Project principles and REA-IDA ownership"
+    },
+    {
+      "path": "context/current.md",
+      "bytes": 3171,
+      "sha256": "bbf242f4eaad8c9178d1fa21dfd0412a4c875933e3279cee9430f7b42560a80e",
+      "revision_binding": "exact bytes at publication checkout; preserve named candidate revisions",
+      "purpose": "Inherited 2026-10-21 project/gate snapshot"
+    },
+    {
+      "path": "context/handoff.md",
+      "bytes": 4169,
+      "sha256": "03df63edb9fb9d60ef10a7afd829d8eec9fba398798659e95fbe0bfe1b4dbd91",
+      "revision_binding": "exact bytes at publication checkout; preserve named candidate revisions",
+      "purpose": "Session handoff procedure and new entry pointer"
+    },
+    {
+      "path": "docs/architecture/agents.md",
+      "bytes": 2161,
+      "sha256": "f9ea7b6ec79a76a428165d55c7cc1b1653181aff198dbcc59a860bb36f1e5463",
+      "revision_binding": "exact bytes at publication checkout; preserve named candidate revisions",
+      "purpose": "Six identities; Muse is a receiving session"
+    },
+    {
+      "path": "docs/planning/phase-map.md",
+      "bytes": 5493,
+      "sha256": "7764356a0f401344ac0c6fd3b7d0100bbbe683921250b0c5830311f6fa482ae1",
+      "revision_binding": "exact bytes at publication checkout; preserve named candidate revisions",
+      "purpose": "Distinct R/W/G phase systems"
+    },
+    {
+      "path": "docs/planning/work-queue.md",
+      "bytes": 4328,
+      "sha256": "4b003b1494960b2b918be4ee279128033698b4b79bd2bec884806d1b1efc3b44",
+      "revision_binding": "exact bytes at publication checkout; preserve named candidate revisions",
+      "purpose": "Dependencies and office candidate state"
+    },
+    {
+      "path": "docs/reference/source-map.md",
+      "bytes": 6098,
+      "sha256": "d31cd4b8d0debbd9f38fc76f43bbf118d59df6517c686eddc9317ec678e0ba77",
+      "revision_binding": "exact bytes at publication checkout; preserve named candidate revisions",
+      "purpose": "Source authority and local-only gaps"
+    },
+    {
+      "path": "docs/reference/open-questions.md",
+      "bytes": 6743,
+      "sha256": "61c31b1e5c5d368c23dd5a29fbe25ac10d9a587bd4d24d06402e0b4877ed8947",
+      "revision_binding": "exact bytes at publication checkout; preserve named candidate revisions",
+      "purpose": "Unresolved issues including AO-HANDOFF-01"
+    },
+    {
+      "path": "docs/onboarding/muse-takeover-2026-10-22.md",
+      "bytes": 12251,
+      "sha256": "e4540087ff180f3ad75aaad4241633119dda84e50fefc23662eed0e7d4c4c87e",
+      "revision_binding": "exact bytes at publication checkout; preserve named candidate revisions",
+      "purpose": "Historical v1 handoff and detailed receipt/WHAT-WHY-HOW; current v2 entry supplies stronger pre-AO2 condition."
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/README.md",
+      "bytes": 7780,
+      "sha256": "755fb48afc84effeb18d89c71238f85f56d4bbe31170c065e138228ef19fe353",
+      "revision_binding": "exact bytes at publication checkout; preserve named candidate revisions",
+      "purpose": "Product proposal index and chronology"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/roadmap.md",
+      "bytes": 10390,
+      "sha256": "d77360a4e86b6c2b5d433ee8a99904f83e89789987c86c0a0604824ee74df9d4",
+      "revision_binding": "exact bytes at publication checkout; preserve named candidate revisions",
+      "purpose": "AO phases and dependencies"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/preflight-knowledge-and-benchmark.md",
+      "bytes": 13316,
+      "sha256": "86cb75bac120d68c1879271baec25e8390df8df2912a6a369649ed51156efc6d",
+      "revision_binding": "exact bytes at publication checkout; preserve named candidate revisions",
+      "purpose": "R4a/R4b ordering and evaluation boundaries"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/visual-review-2026-10-22-01.md",
+      "bytes": 5401,
+      "sha256": "2de71abc996897175a53cef831a489edd9714580c4e6a99e860d310f195110bb",
+      "revision_binding": "exact bytes at publication checkout; preserve named candidate revisions",
+      "purpose": "Scene direction and accessibility"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/ai-judges-review-2026-10-22-01.md",
+      "bytes": 7799,
+      "sha256": "e2206c0c82275fcb27354f3f2b1ace17e386130cc8c216d233e981355c5cfd93",
+      "revision_binding": "exact bytes at publication checkout; preserve named candidate revisions",
+      "purpose": "Advisory stakeholder review"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/ao-1-offline-replay-packet-06.md",
+      "bytes": 10792,
+      "sha256": "bab94f99d1170793dcadb625a2a537cc9e0ddef05779a7336d37c9d7e0848d92",
+      "revision_binding": "exact bytes at publication checkout; preserve named candidate revisions",
+      "purpose": "Exact 6-candidate contract; contradiction recorded separately"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/ao-1-review-2026-10-22-06.md",
+      "bytes": 1803,
+      "sha256": "1a1dd8455be02885d74f56a21ce2a4a7c568ea4c61409653dee1f9b1979283d0",
+      "revision_binding": "exact bytes at publication checkout; preserve named candidate revisions",
+      "purpose": "Exact v6 advisory review; not acceptance"
+    },
+    {
+      "path": "prompt_stacks/protocols/knowledge_protocol.md",
+      "bytes": 3321,
+      "sha256": "a0c923dd64283b4fa437f16bfc23f502f1b25abf74c1ede5f1db25ac9dd84158",
+      "revision_binding": "exact bytes at publication checkout; preserve named candidate revisions",
+      "purpose": "Knowledge source/rights/context/ACK requirements"
+    },
+    {
+      "path": "prompt_stacks/protocols/handoff_protocol.md",
+      "bytes": 3259,
+      "sha256": "7877dcc078adefdff8e2ca34342937576c7e8b6a6ba30cf2e0bfdbb01607e032",
+      "revision_binding": "exact bytes at publication checkout; preserve named candidate revisions",
+      "purpose": "Candidate/review/handoff constraints"
+    },
+    {
+      "path": "docs/knowledge/README.md",
+      "bytes": 2124,
+      "sha256": "ec918a562fba58b175b12c3f4bc6c07ceae4e0145e7ae0dfba3a1d6a10deaee5",
+      "revision_binding": "exact bytes at publication checkout; preserve named candidate revisions",
+      "purpose": "Candidate reference status"
+    },
+    {
+      "path": "docs/knowledge/prompt-orchestration/retrieval-guide.md",
+      "bytes": 3634,
+      "sha256": "921c9b5305dd457a0abf1270775e47fb2d0ddc1723e99e466192bf950bccd624",
+      "revision_binding": "exact bytes at publication checkout; preserve named candidate revisions",
+      "purpose": "Selected/rejected retrieval worksheet"
+    },
+    {
+      "path": "docs/knowledge/prompt-orchestration/application-map.md",
+      "bytes": 6598,
+      "sha256": "c51f22337191b4df759741b573739e6de2cc0a2c3f8db362b7e60a46db8b7b4f",
+      "revision_binding": "exact bytes at publication checkout; preserve named candidate revisions",
+      "purpose": "Applicability, rejected claims and rights limitations"
+    },
+    {
+      "path": "docs/knowledge/prompt-orchestration/knowledge-cards.md",
+      "bytes": 16087,
+      "sha256": "f62c0f07b5d3eeba3a3131c6063393820027244f5b97a32a35af123930f6d782",
+      "revision_binding": "exact bytes at publication checkout; preserve named candidate revisions",
+      "purpose": "Read K01/K02 for task/context, K03/K11 for dependency/authority, K04/K06 for handoff, K07/K10 for evidence/oracle as needed."
+    },
+    {
+      "path": "docs/knowledge/prompt-orchestration/sources.json",
+      "bytes": 16268,
+      "sha256": "e4215f3314a6afb3865aef672c8f6effbb43e11460588958ddf2a8387ac7ab1f",
+      "revision_binding": "exact bytes at publication checkout; preserve named candidate revisions",
+      "purpose": "Exact external source commit/locator/rights catalog"
+    },
+    {
+      "path": "docs/knowledge/prompt-orchestration/third-party-notices.md",
+      "bytes": 2916,
+      "sha256": "4f1aff30125ae47be502d610e7f8348a63daeefafebc7f28c2f0e1479c20adee",
+      "revision_binding": "exact bytes at publication checkout; preserve named candidate revisions",
+      "purpose": "Source license and attribution limitations"
+    },
+    {
+      "path": "docs/onboarding/muse-roadmap-guide-2026-10-22.md",
+      "revision_binding": "exact bytes at v2 publication checkout",
+      "purpose": "Current entry: clear roadmap steps, available assets, scoped knowledge/parallel work and first output",
+      "bytes": 11344,
+      "sha256": "4aacfa2e89ed21f5f2266cf9f716300744947a9f9337bfee1ef11181a396d1c9"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/gate-recheck-2026-10-22.md",
+      "revision_binding": "exact bytes at v2 publication checkout",
+      "purpose": "Source-grounded recheck, no runtime/gate promotion; AO-HANDOFF-01/02/03",
+      "bytes": 5831,
+      "sha256": "0fc5c2c2c848609224400be5bd60a9e6bee25dfbd5f6c6d1d84742b8ec31f0d0"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/context-handoff-implementation-2026-10-22.md",
+      "revision_binding": "exact bytes at v2 publication checkout",
+      "purpose": "Original stronger prerequisite: applicable R4a freeze before AO-2",
+      "bytes": 6558,
+      "sha256": "71ecea8e9cca0eb67127f6bffd6339b2f1304d716605c582df29e6d51ee3b846"
+    },
+    {
+      "path": "prompt_stacks/protocols/evaluation_protocol.md",
+      "revision_binding": "exact bytes at v2 publication checkout",
+      "purpose": "R4a before applicable attempt; independent R4b after raw",
+      "bytes": 3322,
+      "sha256": "8a5232dc901d8f47c339cae074eafa378143ca77a8c468ef0bf3d46a5cd2fd00"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/execution-runbook.md",
+      "revision_binding": "exact bytes at v2 publication checkout",
+      "purpose": "AO DAG and responsibility mapping",
+      "bytes": 4087,
+      "sha256": "d19fbf9ffeb987734bfc7145ea7ad0e890fdc2a511e3ebc3dd357032152b5e44"
+    }
+  ],
+  "evaluation_reference_only": [
+    {
+      "path": "docs/proposals/agent-office-3d/ao-1-event-v6.schema.json",
+      "bytes": 7354,
+      "sha256": "bbff2735db48e79ad969e29c5d040ae1a02cd341453bd996014a1dd11738fcea",
+      "revision_binding": "exact bytes at publication checkout; preserve named candidate revisions",
+      "purpose": "AO-1 schema candidate; read for scoped implementation/evaluation"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/ao-1-fixture-v6.jsonl",
+      "bytes": 16417,
+      "sha256": "03c4c66e7d1eb9f7b10af19987cacb5f88799a001386bd83d13ec2680a50068c",
+      "revision_binding": "exact bytes at publication checkout; preserve named candidate revisions",
+      "purpose": "Synthetic development fixture; hash only during intake, no execution"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/ao-1-test-matrix-v6.md",
+      "bytes": 10868,
+      "sha256": "37013b825b1080d8c206255a372dbcb7cd088a82142f354e0e3fd4ab892ddde8",
+      "revision_binding": "exact bytes at publication checkout; preserve named candidate revisions",
+      "purpose": "Acceptance/oracle reference, not active runtime KB"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/ao-pentest-case-01.md",
+      "bytes": 6520,
+      "sha256": "d60fd906dfc9bdb907b7720d13d62d0167bce9a9ce6a613dec3e5cd5c7f520b0",
+      "revision_binding": "exact bytes at publication checkout; preserve named candidate revisions",
+      "purpose": "AO-3 case design, baseline, mapping and oracle"
+    },
+    {
+      "path": "docs/proposals/agent-office-3d/ao-pentest-case-01.jsonl",
+      "bytes": 4073,
+      "sha256": "115ea818206e38b873267a1f64c5dc1bbea7dc509c5019f167735c32ed158a7b",
+      "revision_binding": "exact bytes at publication checkout; preserve named candidate revisions",
+      "purpose": "Development attack/control gold; keep out of active KB"
+    }
+  ],
+  "rejected_or_deferred": [
+    {
+      "item": "workspace parent, archive/raw/target/private config",
+      "reason": "Outside authorized public package; local-only evidence stays local."
+    },
+    {
+      "item": "AO-1 candidates 1-5 and review history",
+      "reason": "Preserved in repository; consult for finding history, not default current contract."
+    },
+    {
+      "item": "S1 external prompt templates",
+      "reason": "Rights UNKNOWN; catalog metadata only."
+    },
+    {
+      "item": "K05/K08/K09/K12",
+      "reason": "Deferred for this intake; choose only if retry, prompt-versioning, discovery or module-loading task actually needs them."
+    },
+    {
+      "item": "benchmark gold/heldout/failure labels as active knowledge",
+      "reason": "Evaluation integrity; current public development cases provide no hidden-holdout claim."
+    },
+    {
+      "item": "runtime, pilot, training, REA/IDA target work",
+      "reason": "Separate task prerequisites; inherited project gates do not permit these through document handoff."
+    }
+  ],
+  "rights_and_limitations": "Project LICENSE_STATUS and source notices apply. Hashes establish byte identity only; source catalog admission, consumer validation, and rights remain separate.",
+  "review_scope": "Separate supporting-agent advisory review; not human/cross-model independence or R4b.",
+  "execution_status": "NOT_RUN",
+  "gates": {
+    "P1K_B4": "FAIL",
+    "G1": "INCOMPLETE",
+    "G2": "INCOMPLETE",
+    "G3": "NOT_RUN",
+    "G4": "NOT_RUN",
+    "W4_runtime": "NOT_RUN_BLOCKED",
+    "v3": "OFF"
+  },
+  "revision": 2,
+  "entrypoint": "docs/onboarding/muse-roadmap-guide-2026-10-22.md",
+  "supersedes": {
+    "path": "metadata/muse-knowledge-transfer-2026-10-22.json",
+    "sha256": "fbbc5f91d553f3bc07155a60e9e545b51e65a400eeee4275f1dc077a72ec712a",
+    "valid_at_commit": "155866c9077315433bd3f0a11021ab874b2b7a93",
+    "policy": "Keep v1 bytes and pins; verify its entries only at its publication revision, not at newer HEAD."
+  },
+  "gate_recheck": {
+    "report": "docs/proposals/agent-office-3d/gate-recheck-2026-10-22.md",
+    "scope": "DOCUMENT_SOURCE_RECONCILIATION_NOT_RUNTIME_REVALIDATION",
+    "ao1": "ADVISORY_REVIEWED_NOT_ACCEPTED_NOT_RUN",
+    "ao2": "ENTRY_PREREQUISITES_INCOMPLETE",
+    "r4a": "NO_ACCEPTED_FROZEN_OFFICE_PACKET_IN_REVIEWED_SOURCES",
+    "next_task": "AO1 exact decision proposal and AO2/R4a readiness planning",
+    "pre_ao2_condition": "Applicable R4a freeze required by original handoff; scope/applicability needs coordinator decision, no fabricated nonexistent app-code digest."
+  }
+}
