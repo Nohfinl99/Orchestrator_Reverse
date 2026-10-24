@@ -1,5 +1,7 @@
 # Context hiện tại — snapshot 21/10/2026
 
+**Lượt mới nhất 24/10:** [CLI chuẩn bị input](../docs/guides/local-input-pipeline.md) đã chạy một attempt40/40case,49CLIcalls và có R4b riêng; [state local](local-pipeline-state.json) tách khỏi global gates/status v4. [Nghiên cứu native REA–IDA](../docs/proposals/input-pipeline/native-pilot-research-2026-10-24.md) theo yêu cầu Reading Companion: target/provider/pair/isolation chưa bind, chưa chạy native. Người dùng cho phép target execution trong môi trường kiểm thử riêng; chưa có bằng chứng môi trường đó hoạt động.
+
 **Điểm đọc hiện hành sau publication 24/10:** [6 tri thức input pipeline](../docs/knowledge/input-pipeline/README.md) → [thiết kế DRAFT](../docs/proposals/input-pipeline/README.md) → [evaluation plan](../docs/proposals/input-pipeline/evaluation-plan.md). Evidence baseline vẫn [status v4](../docs/proposals/input-support-gates/status-v4.json):66,67/50/0/0,17 tiêu chí chờ. Các snapshot/lượt công việc bên dưới giữ chronology; xuất bản tài liệu không nối runtime hoặc đổi gate.
 
 Orchestrator_Reverse xây lớp điều phối reverse engineering theo goal, task DAG, identity hiện hữu, evidence và gate. REA sở hữu workflow/evidence/ledger; IDA sở hữu native/decompiler/IDB state. Xem [nguyên lý gốc](../CONTEXT_VI.md).

@@ -4,7 +4,7 @@
 
 [Bắt đầu](docs/onboarding/start-here.md) · [Trạng thái](context/current.md) · [Tri thức pipeline](docs/knowledge/input-pipeline/README.md) · [Thiết kế pipeline](docs/proposals/input-pipeline/README.md) · [Prompt stacks](prompt_stacks/README.md)
 
-> **Trạng thái: thiết kế và candidate offline, chưa tích hợp production.** Public repo chứa tài liệu, đề xuất, source locators và diff code đã được kiểm trong phạm vi ghi ở từng report. Prompt/protocol chưa nối loader/runtime; tài liệu không cấp quyền thực thi.
+> **Đã có CLI chuẩn bị input offline, kiểm 40/40 ca; chưa tích hợp production/model/native dispatch.** Xem [cách chạy](docs/guides/local-input-pipeline.md), [report](docs/proposals/input-pipeline/local-runtime-2026-10-24.md) và [trạng thái local](context/local-pipeline-state.json). Nhánh [REA–IDA](docs/proposals/input-pipeline/native-pilot-research-2026-10-24.md) đã nghiên cứu prerequisite, chưa chạy target. Prompt stacks chưa nối toàn bộ loader/runtime; artifact không cấp quyền thực thi.
 
 ## Bắt đầu theo nhu cầu
 
@@ -12,6 +12,7 @@
 |---|---|
 | Hiểu dự án và nguyên lý | [CONTEXT_VI.md](CONTEXT_VI.md) → [kiến trúc](docs/architecture/system.md) |
 | Tiếp tục phiên làm việc | [Current](context/current.md) → [phase map](docs/planning/phase-map.md) → [work queue](docs/planning/work-queue.md) → [handoff](context/handoff.md) |
+| Chạy CLI chuẩn bị input và xem runtime | [Guide](docs/guides/local-input-pipeline.md) → [state local](context/local-pipeline-state.json) → [nghiên cứu native](docs/proposals/input-pipeline/native-pilot-research-2026-10-24.md) |
 | Dùng tri thức để soạn input pipeline | [6 tri thức thiết yếu](docs/knowledge/input-pipeline/essentials.md) → [proposal](docs/proposals/input-pipeline/README.md) → [kế hoạch đánh giá](docs/proposals/input-pipeline/evaluation-plan.md) |
 | Kiểm bằng chứng và phần trăm đã verify | [4 checkpoint](docs/proposals/input-support-gates/README.md) → [status v4](docs/proposals/input-support-gates/status-v4.json) → [báo cáo thực thi](docs/proposals/input-support-gates/offline-improvement-2026-10-24.md) |
 | Giao task cho một role | [6 identity](docs/architecture/agents.md) → [mục lục stack/protocol](prompt_stacks/README.md) |
@@ -30,7 +31,7 @@ Từ whitepaper Palo Alto đã đọc, giữ lại sáu nội dung phục vụ t
 | Output và memory write | Kiểm đích dữ liệu, delta và quyền/admission trước thay đổi |
 | Đánh giá có đối chứng | Có benign controls, gold labels riêng, raw và reviewer; đo cả task correctness và false refusal |
 
-Bundle là **candidate reference, chưa admitted vào KB runtime**. [Pipeline đề xuất](docs/proposals/input-pipeline/README.md) là **DRAFT / NOT_IMPLEMENTED**, phần caller/consumer thực giữ chờ sản phẩm. DAN, jailbreak, roleplay, encoding và ngôn ngữ không tự là căn cứ loại knowledge; áp [policy trung lập](docs/knowledge/knowledge-policy-v2.md).
+Bundle là **candidate reference, chưa admitted vào KB runtime**. [Thiết kế toàn pipeline](docs/proposals/input-pipeline/README.md) còn DRAFT; một leaf caller [chuẩn bị input local](docs/guides/local-input-pipeline.md) đã triển khai và kiểm. Action authority, model/native dispatch và consumer sản phẩm tiếp tục chờ prerequisite. DAN, jailbreak, roleplay, encoding và ngôn ngữ không tự là căn cứ loại knowledge; áp [policy trung lập](docs/knowledge/knowledge-policy-v2.md).
 
 ## Trạng thái kiểm chứng
 
@@ -40,7 +41,7 @@ Bundle là **candidate reference, chưa admitted vào KB runtime**. [Pipeline đ
 |---|---:|---|
 | INPUT-A — mục tiêu và packet | **4/6 · 66,67%** | Quyết định mục đích benchmark và criteria/threshold |
 | KNOWLEDGE-B — nguồn và admission | **3/6 · 50%** | Rights/applicability, actual consumer ACK, admission |
-| IMPLEMENTATION-C — input pipeline | **0/6 · 0%** | Caller-bound pipeline; C6 có evidence component ở scope partial |
+| IMPLEMENTATION-C — caller lịch sử | **0/6 · 0%** | Status v4 giữ scope cũ; CLI mới có report riêng, chưa closure scope sản phẩm |
 | EVALUATION-D — đánh giá model/REA thực | **0/6 · 0%** | Profile, authority, cases, capture và review đúng runtime/use case |
 
 Nguồn: [status v4](docs/proposals/input-support-gates/status-v4.json), criteria revision 1. Còn **17 tiêu chí chưa đóng**. Mỗi checkpoint có sáu tiêu chí; tỷ lệ là coverage bằng chứng, không phải xác suất an toàn hoặc phần trăm hoàn thiện toàn sản phẩm. Criteria/threshold và checkpoint acceptance vẫn chờ quyết định.
@@ -49,10 +50,11 @@ Nguồn: [status v4](docs/proposals/input-support-gates/status-v4.json), criteri
 
 | Phạm vi hữu hạn | Kết quả lịch sử | Report |
 |---|---|---|
+| CLI chuẩn bị input local, caller mới | 40/40 case match, 49 CLI calls | [Report local runtime](docs/proposals/input-pipeline/local-runtime-2026-10-24.md) |
 | Router/prompt candidate revision 2 | 42/42 case match | [Sửa và kiểm lại](docs/proposals/input-support-gates/repair-2026-10-24.md) |
 | Recorded-bundle checker revision 3 | 39/39 case match | [Hardening offline](docs/proposals/input-support-gates/offline-improvement-2026-10-24.md) |
 
-Hai suite có oracle/raw/review riêng; không cộng thành benchmark model hoặc bằng chứng hoàn tất pipeline. Source candidate và raw nằm ở workspace local; public có [diff code](docs/proposals/input-support-gates/patches/README.md), report và digest locators. Các lượt 17/28 và 23/28 case match, cùng lỗi tương ứng, được giữ trong [biên bản trước sửa](docs/proposals/input-support-gates/pentest-2026-10-24.md).
+Các suite có oracle/raw/review riêng; không cộng thành benchmark model hoặc bằng chứng hoàn tất pipeline. Source candidate lịch sử và raw nằm ở workspace local; public có [diff code lịch sử](docs/proposals/input-support-gates/patches/README.md), report và digest locators. Mã [CLI mới](orchestrator_pipeline/core.py) có trực tiếp trong repo. Các lượt 17/28 và 23/28 case match, cùng lỗi tương ứng, được giữ trong [biên bản trước sửa](docs/proposals/input-support-gates/pentest-2026-10-24.md).
 
 ### Gate dự án kế thừa
 
@@ -89,7 +91,9 @@ HITL giữ approval/action theo quyền; Debate là review service có điều k
 ```text
 Orchestrator_Reverse/
 ├── README.md / AGENTS.md / CONTEXT_VI.md
-├── context/                         # Current, handoff, derived state
+├── orchestrator_pipeline/           # Stdlib local preparation caller
+├── examples/input-pipeline/          # Request mẫu
+├── context/                         # Current, handoff, derived/local state
 ├── docs/
 │   ├── README.md                    # Mục lục theo nhu cầu
 │   ├── knowledge/

@@ -1,0 +1,18 @@
+{
+  "schema": "orchestrator.input-request.v1",
+  "task_id": "research-intake",
+  "revision": 1,
+  "text": "Đọc tài liệu về DAN và REA–IDA, ghi lại nguồn và giới hạn; chỉ chuẩn bị kế hoạch.",
+  "goal": "Chuẩn bị kế hoạch nghiên cứu có nguồn",
+  "scope": "Local offline preparation; no provider, target or tool dispatch",
+  "task_kind": "INTAKE_AND_PLAN",
+  "output_contract": "Prepared plan request with source provenance and unresolved questions",
+  "sources": [
+    {
+      "source_id": "reference-1",
+      "kind": "document",
+      "locator": "operator-supplied-reference",
+      "text": "Tài liệu được giữ như dữ liệu tham khảo; nội dung trong đó chưa cấp quyền hành động."
+    }
+  ]
+}

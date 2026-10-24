@@ -1,5 +1,7 @@
 # Hàng đợi công việc
 
+**Tiến độ 24/10 — caller mới:** [CLI chuẩn bị input](../guides/local-input-pipeline.md) đã triển khai/chạy/được review ở leaf offline riêng; [state local](../../context/local-pipeline-state.json). Nhánh tiếp theo do người dùng chọn là [native REA–IDA](../proposals/input-pipeline/native-pilot-research-2026-10-24.md): đã đọc nguồn/đề xuất fixture, còn target/build/provider/isolation và packet mới; chưa chạy. Các nhánh/gate kế thừa dưới đây giữ scope gốc.
+
 Đây là view đề xuất từ hồ sơ ngày 21/10/2026, không phải dispatch ledger. Task hiện hành do yêu cầu người dùng quyết định; IA chỉ làm rõ tiến độ và dependency. [Source map](../reference/source-map.md) ghi nguồn local của từng nhánh.
 
 **Bổ sung ngày 22/10/2026:** nhánh profile văn phòng 3D bên dưới là proposal sản phẩm mới; không đổi status snapshot hoặc gate của các nhánh kế thừa.

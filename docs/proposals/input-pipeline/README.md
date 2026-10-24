@@ -1,5 +1,7 @@
 # Đề xuất input pipeline
 
+**Cập nhật implementation 24/10:** [CLI local](../../guides/local-input-pipeline.md) đã triển khai/kiểm trong scope chuẩn bị input; [report](local-runtime-2026-10-24.md) và [state](../../../context/local-pipeline-state.json) là view của caller mới. Các mô tả NOT_IMPLEMENTED dưới đây giữ baseline thiết kế toàn sản phẩm; không dùng để phủ nhận leaf mới hoặc suy rằng phần còn lại đã chạy. [Native pilot](native-pilot-research-2026-10-24.md) mới nghiên cứu, chưa có target run.
+
 **Trạng thái: PROPOSED / NOT_IMPLEMENTED / NOT_APPLIED.** Đây là thiết kế để review, chưa nối caller hoặc sản phẩm. Các bước dưới đây không tạo gate, schema, state hay identity mới và không cấp quyền thực thi.
 
 Đọc [sáu tri thức nền](../../knowledge/input-pipeline/README.md) để xem nguồn và giới hạn; dùng [status v4](../input-support-gates/status-v4.json) làm mốc evidence. IMPLEMENTATION-C và EVALUATION-D vẫn 0/6 criterion hoàn tất; C6 chỉ có bằng chứng component một phần. Suite component 42 ca và suite checker 39 ca là hai phạm vi riêng, không là benchmark model hoặc input pipeline.
