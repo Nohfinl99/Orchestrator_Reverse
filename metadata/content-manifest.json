@@ -29,8 +29,8 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 7455,
-      "sha256": "7a034f7980eb23c8b069831e3fe6e3825d8c3956cb1a4ce1d188f3b1ac29d728"
+      "bytes": 7891,
+      "sha256": "acf0fba679ab34a8ce9ebc497b2f4b41913583418c27afbd38888afc1528cb32"
     },
     {
       "path": "CITATION.cff",
@@ -39,18 +39,23 @@
     },
     {
       "path": "context/current.md",
-      "bytes": 7830,
-      "sha256": "5f969f1c090bd39914126d14576c3905334502fc995b27294517b826b0c07167"
+      "bytes": 8330,
+      "sha256": "26c348909913847b8636de4ff2a182444194ea711599039490b6d1128b88699b"
     },
     {
       "path": "context/handoff.md",
-      "bytes": 9365,
-      "sha256": "1e42bc7885c787ffbc0a0114c58344267e3f18d3e98560ef4c44305734081c43"
+      "bytes": 9993,
+      "sha256": "d5251792d7c02d0bf9a530d5de587d4905f776e65c4277febccbf4941fe211f1"
     },
     {
       "path": "context/local-pipeline-state.json",
       "bytes": 2339,
       "sha256": "409db601e5a2f21ea0c47bb04fd3876d08ab737fc2ee8ad792ac2ea64239f92f"
+    },
+    {
+      "path": "context/native-local-state.json",
+      "bytes": 2799,
+      "sha256": "ef6c2cbca5e3d9703c1f0d24e2adfa5d51f1fd7b45ca87491d7a6950ac546bfc"
     },
     {
       "path": "context/project-state.json",
@@ -168,6 +173,11 @@
       "sha256": "ccb0fb1da07e52ecb41177223962e3ae293c36f124a46fdfdb9baaf8e66010ac"
     },
     {
+      "path": "docs/changes/2026-10-24-native-local-acquisition.md",
+      "bytes": 2662,
+      "sha256": "c8b926c3ad94f8a5d802e8b39cc8ae628bc4c0a07c3949d75d40e0877d7d5a52"
+    },
+    {
       "path": "docs/changes/2026-10-24-pipeline-knowledge-publication.md",
       "bytes": 3851,
       "sha256": "ad113e42bb6ddd4c1624a27fd545097214a2b1d12cf2843425c20c7e1c53a9f4"
@@ -186,6 +196,11 @@
       "path": "docs/guides/local-input-pipeline.md",
       "bytes": 4339,
       "sha256": "dc3925ca33494723346c3f3987d891ed1d25fbedee8ba5caeb85997962e5b100"
+    },
+    {
+      "path": "docs/guides/native-local-pilot.md",
+      "bytes": 3437,
+      "sha256": "06ea74850a3a73a2fc4104ae1f4a9367be62f12d1beae4f7ea0c04860381f0e4"
     },
     {
       "path": "docs/knowledge/input-pipeline/essentials.md",
@@ -279,8 +294,8 @@
     },
     {
       "path": "docs/planning/work-queue.md",
-      "bytes": 7742,
-      "sha256": "d85d921d1865065656a1cf2fd1da7444bd6704dbc2be6d22778885111ed8aecf"
+      "bytes": 8072,
+      "sha256": "b5f03fa5440ad92481223f71418fa6cd07e003ae3ac18ac1b80fbd502cead002"
     },
     {
       "path": "docs/proposals/agent-office-3d/ai-judges-review-2026-10-22-01.md",
@@ -528,6 +543,11 @@
       "sha256": "69973a8946cd561f463b8690ba1144f6bff19a5ab81d89c231c0be694be4c6db"
     },
     {
+      "path": "docs/proposals/input-pipeline/local-native-2026-10-24.md",
+      "bytes": 6566,
+      "sha256": "bce00fee9930ff190eea76e4c1e1a283cc6c78c9b8c5ccb361360ff86223d1f4"
+    },
+    {
       "path": "docs/proposals/input-pipeline/local-runtime-2026-10-24.md",
       "bytes": 5796,
       "sha256": "d4f47f8b1dc5c241a4a0d6bf483f54ce07e832dea3873e8c6f0cbd6215df55f4"
@@ -654,8 +674,8 @@
     },
     {
       "path": "docs/README.md",
-      "bytes": 4586,
-      "sha256": "4954a11c924fc80b6ce96774011e216d871846b5f5256e0eaacb47bee931491d"
+      "bytes": 4798,
+      "sha256": "1922ddec9ac1429e95a1e401665c51a127054e92933c601273a4f8fc03f1a40a"
     },
     {
       "path": "docs/reference/open-questions.md",
@@ -709,8 +729,8 @@
     },
     {
       "path": "metadata/navigation.json",
-      "bytes": 10355,
-      "sha256": "bf159443e2dc5d28435e74419deb30cd7e6c3adf60f8dc0a7174d85ca1225233"
+      "bytes": 10877,
+      "sha256": "7c6647037ba9542471b64b08dd42ca1a3527647f469f6a7be20cfc901bceda6c"
     },
     {
       "path": "metadata/pipeline-knowledge-source-pins.json",
@@ -844,8 +864,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 12944,
-      "sha256": "5bae37013770a85cda9f584b049d30c34cc3baec220e530a69c6b8d935ac9ffa"
+      "bytes": 13393,
+      "sha256": "534f0118b1089a7a34667f37a7a6fd77a635edbfe26844c68e41d0734acd3f25"
+    },
+    {
+      "path": "scripts/build_native_pilot.py",
+      "bytes": 3236,
+      "sha256": "c93cd8c9942db236025497c7ff8be966fff3d5b89683582a10e7c60d0473413f"
     },
     {
       "path": "scripts/prepare_input.py",

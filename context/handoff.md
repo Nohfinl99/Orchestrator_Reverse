@@ -1,5 +1,7 @@
 # Bàn giao và tiếp tục phiên
 
+**Bàn giao native local:** [report](../docs/proposals/input-pipeline/local-native-2026-10-24.md) → [state](native-local-state.json) → [guide](../docs/guides/native-local-pilot.md). Build1/staticIDA1 đã executed/reviewed trong packet native_local_01; không rerun/ghi đè. R4a static dùng freeze-v2a03bfa…0909 và reviewer thay thế native_static_preflight; R4b06beb4…0950. Tiếp theo kiểm kê/probe bridge đang cài và lập isolation+harness packet riêng. Plugin load message chưa là live provider; Lumina warning/network/env limits giữ nguyên. Raw/IDB/target giữ local; global gates không đổi.
+
 **Bàn giao mới 24/10 — local CLI:** đọc [guide](../docs/guides/local-input-pipeline.md), [report](../docs/proposals/input-pipeline/local-runtime-2026-10-24.md), [state](local-pipeline-state.json), rồi [native research](../docs/proposals/input-pipeline/native-pilot-research-2026-10-24.md). Leaf offline đã IMPLEMENTED/EXECUTED/REVIEWED; nguyên suite raw local_only, không rerun để đổi tỷ lệ. Native cần fixture/build/isolation/provider và packet R4a riêng; giữ global gates và status v4. Không chọn trạng thái từ các snapshot cũ bên dưới.
 
 Đọc [current.md](current.md) để biết trạng thái, [work queue](../docs/planning/work-queue.md) để biết nhánh tiếp theo và [source map](../docs/reference/source-map.md) để mở đúng nguồn. Trang này quy định cách ghi bàn giao ở lớp tài liệu; không thay schema checkpoint/handoff của runtime.

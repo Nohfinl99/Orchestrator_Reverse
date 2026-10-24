@@ -1,5 +1,7 @@
 # Orchestrator_Reverse
 
+**Local pilot mới:** [W4 local native](docs/proposals/input-pipeline/local-native-2026-10-24.md) đã có một direct IDA static acquisition được review: PE64 mẫu,hai function,IDB mới. [Guide](docs/guides/native-local-pilot.md) · [state](context/native-local-state.json). Chưa có connected REA–IDA pair hoặc dynamic execution; W4 toàn hệ vẫn blocked. Source/guide/report thuộc gói public; target, IDB và raw giữ local.
+
 Điều phối reverse engineering từ **mục tiêu → task DAG → owner → evidence → review → tiếp tục hoặc dừng**, theo nguyên lý REA–IDA.
 
 [Bắt đầu](docs/onboarding/start-here.md) · [Trạng thái](context/current.md) · [Tri thức pipeline](docs/knowledge/input-pipeline/README.md) · [Thiết kế pipeline](docs/proposals/input-pipeline/README.md) · [Prompt stacks](prompt_stacks/README.md)
