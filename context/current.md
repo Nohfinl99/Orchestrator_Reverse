@@ -55,3 +55,7 @@ Người dùng chọn chuẩn bị/verify packet offline và giao chọn model t
 ## Sửa và kiểm lại candidate — 24/10/2026
 
 [Biên bản sửa](../docs/proposals/input-support-gates/repair-2026-10-24.md) và [status v3](../docs/proposals/input-support-gates/status-v3.json): revision 2 sửa import, recompute eligibility/owner và structured evidence errors; suite mới42/42 có R4a/executor/R4b riêng. [Diff code](../docs/proposals/input-support-gates/patches/README.md) để review; bản gốc và FAIL vẫn giữ. Criterion coverage50/50/0/0; chưa caller integration, authentic ACK/authority hoặc model/target benchmark.
+
+## Chỉ thị điều phối theo giai đoạn sản phẩm
+
+[Cuộc họp và sổ chờ](../docs/proposals/input-support-gates/checkpoint-roadmap-2026-10-24.md) giữ18 tiêu chí chưa đóng, có owner/evidence/điều kiện mở lại. Ưu tiên hiện hành là bảo toàn baseline và dùng [mẫu pilot](../docs/proposals/input-support-gates/product-pilot-template.json) khi bắt đầu một caller/consumer sản phẩm thật; không tiếp tục cố đóng checkpoint bằng fixture hoặc hồ sơ giả. Coverage và gate giữ nguyên. Lượt họp chỉ lập kế hoạch, không test hoặc code mới.

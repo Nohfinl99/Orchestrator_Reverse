@@ -58,3 +58,7 @@ Xem [report](../docs/proposals/input-support-gates/pentest-2026-10-24.md) và [s
 ## Handoff sau sửa candidate
 
 Ưu tiên sửa ở đoạn trước đã được thực hiện trong [revision mới và biên bản](../docs/proposals/input-support-gates/repair-2026-10-24.md):42/42 bounded case match, review trước/sau độc lập theo session. [Status v3](../docs/proposals/input-support-gates/status-v3.json) kế thừa50/50/0/0 criteria. Tiếp tục từ local `src/candidates/revision_2/`, giữ gốc freeze nguyên byte; public có hai patch reviewable. Next là packet tích hợp một caller đúng dependency, chưa dispatch hoặc bật W4; authentic source/authority/knowledge ACK vẫn thiếu. Automation 10h không được tạo trong phiên này.
+
+## Handoff sau cuộc họp phân kỳ sản phẩm
+
+[Sổ chờ18 tiêu chí](../docs/proposals/input-support-gates/checkpoint-roadmap-2026-10-24.md) ghi chỉ thị mới: giữ phần chưa giải quyết/cần sản phẩm ở trạng thái chờ, mở từng mục khi có objective/caller/consumer và prerequisite tương ứng. [Mẫu pilot](../docs/proposals/input-support-gates/product-pilot-template.json) chưa dispatch được. Không coi “next packet” ở handoff trước là lệnh chạy ngay. Chưa có sản phẩm thì không gọi provider/target hoặc rerun fixture để tăng phần trăm. Không tạo lịch tự mở lại; status v3, frozen FAIL và gate gốc giữ nguyên.

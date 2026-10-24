@@ -45,3 +45,7 @@ P1K B4 FAIL; G1/G2 INCOMPLETE; G3/G4 NOT_RUN; W4 NOT_RUN_BLOCKED; v3 OFF. Snapsh
 ## Sau sửa candidate
 
 [Biên bản sửa/kiểm lại](repair-2026-10-24.md), [status revision 3](status-v3.json) và [hai diff code](patches/README.md) là điểm tiếp tục:42/42 bounded cases ở revision mới, lịch sử lỗi giữ nguyên. Coverage criteria50/50/0/0 và các project gates chưa thay đổi; không dùng tỷ lệ ca test để nhận checkpoint.
+
+## Quyết định điều phối sau cuộc họp
+
+[Lộ trình và sổ chờ](checkpoint-roadmap-2026-10-24.md) áp dụng chỉ thị mới: việc chưa giải quyết hoặc cần sản phẩm thật giữ chờ với owner/điều kiện mở lại, cải tiến từng pilot khi có caller/consumer thực. [Mẫu pilot](product-pilot-template.json) là chuẩn bị tài liệu, chưa dispatch được. Status v3 tiếp tục là evidence baseline; trì hoãn không đóng tiêu chí, không nhận threshold và không tự chạy lại suite.

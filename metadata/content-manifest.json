@@ -29,8 +29,8 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 5559,
-      "sha256": "2b4e850051f8cfe764cd3e52a9f978a4cb53f3c3ab995b95f48acbbc6df2d95e"
+      "bytes": 5996,
+      "sha256": "0c5bd4562627f1c05530b4cfc77f598c2748f7a5c2b1d19b2872bddb9d513d7c"
     },
     {
       "path": "CITATION.cff",
@@ -39,13 +39,13 @@
     },
     {
       "path": "context/current.md",
-      "bytes": 5492,
-      "sha256": "086ac8e98b30a7272faf3d46289a3f9106087d90489b7b934990670a4099374a"
+      "bytes": 6120,
+      "sha256": "beba0839bf3a0bf6aa58fbfdef2b9965c24ef0ec9f0deeffe09d5bdf38262822"
     },
     {
       "path": "context/handoff.md",
-      "bytes": 6669,
-      "sha256": "2175477cd937c8fa7b206065e46c5c92952281f7d7dc9c70436dccc3bd35b831"
+      "bytes": 7380,
+      "sha256": "0b748711a4fe4f3ca365d2e71242351393253af2077c8d1715711812f5b5a242"
     },
     {
       "path": "context/project-state.json",
@@ -244,8 +244,8 @@
     },
     {
       "path": "docs/planning/work-queue.md",
-      "bytes": 5698,
-      "sha256": "5b44922911f66b29031c74b9b605772d2574bb9b9472d882d98ef262e90bd107"
+      "bytes": 6266,
+      "sha256": "ab27db9316d1f08b12c26b92107cd6ee9509c79597e9f2dbea3dfca633df627c"
     },
     {
       "path": "docs/proposals/agent-office-3d/ai-judges-review-2026-10-22-01.md",
@@ -493,6 +493,11 @@
       "sha256": "3b174cb2757c85ebceaa5c791148bdc8db241d80ff02741bba9667eb60d4bf31"
     },
     {
+      "path": "docs/proposals/input-support-gates/checkpoint-roadmap-2026-10-24.md",
+      "bytes": 10622,
+      "sha256": "9c1e22091bf3a67d4f5cc3389fa24f8fae318656427ca92609fb982ce84344ec"
+    },
+    {
       "path": "docs/proposals/input-support-gates/packet.md",
       "bytes": 3534,
       "sha256": "dfe465b97341ff0ef32fdbd1e4904f4842afbbaaaf0f2081eda23c85b038dba7"
@@ -518,9 +523,14 @@
       "sha256": "8eb966cc3c522c66978ca7c25adbd0203b7bd69619a365da2cf9403e213a6893"
     },
     {
+      "path": "docs/proposals/input-support-gates/product-pilot-template.json",
+      "bytes": 2522,
+      "sha256": "02ffb48fc7f41f4626329e9d3e25b95db8e916777f5b5958b735bea5e5727813"
+    },
+    {
       "path": "docs/proposals/input-support-gates/README.md",
-      "bytes": 6953,
-      "sha256": "14945d1e0327be448f00d8216d746fede8d659dbd422a8524b12096c7d7d6665"
+      "bytes": 7510,
+      "sha256": "cebc18bea363d75178f6eedfc1882ac0b20d2408825326e3def1dfa65c4508a5"
     },
     {
       "path": "docs/proposals/input-support-gates/repair-2026-10-24.md",
