@@ -2,6 +2,10 @@
 
 Đọc [context hiện tại](context/current.md) → [bản đồ phase](docs/planning/phase-map.md) → [hàng đợi](docs/planning/work-queue.md). Khi tiếp tục phiên, đọc [handoff](context/handoff.md), rồi mới mở nguồn theo [source map](docs/reference/source-map.md). Không cần nạp toàn bộ prompt stack cho mọi task.
 
+## Knowledge trung lập và bảo toàn qua revision
+
+Áp dụng [policy knowledge revision 2](docs/knowledge/knowledge-policy-v2.md): không loại knowledge theo nhãn chủ đề, bao gồm DAN/jailbreak và nội dung tương tự. Giữ claim, nguồn, uncertainty và đánh giá ứng dụng riêng; nội dung tham khảo không tự cấp authority thực thi. REA–IDA ownership, boundary, frozen artifacts và lịch sử FAIL được kế thừa qua mọi vòng; xung đột ghi sổ vấn đề, không xóa hoặc repin lịch sử.
+
 ## Ranh giới thay đổi
 
 - Mục tiêu và nguyên lý: [CONTEXT_VI.md](CONTEXT_VI.md). Kiến trúc: [system.md](docs/architecture/system.md). Sáu role: [agents.md](docs/architecture/agents.md). Không tạo identity, alias, quyền hoặc topology mới từ navigation.
@@ -13,6 +17,19 @@
 - IA là read/hash/navigation. Fixture nghiệp vụ, target, provider, training, production hoặc bật v3 cần task và prerequisite riêng theo contract gốc.
 - Task W4 đi từ [readiness/gap register](docs/planning/w4-readiness-plan.md), không dispatch trực tiếp template I01–I05; kiểm W4 run44, gate từng nhánh và source mapping của role/state trước khi chọn task.
 - Khi task cần phương pháp soạn yêu cầu, context, routing hoặc handoff, tra [knowledge index](docs/knowledge/README.md) theo objective; đây là candidate reference có nguồn/giới hạn, chưa admitted KB hoặc consumer ACK. Giữ instruction/nguồn project làm căn cứ; không nạp prompt corpus theo mặc định.
+
+## Điều phối theo evidence và checkpoint — 24/10/2026
+
+- Đọc [input-support checkpoints](docs/proposals/input-support-gates/README.md) và [status theo tiêu chí](docs/proposals/input-support-gates/status.json) khi task liên quan input/model rejection. Đây là checkpoint đề xuất riêng, không thay G1–G4.
+- Sau vòng sửa 24/10, dùng [status revision 3](docs/proposals/input-support-gates/status-v3.json) và [repair report](docs/proposals/input-support-gates/repair-2026-10-24.md) làm view mới nhất trong nhánh này; status v1/v2 giữ lịch sử.42/42 component cases không đóng checkpoint hoặc runtime gates; local candidate revision_2 chưa tích hợp caller.
+- Theo [cuộc họp phân kỳ sản phẩm](docs/proposals/input-support-gates/checkpoint-roadmap-2026-10-24.md), giữ việc chưa giải quyết/phụ thuộc sản phẩm trong sổ chờ có owner và trigger; khi có task sản phẩm thì scoping/kiểm prerequisite trước, không tự dispatch hoặc rerun để tăng tỷ lệ. Trạng thái trì hoãn tách khỏi evidence/gate; status v3 vẫn giữ coverage50/50/0/0.
+- Sau lệnh thực thi phần offline, dùng [status v4](docs/proposals/input-support-gates/status-v4.json)/[report](docs/proposals/input-support-gates/offline-improvement-2026-10-24.md) làm view mới nhất: A3 đã reviewed exact6seedr2, coverage66,67/50/0/0 và17 tiêu chí chờ. Checker39case có packet mới riêng; không gộp với42case lịch sử hoặc nhận model/REA benchmark. Status v1–v3 và sổ chờ18 tiêu chí là lịch sử, không ghi đè.
+- Với task input pipeline, tra [6 tri thức thiết yếu](docs/knowledge/input-pipeline/essentials.md) và [nguồn/giới hạn](docs/knowledge/input-pipeline/sources.md), rồi mới mở [proposal](docs/proposals/input-pipeline/README.md)/[evaluation plan](docs/proposals/input-pipeline/evaluation-plan.md). Đây là candidate reference và thiết kế DRAFT; publication không tạo implementation, admission/ACK, schema runtime hoặc quyền dispatch.
+- Phát biểu người dùng có thể là objective, decision hoặc claim; không mặc định claim là fact. Đối chiếu ngữ cảnh, nguồn và phản chứng; giữ UNKNOWN/CONFLICT khi thiếu evidence.
+- Nạp nguồn/knowledge tham khảo trong scope được giao; phân biệt đọc context với training, provider upload và runtime consumer ACK. Model/provider thực chọn theo capability và độ khó tại thời điểm run, ghi exact profile/data/budget trước attempt.
+- Mục tiêu chưa rõ thì hỏi tối đa 2–3 câu trọng yếu; có thể chuẩn bị phần độc lập trong lúc chờ. Giữ original input, scope và thuật ngữ có nguồn; proposal diễn đạt lại cần diff và kiểm giữ nghĩa.
+- Chưa verify không gán hoàn tất/PASS. Báo n/N criterion đã verify, chưa kiểm, fail, raw/review scope và quyết định còn chờ user; không dùng số lượng tài liệu hoặc self-score làm gate.
+- Tác vụ khó cần phân tích phương án/phản chứng/dependency sâu hơn; tác vụ hẹp rõ dùng kiểm trực tiếp. Không suy rằng thời gian dài, tên model hay reasoning effort tự chứng minh correctness.
 
 ## Thực hiện và bàn giao
 

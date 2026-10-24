@@ -1,0 +1,20 @@
+{
+  "kind": "FUTURE_PRODUCT_PILOT_TEMPLATE_NOT_DISPATCHABLE",
+  "revision": 1,
+  "status": "DEFERRED_PRODUCT",
+  "authority": "Template fields are not approval or execution authority",
+  "objective": null,
+  "product_revision": null,
+  "single_caller": {"path": null, "symbol": null, "sha256": null, "action": null},
+  "input": {"original_locator": null, "revision": null, "sha256": null, "data_policy": null},
+  "proposed_revision": {"locator": null, "diff_locator": null, "intent_review": null},
+  "taxonomy": ["PACKET_INTEGRITY_REJECT", "ELIGIBILITY_BLOCKED", "MODEL_REFUSAL", "TOOL_CLIENT_POLICY_ERROR", "PROVIDER_UNAVAILABLE", "CAPABILITY_GAP", "MATERIAL_AMBIGUITY", "EVIDENCE_MISMATCH", "REVIEW_REJECTION", "UNKNOWN"],
+  "input_flow_proposal": {"steps": ["STORE_ORIGINAL_WITH_ENCODING_REVISION_DIGEST", "CLARIFY_MATERIAL_AMBIGUITY_OR_PROPOSE_DIFF", "RECORD_USER_ANSWER_OR_REVISION_DECISION", "VALIDATE_APPLICABLE_PREREQUISITES", "PREPARE_ONE_CONSUMER_PROMPT_WITHOUT_AUTOMATIC_DISPATCH"], "maximum_material_questions": 3, "pause_dependent_work_until_answer": true, "proposal_parent_digest": null, "user_revision_decision_receipt": null, "implementation_status": "NOT_IMPLEMENTED"},
+  "knowledge": {"required": null, "bundle_digest": null, "rights_applicability_review": null, "consumer_context_digest": null, "actual_ack": null},
+  "runtime": {"required": null, "model_provider_version": null, "capability_observation": null, "authority_receipt": null, "target_required": null, "target_binding": null, "applicable_rea_ida_pair": null, "pair_not_applicable_reason": null},
+  "execution_budget": {"calls": null, "cost_cap": null, "wall_seconds": null, "retry_cap": null},
+  "evaluation": {"cases_revision_sha256": null, "oracle_revision_sha256": null, "reviewer": null, "r4a_acceptance": null, "user_accepted_thresholds": null, "raw_output_directory": null, "r4b_reviewer": null},
+  "continuation": {"owner": "Prompt-Master", "review_owner": "Evidence-Synthesizer", "stop_conditions": ["MISSING_PREREQUISITE", "SOURCE_DRIFT", "BUDGET_EXCEEDED", "CRITICAL_INVARIANT_VIOLATION"], "rollback_revision": null, "rollback_action": null},
+  "entry_rule": "Populate only from actual product/source/decision evidence; applicable checks and fresh review before dispatch. No default READY or copied historical ACK.",
+  "scope_rule": "A product pilot does not automatically require a native target. Native/target-dependent work needs the applicable REA-IDA prerequisites; source-only work records why the pair is not applicable."
+}

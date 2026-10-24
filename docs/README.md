@@ -2,6 +2,11 @@
 
 | Cần biết | Đọc |
 |---|---|
+| Chọn proposal theo chủ đề/trạng thái | [Mục lục proposals](proposals/README.md) |
+| Cải tiến từ nền tảng và giao việc cụ thể | [Đề xuất](proposals/knowledge-foundation/README.md), [guide](proposals/knowledge-foundation/operating-guide.md), [worksheet](proposals/knowledge-foundation/packet-template.md), [tiến trình](proposals/knowledge-foundation/progress.md) |
+| Tri thức cần cho input pipeline | [6 tri thức](knowledge/input-pipeline/essentials.md), [nguồn và giới hạn](knowledge/input-pipeline/sources.md) |
+| Thiết kế input pipeline và cách đánh giá | [Proposal](proposals/input-pipeline/README.md), [evaluation plan](proposals/input-pipeline/evaluation-plan.md); DRAFT, chưa triển khai |
+| Input/model rejection: checkpoint, % verify và benchmark | [Đề xuất 4 checkpoint](proposals/input-support-gates/README.md), [packet](proposals/input-support-gates/packet.md), [benchmark plan](proposals/input-support-gates/benchmark-plan.md), [status v4](proposals/input-support-gates/status-v4.json), [thực thi offline](proposals/input-support-gates/offline-improvement-2026-10-24.md) |
 | Project làm gì, đang ở đâu | [Context](../context/current.md), [nguyên lý](../CONTEXT_VI.md) |
 | AI mới tiếp nhận | [Start here](onboarding/start-here.md), [workflow phiên](onboarding/session-workflow.md) |
 | Muse tiếp tục office 3D | [Hướng dẫn roadmap và prompt](onboarding/muse-roadmap-guide-2026-10-22.md), [gate recheck](proposals/agent-office-3d/gate-recheck-2026-10-22.md), [handoff v1](onboarding/muse-takeover-2026-10-22.md) |

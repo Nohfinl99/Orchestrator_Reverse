@@ -25,6 +25,14 @@ Ghi objective, scope/exclusions, owner hiện hữu, input path/digest/revision,
 
 Với task W4, dùng [readiness/gap register](../planning/w4-readiness-plan.md) để xét I01–I05 và dependency hiện tại trước khi làm; các template không là task READY.
 
+## Input và model rejection theo checkpoint
+
+Áp dụng [packet và checkpoint đề xuất](../proposals/input-support-gates/README.md). Phân loại request thành objective/decision/claim rồi kiểm claim với nguồn; không mặc định người dùng hoặc source là đúng. Nếu thiếu lựa chọn ảnh hưởng implementation, hỏi 2–3 câu. Rejection phải phân biệt model refusal với integrity reject, tool/client-policy error, provider/capability gap và ambiguity.
+
+Hiện người dùng chọn verify packet offline trước; 0 model/provider/target/fixture calls trong packet chuẩn bị. Có quyền đọc/nạp reference theo task không tự là training hoặc quyền upload. Với model run tương lai, coordinator chọn profile phù hợp reasoning/coding, pin version/data/budget và prerequisites; không khai đã đổi model khi phiên hiện tại không làm được việc đó.
+
+Báo theo criterion coverage và evidence; kế hoạch và tài liệu không tính thành implementation hoặc benchmark đã chạy. Không cộng historical suite vào kết quả model mới.
+
 ## Kiểm tra và kết thúc
 
 Với IA, chạy verifier read/hash/navigation từ repository root. Với thay đổi nghiệp vụ, áp task, packet R4a trước attempt và R4b sau attempt theo contract; không lấy kiểm link thay behavioral test. Báo kết quả cùng phạm vi và phần chưa chứng minh. Bàn giao theo [mẫu](../../context/handoff.md), cập nhật view context chỉ khi có nguồn mới; report đã freeze giữ nguyên.

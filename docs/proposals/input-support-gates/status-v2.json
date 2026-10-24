@@ -1,0 +1,298 @@
+{
+  "kind": "PROPOSED_WORK_CHECKPOINTS_NOT_RUNTIME_GATES",
+  "date": "2026-10-24",
+  "baseline": "617496f915cd2d6cf0828cde843cb4f515445866",
+  "criteria_revision": 1,
+  "threshold_decision": "PENDING_USER_DECISION",
+  "percent_means": "Verified named criteria divided by six; not probability, benchmark accuracy or project completion",
+  "acceptance": "NO_CHECKPOINT_ACCEPTED; BOUNDED_TESTS_WITH_CANDIDATE_FAILURES",
+  "new_model_calls": 0,
+  "new_target_calls": 0,
+  "new_fixture_runs": 2,
+  "checkpoints": [
+    {
+      "id": "INPUT-A",
+      "verified": 3,
+      "total": 6,
+      "percent": 50.0,
+      "unverified": 3,
+      "failed": 0,
+      "decision": "PENDING",
+      "evidence_review": "R4A_R4B_BOUNDED_FUNCTION_TESTS; NO_INTEGRATED_PIPELINE_ACCEPTANCE",
+      "criteria": [
+        {
+          "id": "A1",
+          "criterion": "Scope and user choices recorded",
+          "status": "VERIFIED_IN_DECLARED_SCOPE",
+          "evidence": "user-decisions.json"
+        },
+        {
+          "id": "A2",
+          "criterion": "One selected call site and source pins",
+          "status": "VERIFIED_IN_DECLARED_SCOPE",
+          "evidence": "source-pins.json; packet.md"
+        },
+        {
+          "id": "A3",
+          "criterion": "Input/cases/oracle independently reviewed",
+          "status": "PENDING_OR_NOT_RUN",
+          "evidence": "benchmark-seeds.json: review pending"
+        },
+        {
+          "id": "A4",
+          "criterion": "Offline actions/outputs/numeric budget/stop recorded",
+          "status": "VERIFIED_IN_DECLARED_SCOPE",
+          "evidence": "packet.md; user-decisions.json"
+        },
+        {
+          "id": "A5",
+          "criterion": "Actual model-refusal raw or explicit source-only benchmark decision",
+          "status": "PENDING_OR_NOT_RUN",
+          "evidence": "User decision pending on limited source-comprehension scope"
+        },
+        {
+          "id": "A6",
+          "criterion": "Criteria and thresholds accepted by user",
+          "status": "PENDING_OR_NOT_RUN",
+          "evidence": "Decision pending"
+        }
+      ]
+    },
+    {
+      "id": "KNOWLEDGE-B",
+      "verified": 3,
+      "total": 6,
+      "percent": 50.0,
+      "unverified": 3,
+      "failed": 0,
+      "decision": "PENDING",
+      "evidence_review": "R4A_R4B_BOUNDED_FUNCTION_TESTS; NO_INTEGRATED_PIPELINE_ACCEPTANCE",
+      "criteria": [
+        {
+          "id": "B1",
+          "criterion": "Source captures match declared SHA/bytes",
+          "status": "VERIFIED_IN_DECLARED_SCOPE",
+          "evidence": "verification.json: 13 captures"
+        },
+        {
+          "id": "B2",
+          "criterion": "Release/package/skill versions distinguished by source metadata",
+          "status": "VERIFIED_IN_DECLARED_SCOPE",
+          "evidence": "verification.json: version_checks"
+        },
+        {
+          "id": "B3",
+          "criterion": "Session capability metadata captured and internally checked",
+          "status": "VERIFIED_IN_DECLARED_SCOPE",
+          "evidence": "capability-observed.json; verification.json"
+        },
+        {
+          "id": "B4",
+          "criterion": "Bundle rights/applicability reviewed",
+          "status": "PENDING_OR_NOT_RUN",
+          "evidence": "Not performed for concrete consumer"
+        },
+        {
+          "id": "B5",
+          "criterion": "Actual consumer context/bundle/digest ACK",
+          "status": "PENDING_OR_NOT_RUN",
+          "evidence": "Not received"
+        },
+        {
+          "id": "B6",
+          "criterion": "Independent review/admission",
+          "status": "PENDING_OR_NOT_RUN",
+          "evidence": "Not performed"
+        }
+      ]
+    },
+    {
+      "id": "IMPLEMENTATION-C",
+      "verified": 0,
+      "total": 6,
+      "percent": 0.0,
+      "unverified": 6,
+      "failed": 0,
+      "decision": "PENDING",
+      "evidence_review": "R4A_R4B_BOUNDED_FUNCTION_TESTS; NO_INTEGRATED_PIPELINE_ACCEPTANCE",
+      "criteria": [
+        {
+          "id": "C1",
+          "criterion": "Bound caller integration",
+          "status": "PENDING_OR_NOT_RUN",
+          "evidence": "NOT_IMPLEMENTED_NOT_RUN"
+        },
+        {
+          "id": "C2",
+          "criterion": "Original input storage and revision/digest",
+          "status": "PENDING_OR_NOT_RUN",
+          "evidence": "NOT_IMPLEMENTED_NOT_RUN"
+        },
+        {
+          "id": "C3",
+          "criterion": "Layer-correct rejection taxonomy",
+          "status": "PENDING_OR_NOT_RUN",
+          "evidence": "NOT_IMPLEMENTED_NOT_RUN"
+        },
+        {
+          "id": "C4",
+          "criterion": "Diff-visible intent-preserving normalization",
+          "status": "PENDING_OR_NOT_RUN",
+          "evidence": "NOT_IMPLEMENTED_NOT_RUN"
+        },
+        {
+          "id": "C5",
+          "criterion": "2-3 clarification questions as implemented behavior",
+          "status": "PENDING_OR_NOT_RUN",
+          "evidence": "NOT_IMPLEMENTED_NOT_RUN"
+        },
+        {
+          "id": "C6",
+          "criterion": "Behavioral raw and independent review",
+          "status": "PARTIAL_FAILED_CANDIDATE_SCOPE",
+          "evidence": "Observed raw and separate review exist, but candidate composition crashes; complete input pipeline acceptance not established"
+        }
+      ]
+    },
+    {
+      "id": "EVALUATION-D",
+      "verified": 0,
+      "total": 6,
+      "percent": 0.0,
+      "unverified": 6,
+      "failed": 0,
+      "decision": "PENDING",
+      "evidence_review": "R4A_R4B_BOUNDED_FUNCTION_TESTS; NO_INTEGRATED_PIPELINE_ACCEPTANCE",
+      "criteria": [
+        {
+          "id": "D1",
+          "criterion": "Concrete model/provider/data/budget profile",
+          "status": "PENDING_OR_NOT_RUN",
+          "evidence": "NOT_RUN"
+        },
+        {
+          "id": "D2",
+          "criterion": "Reviewed frozen cases/oracle R4a",
+          "status": "PENDING_OR_NOT_RUN",
+          "evidence": "NOT_RUN"
+        },
+        {
+          "id": "D3",
+          "criterion": "Capability/authority/applicable pair",
+          "status": "PENDING_OR_NOT_RUN",
+          "evidence": "NOT_RUN"
+        },
+        {
+          "id": "D4",
+          "criterion": "Captured model/REA attempt",
+          "status": "PENDING_OR_NOT_RUN",
+          "evidence": "NOT_RUN"
+        },
+        {
+          "id": "D5",
+          "criterion": "Independent R4b",
+          "status": "PENDING_OR_NOT_RUN",
+          "evidence": "NOT_RUN"
+        },
+        {
+          "id": "D6",
+          "criterion": "Accepted metrics and continuation/rollback",
+          "status": "PENDING_OR_NOT_RUN",
+          "evidence": "NOT_RUN"
+        }
+      ]
+    }
+  ],
+  "status_revision": 2,
+  "independence": "Three real subagent sessions with separate producer/executor/review responsibilities; same model, not human/cross-model",
+  "bounded_test_results": {
+    "distinct_cases": 28,
+    "suite_attempts": 2,
+    "final_passed": 23,
+    "final_errors": 5,
+    "candidate_composition_crashes": [
+      "C01",
+      "C03",
+      "C04",
+      "C09",
+      "C10"
+    ],
+    "security_probes_masked_by_crash": [
+      "C03",
+      "C09"
+    ],
+    "model_provider_calls": 0,
+    "target_calls": 0,
+    "checkpoint_percentages_unchanged": true,
+    "fixture_runs_means": "Suite attempts, not distinct cases or model calls",
+    "scope": "Candidate Python functions and evidence readback only; not actual model or REA engine",
+    "attempt_results": [
+      {
+        "attempt": "attempt_01",
+        "passed": 17,
+        "total": 28,
+        "groups": {
+          "INPUT-A": {
+            "passed": 6,
+            "total": 6,
+            "case_match_percent": 100.0
+          },
+          "KNOWLEDGE-B": {
+            "passed": 6,
+            "total": 6,
+            "case_match_percent": 100.0
+          },
+          "IMPLEMENTATION-C": {
+            "passed": 5,
+            "total": 10,
+            "case_match_percent": 50.0
+          },
+          "EVALUATION-D": {
+            "passed": 0,
+            "total": 6,
+            "case_match_percent": 0.0
+          }
+        }
+      },
+      {
+        "attempt": "attempt_02",
+        "passed": 23,
+        "total": 28,
+        "groups": {
+          "INPUT-A": {
+            "passed": 6,
+            "total": 6,
+            "case_match_percent": 100.0
+          },
+          "KNOWLEDGE-B": {
+            "passed": 6,
+            "total": 6,
+            "case_match_percent": 100.0
+          },
+          "IMPLEMENTATION-C": {
+            "passed": 5,
+            "total": 10,
+            "case_match_percent": 50.0
+          },
+          "EVALUATION-D": {
+            "passed": 6,
+            "total": 6,
+            "case_match_percent": 100.0
+          }
+        }
+      }
+    ]
+  },
+  "evidence_locators": {
+    "workspace_packet": "evidence/orchestrator_meetings/20261024_four_checkpoint_pentest_01",
+    "availability": "LOCAL_ONLY_NOT_DISTRIBUTED",
+    "freeze_v1_sha256": "ae9c478c36cde424d15f89e7827c3496a77b2c9c7d1909dc11f33bf6a607f46e",
+    "freeze_v2_sha256": "c6bcb5a85306199fb860e7604731df6f569769aa85f711b62259e837c20099ad",
+    "runner_v1_sha256": "fbb3f96e5c71ea12fa8c6519309f0df3ac74ee095f49df80d0c1b3f8da43dbcd",
+    "runner_v2_sha256": "392e4a646e7a35a60dba8caa715f080ab6232fdac409ff51296e5b0a9cd12f37",
+    "oracle_sha256": "6974a49042333f3261f783c97eae589880ed1a862e58641eef2c3ac1bdb3a11f",
+    "r4b_v2": "VALID_CAPTURE_WITH_FIVE_CANDIDATE_FAILURES",
+    "r4b_v2_report_sha256": "5911c3e706a1774bf70cc8f58381f69a3422d527d40eacb7d1820e66e96e2e18",
+    "r4b_v2_verdict_sha256": "8cc8faca00a9527b1b0894c970ae562740055377223161c2ccf748734ab6e74d"
+  }
+}

@@ -38,3 +38,35 @@ Git commit / branch / remote nếu có:
 ```
 
 Trước resume: kiểm nguồn có drift, context/IDB revisions và các consumer ACK liên quan theo contract gốc. View IA không tự chuyển task sang READY. Thiếu nguồn chỉ chặn claim/nhánh phụ thuộc; tiếp tục phần độc lập đúng scope.
+
+## Bàn giao cải tiến nền tảng — 23/10/2026
+
+Đọc [proposal](../docs/proposals/knowledge-foundation/README.md), [reuse map](../docs/proposals/knowledge-foundation/reuse-map.md), [guide](../docs/proposals/knowledge-foundation/operating-guide.md) và [progress](../docs/proposals/knowledge-foundation/progress.md). Source pins mới nằm trong metadata; manifests lịch sử giữ nguyên. Bản này là document foundation; chưa triển khai consumer admission hoặc runtime. Publication xác định từ Git commit/remote, không từ checklist.
+
+## Bàn giao policy knowledge revision 2
+
+Đọc [knowledge policy v2](../docs/knowledge/knowledge-policy-v2.md) trước khi áp disposition v1. Không lập topic blacklist cho DAN hoặc kiến thức tương tự. Bản v1, source pins, REA–IDA artifacts và FAIL giữ lịch sử; [change record](../docs/changes/2026-10-23-neutral-knowledge.md) ghi điều chỉnh.
+
+## Handoff input support — 24/10/2026
+
+Đọc [packet](../docs/proposals/input-support-gates/packet.md), [benchmark plan](../docs/proposals/input-support-gates/benchmark-plan.md) và [status](../docs/proposals/input-support-gates/status.json). Scope offline, provider/target/fixture calls mới bằng 0. Ground truth seeds giữ local ngoài active KB, chưa review độc lập. Cần user chốt criteria/threshold và scope source-only benchmark trước khi mở nhánh mới.
+
+## Handoff sau bounded pentest
+
+Xem [report](../docs/proposals/input-support-gates/pentest-2026-10-24.md) và [status v2](../docs/proposals/input-support-gates/status-v2.json). Ưu tiên candidate revision sửa missing import ROLE_SCOPE rồi review/retest trước forged-decision probes. Giữ runner/oracle/freeze/attempt histories; không thêm attempt dưới acceptance cũ.
+
+## Handoff sau sửa candidate
+
+Ưu tiên sửa ở đoạn trước đã được thực hiện trong [revision mới và biên bản](../docs/proposals/input-support-gates/repair-2026-10-24.md):42/42 bounded case match, review trước/sau độc lập theo session. [Status v3](../docs/proposals/input-support-gates/status-v3.json) kế thừa50/50/0/0 criteria. Tiếp tục từ local `src/candidates/revision_2/`, giữ gốc freeze nguyên byte; public có hai patch reviewable. Next là packet tích hợp một caller đúng dependency, chưa dispatch hoặc bật W4; authentic source/authority/knowledge ACK vẫn thiếu. Automation 10h không được tạo trong phiên này.
+
+## Handoff sau cuộc họp phân kỳ sản phẩm
+
+[Sổ chờ18 tiêu chí](../docs/proposals/input-support-gates/checkpoint-roadmap-2026-10-24.md) ghi chỉ thị mới: giữ phần chưa giải quyết/cần sản phẩm ở trạng thái chờ, mở từng mục khi có objective/caller/consumer và prerequisite tương ứng. [Mẫu pilot](../docs/proposals/input-support-gates/product-pilot-template.json) chưa dispatch được. Không coi “next packet” ở handoff trước là lệnh chạy ngay. Chưa có sản phẩm thì không gọi provider/target hoặc rerun fixture để tăng phần trăm. Không tạo lịch tự mở lại; status v3, frozen FAIL và gate gốc giữ nguyên.
+
+## Handoff sau thực thi cải thiện offline
+
+Lệnh sau cuộc họp đã cho phép task offline riêng: xem [report](../docs/proposals/input-support-gates/offline-improvement-2026-10-24.md)/[status v4](../docs/proposals/input-support-gates/status-v4.json). A3 được verify theo seedr2/review exactdigest; A5/A6 chưa nhận. Checker local `src/candidates/revision_3/` là hardening readback fixed bundle; role_router/prompt_contract vẫn revision2, không product integration.39case mới không gộp thành benchmark với42case cũ; timeout fault injection và hostile symlink/race chưa kiểm. Còn17 tiêu chí chờ, scope/gate runtime giữ nguyên; mọi attempt sau cần review/dispatch mới.
+
+## Handoff sau publication tri thức pipeline và README
+
+README dẫn theo nhu cầu; [knowledge bundle](../docs/knowledge/input-pipeline/README.md) chứa6điểm cùng nguồn/page/digest; [proposal](../docs/proposals/input-pipeline/README.md) và [evaluation](../docs/proposals/input-pipeline/evaluation-plan.md) là DRAFT/NOT_APPLIED. [Change record](../docs/changes/2026-10-24-pipeline-knowledge-publication.md) ghi phạm vi xuất bản. Source PDF, extraction, raw/oracle và receipt local không được phân phối. Publication không tăng coverage66,67/50/0/0 hoặc tạo runtime/KB ACK; product-dependent work tiếp tục chờ actual caller/consumer/prerequisite.

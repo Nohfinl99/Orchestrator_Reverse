@@ -19,3 +19,19 @@
 Nhánh consumer packet là đề xuất offline gần nhất sau logic review. Không lặp lại selected-consumer projection như chưa tồn tại; dùng nguồn đã pin và kiểm lại drift. B4 là một task độc lập, không lồng correction vào thay đổi IA hoặc tự gọi PASS sau sửa một case.
 
 Các câu hỏi cần quyền hoặc dữ kiện mới được giữ trong [open questions](../reference/open-questions.md). Phần độc lập đã được giao có thể tiếp tục khi nhánh khác thiếu prerequisite.
+
+## Nhánh cải tiến nền tảng — 23/10/2026
+
+[Proposal](../proposals/knowledge-foundation/README.md) đã chuyển các card hữu ích thành guide và worksheet; [progress](../proposals/knowledge-foundation/progress.md) tách tài liệu đã viết khỏi integration chưa triển khai. Next task vẫn hoàn thiện một consumer/call-site packet từ projection hiện có, PROPOSED_NOT_DISPATCHED; không tạo một luồng runtime cạnh tranh.
+
+## Input support checkpoints — 24/10/2026
+
+[Packet mới](../proposals/input-support-gates/packet.md) chọn một archived generated-prompt builder để source-map, không thay Stage1 parser. [Bốn checkpoint](../proposals/input-support-gates/README.md) báo criterion coverage ở status.json; chưa được user nhận. Next: review sáu seed oracle local và chốt tiêu chí, rồi xét implementation/benchmark đúng prerequisite.
+
+[Candidate repair](../proposals/input-support-gates/repair-2026-10-24.md) đã kiểm42/42 component cases; [status v3](../proposals/input-support-gates/status-v3.json) giữ coverage50/50/0/0. Next atomic proposal: bind một caller với revision_2 source, original input/diff/taxonomy/clarification và acceptance/budget; compatibility phụ thuộc B4 giữ blocked. Component predicates chưa xác thực issuer/ACK/pair thực; model/target chưa chạy.
+
+Chỉ thị mới sau [cuộc họp phân kỳ](../proposals/input-support-gates/checkpoint-roadmap-2026-10-24.md): proposal tích hợp trên giữ **DEFERRED_PRODUCT**, chưa dispatch.18 tiêu chí có owner/điều kiện mở lại; phần chờ quyết định/review tách khỏi phần chờ sản phẩm. Khi bắt đầu sản phẩm, chọn một pilot/caller/consumer và kiểm dependency từ [mẫu packet](../proposals/input-support-gates/product-pilot-template.json). Không chạy thêm test hoặc tạo runtime giả chỉ để đóng checkpoint.
+
+[Thực thi offline được giao sau cuộc họp](../proposals/input-support-gates/offline-improvement-2026-10-24.md) đã xử lý A3 và checker hardening bằng revision/review riêng. [Status v4](../proposals/input-support-gates/status-v4.json) còn17 tiêu chí: A5/A6 chờ quyết định, B4–B6/C1–C6/D1–D6 chờ product/prerequisite; C6 partial component giữ nguyên. Next product pilot vẫn DEFERRED_PRODUCT, không tự dispatch. Gap checker còn timeout fault injection/filesystem-race ngoài scope đã kiểm.
+
+Nhánh tài liệu pipeline đã có [6 tri thức](../knowledge/input-pipeline/README.md), [proposal](../proposals/input-pipeline/README.md) và [evaluation plan](../proposals/input-pipeline/evaluation-plan.md) để chọn boundary khi được giao implementation sau này. Chúng không mở lại deferred product pilot hoặc tạo executable case set; giữ prerequisite/budget/review theo task mới.
