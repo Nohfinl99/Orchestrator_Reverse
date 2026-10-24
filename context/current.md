@@ -1,5 +1,7 @@
 # Context hiện tại — snapshot 21/10/2026
 
+**W4 local mới nhất 24/10:** [Pilot native](../docs/proposals/input-pipeline/local-native-2026-10-24.md) đã build một PE mẫu và chạy/review một direct IDA static acquisition:15pin/14raw hash khớp,metapc64,hai function và IDB mới. [State native local](native-local-state.json) ghi scope riêng. REA provider/pair, isolation và dynamic harness còn chờ; W4/global gates/statusv4 giữ nguyên. Acquisition chạy local; source/guide/report thuộc gói public, raw giữ local.
+
 **Lượt mới nhất 24/10:** [CLI chuẩn bị input](../docs/guides/local-input-pipeline.md) đã chạy một attempt40/40case,49CLIcalls và có R4b riêng; [state local](local-pipeline-state.json) tách khỏi global gates/status v4. [Nghiên cứu native REA–IDA](../docs/proposals/input-pipeline/native-pilot-research-2026-10-24.md) theo yêu cầu Reading Companion: target/provider/pair/isolation chưa bind, chưa chạy native. Người dùng cho phép target execution trong môi trường kiểm thử riêng; chưa có bằng chứng môi trường đó hoạt động.
 
 **Điểm đọc hiện hành sau publication 24/10:** [6 tri thức input pipeline](../docs/knowledge/input-pipeline/README.md) → [thiết kế DRAFT](../docs/proposals/input-pipeline/README.md) → [evaluation plan](../docs/proposals/input-pipeline/evaluation-plan.md). Evidence baseline vẫn [status v4](../docs/proposals/input-support-gates/status-v4.json):66,67/50/0/0,17 tiêu chí chờ. Các snapshot/lượt công việc bên dưới giữ chronology; xuất bản tài liệu không nối runtime hoặc đổi gate.

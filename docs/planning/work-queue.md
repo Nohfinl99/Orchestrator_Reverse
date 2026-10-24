@@ -1,5 +1,7 @@
 # Hàng đợi công việc
 
+**Native acquisition 24/10:** [mẫu/local IDA](../proposals/input-pipeline/local-native-2026-10-24.md) đã executed/reviewed; phần tiếp theo là bridge version/transport probe và isolation+harness có packet riêng. Snapshot W4 dưới đây giữ dependency/gates gốc; không nhận directIDA inventory là G3/W4 PASS.
+
 **Tiến độ 24/10 — caller mới:** [CLI chuẩn bị input](../guides/local-input-pipeline.md) đã triển khai/chạy/được review ở leaf offline riêng; [state local](../../context/local-pipeline-state.json). Nhánh tiếp theo do người dùng chọn là [native REA–IDA](../proposals/input-pipeline/native-pilot-research-2026-10-24.md): đã đọc nguồn/đề xuất fixture, còn target/build/provider/isolation và packet mới; chưa chạy. Các nhánh/gate kế thừa dưới đây giữ scope gốc.
 
 Đây là view đề xuất từ hồ sơ ngày 21/10/2026, không phải dispatch ledger. Task hiện hành do yêu cầu người dùng quyết định; IA chỉ làm rõ tiến độ và dependency. [Source map](../reference/source-map.md) ghi nguồn local của từng nhánh.
