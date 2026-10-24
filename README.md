@@ -1,113 +1,130 @@
 # Orchestrator_Reverse
 
-**Bộ tài liệu thiết kế và điều phối agent cho công việc reverse engineering có ranh giới bằng chứng REA–IDA.** Thư mục này được chuẩn bị thành một gói public độc lập trong workspace Orchestrator. Nội dung gồm bối cảnh dự án, kiến trúc, quy ước đóng góp và mười Prompt Stack offline.
+Điều phối reverse engineering từ **mục tiêu → task DAG → owner → evidence → review → tiếp tục hoặc dừng**, theo nguyên lý REA–IDA.
 
-> Trạng thái hiện tại: **tài liệu thiết kế / offline**. Đây chưa phải orchestrator tích hợp production. Các prompt và protocol mô tả yêu cầu và cách làm; chúng chưa được nối vào loader/runtime và không cấp quyền cho công cụ.
+[Bắt đầu](docs/onboarding/start-here.md) · [Trạng thái](context/current.md) · [Tri thức pipeline](docs/knowledge/input-pipeline/README.md) · [Thiết kế pipeline](docs/proposals/input-pipeline/README.md) · [Prompt stacks](prompt_stacks/README.md)
 
-## Mục tiêu
+> **Trạng thái: thiết kế và candidate offline, chưa tích hợp production.** Public repo chứa tài liệu, đề xuất, source locators và diff code đã được kiểm trong phạm vi ghi ở từng report. Prompt/protocol chưa nối loader/runtime; tài liệu không cấp quyền thực thi.
 
-Orchestrator_Reverse hướng tới điều phối các bước từ ý định đến kết quả có thể kiểm chứng: làm rõ mục tiêu và phạm vi, kiểm capability và evidence, lập dependency DAG, chọn đúng role hiện có, giữ checkpoint/attempt, đánh giá theo testcase và chuyển tiếp hoặc dừng có lý do.
+## Bắt đầu theo nhu cầu
 
-Nguyên tắc xuyên suốt là **bảo toàn REA–IDA qua mọi cấu trúc và boundary**:
+| Nhu cầu | Điểm vào |
+|---|---|
+| Hiểu dự án và nguyên lý | [CONTEXT_VI.md](CONTEXT_VI.md) → [kiến trúc](docs/architecture/system.md) |
+| Tiếp tục phiên làm việc | [Current](context/current.md) → [phase map](docs/planning/phase-map.md) → [work queue](docs/planning/work-queue.md) → [handoff](context/handoff.md) |
+| Dùng tri thức để soạn input pipeline | [6 tri thức thiết yếu](docs/knowledge/input-pipeline/essentials.md) → [proposal](docs/proposals/input-pipeline/README.md) → [kế hoạch đánh giá](docs/proposals/input-pipeline/evaluation-plan.md) |
+| Kiểm bằng chứng và phần trăm đã verify | [4 checkpoint](docs/proposals/input-support-gates/README.md) → [status v4](docs/proposals/input-support-gates/status-v4.json) → [báo cáo thực thi](docs/proposals/input-support-gates/offline-improvement-2026-10-24.md) |
+| Giao task cho một role | [6 identity](docs/architecture/agents.md) → [mục lục stack/protocol](prompt_stacks/README.md) |
+| Tìm tài liệu khác hoặc đóng góp | [Mục lục](docs/README.md) · [CONTRIBUTING](CONTRIBUTING.md) · [AGENTS](AGENTS.md) |
 
-- REA giữ workflow, evidence/provenance và ledger.
-- IDA giữ phân tích native/decompiler và trạng thái IDB trong capability thực tế được cấp.
-- Khi task tiêu thụ target evidence, pair phải cùng target/component/slice/IDA state, có producer/session/revision/custody/freshness, và mỗi consumer tham gia phải kiểm tính liên quan, xác thực và ACK riêng.
-- Chuẩn bị tài liệu ngoài target được ghi `NON_TARGET_PREPARATION`, pair `null`, trạng thái `NOT_RUN`; không tạo target claim hoặc target-consumption ACK.
-- Prompt, hash file hoặc sự tồn tại của IDA không tự chứng minh tool đã nối, evidence authentic, quyền hành động hoặc kết quả đã chạy.
+## Tri thức cho input pipeline
 
-## Tiếp nhận theo IA — 21/10/2026
+Từ whitepaper Palo Alto đã đọc, giữ lại sáu nội dung phục vụ thiết kế. [Nguồn, trang và giới hạn](docs/knowledge/input-pipeline/sources.md) phân biệt claim tác giả với suy luận của dự án.
 
-**Đọc trước:** [context hiện tại](context/current.md) → [bản đồ phase](docs/planning/phase-map.md) → [việc tiếp theo](docs/planning/work-queue.md). AI đọc [AGENTS.md](AGENTS.md); khi đổi phiên dùng [handoff](context/handoff.md).
+| Tri thức | Hành vi cần thiết kế |
+|---|---|
+| Ranh giới instruction/data | PDF, RAG, memory và tool output mang provenance; instruction trong nguồn không tự thay task hoặc cấp quyền |
+| Intent và scope xuyên lượt | Ghi mục tiêu/decision revision; hỏi tối đa 2–3 câu khi thiếu dữ kiện ảnh hưởng hành động |
+| Original và derived view | Lưu input gốc; decode/translation/rewrite tạo bản riêng có lineage/diff để kiểm giữ nghĩa |
+| Quyền tại executor | Kiểm task/action/resource/budget và receipt thật trước side effect; REA–IDA theo applicability |
+| Output và memory write | Kiểm đích dữ liệu, delta và quyền/admission trước thay đổi |
+| Đánh giá có đối chứng | Có benign controls, gold labels riêng, raw và reviewer; đo cả task correctness và false refusal |
 
-- [Mục lục theo nhu cầu](docs/README.md) và [start here](docs/onboarding/start-here.md).
-- [Nguồn chính và mức truy cập](docs/reference/source-map.md); một số worksheet/pins chỉ có trong workspace local.
-- [Kiến trúc thông tin](docs/architecture/information-architecture.md), [sáu role](docs/architecture/agents.md) và [vấn đề mở](docs/reference/open-questions.md).
-- [W4: gate còn thiếu, trạng thái I01–I05 và dependency](docs/planning/w4-readiness-plan.md).
-- [Kiến thức tham khảo cho điều phối](docs/knowledge/README.md): 12 card từ ba nguồn GitHub, source pins và cách chọn theo task; chưa admitted KB.
-- [Cải tiến nền tảng 23/10](docs/proposals/knowledge-foundation/README.md): biên bản đề xuất, phần knowledge tận dụng, hướng dẫn thao tác, worksheet và tiến trình.
-- [Profile IA văn phòng agent 3D](docs/proposals/agent-office-3d/README.md): proposal offline-first, so sánh mã nguồn tương tự, meeting model và acceptance; chưa có UI/runtime.
-- [Muse đi theo roadmap office 3D](docs/onboarding/muse-roadmap-guide-2026-10-22.md): điểm vào sau recheck gate, cách tận dụng artifact/knowledge, điều kiện trước AO-2 và prompt bàn giao; [handoff v1](docs/onboarding/muse-takeover-2026-10-22.md) giữ lịch sử.
-- Gate kế thừa: **P1K B4 FAIL; G1/G2 INCOMPLETE; G3/G4 NOT_RUN; W4 NOT_RUN_BLOCKED; v3 OFF**. IA không đổi trạng thái nghiệm thu.
+Bundle là **candidate reference, chưa admitted vào KB runtime**. [Pipeline đề xuất](docs/proposals/input-pipeline/README.md) là **DRAFT / NOT_IMPLEMENTED**, phần caller/consumer thực giữ chờ sản phẩm. DAN, jailbreak, roleplay, encoding và ngôn ngữ không tự là căn cứ loại knowledge; áp [policy trung lập](docs/knowledge/knowledge-policy-v2.md).
 
-Các phần bên dưới giữ mục tiêu, nguyên lý và phạm vi gốc; ba đường dẫn docs cũ vẫn chuyển tới bản canonical mới. [Bản ghi IA](docs/changes/2026-10-21-information-architecture.md) nêu phạm vi và cách kiểm bảo toàn.
+## Trạng thái kiểm chứng
 
-[Chính sách knowledge trung lập revision 2](docs/knowledge/knowledge-policy-v2.md): DAN/jailbreak và các chủ đề tương tự có thể được catalog, đọc và nghiên cứu; REA–IDA được bảo toàn qua mọi vòng.
+### Bốn checkpoint của nhánh input-support
 
-## Bắt đầu
+| Checkpoint | Tiêu chí đã verify | Phần còn chờ |
+|---|---:|---|
+| INPUT-A — mục tiêu và packet | **4/6 · 66,67%** | Quyết định mục đích benchmark và criteria/threshold |
+| KNOWLEDGE-B — nguồn và admission | **3/6 · 50%** | Rights/applicability, actual consumer ACK, admission |
+| IMPLEMENTATION-C — input pipeline | **0/6 · 0%** | Caller-bound pipeline; C6 có evidence component ở scope partial |
+| EVALUATION-D — đánh giá model/REA thực | **0/6 · 0%** | Profile, authority, cases, capture và review đúng runtime/use case |
 
-1. Đọc [bối cảnh và phạm vi](CONTEXT_VI.md).
-2. Xem [kiến trúc và ranh giới](docs/architecture/system.md) cùng [trạng thái nghiệm thu](docs/reference/validation-status.md).
-3. Chọn stack theo mục tiêu tại [mục lục Prompt Stack](prompt_stacks/README.md).
-4. Nếu cần tinh chỉnh model, đọc [hướng dẫn fine-tuning](docs/guides/fine-tuning.md); training không thay thế tool authority hay các gate REA–IDA.
-5. Trước khi áp dụng vào hệ đang chạy, kiểm quyền, source binding, consumer và các gate liên quan. Mọi execution cần bộ pre-run R4a được review/freeze trước attempt và R4b độc lập sau khi thu raw evidence.
+Nguồn: [status v4](docs/proposals/input-support-gates/status-v4.json), criteria revision 1. Còn **17 tiêu chí chưa đóng**. Mỗi checkpoint có sáu tiêu chí; tỷ lệ là coverage bằng chứng, không phải xác suất an toàn hoặc phần trăm hoàn thiện toàn sản phẩm. Criteria/threshold và checkpoint acceptance vẫn chờ quyết định.
 
-## Cấu trúc
+### Kết quả component đã ghi nhận
+
+| Phạm vi hữu hạn | Kết quả lịch sử | Report |
+|---|---|---|
+| Router/prompt candidate revision 2 | 42/42 case match | [Sửa và kiểm lại](docs/proposals/input-support-gates/repair-2026-10-24.md) |
+| Recorded-bundle checker revision 3 | 39/39 case match | [Hardening offline](docs/proposals/input-support-gates/offline-improvement-2026-10-24.md) |
+
+Hai suite có oracle/raw/review riêng; không cộng thành benchmark model hoặc bằng chứng hoàn tất pipeline. Source candidate và raw nằm ở workspace local; public có [diff code](docs/proposals/input-support-gates/patches/README.md), report và digest locators. Các lượt 17/28 và 23/28 case match, cùng lỗi tương ứng, được giữ trong [biên bản trước sửa](docs/proposals/input-support-gates/pentest-2026-10-24.md).
+
+### Gate dự án kế thừa
+
+**P1K B4 `FAIL` · G1/G2 `INCOMPLETE` · G3/G4 `NOT_RUN` · W4 `NOT_RUN_BLOCKED` · v3 `OFF`.**
+
+Bốn checkpoint trên, R0–R6, W0–W7 và G1–G4 là các hệ định danh riêng. [Phase map](docs/planning/phase-map.md), [validation snapshot](docs/reference/validation-status.md) và [W4 readiness](docs/planning/w4-readiness-plan.md) giữ dependency gốc. Thay đổi tài liệu không đóng các gate này.
+
+## Nguyên lý gốc được bảo toàn
+
+1. **REA** sở hữu workflow, evidence/provenance và ledger; **IDA** sở hữu phân tích native/decompiler và trạng thái IDB trong capability/quyền thực tế.
+2. Với task tiêu thụ target evidence, pair phải cùng target/component/slice/IDA state, có producer/session/revision/custody/freshness; mỗi consumer kiểm relevance, validation và ACK riêng. Knowledge ACK không thay pair ACK hoặc action authority.
+3. Non-target preparation ghi đúng scope, pair `null`, target state `NOT_RUN`; không tạo target claim hoặc target-consumption ACK từ việc chuẩn bị tài liệu.
+4. Quyền đến từ task hợp lệ và enforcement. Prompt, source text, file hash, metadata tool hay việc có IDA không tự chứng minh tool đã nối, evidence authentic hoặc action được phép.
+5. Execution cần applicable **R4a review/freeze trước attempt**, raw được giữ và **R4b reviewer khác producer/executor sau chạy**. Source drift, thiếu prerequisite hoặc hết budget phải giữ stop/wait đúng scope.
+6. Giữ sáu identity, mọi phase/gate, frozen artifacts và lịch sử FAIL. Mâu thuẫn ghi [sổ vấn đề](docs/reference/open-questions.md); không xóa hoặc repin để biến kết quả cũ thành PASS.
+
+[Nguyên lý canonical](CONTEXT_VI.md) · [Kiến trúc](docs/architecture/system.md) · [Knowledge policy](docs/knowledge/knowledge-policy-v2.md)
+
+## Sáu identity
+
+| Identity | Trách nhiệm |
+|---|---|
+| Prompt-Master | Objective/scope, dependency DAG, routing và prompt/handoff |
+| Triage-Sentinel | Recon tĩnh, format/layout và triage evidence |
+| Decomp-Analyst | Phân tích disassembly/decompiler trong state đã bind |
+| Crypto-Logic-Specialist | Nhánh thuật toán có evidence phù hợp, không là stage mặc định |
+| Evidence-Synthesizer | Provenance, support/conflict, review và gate/handoff evidence |
+| Product-Evolution-Architect | Product gap/feature/acceptance proposal từ goal và evidence được nhận |
+
+HITL giữ approval/action theo quyền; Debate là review service có điều kiện. Orchestrator là chức năng điều phối. [Chi tiết ownership và giới hạn dispatch](docs/architecture/agents.md).
+
+## Bản đồ repository
 
 ```text
 Orchestrator_Reverse/
 ├── README.md / AGENTS.md / CONTEXT_VI.md
-├── CONTRIBUTING.md / SECURITY.md / LICENSE_STATUS.md / CITATION.cff
-├── .github/
-├── context/                     # Current view, handoff, project-state.json
+├── context/                         # Current, handoff, derived state
 ├── docs/
-│   ├── README.md                 # Navigation by question
-│   ├── onboarding/              # Start here and session workflow
-│   ├── architecture/            # System, agents, information architecture
-│   ├── planning/                # Phase map and work queue
-│   ├── reference/               # Sources, validation, open questions
-│   ├── proposals/               # Revision-scoped product/architecture proposals
-│   ├── guides/                  # Conditional fine-tuning guide
-│   ├── changes/                 # Revision-scoped change records
-│   └── ARCHITECTURE.md ...       # Compatibility redirects
-├── prompt_stacks/               # Ten unchanged stacks
-│   └── protocols/               # Ten unchanged protocols
-├── metadata/                    # Navigation, preservation, content inventory
-└── scripts/verify_ia.py          # Read/hash/link verification only
+│   ├── README.md                    # Mục lục theo nhu cầu
+│   ├── knowledge/
+│   │   ├── input-pipeline/          # 6 tri thức thiết yếu + nguồn
+│   │   └── prompt-orchestration/    # 12 card tham khảo đã pin
+│   ├── proposals/
+│   │   ├── input-pipeline/          # Thiết kế và evaluation DRAFT
+│   │   ├── input-support-gates/     # Checkpoint/status/report/code diffs
+│   │   ├── knowledge-foundation/    # Reuse guide và worksheet
+│   │   └── agent-office-3d/         # Product/UI proposal riêng
+│   ├── architecture/                # System, identity, IA
+│   ├── planning/                    # Phase, work queue, W4 readiness
+│   ├── reference/                   # Source map, validation, open questions
+│   ├── onboarding/                  # Tiếp nhận và workflow phiên
+│   ├── guides/                      # Hướng dẫn chuyên đề có điều kiện
+│   └── changes/                     # Lịch sử thay đổi theo revision
+├── prompt_stacks/                   # 10 stack giữ nguyên
+│   └── protocols/                   # 10 protocol giữ nguyên
+├── metadata/                        # Navigation, preservation, inventory
+├── scripts/verify_ia.py             # Kiểm read/hash/link của tài liệu
+└── .github/                         # Mẫu issue và pull request
 ```
 
-Repository công khai [Nohfinl99/Orchestrator_Reverse](https://github.com/Nohfinl99/Orchestrator_Reverse) được tạo từ **nội dung bên trong folder này** làm repository root. Không upload hoặc push folder cha `Orchestrator`, vì folder đó còn workspace archive và evidence riêng.
+Các stack/protocol và đường dẫn canonical giữ ổn định. [IA và quy tắc bảo trì](docs/architecture/information-architecture.md) · [Source availability](docs/reference/source-map.md) · [Bản ghi cập nhật README/knowledge](docs/changes/2026-10-24-pipeline-knowledge-publication.md).
 
-## Mười Prompt Stack
+## Công việc tiếp theo
 
-| Stack | Vai trò của stack |
-|---|---|
-| `00_bootstrap` | Tiếp nhận mục tiêu, làm rõ điểm thiếu trọng yếu, lập DAG và handoff atomic. |
-| `01_W0_context_baseline` | Ghi baseline, scope, revision và khả năng phục hồi. |
-| `02_W1_masters_prompts` | Quy tắc routing, owner, no-match, conflict và stop. |
-| `03_W2_knowledge_transfer` | Nguồn tri thức, quyền, applicability và ACK riêng của consumer. |
-| `04_W3_REA_IDA` | Bảo toàn trách nhiệm và evidence qua boundary REA–IDA. |
-| `05_W4_integration` | Checkpoint, history, resume, invalidation và retry. |
-| `06_W5_evaluation` | R4a trước chạy; R4b grading độc lập sau attempt. |
-| `07_W6_pilot_release` | Điều kiện pilot, phạm vi phát hành và rollback. |
-| `08_W7_training_conditional` | Training là nhánh tùy điều kiện, yêu cầu dữ liệu/quyền/eval. |
-| `09_review_gate_handoff` | Review theo digest, tổng hợp gate và chuyển giao context. |
+Chuẩn bị một pilot khi có objective, caller và consumer thực: original/provenance/diff contract → prerequisite/rights/ACK → profile/cases/oracle/budget → R4a → attempt/raw → R4b → quyết định tiếp tục hoặc rollback. [Sổ chờ](docs/proposals/input-support-gates/checkpoint-roadmap-2026-10-24.md) là lịch sử trước A3 closure; [status v4](docs/proposals/input-support-gates/status-v4.json) ghi delta còn 17 tiêu chí. Product availability mở bước scoping, chưa tự dispatch.
 
-Mỗi stack có protocol chuyên trách trong `prompt_stacks/protocols/`. Xem [mục lục chi tiết](prompt_stacks/README.md).
+Các nhánh khác: [nền tảng điều phối](docs/proposals/knowledge-foundation/README.md) · [office 3D](docs/proposals/agent-office-3d/README.md) · [Muse roadmap](docs/onboarding/muse-roadmap-guide-2026-10-22.md) · [fine-tuning có điều kiện](docs/guides/fine-tuning.md).
 
-## Agent và trách nhiệm
+## Đóng góp, kiểm tài liệu và quyền sử dụng
 
-| Agent | Trách nhiệm chính | Bàn giao tiêu biểu |
-|---|---|---|
-| Prompt-Master | Tiếp nhận mục tiêu, scope, dependency và điều phối prompt. | Task DAG/prompt cho owner chuyên trách. |
-| Triage-Sentinel | Reconnaissance tĩnh, format/layout và ưu tiên phân tích. | Triage evidence cho Prompt-Master/Decomp-Analyst. |
-| Decomp-Analyst | Phân tích sâu disassembly/decompiler trong state đã binding. | Phân tích có locator và proposal; Crypto khi evidence phù hợp. |
-| Crypto-Logic-Specialist | Phân tích logic thuật toán có bằng chứng. | Claim/hypothesis và phản chứng cho Evidence-Synthesizer. |
-| Evidence-Synthesizer | Kiểm provenance, support, conflict và handoff. | Report/receipt hoặc unresolved findings cho owner/HITL. |
-| Product-Evolution-Architect | Phân tích product gap từ goal và evidence được chấp nhận. | Feature/acceptance proposal về Prompt-Master. |
+Đọc [CONTRIBUTING.md](CONTRIBUTING.md) và [SECURITY.md](SECURITY.md). Sau chỉnh navigation, dùng `python -I -B scripts/verify_ia.py` theo [quy trình IA](docs/architecture/information-architecture.md); kết quả chỉ kiểm tính toàn vẹn/liên kết tài liệu, không chạy workload hoặc chứng nhận runtime.
 
-HITL giữ approval/action theo quyền được cấp. Debate là review service có điều kiện. Orchestrator là chức năng điều phối, không phải identity thứ bảy.
+Public root chỉ là nội dung trong `Orchestrator_Reverse/`. Archive, raw, target/binary, IDB, config/credential và PDF nguồn không thuộc gói xuất bản này. Các source/receipt thiếu trong clone public được ghi `LOCAL_ONLY_NOT_DISTRIBUTED`.
 
-## Phạm vi và giới hạn
-
-Gói này chứa instruction overlay và tài liệu mô tả. Nó không chứa RE-Decom archive đầy đủ, raw capture, target/binary, database IDA, local config/credential, snapshot backup, output fine-tuning hoặc các artefact riêng của máy.
-
-Mười stack là bộ tài liệu, không có nghĩa toàn bộ task đã chạy. Mười protocol không chứng nhận code thực thi. Coverage design, hash/locator checks, benchmark execution và review độc lập là những loại bằng chứng khác nhau. Xem [trạng thái nghiệm thu](docs/reference/validation-status.md).
-
-## Quyền và giấy phép
-
-Quyền của corpus nguồn chưa được xác nhận đủ để gán một license mở cho mọi nội dung. Theo mặc định không cấp quyền sao chép, sửa đổi hoặc phân phối vượt quá các quyền hiện có. Xem [LICENSE_STATUS.md](LICENSE_STATUS.md) trước khi tái sử dụng hoặc thêm code/asset bên thứ ba.
-
-## Đóng góp và báo lỗi
-
-Xem [CONTRIBUTING.md](CONTRIBUTING.md) và [SECURITY.md](SECURITY.md). Mọi thay đổi phải giữ provenance, phân biệt thiết kế với execution, và không sửa lịch sử để biến FAIL/NOT_RUN thành PASS.
+Quyền corpus nguồn chưa đủ để gán license mở cho toàn bộ repository; xem [LICENSE_STATUS.md](LICENSE_STATUS.md) và [nguồn/attribution của bundle mới](docs/knowledge/input-pipeline/sources.md). Nguyên lý và provenance phải được giữ khi tái sử dụng.

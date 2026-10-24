@@ -66,3 +66,7 @@ Xem [report](../docs/proposals/input-support-gates/pentest-2026-10-24.md) và [s
 ## Handoff sau thực thi cải thiện offline
 
 Lệnh sau cuộc họp đã cho phép task offline riêng: xem [report](../docs/proposals/input-support-gates/offline-improvement-2026-10-24.md)/[status v4](../docs/proposals/input-support-gates/status-v4.json). A3 được verify theo seedr2/review exactdigest; A5/A6 chưa nhận. Checker local `src/candidates/revision_3/` là hardening readback fixed bundle; role_router/prompt_contract vẫn revision2, không product integration.39case mới không gộp thành benchmark với42case cũ; timeout fault injection và hostile symlink/race chưa kiểm. Còn17 tiêu chí chờ, scope/gate runtime giữ nguyên; mọi attempt sau cần review/dispatch mới.
+
+## Handoff sau publication tri thức pipeline và README
+
+README dẫn theo nhu cầu; [knowledge bundle](../docs/knowledge/input-pipeline/README.md) chứa6điểm cùng nguồn/page/digest; [proposal](../docs/proposals/input-pipeline/README.md) và [evaluation](../docs/proposals/input-pipeline/evaluation-plan.md) là DRAFT/NOT_APPLIED. [Change record](../docs/changes/2026-10-24-pipeline-knowledge-publication.md) ghi phạm vi xuất bản. Source PDF, extraction, raw/oracle và receipt local không được phân phối. Publication không tăng coverage66,67/50/0/0 hoặc tạo runtime/KB ACK; product-dependent work tiếp tục chờ actual caller/consumer/prerequisite.

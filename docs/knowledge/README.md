@@ -14,6 +14,7 @@
 
 | Bundle | Nội dung | Trạng thái |
 |---|---|---|
+| [Input pipeline — 24/10/2026](input-pipeline/README.md) | [6 tri thức thiết yếu](input-pipeline/essentials.md), [source/page/digest và giới hạn](input-pipeline/sources.md); phân biệt claim tác giả với suy luận thiết kế | CANDIDATE_REFERENCE_NOT_ADMITTED; chưa triển khai pipeline hoặc consumer ACK |
 | [Prompt orchestration — 21/10/2026](prompt-orchestration/knowledge-cards.md) | 12 card WHAT/WHY/HOW, nguồn pin commit, giới hạn và check đề xuất | CANDIDATE_REFERENCE_NOT_ADMITTED; chưa consumer ACK |
 
 Chọn theo [retrieval guide](prompt-orchestration/retrieval-guide.md), rồi áp dụng [policy revision 2](knowledge-policy-v2.md); [application-map revision 1](prompt-orchestration/application-map.md) là snapshot lịch sử, không phải topic blacklist. AI có thể tra [knowledge.json](prompt-orchestration/knowledge.json) và [sources.json](prompt-orchestration/sources.json); hai file là worksheet tài liệu, không phải runtime API/schema.

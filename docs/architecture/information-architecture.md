@@ -12,8 +12,10 @@ IA tổ chức cách tìm hiểu và tiếp tục project; các nguyên lý, pha
 | `docs/architecture/` | Thành phần, role và thông tin liên hệ ra sao? | View kiến trúc và trách nhiệm; không tự đổi topology |
 | `docs/planning/` | Phase/dependency và công việc nào? | Tách W, R và gate; đề xuất khác dispatch |
 | `docs/reference/` | Nguồn nào chính, còn thiếu gì? | Provenance, availability, validation và câu hỏi mở |
+| `docs/knowledge/` | Tri thức tham khảo nào liên quan task? | Giữ source/page/digest và phân biệt claim/suy luận; không tự admission KB hoặc cấp quyền. Nhánh `input-pipeline/` giữ 6 điểm thiết yếu. |
 | `docs/guides/` | Hướng dẫn chuyên đề nào? | Chỉ mở khi task cần; nội dung phụ thuộc thời gian phải kiểm lại lúc dùng |
 | `docs/proposals/` | Proposal sản phẩm/kiến trúc nào đang được xem xét? | Ghi status proposal, source/revision, giới hạn và acceptance đề xuất; không là runtime contract hoặc dispatch. |
+| `docs/proposals/input-pipeline/` | Pipeline và đánh giá sẽ được thiết kế ra sao? | Proposal/evaluation DRAFT tách khỏi knowledge và các kết quả tại `input-support-gates/`; phần sản phẩm chờ caller/consumer thật. |
 | `docs/changes/` | Lượt thay đổi nào đã làm gì? | Record theo revision, không thay raw/frozen history |
 | `prompt_stacks/` | Hợp đồng instruction nào? | Giữ nguyên mười stack/protocol, tên và bytes |
 | `metadata/` | File nào có digest và mapping? | Navigation/relocation/custody, không chứng minh semantic support |

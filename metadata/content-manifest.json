@@ -29,8 +29,8 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 6472,
-      "sha256": "ff7c23bd102e0315604ddb240f74f7cb75c0714236d97bdbf28c993005a022e7"
+      "bytes": 6937,
+      "sha256": "6a444a3d6b2e3a5fd66d7bcf5ed46e4798e4848f88b2308e40831f51740a597e"
     },
     {
       "path": "CITATION.cff",
@@ -39,13 +39,13 @@
     },
     {
       "path": "context/current.md",
-      "bytes": 6710,
-      "sha256": "6a50a3957c9b4f8050d72830db233a011b5f3ac3cdd679c70b7c6702b1f6805b"
+      "bytes": 7241,
+      "sha256": "262e6968fbffaae8c7792c3f882faef875b447068061a3ca3495dd5464cdd562"
     },
     {
       "path": "context/handoff.md",
-      "bytes": 8095,
-      "sha256": "ac73e84bb0d49d1cd17aaab588c025343d75c23d060ff06b1b05d63e203bea04"
+      "bytes": 8780,
+      "sha256": "e328b8e933132618f4e727b5c1fc7a58c4992fea0adc112a61a1043e5c5ed72a"
     },
     {
       "path": "context/project-state.json",
@@ -69,8 +69,8 @@
     },
     {
       "path": "docs/architecture/information-architecture.md",
-      "bytes": 5102,
-      "sha256": "52796caa9a88a4d1d334f88fa975bb6b738b4f5ce77356954239d305313118e6"
+      "bytes": 5587,
+      "sha256": "e77abcf404f4123bb292e6e1b19c21b7f0580d57976be97f0c8fc795624e407d"
     },
     {
       "path": "docs/architecture/system.md",
@@ -158,6 +158,11 @@
       "sha256": "11e1d189bc289b6291874503ca043446f35eda3d85c01795f84b8cc45db4ce91"
     },
     {
+      "path": "docs/changes/2026-10-24-pipeline-knowledge-publication.md",
+      "bytes": 3851,
+      "sha256": "ad113e42bb6ddd4c1624a27fd545097214a2b1d12cf2843425c20c7e1c53a9f4"
+    },
+    {
       "path": "docs/FINE_TUNING.md",
       "bytes": 272,
       "sha256": "ec981804e339c8489880889d18fe30a80a9fafde9f3d2820018e8cd508f5cb67"
@@ -166,6 +171,21 @@
       "path": "docs/guides/fine-tuning.md",
       "bytes": 6150,
       "sha256": "f95bffb9f9e56894da815979bb7017d06a8717998a74769b48db0ad6170d0d29"
+    },
+    {
+      "path": "docs/knowledge/input-pipeline/essentials.md",
+      "bytes": 5919,
+      "sha256": "3d1d6052ac9ee990a9da9c33c34bdf628eedcc9c5e23eaee9c3f2cccb3607714"
+    },
+    {
+      "path": "docs/knowledge/input-pipeline/README.md",
+      "bytes": 2550,
+      "sha256": "d744858e5217758a6d97d0191c25a40a4806600db7e1ea7e3c080ca0df7daad7"
+    },
+    {
+      "path": "docs/knowledge/input-pipeline/sources.md",
+      "bytes": 4494,
+      "sha256": "08f51c142444d5e0c0a9653683dee0f0eefef976f9e33d60aa7feb314ee91d1c"
     },
     {
       "path": "docs/knowledge/knowledge-policy-v2.md",
@@ -209,8 +229,8 @@
     },
     {
       "path": "docs/knowledge/README.md",
-      "bytes": 3332,
-      "sha256": "b013a628e3e78eaab4013324b356c2731cd689eded799276a6476b2f7ae585f4"
+      "bytes": 3666,
+      "sha256": "365fd190b85ae258af0d980aa939adbc587b2d0be44b04003df76d6325bd78da"
     },
     {
       "path": "docs/onboarding/muse-roadmap-guide-2026-10-22.md",
@@ -244,8 +264,8 @@
     },
     {
       "path": "docs/planning/work-queue.md",
-      "bytes": 6802,
-      "sha256": "9532f5aa1e014e74b78fbab9d7f249f1f1770986ee7b0395be319ab856467d49"
+      "bytes": 7212,
+      "sha256": "e75531252e864cad702efedc3d11b6b40e26036a3c01bfba097364c155c1a663"
     },
     {
       "path": "docs/proposals/agent-office-3d/ai-judges-review-2026-10-22-01.md",
@@ -488,6 +508,16 @@
       "sha256": "2de71abc996897175a53cef831a489edd9714580c4e6a99e860d310f195110bb"
     },
     {
+      "path": "docs/proposals/input-pipeline/evaluation-plan.md",
+      "bytes": 5615,
+      "sha256": "69973a8946cd561f463b8690ba1144f6bff19a5ab81d89c231c0be694be4c6db"
+    },
+    {
+      "path": "docs/proposals/input-pipeline/README.md",
+      "bytes": 5233,
+      "sha256": "e06b47e204824a26e5effd91be7dcc0a48f372db008e7a68b61e22dc3752344f"
+    },
+    {
       "path": "docs/proposals/input-support-gates/benchmark-plan.md",
       "bytes": 4023,
       "sha256": "3b174cb2757c85ebceaa5c791148bdc8db241d80ff02741bba9667eb60d4bf31"
@@ -593,9 +623,14 @@
       "sha256": "04641b559f82add3b0aa1e550e1f38375f20d8d0786eee63a441403a1f75edfa"
     },
     {
+      "path": "docs/proposals/README.md",
+      "bytes": 2265,
+      "sha256": "b172593db537d73f977a2eef578ea8f6ab027ac7a064f71af9d86a44bedc0cb9"
+    },
+    {
       "path": "docs/README.md",
-      "bytes": 3747,
-      "sha256": "bf1ce5ddc9a44ab0b1c187991986501a7b8372be6ef0fb0ab917ba4fbbb578bf"
+      "bytes": 4294,
+      "sha256": "80dc50d8f8eac8b3d386ba8d7553fafe0a12d542ce537a5e179659b2120a90ba"
     },
     {
       "path": "docs/reference/open-questions.md",
@@ -639,8 +674,13 @@
     },
     {
       "path": "metadata/navigation.json",
-      "bytes": 8462,
-      "sha256": "61647aae0319ae093a92dd2535da4794a46472d18d60bbd13ec1bcca1d886c7c"
+      "bytes": 9690,
+      "sha256": "d0d50b8642678cf0d1d9cb689d7c391ab3b08950363581b2594bdc7b1b258213"
+    },
+    {
+      "path": "metadata/pipeline-knowledge-source-pins.json",
+      "bytes": 2537,
+      "sha256": "d0e625ae823d6a49027837993ce645819c645aa9644b36eb9e86ec0b83b75e12"
     },
     {
       "path": "metadata/preservation.json",
@@ -754,8 +794,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 9978,
-      "sha256": "a031a7c170fe600804ee9ea4a4811f5bc8031c9b2be8564f967ed83d8816d7c2"
+      "bytes": 11899,
+      "sha256": "f027812638ffddbda0de7dfac111424d8f8cac5018dfb6f2d2b50c7b0031627a"
     },
     {
       "path": "scripts/verify_ia.py",

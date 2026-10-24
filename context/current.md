@@ -1,5 +1,7 @@
 # Context hiện tại — snapshot 21/10/2026
 
+**Điểm đọc hiện hành sau publication 24/10:** [6 tri thức input pipeline](../docs/knowledge/input-pipeline/README.md) → [thiết kế DRAFT](../docs/proposals/input-pipeline/README.md) → [evaluation plan](../docs/proposals/input-pipeline/evaluation-plan.md). Evidence baseline vẫn [status v4](../docs/proposals/input-support-gates/status-v4.json):66,67/50/0/0,17 tiêu chí chờ. Các snapshot/lượt công việc bên dưới giữ chronology; xuất bản tài liệu không nối runtime hoặc đổi gate.
+
 Orchestrator_Reverse xây lớp điều phối reverse engineering theo goal, task DAG, identity hiện hữu, evidence và gate. REA sở hữu workflow/evidence/ledger; IDA sở hữu native/decompiler/IDB state. Xem [nguyên lý gốc](../CONTEXT_VI.md).
 
 **Lượt công việc gần nhất:** đã trích xuất [12 knowledge card cho điều phối](../docs/knowledge/README.md) từ ba nguồn GitHub, có source pins, WHAT/WHY/HOW, retrieval và giới hạn; đây là candidate reference, chưa admitted KB/ACK. [W4 readiness/gap register](../docs/planning/w4-readiness-plan.md) giữ runtime `NOT_RUN_BLOCKED`; I01–I04 không eligible ở run44, I05 chỉ verified non-target preparation. Nhánh nghiệp vụ tiếp theo vẫn là proposal consumer, chưa dispatch. Prompt/protocol chưa nối loader/runtime.

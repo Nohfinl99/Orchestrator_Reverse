@@ -1,0 +1,77 @@
+{
+  "record_type": "PUBLIC_REFERENCE_PROVENANCE_NOT_RUNTIME_ADMISSION",
+  "date": "2026-10-24",
+  "bundle": "INPUT_PIPELINE_ESSENTIALS",
+  "revision": 1,
+  "knowledge_status": "CANDIDATE_REFERENCE_NOT_ADMITTED",
+  "proposal_status": "DRAFT_NOT_IMPLEMENTED_NOT_APPLIED",
+  "source": {
+    "title": "Securing GenAI: A Comprehensive Report on Prompt Attacks: Taxonomy, Risks, and Solutions",
+    "publisher": "Palo Alto Networks",
+    "copyright_year": 2025,
+    "pdf_pages": 34,
+    "pdf_sha256": "b250ca8a780dd07517b578766522e5d1b53a45e351a2221d64d019c3bd822ec3",
+    "bytes": 4203129,
+    "availability": "SOURCE_PDF_LOCAL_NOT_DISTRIBUTED",
+    "official_url": "https://www.paloaltonetworks.com/resources/whitepapers/prompt-attack",
+    "official_summary_url": "https://unit42.paloaltonetworks.com/new-frontier-of-genai-threats-a-comprehensive-guide-to-prompt-attacks/",
+    "website_byte_identity": "NOT_CHECKED",
+    "bibliography_replication": "NOT_PERFORMED"
+  },
+  "public_documents": [
+    "docs/knowledge/input-pipeline/README.md",
+    "docs/knowledge/input-pipeline/essentials.md",
+    "docs/knowledge/input-pipeline/sources.md",
+    "docs/proposals/input-pipeline/README.md",
+    "docs/proposals/input-pipeline/evaluation-plan.md"
+  ],
+  "locators": {
+    "source_instruction_boundary": [
+      9,
+      10,
+      12
+    ],
+    "intent_multi_turn": [
+      10,
+      17,
+      18,
+      19,
+      20
+    ],
+    "derived_representations": [
+      20,
+      21,
+      22
+    ],
+    "tool_action": [
+      9,
+      11,
+      25
+    ],
+    "output_memory": [
+      7,
+      8,
+      9,
+      22,
+      23,
+      24,
+      25
+    ],
+    "evaluation_limits": [
+      28,
+      29,
+      30
+    ]
+  },
+  "interpretation": "Source observations are paraphrases; implementation steps, storage/diff/enforcement and evaluation checks are project proposals/inferences and inherited contracts, not validated defenses from the paper",
+  "local_analysis_digest_locators": {
+    "analysis.md": "0021b612f02fad704a4ced8c043e3087203cee79c85655cee858f0aa20699e79",
+    "pipeline-knowledge.md": "e13eda61360c12111e2240554787ae99452e9f8db0ff7faad5eeda2c82aed81b",
+    "final-review.md": "b70533a03c1c68d6c413ebf4dadf1a31c0540910e89fe42c73b9a8006fb52210"
+  },
+  "local_record_access": "LOCAL_ONLY_NOT_DISTRIBUTED; digests are locators, not signatures or public availability claims",
+  "runtime_consumer_ack": "NOT_ISSUED",
+  "new_model_provider_target_calls": 0,
+  "source_payload_raw_oracle_pdf_published": false,
+  "runtime_gate_promotion": false
+}

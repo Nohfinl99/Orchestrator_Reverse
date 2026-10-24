@@ -14,6 +14,7 @@
     "machine_view": "context/project-state.json",
     "handoff": "context/handoff.md",
     "docs_index": "docs/README.md",
+    "proposals_index": "docs/proposals/README.md",
     "onboarding": "docs/onboarding/start-here.md",
     "session_workflow": "docs/onboarding/session-workflow.md",
     "system": "docs/architecture/system.md",
@@ -55,8 +56,16 @@
     "knowledge_policy": "docs/knowledge/knowledge-policy-v2.md",
     "rea_knowledge_refresh": "docs/knowledge/rea-update-2026-10-24.md",
     "input_support_checkpoints": "docs/proposals/input-support-gates/README.md",
-    "input_support_status": "docs/proposals/input-support-gates/status-v2.json",
-    "input_support_pentest": "docs/proposals/input-support-gates/pentest-2026-10-24.md"
+    "input_support_status": "docs/proposals/input-support-gates/status-v4.json",
+    "input_support_status_v2_history": "docs/proposals/input-support-gates/status-v2.json",
+    "input_support_pentest": "docs/proposals/input-support-gates/pentest-2026-10-24.md",
+    "input_support_offline_improvement": "docs/proposals/input-support-gates/offline-improvement-2026-10-24.md",
+    "pipeline_knowledge": "docs/knowledge/input-pipeline/README.md",
+    "pipeline_essentials": "docs/knowledge/input-pipeline/essentials.md",
+    "pipeline_sources": "docs/knowledge/input-pipeline/sources.md",
+    "pipeline_design": "docs/proposals/input-pipeline/README.md",
+    "pipeline_evaluation": "docs/proposals/input-pipeline/evaluation-plan.md",
+    "pipeline_publication_record": "docs/changes/2026-10-24-pipeline-knowledge-publication.md"
   },
   "compatibility_routes": {
     "docs/ARCHITECTURE.md": "docs/architecture/system.md",
@@ -165,11 +174,22 @@
     ],
     "input_support": [
       "docs/proposals/input-support-gates/README.md",
+      "docs/proposals/input-support-gates/status-v4.json",
+      "docs/proposals/input-support-gates/offline-improvement-2026-10-24.md",
       "docs/proposals/input-support-gates/packet.md",
       "docs/proposals/input-support-gates/benchmark-plan.md",
       "docs/proposals/input-support-gates/status.json",
       "docs/proposals/input-support-gates/pentest-2026-10-24.md",
       "docs/proposals/input-support-gates/status-v2.json"
+    ],
+    "input_pipeline_design": [
+      "context/current.md",
+      "docs/knowledge/input-pipeline/README.md",
+      "docs/knowledge/input-pipeline/essentials.md",
+      "docs/knowledge/input-pipeline/sources.md",
+      "docs/proposals/input-pipeline/README.md",
+      "docs/proposals/input-pipeline/evaluation-plan.md",
+      "docs/proposals/input-support-gates/status-v4.json"
     ]
   },
   "local_sources": "docs/reference/source-map.md",
