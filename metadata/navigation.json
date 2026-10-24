@@ -65,7 +65,12 @@
     "pipeline_sources": "docs/knowledge/input-pipeline/sources.md",
     "pipeline_design": "docs/proposals/input-pipeline/README.md",
     "pipeline_evaluation": "docs/proposals/input-pipeline/evaluation-plan.md",
-    "pipeline_publication_record": "docs/changes/2026-10-24-pipeline-knowledge-publication.md"
+    "pipeline_publication_record": "docs/changes/2026-10-24-pipeline-knowledge-publication.md",
+    "local_pipeline_guide": "docs/guides/local-input-pipeline.md",
+    "local_pipeline_state": "context/local-pipeline-state.json",
+    "local_pipeline_report": "docs/proposals/input-pipeline/local-runtime-2026-10-24.md",
+    "native_pilot_research": "docs/proposals/input-pipeline/native-pilot-research-2026-10-24.md",
+    "local_runtime_change_record": "docs/changes/2026-10-24-local-input-runtime.md"
   },
   "compatibility_routes": {
     "docs/ARCHITECTURE.md": "docs/architecture/system.md",
@@ -190,6 +195,12 @@
       "docs/proposals/input-pipeline/README.md",
       "docs/proposals/input-pipeline/evaluation-plan.md",
       "docs/proposals/input-support-gates/status-v4.json"
+    ],
+    "local_pipeline": [
+      "docs/guides/local-input-pipeline.md",
+      "context/local-pipeline-state.json",
+      "docs/proposals/input-pipeline/local-runtime-2026-10-24.md",
+      "docs/proposals/input-pipeline/native-pilot-research-2026-10-24.md"
     ]
   },
   "local_sources": "docs/reference/source-map.md",

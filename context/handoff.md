@@ -1,5 +1,7 @@
 # Bàn giao và tiếp tục phiên
 
+**Bàn giao mới 24/10 — local CLI:** đọc [guide](../docs/guides/local-input-pipeline.md), [report](../docs/proposals/input-pipeline/local-runtime-2026-10-24.md), [state](local-pipeline-state.json), rồi [native research](../docs/proposals/input-pipeline/native-pilot-research-2026-10-24.md). Leaf offline đã IMPLEMENTED/EXECUTED/REVIEWED; nguyên suite raw local_only, không rerun để đổi tỷ lệ. Native cần fixture/build/isolation/provider và packet R4a riêng; giữ global gates và status v4. Không chọn trạng thái từ các snapshot cũ bên dưới.
+
 Đọc [current.md](current.md) để biết trạng thái, [work queue](../docs/planning/work-queue.md) để biết nhánh tiếp theo và [source map](../docs/reference/source-map.md) để mở đúng nguồn. Trang này quy định cách ghi bàn giao ở lớp tài liệu; không thay schema checkpoint/handoff của runtime.
 
 ## Đã bàn giao từ lượt IA

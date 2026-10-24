@@ -1,5 +1,7 @@
 # Hướng dẫn cho AI tiếp nhận Orchestrator_Reverse
 
+**Implementation mới:** input pipeline có [CLI local](docs/guides/local-input-pipeline.md), [report](docs/proposals/input-pipeline/local-runtime-2026-10-24.md) và [state riêng](context/local-pipeline-state.json). Đây là caller chuẩn bị offline đã kiểm; không thay caller scope/status v4 hoặc W4. Khi tiếp tục native, đọc [nghiên cứu pilot](docs/proposals/input-pipeline/native-pilot-research-2026-10-24.md); chỉ thị cho phép isolation không chứng minh isolation đã tồn tại.
+
 Đọc [context hiện tại](context/current.md) → [bản đồ phase](docs/planning/phase-map.md) → [hàng đợi](docs/planning/work-queue.md). Khi tiếp tục phiên, đọc [handoff](context/handoff.md), rồi mới mở nguồn theo [source map](docs/reference/source-map.md). Không cần nạp toàn bộ prompt stack cho mọi task.
 
 ## Knowledge trung lập và bảo toàn qua revision
