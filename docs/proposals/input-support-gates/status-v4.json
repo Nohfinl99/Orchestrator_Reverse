@@ -1,0 +1,304 @@
+{
+  "kind": "PROPOSED_WORK_CHECKPOINTS_NOT_RUNTIME_GATES",
+  "date": "2026-10-24",
+  "baseline": "63a40e47c2344fe8c64539906be9df797a0e174f",
+  "criteria_revision": 1,
+  "threshold_decision": "PENDING_USER_DECISION",
+  "percent_means": "Verified named criteria divided by six; not probability, benchmark accuracy or project completion",
+  "acceptance": "NO_CHECKPOINT_ACCEPTED; SOURCE_SEEDS_REVIEWED_AND_CHECKER_HARDENED",
+  "new_model_calls": 0,
+  "new_target_calls": 0,
+  "new_fixture_runs": 1,
+  "checkpoints": [
+    {
+      "id": "INPUT-A",
+      "verified": 4,
+      "total": 6,
+      "percent": 66.67,
+      "unverified": 2,
+      "failed": 0,
+      "decision": "PENDING",
+      "evidence_review": "SIX_SOURCE_SEED_REVISION_2_INDEPENDENT_REVIEW; NO_MODEL_BENCHMARK_OR_THRESHOLD_ACCEPTANCE",
+      "criteria": [
+        {
+          "id": "A1",
+          "criterion": "Scope and user choices recorded",
+          "status": "VERIFIED_IN_DECLARED_SCOPE",
+          "evidence": "user-decisions.json"
+        },
+        {
+          "id": "A2",
+          "criterion": "One selected call site and source pins",
+          "status": "VERIFIED_IN_DECLARED_SCOPE",
+          "evidence": "source-pins.json; packet.md"
+        },
+        {
+          "id": "A3",
+          "criterion": "Input/cases/oracle independently reviewed",
+          "status": "VERIFIED_IN_DECLARED_SCOPE",
+          "evidence": "Six source-comprehension seeds revision2 accepted by different reviewer, exact digest; no benchmark run or hidden heldout claim"
+        },
+        {
+          "id": "A4",
+          "criterion": "Offline actions/outputs/numeric budget/stop recorded",
+          "status": "VERIFIED_IN_DECLARED_SCOPE",
+          "evidence": "packet.md; user-decisions.json"
+        },
+        {
+          "id": "A5",
+          "criterion": "Actual model-refusal raw or explicit source-only benchmark decision",
+          "status": "PENDING_OR_NOT_RUN",
+          "evidence": "User decision pending on limited source-comprehension scope"
+        },
+        {
+          "id": "A6",
+          "criterion": "Criteria and thresholds accepted by user",
+          "status": "PENDING_OR_NOT_RUN",
+          "evidence": "Decision pending"
+        }
+      ]
+    },
+    {
+      "id": "KNOWLEDGE-B",
+      "verified": 3,
+      "total": 6,
+      "percent": 50.0,
+      "unverified": 3,
+      "failed": 0,
+      "decision": "PENDING",
+      "evidence_review": "BOUNDED_COMPONENT_REPAIR_R4A_R4B; NO_INTEGRATED_PIPELINE_ACCEPTANCE",
+      "criteria": [
+        {
+          "id": "B1",
+          "criterion": "Source captures match declared SHA/bytes",
+          "status": "VERIFIED_IN_DECLARED_SCOPE",
+          "evidence": "verification.json: 13 captures"
+        },
+        {
+          "id": "B2",
+          "criterion": "Release/package/skill versions distinguished by source metadata",
+          "status": "VERIFIED_IN_DECLARED_SCOPE",
+          "evidence": "verification.json: version_checks"
+        },
+        {
+          "id": "B3",
+          "criterion": "Session capability metadata captured and internally checked",
+          "status": "VERIFIED_IN_DECLARED_SCOPE",
+          "evidence": "capability-observed.json; verification.json"
+        },
+        {
+          "id": "B4",
+          "criterion": "Bundle rights/applicability reviewed",
+          "status": "PENDING_OR_NOT_RUN",
+          "evidence": "Not performed for concrete consumer"
+        },
+        {
+          "id": "B5",
+          "criterion": "Actual consumer context/bundle/digest ACK",
+          "status": "PENDING_OR_NOT_RUN",
+          "evidence": "Not received"
+        },
+        {
+          "id": "B6",
+          "criterion": "Independent review/admission",
+          "status": "PENDING_OR_NOT_RUN",
+          "evidence": "Not performed"
+        }
+      ]
+    },
+    {
+      "id": "IMPLEMENTATION-C",
+      "verified": 0,
+      "total": 6,
+      "percent": 0.0,
+      "unverified": 6,
+      "failed": 0,
+      "decision": "PENDING",
+      "evidence_review": "BOUNDED_COMPONENT_REPAIR_R4A_R4B; NO_INTEGRATED_PIPELINE_ACCEPTANCE",
+      "criteria": [
+        {
+          "id": "C1",
+          "criterion": "Bound caller integration",
+          "status": "PENDING_OR_NOT_RUN",
+          "evidence": "NOT_IMPLEMENTED_NOT_RUN"
+        },
+        {
+          "id": "C2",
+          "criterion": "Original input storage and revision/digest",
+          "status": "PENDING_OR_NOT_RUN",
+          "evidence": "NOT_IMPLEMENTED_NOT_RUN"
+        },
+        {
+          "id": "C3",
+          "criterion": "Layer-correct rejection taxonomy",
+          "status": "PENDING_OR_NOT_RUN",
+          "evidence": "NOT_IMPLEMENTED_NOT_RUN"
+        },
+        {
+          "id": "C4",
+          "criterion": "Diff-visible intent-preserving normalization",
+          "status": "PENDING_OR_NOT_RUN",
+          "evidence": "NOT_IMPLEMENTED_NOT_RUN"
+        },
+        {
+          "id": "C5",
+          "criterion": "2-3 clarification questions as implemented behavior",
+          "status": "PENDING_OR_NOT_RUN",
+          "evidence": "NOT_IMPLEMENTED_NOT_RUN"
+        },
+        {
+          "id": "C6",
+          "criterion": "Behavioral raw and independent review",
+          "status": "PARTIAL_VERIFIED_COMPONENT_SCOPE",
+          "evidence": "42/42 bounded function cases plus separate R4b; complete input pipeline not implemented/accepted"
+        }
+      ]
+    },
+    {
+      "id": "EVALUATION-D",
+      "verified": 0,
+      "total": 6,
+      "percent": 0.0,
+      "unverified": 6,
+      "failed": 0,
+      "decision": "PENDING",
+      "evidence_review": "BOUNDED_COMPONENT_REPAIR_R4A_R4B; NO_INTEGRATED_PIPELINE_ACCEPTANCE",
+      "criteria": [
+        {
+          "id": "D1",
+          "criterion": "Concrete model/provider/data/budget profile",
+          "status": "PENDING_OR_NOT_RUN",
+          "evidence": "NOT_RUN"
+        },
+        {
+          "id": "D2",
+          "criterion": "Reviewed frozen cases/oracle R4a",
+          "status": "PENDING_OR_NOT_RUN",
+          "evidence": "NOT_RUN"
+        },
+        {
+          "id": "D3",
+          "criterion": "Capability/authority/applicable pair",
+          "status": "PENDING_OR_NOT_RUN",
+          "evidence": "NOT_RUN"
+        },
+        {
+          "id": "D4",
+          "criterion": "Captured model/REA attempt",
+          "status": "PENDING_OR_NOT_RUN",
+          "evidence": "NOT_RUN"
+        },
+        {
+          "id": "D5",
+          "criterion": "Independent R4b",
+          "status": "PENDING_OR_NOT_RUN",
+          "evidence": "NOT_RUN"
+        },
+        {
+          "id": "D6",
+          "criterion": "Accepted metrics and continuation/rollback",
+          "status": "PENDING_OR_NOT_RUN",
+          "evidence": "NOT_RUN"
+        }
+      ]
+    }
+  ],
+  "status_revision": 4,
+  "independence": "Three real subagent sessions with separate producer/executor/review responsibilities; same model, not human/cross-model",
+  "evidence_locators": {
+    "workspace_packet": "evidence/orchestrator_meetings/20261024_offline_improvement_01",
+    "availability": "LOCAL_ONLY_NOT_DISTRIBUTED",
+    "sha256": {
+      "freeze.json": "da5876c86c5607d41b9c5e5f8272e4514e8521dfd4d9a1c3c704b6e2a4cb5cac",
+      "runner.py": "e647ce88af45dce83484da19cf7fb99a1ef7ea514fbec25858b0b37bb41aefb9",
+      "oracle.json": "ceaa501edcd468ce6715dac525cc32b93dbc92d02c47c009dcf9cd9d8c1b914a",
+      "meeting/r4a-review.md": "dc28eb2745cebb7d8b37b217673ac62e5791ef30ffc347f1d0b69f94f4a6b819",
+      "meeting/r4b-review.md": "79a4583aa3a6afbca68430cb44f2017dddfb0ce6957c138bd6d62fae9581c09f",
+      "meeting/r4b-verdict.json": "dd6ab482f7fdf5acc6f566642cc5b1c4f5608d0e16d73d561c5f712290fb2178",
+      "execution/attempt_01/summary.json": "440d2ca60fca3593669058903aa097f033e1c0e3c4d0e62c482b09aeca7ee52a",
+      "execution/executor-receipt.json": "5dae5a6afb5a491c91382ea7880502ef46d518cea0c2f448210c3ef087cee582"
+    },
+    "previous_status": "status-v3.json"
+  },
+  "new_fixture_runs_scope": "New offline_improvement_01 checker-only suite. Historical42-case repair result below not rerun.",
+  "historical_component_results": {
+    "distinct_cases": 42,
+    "suite_attempts": 1,
+    "final_passed": 42,
+    "final_errors": 0,
+    "groups": {
+      "INPUT-A": {
+        "passed": 8,
+        "total": 8,
+        "case_match_percent": 100.0
+      },
+      "KNOWLEDGE-B": {
+        "passed": 8,
+        "total": 8,
+        "case_match_percent": 100.0
+      },
+      "IMPLEMENTATION-C": {
+        "passed": 16,
+        "total": 16,
+        "case_match_percent": 100.0
+      },
+      "EVALUATION-D": {
+        "passed": 10,
+        "total": 10,
+        "case_match_percent": 100.0
+      }
+    },
+    "original_28_oracle_objects_preserved": true,
+    "regression_cases_added": 14,
+    "model_provider_calls": 0,
+    "target_calls": 0,
+    "scope": "Revision_2 candidate Python functions and copied evidence readback; not model/REA engine",
+    "remaining_limits": [
+      "Caller statuses not authenticated by external validators",
+      "No bound input pipeline or natural language normalization",
+      "Arbitrary valid JSON shapes not exhaustively validated"
+    ],
+    "status_revision_provenance": 3,
+    "historical_only_not_rerun": true
+  },
+  "source_seed_adjudication": {
+    "original_review": "Five accepted; S05 needed revision; original retained",
+    "current_revision": 2,
+    "reviewed": 6,
+    "accepted": 6,
+    "accepted_sha256": "ed4c658dfaf30754355ac29fd3b68d4931698e67c80b8d9597a715124919aa8d",
+    "review_sha256": "b2bd0ac6db32cb3e23fe6b92b42e1276c950ab68be6ff27a680bf6af6af4d81a",
+    "review_verdict_sha256": "83a0c8d9ddccc64810e5888897a2452cee5fa47ce7f9c4d0e099b0a50df3e17d",
+    "scope": "Historical/source-comprehension development set. Not executed as model benchmark, not active KB or hidden heldout",
+    "original_preserved": true,
+    "A5_A6": "PENDING_UNCHANGED"
+  },
+  "offline_hardening_results": {
+    "suite_cases": 39,
+    "passed": 39,
+    "failed": [],
+    "suite_attempts": 1,
+    "frozen_files": 61,
+    "source_match": "61/61 pre/post",
+    "original_D_oracle_objects_preserved": 10,
+    "new_regressions": 29,
+    "scope": "Fixed recorded-bundle checker JSON-shape/cardinality/path and diagnostic behavior only; not EVALUATION-D model/REA benchmark",
+    "timeout": false,
+    "outer_exit": 0,
+    "model_provider_target_calls": 0,
+    "remaining_limits": [
+      "No general JSON Schema engine or evidence authenticity/authority validation",
+      "Filesystem races/symlink injection and timeout fault injection not tested",
+      "Unwritable receipt yields structured stdout; disk receipt cannot be guaranteed"
+    ]
+  },
+  "management_delta": {
+    "previous_backlog": "checkpoint-roadmap-2026-10-24.md",
+    "remaining_unclosed_criteria": 17,
+    "closed_in_declared_scope": [
+      "A3"
+    ],
+    "other_product_dependent_work": "DEFERRED_UNCHANGED",
+    "checkpoint_decision": "PENDING"
+  }
+}

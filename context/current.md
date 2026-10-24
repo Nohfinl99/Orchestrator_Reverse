@@ -59,3 +59,7 @@ Người dùng chọn chuẩn bị/verify packet offline và giao chọn model t
 ## Chỉ thị điều phối theo giai đoạn sản phẩm
 
 [Cuộc họp và sổ chờ](../docs/proposals/input-support-gates/checkpoint-roadmap-2026-10-24.md) giữ18 tiêu chí chưa đóng, có owner/evidence/điều kiện mở lại. Ưu tiên hiện hành là bảo toàn baseline và dùng [mẫu pilot](../docs/proposals/input-support-gates/product-pilot-template.json) khi bắt đầu một caller/consumer sản phẩm thật; không tiếp tục cố đóng checkpoint bằng fixture hoặc hồ sơ giả. Coverage và gate giữ nguyên. Lượt họp chỉ lập kế hoạch, không test hoặc code mới.
+
+## Thực thi phần offline theo chỉ thị sau cuộc họp
+
+[Báo cáo mới](../docs/proposals/input-support-gates/offline-improvement-2026-10-24.md) mở lại A3 và checker hardening riêng:6/6seed revision2 được review độc lập,39/39case checker mới có capture/review riêng. [Status v4](../docs/proposals/input-support-gates/status-v4.json) là view mới nhất nhánh input-support: **A4/6=66,67%,B3/6=50%,C/D0/6**, còn17 tiêu chí chưa đóng. A5/A6 và product-dependent work vẫn chờ; không có model/REA/IDA/target runtime call hoặc thay gate dự án.

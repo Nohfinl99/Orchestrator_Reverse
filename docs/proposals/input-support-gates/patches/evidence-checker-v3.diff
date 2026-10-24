@@ -1,0 +1,150 @@
+--- src/candidates/revision_2/verify_recorded_evidence.py
++++ src/candidates/revision_3/verify_recorded_evidence.py
+@@ -1,6 +1,7 @@
+ """Read/hash recorded evidence only. Does not run fixtures, models, providers or targets."""
+ import hashlib
+ import json
++import re
+ from pathlib import Path
+ 
+ ROOT = Path(__file__).resolve().parents[3]
+@@ -11,17 +12,76 @@
+     return hashlib.sha256(path.read_bytes()).hexdigest()
+ 
+ 
++def require(condition, label):
++    if not condition:
++        raise ValueError("INVALID_EVIDENCE_SHAPE:" + label)
++
++
++def object_shape(value, label):
++    require(type(value) is dict, label)
++    return value
++
++
++def rows_shape(value, label, count):
++    require(type(value) is list and len(value) == count, label)
++    require(all(type(row) is dict for row in value), label + ":rows")
++    return value
++
++
++def text(value):
++    return type(value) is str and bool(value)
++
++
++def hash_shape(value):
++    return type(value) is str and re.fullmatch(r"[0-9a-f]{64}", value) is not None
++
++
++def safe_child(parent, name):
++    require(type(name) is str and re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9_.-]*", name) is not None,
++            "single_filename")
++    candidate = parent / name
++    require(candidate.resolve().is_relative_to(parent.resolve()), "path_containment")
++    return candidate
++
++
++def unique_object(pairs):
++    result = {}
++    for key, value in pairs:
++        require(key not in result, "duplicate_json_key")
++        result[key] = value
++    return result
++
++
++def invalid_constant(value):
++    raise ValueError("INVALID_JSON_CONSTANT:" + value)
++
++
++def decode(raw):
++    return json.loads(raw, object_pairs_hook=unique_object, parse_constant=invalid_constant)
++
++
+ def load(path):
+-    return json.loads(path.read_text(encoding="utf-8-sig"))
++    return decode(path.read_text(encoding="utf-8-sig"))
++
++
++CAPTURE_IDS = ('npm-latest', 'github-main', 'github-release', 'github-tree', 'main-skill', 'release-skill', 'main-package', 'main-install', 'guide-1', 'guide-2', 'guide-3', 'guide-4', 'guide-5')
++CASE_IDS = ('valid', 'missing_repository_manifest', 'missing_migration_manifest', 'empty_migration_inventory', 'empty_repository_inventory', 'malformed_schema', 'path_escape', 'invalid_hash', 'count_mismatch', 'digest_mismatch')
+ 
+ 
+ def verify():
+     upstream = ROOT / "evidence/upstream_review/20261024_rea_input_audit_01"
+     captures = load(upstream / "source-captures.json")
++    rows_shape(captures, "captures", len(CAPTURE_IDS))
++    require(all(text(row.get("id")) for row in captures), "capture_id")
++    require(tuple(row["id"] for row in captures) == CAPTURE_IDS, "capture_ids")
++    for row in captures:
++        require(type(row.get("bytes")) is int and row["bytes"] >= 0, "capture_bytes")
++        require(hash_shape(row.get("sha256")), "capture_hash")
++        require(text(row.get("url")), "capture_url")
+     capture_checks = []
+     for row in captures:
+         suffix = ".json" if row["id"].startswith(("npm-", "github-")) else ".txt"
+-        path = upstream / row.get("local", row["id"] + suffix)
++        path = safe_child(upstream, row.get("local", row["id"] + suffix))
+         capture_checks.append({"id": row["id"], "verified": (
+             path.is_file() and path.stat().st_size == row["bytes"]
+             and digest(path) == row["sha256"]
+@@ -30,16 +90,24 @@
+     installed = OUT / "installed-skill-observed.md"
+     main_skill = (upstream / "main-skill.txt").read_text(encoding="utf-8")
+     release_skill = (upstream / "release-skill.txt").read_text(encoding="utf-8")
++    npm = object_shape(load(upstream / "npm-latest.json"), "npm")
++    release = object_shape(load(upstream / "github-release.json"), "release")
++    require(text(npm.get("version")) and text(release.get("tag_name")), "version_metadata")
+     version_checks = {
+         "installed_skill_42": 'version: "42"' in installed.read_text(encoding="utf-8"),
+         "main_skill_45": 'version: "45"' in main_skill,
+         "release_skill_42": 'version: "42"' in release_skill,
+-        "npm_6_7_0": load(upstream / "npm-latest.json")["version"] == "6.7.0",
+-        "release_6_7_0": load(upstream / "github-release.json")["tag_name"] == "rea-agents-6.7.0",
++        "npm_6_7_0": npm["version"] == "6.7.0",
++        "release_6_7_0": release["tag_name"] == "rea-agents-6.7.0",
+     }
+     
+     capability = load(OUT / "capability-observed.json")
+-    tools = capability["tools"]
++    object_shape(capability, "capability")
++    tools = capability.get("tools")
++    require(type(tools) is list and all(text(tool) for tool in tools), "tools")
++    selected = rows_shape(capability.get("selected"), "selected", 9)
++    require(all(text(row.get("name")) and type(row.get("advertised")) is bool
++                for row in selected), "selected_fields")
+     capability_check = (len(tools) == 207 and len(set(tools)) == len(tools)
+                         and len(capability["selected"]) == 9 and all(
+                             row["advertised"] == (row["name"] in tools)
+@@ -49,17 +117,29 @@
+     plan_path = old / "candidate/test_plan.json"
+     code_path = old / "candidate/verify_repository_v2.py"
+     plan = load(plan_path)
++    object_shape(plan, "plan")
++    cases = rows_shape(plan.get("cases"), "cases", len(CASE_IDS))
++    require(all(text(case.get("id")) for case in cases), "case_id")
++    require(tuple(case["id"] for case in cases) == CASE_IDS, "case_ids")
++    require(all(type(case.get("exit")) is int and text(case.get("status")) for case in cases), "case_fields")
+     attempt = old / "execution/attempt_01"
+     freeze = load(attempt / "freeze.json")
++    object_shape(freeze, "freeze")
++    pins = object_shape(freeze.get("pins"), "pins")
++    require(hash_shape(pins.get("plan")) and hash_shape(pins.get("candidate")), "freeze_hashes")
+     freeze_check = (digest(plan_path) == freeze["pins"]["plan"]
+                     and digest(code_path) == freeze["pins"]["candidate"])
+     case_checks = []
+-    for case in plan["cases"]:
+-        directory = attempt / case["id"]
++    for case in cases:
++        directory = safe_child(attempt, case["id"])
+         receipt = load(directory / "receipt.json")
+         stdout = directory / "stdout.bin"
+         stderr = directory / "stderr.bin"
+-        observed = json.loads(stdout.read_bytes())
++        object_shape(receipt, "receipt")
++        require(type(receipt.get("exit")) is int and type(receipt.get("timed_out")) is bool, "receipt_fields")
++        require(all(hash_shape(receipt.get(key)) for key in
++                    ("stdout_sha256", "stderr_sha256", "candidate_sha256", "plan_sha256")), "receipt_hashes")
++        observed = object_shape(decode(stdout.read_bytes()), "observed")
+         matches = (receipt["expected"] == case and receipt["exit"] == case["exit"]
+                    and receipt["observed"] == observed
+                    and receipt["stdout_sha256"] == digest(stdout)

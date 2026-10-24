@@ -49,3 +49,7 @@ P1K B4 FAIL; G1/G2 INCOMPLETE; G3/G4 NOT_RUN; W4 NOT_RUN_BLOCKED; v3 OFF. Snapsh
 ## Quyết định điều phối sau cuộc họp
 
 [Lộ trình và sổ chờ](checkpoint-roadmap-2026-10-24.md) áp dụng chỉ thị mới: việc chưa giải quyết hoặc cần sản phẩm thật giữ chờ với owner/điều kiện mở lại, cải tiến từng pilot khi có caller/consumer thực. [Mẫu pilot](product-pilot-template.json) là chuẩn bị tài liệu, chưa dispatch được. Status v3 tiếp tục là evidence baseline; trì hoãn không đóng tiêu chí, không nhận threshold và không tự chạy lại suite.
+
+## Thực thi phần cải thiện offline
+
+[Báo cáo thực thi](offline-improvement-2026-10-24.md) và [status v4](status-v4.json) kế thừa sổ chờ: seed revision2 đã independent review6/6, đóng riêng A3 trong scope đọc nguồn; checker revision3 được hardening và kiểm39/39ca riêng. Coverage hiện hành **66,67%/50%/0%/0%**, còn17 tiêu chí chưa đóng. [Patch checker](patches/evidence-checker-v3.diff) có code thực; phần product/runtime tiếp tục chờ. Không có model/REA benchmark mới.

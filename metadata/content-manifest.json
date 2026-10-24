@@ -29,8 +29,8 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 5996,
-      "sha256": "0c5bd4562627f1c05530b4cfc77f598c2748f7a5c2b1d19b2872bddb9d513d7c"
+      "bytes": 6472,
+      "sha256": "ff7c23bd102e0315604ddb240f74f7cb75c0714236d97bdbf28c993005a022e7"
     },
     {
       "path": "CITATION.cff",
@@ -39,13 +39,13 @@
     },
     {
       "path": "context/current.md",
-      "bytes": 6120,
-      "sha256": "beba0839bf3a0bf6aa58fbfdef2b9965c24ef0ec9f0deeffe09d5bdf38262822"
+      "bytes": 6710,
+      "sha256": "6a50a3957c9b4f8050d72830db233a011b5f3ac3cdd679c70b7c6702b1f6805b"
     },
     {
       "path": "context/handoff.md",
-      "bytes": 7380,
-      "sha256": "0b748711a4fe4f3ca365d2e71242351393253af2077c8d1715711812f5b5a242"
+      "bytes": 8095,
+      "sha256": "ac73e84bb0d49d1cd17aaab588c025343d75c23d060ff06b1b05d63e203bea04"
     },
     {
       "path": "context/project-state.json",
@@ -244,8 +244,8 @@
     },
     {
       "path": "docs/planning/work-queue.md",
-      "bytes": 6266,
-      "sha256": "ab27db9316d1f08b12c26b92107cd6ee9509c79597e9f2dbea3dfca633df627c"
+      "bytes": 6802,
+      "sha256": "9532f5aa1e014e74b78fbab9d7f249f1f1770986ee7b0395be319ab856467d49"
     },
     {
       "path": "docs/proposals/agent-office-3d/ai-judges-review-2026-10-22-01.md",
@@ -498,6 +498,11 @@
       "sha256": "9c1e22091bf3a67d4f5cc3389fa24f8fae318656427ca92609fb982ce84344ec"
     },
     {
+      "path": "docs/proposals/input-support-gates/offline-improvement-2026-10-24.md",
+      "bytes": 8124,
+      "sha256": "74b5d4ca0557513534c24fc971d9fd24c16b34ada9bb9d4c407f2e0268d7e71f"
+    },
+    {
       "path": "docs/proposals/input-support-gates/packet.md",
       "bytes": 3534,
       "sha256": "dfe465b97341ff0ef32fdbd1e4904f4842afbbaaaf0f2081eda23c85b038dba7"
@@ -508,14 +513,19 @@
       "sha256": "4bbb49a6b9a46a7dc3ec4afd706406db89b8db318fa68060537850fca5e73a83"
     },
     {
+      "path": "docs/proposals/input-support-gates/patches/evidence-checker-v3.diff",
+      "bytes": 6908,
+      "sha256": "44ebeceacc5540cbdedb1585da896806cc10f906b93e5cad27572e2d7e6421c5"
+    },
+    {
       "path": "docs/proposals/input-support-gates/patches/prompt-contract-v2.diff",
       "bytes": 1819,
       "sha256": "64b42299f414d0e1d555d5c00e7ef6b3eae79472b657696f22a0718d640f3ea3"
     },
     {
       "path": "docs/proposals/input-support-gates/patches/README.md",
-      "bytes": 1238,
-      "sha256": "3e46e25f3f0993e32e9a9e062de5f2fc0a84ede9940c75d25db33e35157cd71e"
+      "bytes": 1839,
+      "sha256": "305994b6553e77ea4c3c527af97821bc001f06324909589c3410a96bb76e2a4d"
     },
     {
       "path": "docs/proposals/input-support-gates/pentest-2026-10-24.md",
@@ -529,8 +539,8 @@
     },
     {
       "path": "docs/proposals/input-support-gates/README.md",
-      "bytes": 7510,
-      "sha256": "cebc18bea363d75178f6eedfc1882ac0b20d2408825326e3def1dfa65c4508a5"
+      "bytes": 8044,
+      "sha256": "68ceeaea0b50291984bc73ee957020a3b0c0af4e08995c477d01da229abad224"
     },
     {
       "path": "docs/proposals/input-support-gates/repair-2026-10-24.md",
@@ -546,6 +556,11 @@
       "path": "docs/proposals/input-support-gates/status-v3.json",
       "bytes": 9017,
       "sha256": "7ad7b0300ca7a973a5d87ff0ff5eaa2e91386c04f88bed5a2d07d488c368d40b"
+    },
+    {
+      "path": "docs/proposals/input-support-gates/status-v4.json",
+      "bytes": 10897,
+      "sha256": "91d034890dd6f244819530dfbc2476fa36c8fe8c81c6c32f72cd674fee0142a4"
     },
     {
       "path": "docs/proposals/input-support-gates/status.json",
@@ -584,8 +599,8 @@
     },
     {
       "path": "docs/reference/open-questions.md",
-      "bytes": 10319,
-      "sha256": "2b3f94c8ac5b7cb0e039b47413695dde772e12fc5e5bc6c9bccd49178ed1f398"
+      "bytes": 10958,
+      "sha256": "e9f0f865cc32f5dd2b5ec1719a6c28711c77dc56e6224a4d6d64bf231ef10a38"
     },
     {
       "path": "docs/reference/source-map.md",

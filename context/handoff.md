@@ -62,3 +62,7 @@ Xem [report](../docs/proposals/input-support-gates/pentest-2026-10-24.md) và [s
 ## Handoff sau cuộc họp phân kỳ sản phẩm
 
 [Sổ chờ18 tiêu chí](../docs/proposals/input-support-gates/checkpoint-roadmap-2026-10-24.md) ghi chỉ thị mới: giữ phần chưa giải quyết/cần sản phẩm ở trạng thái chờ, mở từng mục khi có objective/caller/consumer và prerequisite tương ứng. [Mẫu pilot](../docs/proposals/input-support-gates/product-pilot-template.json) chưa dispatch được. Không coi “next packet” ở handoff trước là lệnh chạy ngay. Chưa có sản phẩm thì không gọi provider/target hoặc rerun fixture để tăng phần trăm. Không tạo lịch tự mở lại; status v3, frozen FAIL và gate gốc giữ nguyên.
+
+## Handoff sau thực thi cải thiện offline
+
+Lệnh sau cuộc họp đã cho phép task offline riêng: xem [report](../docs/proposals/input-support-gates/offline-improvement-2026-10-24.md)/[status v4](../docs/proposals/input-support-gates/status-v4.json). A3 được verify theo seedr2/review exactdigest; A5/A6 chưa nhận. Checker local `src/candidates/revision_3/` là hardening readback fixed bundle; role_router/prompt_contract vẫn revision2, không product integration.39case mới không gộp thành benchmark với42case cũ; timeout fault injection và hostile symlink/race chưa kiểm. Còn17 tiêu chí chờ, scope/gate runtime giữ nguyên; mọi attempt sau cần review/dispatch mới.
