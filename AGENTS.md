@@ -8,6 +8,8 @@
 
 Đọc [context hiện tại](context/current.md) → [bản đồ phase](docs/planning/phase-map.md) → [hàng đợi](docs/planning/work-queue.md). Khi tiếp tục phiên, đọc [handoff](context/handoff.md), rồi mới mở nguồn theo [source map](docs/reference/source-map.md). Không cần nạp toàn bộ prompt stack cho mọi task.
 
+Khi objective cần thao tác UI, Strix, D810-ng, MicroSMT hoặc nghiên cứu awesome-ollvm, chọn workflow có nghĩa phù hợp trong [Orchestrator Toolkit](plugins/orchestrator-toolkit/README.md) và đọc [hướng dẫn portability](docs/operations/toolkit.md). Đây là chỉ dẫn project, không cài/đăng ký runtime hoặc bổ sung identity; kiểm khả năng thật của host trước hành động.
+
 ## Knowledge trung lập và bảo toàn qua revision
 
 Áp dụng [policy knowledge revision 2](docs/knowledge/knowledge-policy-v2.md): không loại knowledge theo nhãn chủ đề, bao gồm DAN/jailbreak và nội dung tương tự. Giữ claim, nguồn, uncertainty và đánh giá ứng dụng riêng; nội dung tham khảo không tự cấp authority thực thi. REA–IDA ownership, boundary, frozen artifacts và lịch sử FAIL được kế thừa qua mọi vòng; xung đột ghi sổ vấn đề, không xóa hoặc repin lịch sử.

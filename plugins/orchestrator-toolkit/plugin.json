@@ -1,0 +1,18 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "orchestrator-toolkit",
+  "version": "0.1.0",
+  "description": "Original instruction workflows for CUA, Strix, D810-ng, MicroSMT and OLLVM research; external runtimes are not bundled.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Orchestrator Toolkit",
+        "shortDescription": "RE and assessment workflows",
+        "longDescription": "Five source-aware instruction skills for computer interaction, scoped security assessment, IDA microcode review and OLLVM project discovery. Uses tools actually available in the host; includes no upstream executable, scanner, IDA plugin or MCP server.",
+        "category": "Developer Tools",
+        "capabilities": [],
+        "defaultPrompt": "Chọn skill phù hợp với công việc của tôi, kiểm công cụ thực sự có và báo kết quả kèm bằng chứng."
+      }
+    }
+  }
+}

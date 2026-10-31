@@ -76,9 +76,14 @@
     "native_local_report": "docs/proposals/input-pipeline/local-native-2026-10-24.md",
     "native_local_change_record": "docs/changes/2026-10-24-native-local-acquisition.md",
     "operations": "docs/operations/README.md",
+    "toolkit": "plugins/orchestrator-toolkit/README.md",
+    "toolkit_use": "docs/operations/toolkit.md",
+    "task_execution": "docs/operations/task-execution.md",
     "context_index": "context/README.md",
     "cognitive_routing": "docs/proposals/cognitive-routing/README.md",
-    "context_routing_publication": "docs/changes/2026-10-31-context-routing-publication.md"
+    "context_routing_publication": "docs/changes/2026-10-31-context-routing-publication.md",
+    "gemini_entry": "GEMINI.md",
+    "toolkit_platform_publication": "docs/changes/2026-11-01-toolkit-platform-export.md"
   },
   "compatibility_routes": {
     "docs/ARCHITECTURE.md": "docs/architecture/system.md",
@@ -229,6 +234,23 @@
     "local_query_pentest_summary": [
       "docs/changes/2026-10-31-context-routing-publication.md",
       "metadata/offline-query-pentest-2026-10-31.json"
+    ],
+    "toolkit": [
+      "plugins/orchestrator-toolkit/README.md",
+      "plugins/orchestrator-toolkit/plugin.json",
+      "plugins/orchestrator-toolkit/PORTABLE_INSTRUCTIONS.txt",
+      "plugins/orchestrator-toolkit/skills/orch-cua/SKILL.md",
+      "plugins/orchestrator-toolkit/skills/orch-cua/references/source.md",
+      "plugins/orchestrator-toolkit/skills/orch-strix/SKILL.md",
+      "plugins/orchestrator-toolkit/skills/orch-strix/references/source.md",
+      "plugins/orchestrator-toolkit/skills/orch-d810-ng/SKILL.md",
+      "plugins/orchestrator-toolkit/skills/orch-d810-ng/references/source.md",
+      "plugins/orchestrator-toolkit/skills/orch-microsmt/SKILL.md",
+      "plugins/orchestrator-toolkit/skills/orch-microsmt/references/source.md",
+      "plugins/orchestrator-toolkit/skills/orch-ollvm-research/SKILL.md",
+      "plugins/orchestrator-toolkit/skills/orch-ollvm-research/references/source.md",
+      "docs/operations/toolkit.md",
+      "docs/operations/task-execution.md"
     ]
   },
   "local_sources": "docs/reference/source-map.md",

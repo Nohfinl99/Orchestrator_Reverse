@@ -5,6 +5,8 @@
 | Công việc | Điểm vào | Giới hạn |
 |---|---|---|
 | Chọn cognitive task, owner và model | [CT guide](../proposals/cognitive-routing/README.md) → [worksheet dùng lại](../proposals/cognitive-routing/task-worksheet.md) | Model cao review chuyên môn; Luna hỗ trợ bounded work. Đây chưa là router runtime |
+| Chọn workflow CUA, Strix, D810-ng, MicroSMT hoặc OLLVM research | [Orchestrator Toolkit](../../plugins/orchestrator-toolkit/README.md) → [toolkit use and portability](toolkit.md) | Local exporter kiểm gói; account import, activation và runtime chưa được xác nhận |
+| Nhận việc, giao việc và review đầu ra | [Task execution](task-execution.md) | Workflow phiên agent; không chứng minh broker/runtime đã nối |
 | Tìm knowledge liên quan | [Knowledge index](../knowledge/README.md) | Chọn source/condition/locator; candidate reference chưa admission/ACK |
 | Kết hợp Paperclip | [Sync/outbox spec](../proposals/cognitive-routing/paperclip-sync.md) | Chưa connected; task done không thay evidence/gate/approval |
 | Review source security | [Cloudflare selection](../proposals/cognitive-routing/cloudflare.md) | Phương pháp chọn lọc; chưa cài skill hoặc chạy full audit |

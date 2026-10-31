@@ -4,8 +4,8 @@
   "files": [
     {
       "path": ".gitattributes",
-      "bytes": 318,
-      "sha256": "62b43cc4adbf2fa3b452600dd65d118feca5f63f99d220327157f99ac0756087"
+      "bytes": 430,
+      "sha256": "72788755eafc884607edade85719d5fc3d22ce83d3209f50292c7f3c804942aa"
     },
     {
       "path": ".github/ISSUE_TEMPLATE/bug_report.md",
@@ -34,8 +34,8 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 8351,
-      "sha256": "2e60efb0134848eca853e3c81015464fc14797cfeb2ad62e396432116fa27abe"
+      "bytes": 8773,
+      "sha256": "d502fdfee170a500ad3db0ce613af8d2dd378a7de6eb5feb1af2025181eabcb7"
     },
     {
       "path": "CITATION.cff",
@@ -99,8 +99,8 @@
     },
     {
       "path": "docs/architecture/information-architecture.md",
-      "bytes": 5587,
-      "sha256": "e77abcf404f4123bb292e6e1b19c21b7f0580d57976be97f0c8fc795624e407d"
+      "bytes": 5892,
+      "sha256": "b5d76f01799c4160511937a370ffe9d9ee0d0e21020e512b4304fc01402d4fc1"
     },
     {
       "path": "docs/architecture/system.md",
@@ -208,6 +208,11 @@
       "sha256": "b696e71ea7ad583957404c0059f807d5c87d608e734be34482ff52f920f48001"
     },
     {
+      "path": "docs/changes/2026-11-01-toolkit-platform-export.md",
+      "bytes": 2705,
+      "sha256": "0e2398c22d673085b3eb219ad0a2e56ed0b5787490659ae31ddb50eca7e28b68"
+    },
+    {
       "path": "docs/FINE_TUNING.md",
       "bytes": 272,
       "sha256": "ec981804e339c8489880889d18fe30a80a9fafde9f3d2820018e8cd508f5cb67"
@@ -309,8 +314,18 @@
     },
     {
       "path": "docs/operations/README.md",
-      "bytes": 3469,
-      "sha256": "c31a9c66f1eb5e60a256c320655e26d6f50a45b7c2c5d821869c3902452f8e94"
+      "bytes": 3915,
+      "sha256": "f74fe03505089e3620dbb3b642c621df52174a372685fb3bf5682053ff562e66"
+    },
+    {
+      "path": "docs/operations/task-execution.md",
+      "bytes": 3263,
+      "sha256": "fe17cc46bddef63e1cbf8a8d16b2b2ff4ffe73d6affe96b118d908628f1e3513"
+    },
+    {
+      "path": "docs/operations/toolkit.md",
+      "bytes": 3621,
+      "sha256": "5e35b22d3f9da68564c7837cce48afce094debc209f58aed6d78076e60d5328d"
     },
     {
       "path": "docs/planning/phase-map.md",
@@ -758,6 +773,11 @@
       "sha256": "3e945bf95edcf103f1115f0890f742c5fa770346355381289da7e929f8df0a0f"
     },
     {
+      "path": "GEMINI.md",
+      "bytes": 734,
+      "sha256": "331f66047a070119aa74a71ae0eaaf0c64a1fb0c88ef09257392c7338830b8d5"
+    },
+    {
       "path": "LICENSE_STATUS.md",
       "bytes": 875,
       "sha256": "3dc381e26be4e5a6e9c93a043cc8e874d2b16ba4a403af02b775c4909df60689"
@@ -779,8 +799,8 @@
     },
     {
       "path": "metadata/navigation.json",
-      "bytes": 11640,
-      "sha256": "8b0e94cf4748cfcf3d18afd92b10f4899f52ba36e2b3608b7678550a52a05794"
+      "bytes": 12926,
+      "sha256": "d7e2ec3426df846944e0ae6ce30fa0874d57c81d5dc38da86f4e3f7383cd479a"
     },
     {
       "path": "metadata/offline-query-pentest-2026-10-31.json",
@@ -811,6 +831,71 @@
       "path": "orchestrator_pipeline/core.py",
       "bytes": 17393,
       "sha256": "a9c1e95f8517c3957c7d41cca285238f75d2e524f9d26121ea524281e027e4a7"
+    },
+    {
+      "path": "plugins/orchestrator-toolkit/plugin.json",
+      "bytes": 965,
+      "sha256": "327677b1ff97d2ffae6f751554a3bba102d0e4c28a2915fe45bf110c820b40c2"
+    },
+    {
+      "path": "plugins/orchestrator-toolkit/PORTABLE_INSTRUCTIONS.txt",
+      "bytes": 2307,
+      "sha256": "1309717b657596fc9c367f0cede0a6e8ad3d37aaddf142c44d1d0d011c4e1645"
+    },
+    {
+      "path": "plugins/orchestrator-toolkit/README.md",
+      "bytes": 2393,
+      "sha256": "5c9ec1eb716ecd5e139ce89d3852eebe1472131228fc77d09ba40cfe950d4cec"
+    },
+    {
+      "path": "plugins/orchestrator-toolkit/skills/orch-cua/references/source.md",
+      "bytes": 1294,
+      "sha256": "e5772df3a951ece2fc7ef34b9912a8a605ee4bd8a425a54204b1d04b36c95683"
+    },
+    {
+      "path": "plugins/orchestrator-toolkit/skills/orch-cua/SKILL.md",
+      "bytes": 2116,
+      "sha256": "be0b329a0a97e218f7aef5468802ba63d67bce106832c7b7cfebfd9014a2f319"
+    },
+    {
+      "path": "plugins/orchestrator-toolkit/skills/orch-d810-ng/references/source.md",
+      "bytes": 1231,
+      "sha256": "27775969949d7c7a8d496eeb0bf79d2bcf2dbece2d0c51ba2f9b1712f6498bfb"
+    },
+    {
+      "path": "plugins/orchestrator-toolkit/skills/orch-d810-ng/SKILL.md",
+      "bytes": 3472,
+      "sha256": "f570f96eaf2a8461d80ffcb58248c044e1b8f9c13fd5d51f593fdc3b8a548d09"
+    },
+    {
+      "path": "plugins/orchestrator-toolkit/skills/orch-microsmt/references/source.md",
+      "bytes": 1251,
+      "sha256": "b32eedeb12affc192a53a77c01593139c02bc8a03cb67bf1383efc8d01a38fc9"
+    },
+    {
+      "path": "plugins/orchestrator-toolkit/skills/orch-microsmt/SKILL.md",
+      "bytes": 3152,
+      "sha256": "5b15b6b09a4835a3d9f77f7b8070b55d717acedeef2cfdde64956df465414fa1"
+    },
+    {
+      "path": "plugins/orchestrator-toolkit/skills/orch-ollvm-research/references/source.md",
+      "bytes": 1211,
+      "sha256": "3cc63a3127db21e58e2022e89c15dac3d8e1cc81f26576263e4ead4a3eea0702"
+    },
+    {
+      "path": "plugins/orchestrator-toolkit/skills/orch-ollvm-research/SKILL.md",
+      "bytes": 2956,
+      "sha256": "9fc6c53c85e8a8ab173833464de09424be24a6b3574b3bbd9ecbcfd0ffe1dcd5"
+    },
+    {
+      "path": "plugins/orchestrator-toolkit/skills/orch-strix/references/source.md",
+      "bytes": 1793,
+      "sha256": "ec7c5fe69c1f12e855dfffdc8b1b1185ec84c6aa65af86d1a830a3fb95b34adb"
+    },
+    {
+      "path": "plugins/orchestrator-toolkit/skills/orch-strix/SKILL.md",
+      "bytes": 2564,
+      "sha256": "737ed6ef3ebdc68f4847753e479fb576c0ca9b8e398ae8ee8c755240a2db392a"
     },
     {
       "path": "prompt_stacks/00_bootstrap.md",
@@ -919,13 +1004,18 @@
     },
     {
       "path": "README.md",
-      "bytes": 13989,
-      "sha256": "6b967cabd91a2d0bce370d9443f6c741bad992ac99b4680c44298e5fd46cc5ec"
+      "bytes": 14315,
+      "sha256": "b1a7abe53c656ad6da7f0d7f9d07011d19425785af76ccb3fe544f102decda67"
     },
     {
       "path": "scripts/build_native_pilot.py",
       "bytes": 3236,
       "sha256": "c93cd8c9942db236025497c7ff8be966fff3d5b89683582a10e7c60d0473413f"
+    },
+    {
+      "path": "scripts/export_toolkit.py",
+      "bytes": 16410,
+      "sha256": "b975e372c2ab4846c718a3b1205ccac201b640661a9892b7e57e6ac6eff76fd2"
     },
     {
       "path": "scripts/prepare_input.py",
