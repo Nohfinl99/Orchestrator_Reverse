@@ -1,0 +1,13 @@
+# Phần chọn từ Cloudflare security-audit-skill
+
+Nguồn đã đọc ở revision `c1c8a8c1471069fb0e188eeaff69b8e8db6564a8`: [README](https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/README.md), [SKILL](https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/skills/security-audit/SKILL.md), [AI-AND-LLM](https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/skills/security-audit/AI-AND-LLM.md), [validation/reporting](https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/skills/security-audit/VALIDATION-AND-REPORTING.md). Đây là đánh giá nguồn tại revision, không claim latest hoặc hiệu quả benchmark của workspace.
+
+Cuộc họp chọn những phương pháp liên quan đến source security review: coverage ledger theo boundary; verifier độc lập cố bác bỏ candidate; giữ `confirmed`, `needs_validation`, `rejected` khác nhau; kiểm lại current source khi revision đổi. Validator PASS chỉ chứng minh cấu trúc/consistency. Không cài toàn bộ workflow hoặc tự chạy audit từ câu hỏi tư vấn.
+
+Lát cắt đầu tiên đề xuất là một caller/tool dispatcher có source cụ thể: lần theo untrusted input → prompt/context → normalized tool arguments → authority/action binding → side effect. Xem cả direct/retry/resume/batch; ghi control ngăn chặn hiện hữu. Prompt injection đơn thuần không đủ thành finding; phải chứng minh boundary/result. Chưa xác minh thì giữ blocker, không gán severity. Reviewer source phải khác producer; schema/model self-score không thay review.
+
+Phương pháp này gắn vào CT-05 dưới trách nhiệm Evidence-Synthesizer, Prompt-Master giữ scope/dependency. Audit ledger chỉ tham chiếu source/receipt; không thay REA ledger, IDA state, consumer ACK hoặc gates. Sáu phase upstream không là W/R/G của Orchestrator.
+
+Thực thi target-controlled code chỉ được xét trong task riêng có quyền và sandbox được chứng minh; scratch folder hoặc prompt không tự cung cấp network/process/resource isolation. Artifact promotion chống race/symlink trên Windows cần implementation/evidence tương đương; chưa có trong lượt này. Tất cả target/runtime/validator upstream execution mới: NOT_RUN.
+
+[MIT LICENSE](https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/LICENSE) đã được đọc trong phiên review trước; nếu copy/adapt substantial portions phải giữ notices. Trang này diễn giải lựa chọn và dẫn nguồn, không vendor scripts/schema. Trạng thái: CANDIDATE_REFERENCE_NOT_ADMITTED; chưa consumer runtime ACK, chưa skill được cài.

@@ -1,5 +1,7 @@
 # Hướng dẫn cho AI tiếp nhận Orchestrator_Reverse
 
+**Chọn context theo task — 31/10:** current/handoff đã rút gọn; lịch sử cùng folder chỉ mở khi cần. Dùng [cognitive task guide](docs/proposals/cognitive-routing/README.md) khi cần xử lý lặp context/skill, Paperclip sync hoặc security review; không nạp guide này và mọi skill cho mọi task. Model cao review việc khó, Luna hỗ trợ theo scope; chưa router runtime hoặc Paperclip connection từ cập nhật này.
+
 **Native local đã có acquisition:** dùng [guide](docs/guides/native-local-pilot.md), [report](docs/proposals/input-pipeline/local-native-2026-10-24.md), [state](context/native-local-state.json). Một direct IDA static inventory đã được chạy/review; đây chưa là connected REA–IDA pair hoặc W4 acceptance. Reuse exact receipts sau revalidation, không tự rerun; scope bridge/isolation/harness cần packet riêng.
 
 **Implementation mới:** input pipeline có [CLI local](docs/guides/local-input-pipeline.md), [report](docs/proposals/input-pipeline/local-runtime-2026-10-24.md) và [state riêng](context/local-pipeline-state.json). Đây là caller chuẩn bị offline đã kiểm; không thay caller scope/status v4 hoặc W4. Khi tiếp tục native, đọc [nghiên cứu pilot](docs/proposals/input-pipeline/native-pilot-research-2026-10-24.md); chỉ thị cho phép isolation không chứng minh isolation đã tồn tại.

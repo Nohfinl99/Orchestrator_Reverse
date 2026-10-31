@@ -6,12 +6,15 @@
 
 [Bắt đầu](docs/onboarding/start-here.md) · [Trạng thái](context/current.md) · [Tri thức pipeline](docs/knowledge/input-pipeline/README.md) · [Thiết kế pipeline](docs/proposals/input-pipeline/README.md) · [Prompt stacks](prompt_stacks/README.md)
 
+[Điều hành theo task](docs/operations/README.md) · [Context hiện hành/lịch sử](context/README.md) · [Cognitive task và Paperclip](docs/proposals/cognitive-routing/README.md) · [Pentest query local 31/10:47/47](docs/changes/2026-10-31-context-routing-publication.md) — kết quả hữu hạn; graph/query/raw vẫn local, Paperclip chưa connected.
+
 > **Đã có CLI chuẩn bị input offline, kiểm 40/40 ca; chưa tích hợp production/model/native dispatch.** Xem [cách chạy](docs/guides/local-input-pipeline.md), [report](docs/proposals/input-pipeline/local-runtime-2026-10-24.md) và [trạng thái local](context/local-pipeline-state.json). Nhánh [REA–IDA](docs/proposals/input-pipeline/native-pilot-research-2026-10-24.md) đã nghiên cứu prerequisite, chưa chạy target. Prompt stacks chưa nối toàn bộ loader/runtime; artifact không cấp quyền thực thi.
 
 ## Bắt đầu theo nhu cầu
 
 | Nhu cầu | Điểm vào |
 |---|---|
+| Chọn đúng owner/model/skill và hạn chế context | [Operations](docs/operations/README.md) → [CT guide](docs/proposals/cognitive-routing/README.md) → [worksheet](docs/proposals/cognitive-routing/task-worksheet.md) |
 | Hiểu dự án và nguyên lý | [CONTEXT_VI.md](CONTEXT_VI.md) → [kiến trúc](docs/architecture/system.md) |
 | Tiếp tục phiên làm việc | [Current](context/current.md) → [phase map](docs/planning/phase-map.md) → [work queue](docs/planning/work-queue.md) → [handoff](context/handoff.md) |
 | Chạy CLI chuẩn bị input và xem runtime | [Guide](docs/guides/local-input-pipeline.md) → [state local](context/local-pipeline-state.json) → [nghiên cứu native](docs/proposals/input-pipeline/native-pilot-research-2026-10-24.md) |

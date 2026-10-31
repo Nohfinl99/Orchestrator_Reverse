@@ -1,71 +1,27 @@
-# Context hiện tại — snapshot 21/10/2026
+# Trạng thái hiện hành và nơi tiếp tục
 
-**W4 local mới nhất 24/10:** [Pilot native](../docs/proposals/input-pipeline/local-native-2026-10-24.md) đã build một PE mẫu và chạy/review một direct IDA static acquisition:15pin/14raw hash khớp,metapc64,hai function và IDB mới. [State native local](native-local-state.json) ghi scope riêng. REA provider/pair, isolation và dynamic harness còn chờ; W4/global gates/statusv4 giữ nguyên. Acquisition chạy local; source/guide/report thuộc gói public, raw giữ local.
+Entry điều hướng rút gọn ngày 31/10/2026. Đây là view theo nguồn, không phải health check live hoặc state machine thực thi. Đọc một nhánh phù hợp; không nạp toàn bộ lịch sử.
 
-**Lượt mới nhất 24/10:** [CLI chuẩn bị input](../docs/guides/local-input-pipeline.md) đã chạy một attempt40/40case,49CLIcalls và có R4b riêng; [state local](local-pipeline-state.json) tách khỏi global gates/status v4. [Nghiên cứu native REA–IDA](../docs/proposals/input-pipeline/native-pilot-research-2026-10-24.md) theo yêu cầu Reading Companion: target/provider/pair/isolation chưa bind, chưa chạy native. Người dùng cho phép target execution trong môi trường kiểm thử riêng; chưa có bằng chứng môi trường đó hoạt động.
-
-**Điểm đọc hiện hành sau publication 24/10:** [6 tri thức input pipeline](../docs/knowledge/input-pipeline/README.md) → [thiết kế DRAFT](../docs/proposals/input-pipeline/README.md) → [evaluation plan](../docs/proposals/input-pipeline/evaluation-plan.md). Evidence baseline vẫn [status v4](../docs/proposals/input-support-gates/status-v4.json):66,67/50/0/0,17 tiêu chí chờ. Các snapshot/lượt công việc bên dưới giữ chronology; xuất bản tài liệu không nối runtime hoặc đổi gate.
-
-Orchestrator_Reverse xây lớp điều phối reverse engineering theo goal, task DAG, identity hiện hữu, evidence và gate. REA sở hữu workflow/evidence/ledger; IDA sở hữu native/decompiler/IDB state. Xem [nguyên lý gốc](../CONTEXT_VI.md).
-
-**Lượt công việc gần nhất:** đã trích xuất [12 knowledge card cho điều phối](../docs/knowledge/README.md) từ ba nguồn GitHub, có source pins, WHAT/WHY/HOW, retrieval và giới hạn; đây là candidate reference, chưa admitted KB/ACK. [W4 readiness/gap register](../docs/planning/w4-readiness-plan.md) giữ runtime `NOT_RUN_BLOCKED`; I01–I04 không eligible ở run44, I05 chỉ verified non-target preparation. Nhánh nghiệp vụ tiếp theo vẫn là proposal consumer, chưa dispatch. Prompt/protocol chưa nối loader/runtime.
-
-| Đã có | Giới hạn cần giữ |
+| Phạm vi | Trạng thái và bước tiếp |
 |---|---|
-| Mười stack và mười protocol offline | Hoàn thành tài liệu không phải hoàn thành W0–W7 hoặc 57 task cũ |
-| Mapping sáu role và một projection consumer Triage | Chưa đồng bộ toàn hệ; Stage1 thực tế còn parse trực tiếp |
-| Báo cáo logic và verifier custody v2 trong hồ sơ local | Verifier không chứng minh hành vi agent hoặc runtime |
-| P1J bounded implementation, lịch sử 53/53 fixture | Kết quả hữu hạn trước IA, không phải test mới hoặc nghiệm thu toàn hệ |
-| Navigation IA và chỉ dẫn bàn giao | Chỉ giúp tìm đúng nguồn, không tạo quyền/receipt/ACK |
+| Cuộc họp context/Paperclip/Cloudflare 31/10 | [Cognitive task guide](../docs/proposals/cognitive-routing/README.md), [Paperclip sync spec](../docs/proposals/cognitive-routing/paperclip-sync.md), [Cloudflare selection](../docs/proposals/cognitive-routing/cloudflare.md). Chỉ navigation/docs; Paperclip chưa connected. Graph và query tool ở workspace cha, LOCAL_ONLY; chưa runtime admission/ACK |
+| Native local 24/10 | Một build và direct IDA static inventory đã executed/reviewed: [report](../docs/proposals/input-pipeline/local-native-2026-10-24.md), [state](native-local-state.json). REA provider/pair/consumer ACK chưa established; isolation/harness còn chờ. Không tự rerun |
+| Input CLI local 24/10 | Offline preparation CLI implemented/executed/reviewed 40/40 case, 49 calls trong scope lịch sử: [report](../docs/proposals/input-pipeline/local-runtime-2026-10-24.md), [state](local-pipeline-state.json). Không model/tool dispatch hoặc target runtime |
+| Input-support baseline | [Status v4](../docs/proposals/input-support-gates/status-v4.json): A4/6, B3/6, C/D0/6; còn 17 tiêu chí. [Offline report](../docs/proposals/input-support-gates/offline-improvement-2026-10-24.md). Product-dependent work giữ chờ; không chạy để tăng tỷ lệ |
+| Consumer/knowledge | Selected-consumer projection đã có; admission/runtime integration và KB ACK còn thiếu. [Work queue](../docs/planning/work-queue.md), [knowledge index](../docs/knowledge/README.md), [open questions](../docs/reference/open-questions.md) |
 
-## Gate kế thừa
+REA giữ workflow/evidence/ledger; IDA giữ native/decompiler/IDB state. [Sáu identity](../docs/architecture/agents.md) và [kiến trúc](../docs/architecture/system.md) giữ nguyên. Không bắt mọi role tham gia mỗi task; model cao review việc khó, Luna hỗ trợ bounded work theo [guide](../docs/proposals/cognitive-routing/README.md).
 
-| Gate | Trạng thái |
+| Gate kế thừa | Status |
 |---|---|
 | P1K B4 | FAIL |
-| G1 | INCOMPLETE |
-| G2 | INCOMPLETE |
-| G3 | NOT_RUN |
-| G4 | NOT_RUN |
+| G1/G2 | INCOMPLETE |
+| G3/G4 | NOT_RUN |
 | W4 runtime | NOT_RUN_BLOCKED |
 | v3 | OFF |
 
-Nguồn: [validation snapshot gốc](../docs/reference/validation-status.md); locator report local được nêu trong [source map](../docs/reference/source-map.md). [project-state.json](project-state.json) là biểu diễn máy đọc của view này, không phải state machine thực thi. Chưa tái xác minh active REA/IDA session trong task IA.
+Các leaf local/document review không đổi global gates. Nguồn gate: [validation-status](../docs/reference/validation-status.md), [W4 readiness](../docs/planning/w4-readiness-plan.md). [Project-state](project-state.json) là biểu diễn view, không receipt runtime.
 
-## Việc tiếp theo
+Tiếp tục từ [handoff ngắn](handoff.md), [phase map](../docs/planning/phase-map.md) hoặc [source map](../docs/reference/source-map.md). Mục consumer/deferred trong queue là proposal, không tự dispatch. Source/authority/KB/pair và numeric runtime budget được xét đúng scope task mới.
 
-Đề xuất mới nhất là hoàn thiện packet cho **một consumer/call site cụ thể**, giữ `PROPOSED_NOT_DISPATCHED` đến khi có đủ input path/digest/revision, output, budget và acceptance. Selected-consumer projection đã có; không lập lại task như chưa làm. B4 correction là nhánh riêng trước implementation phụ thuộc.
-
-Đọc [work queue](../docs/planning/work-queue.md) để chọn nhánh. Task IA hiện tại không tự dispatch các nhánh này. Các quyết định target/model/provider/numeric runtime budget và quyền pilot chưa được chọn thay người dùng.
-
-## Khi đổi phiên
-
-Đọc [handoff](handoff.md), kiểm scope và revision theo [source map](../docs/reference/source-map.md), rồi chỉ nạp stack/protocol cần thiết. Không lấy README lịch sử hoặc mtime làm bằng chứng trạng thái mới. Nếu chỉ có clone public, các report local chưa có được giữ là `LOCAL_ONLY`, không coi là đã đọc hay xác thực.
-
-## Bổ sung tài liệu 23/10/2026
-
-[Đề xuất cải tiến nền tảng](../docs/proposals/knowledge-foundation/README.md) đưa knowledge card có sẵn vào guide/worksheet; [progress](../docs/proposals/knowledge-foundation/progress.md) ghi việc đã viết và nhánh integration còn đề xuất. Đây là cập nhật documentation, không thay gate snapshot 21/10 hoặc tạo admission/ACK.
-
-## Chỉ thị knowledge trung lập — 23/10/2026
-
-[Policy revision 2](../docs/knowledge/knowledge-policy-v2.md) thay cách hiểu loại trừ chủ đề từ D01–D11: DAN/jailbreak/AutoGPT và các kiến thức tương tự được tiếp nhận để catalog/đọc/nghiên cứu theo objective. Giữ REA–IDA xuyên suốt revision, evidence và quyền thực thi theo task; không xóa lịch sử hoặc nâng gate.
-
-## Input support theo checkpoint — 24/10/2026
-
-Người dùng chọn chuẩn bị/verify packet offline và giao chọn model theo độ khó cho run tương lai. [Bốn checkpoint đề xuất](../docs/proposals/input-support-gates/README.md) có mẫu số cố định và [status](../docs/proposals/input-support-gates/status.json); criteria/threshold chờ user quyết định, chưa đóng gate dự án. Nguồn và raw lịch sử được recheck riêng; chưa có benchmark model mới.
-
-## Bounded pentest bốn checkpoint — 24/10/2026
-
-[Biên bản có execution](../docs/proposals/input-support-gates/pentest-2026-10-24.md): hai attempt có reviewer/executor riêng, final23/28case match; năm prompt-composition paths crash vì ROLE_SCOPE chưa import. [Status v2](../docs/proposals/input-support-gates/status-v2.json) vẫn50/50/0/0 criterion coverage; chưa closure hoặc model/REA runtime run.
-
-## Sửa và kiểm lại candidate — 24/10/2026
-
-[Biên bản sửa](../docs/proposals/input-support-gates/repair-2026-10-24.md) và [status v3](../docs/proposals/input-support-gates/status-v3.json): revision 2 sửa import, recompute eligibility/owner và structured evidence errors; suite mới42/42 có R4a/executor/R4b riêng. [Diff code](../docs/proposals/input-support-gates/patches/README.md) để review; bản gốc và FAIL vẫn giữ. Criterion coverage50/50/0/0; chưa caller integration, authentic ACK/authority hoặc model/target benchmark.
-
-## Chỉ thị điều phối theo giai đoạn sản phẩm
-
-[Cuộc họp và sổ chờ](../docs/proposals/input-support-gates/checkpoint-roadmap-2026-10-24.md) giữ18 tiêu chí chưa đóng, có owner/evidence/điều kiện mở lại. Ưu tiên hiện hành là bảo toàn baseline và dùng [mẫu pilot](../docs/proposals/input-support-gates/product-pilot-template.json) khi bắt đầu một caller/consumer sản phẩm thật; không tiếp tục cố đóng checkpoint bằng fixture hoặc hồ sơ giả. Coverage và gate giữ nguyên. Lượt họp chỉ lập kế hoạch, không test hoặc code mới.
-
-## Thực thi phần offline theo chỉ thị sau cuộc họp
-
-[Báo cáo mới](../docs/proposals/input-support-gates/offline-improvement-2026-10-24.md) mở lại A3 và checker hardening riêng:6/6seed revision2 được review độc lập,39/39case checker mới có capture/review riêng. [Status v4](../docs/proposals/input-support-gates/status-v4.json) là view mới nhất nhánh input-support: **A4/6=66,67%,B3/6=50%,C/D0/6**, còn17 tiêu chí chưa đóng. A5/A6 và product-dependent work vẫn chờ; không có model/REA/IDA/target runtime call hoặc thay gate dự án.
+[Lịch sử current qua 24/10](current-history-2026-10-24.md) giữ nguyên byte của entry trước lần rút gọn. [Lịch sử handoff](handoff-history-2026-10-24.md) chỉ mở khi cần chronology. Manifest cũ tiếp tục bind exact revision lịch sử của nó; snapshot vừa lưu không được gọi là khớp mọi pin cũ.
