@@ -23,14 +23,19 @@
       "sha256": "27c163a5f859a5d8bb620b3c5751c2dde79da26ab592003712cb6e709cb2057f"
     },
     {
+      "path": ".github/workflows/verify-public-docs.yml",
+      "bytes": 609,
+      "sha256": "dc89e3f45db233ff47f53877b0ac4b3d41484bb437da03183628474b0dda269d"
+    },
+    {
       "path": ".gitignore",
       "bytes": 296,
       "sha256": "c8bafc4e2e1486cc29e9de1a9cfe03edb32162824255750f201ddc59d5554e84"
     },
     {
       "path": "AGENTS.md",
-      "bytes": 7891,
-      "sha256": "acf0fba679ab34a8ce9ebc497b2f4b41913583418c27afbd38888afc1528cb32"
+      "bytes": 8351,
+      "sha256": "2e60efb0134848eca853e3c81015464fc14797cfeb2ad62e396432116fa27abe"
     },
     {
       "path": "CITATION.cff",
@@ -38,14 +43,24 @@
       "sha256": "35ce12bdeafd3deca1ec5bbd1a25e1e646fda6bbf1fbdc79f71a4bc13b916ec2"
     },
     {
-      "path": "context/current.md",
+      "path": "context/current-history-2026-10-24.md",
       "bytes": 8330,
       "sha256": "26c348909913847b8636de4ff2a182444194ea711599039490b6d1128b88699b"
     },
     {
-      "path": "context/handoff.md",
+      "path": "context/current.md",
+      "bytes": 3314,
+      "sha256": "c02b24895d24057e26478711a9ed2c4384413c4fc9e4fb31c221752ad3f33945"
+    },
+    {
+      "path": "context/handoff-history-2026-10-24.md",
       "bytes": 9993,
       "sha256": "d5251792d7c02d0bf9a530d5de587d4905f776e65c4277febccbf4941fe211f1"
+    },
+    {
+      "path": "context/handoff.md",
+      "bytes": 2901,
+      "sha256": "ae28c4e6925034b9547ee251f42f80a29b9eae8a2f6dc63186d8c2fa6d79370f"
     },
     {
       "path": "context/local-pipeline-state.json",
@@ -61,6 +76,11 @@
       "path": "context/project-state.json",
       "bytes": 3599,
       "sha256": "35650657c805c634dc79b978e8903c8481b217dc93e621dfe0f2780b3bd5fb9c"
+    },
+    {
+      "path": "context/README.md",
+      "bytes": 1410,
+      "sha256": "4059a9d16f3e7f9d3611123d90a55c27812bba0c3f7e1f319870c22ccec71b31"
     },
     {
       "path": "CONTEXT_VI.md",
@@ -183,6 +203,11 @@
       "sha256": "ad113e42bb6ddd4c1624a27fd545097214a2b1d12cf2843425c20c7e1c53a9f4"
     },
     {
+      "path": "docs/changes/2026-10-31-context-routing-publication.md",
+      "bytes": 4572,
+      "sha256": "b696e71ea7ad583957404c0059f807d5c87d608e734be34482ff52f920f48001"
+    },
+    {
       "path": "docs/FINE_TUNING.md",
       "bytes": 272,
       "sha256": "ec981804e339c8489880889d18fe30a80a9fafde9f3d2820018e8cd508f5cb67"
@@ -259,8 +284,8 @@
     },
     {
       "path": "docs/knowledge/README.md",
-      "bytes": 3666,
-      "sha256": "365fd190b85ae258af0d980aa939adbc587b2d0be44b04003df76d6325bd78da"
+      "bytes": 4277,
+      "sha256": "3c8f6467415b3ec07ab3a55572ad803494fae053729b0e07ac32824ecef48bfd"
     },
     {
       "path": "docs/onboarding/muse-roadmap-guide-2026-10-22.md",
@@ -281,6 +306,11 @@
       "path": "docs/onboarding/start-here.md",
       "bytes": 1288,
       "sha256": "569ef0f7ac8a6c5fc16d089b5f129cf21790040867b4d6e446a2e22d74b40d69"
+    },
+    {
+      "path": "docs/operations/README.md",
+      "bytes": 3469,
+      "sha256": "c31a9c66f1eb5e60a256c320655e26d6f50a45b7c2c5d821869c3902452f8e94"
     },
     {
       "path": "docs/planning/phase-map.md",
@@ -538,6 +568,26 @@
       "sha256": "2de71abc996897175a53cef831a489edd9714580c4e6a99e860d310f195110bb"
     },
     {
+      "path": "docs/proposals/cognitive-routing/cloudflare.md",
+      "bytes": 2890,
+      "sha256": "85a07be6a7c0f902b22860387e15f8f58a60b7e28d8ae3bd05673c4b10b318ec"
+    },
+    {
+      "path": "docs/proposals/cognitive-routing/paperclip-sync.md",
+      "bytes": 4333,
+      "sha256": "1cd949ce56923027a59c44fb3e22d4eb29cd3e59b587d25232184c9006bba5b4"
+    },
+    {
+      "path": "docs/proposals/cognitive-routing/README.md",
+      "bytes": 7213,
+      "sha256": "71bf0c678c264d422da388a32534935a21ce0177473e992c9c7cb2d9c22ab0b1"
+    },
+    {
+      "path": "docs/proposals/cognitive-routing/task-worksheet.md",
+      "bytes": 2684,
+      "sha256": "f28f85a63478233e558852906215e079437afc3f0305ab9c83c54c80d906fd70"
+    },
+    {
       "path": "docs/proposals/input-pipeline/evaluation-plan.md",
       "bytes": 5615,
       "sha256": "69973a8946cd561f463b8690ba1144f6bff19a5ab81d89c231c0be694be4c6db"
@@ -669,13 +719,13 @@
     },
     {
       "path": "docs/proposals/README.md",
-      "bytes": 2399,
-      "sha256": "de88e9f91b1b89b3dcc44a6a3b6dca5f9cf0005cb8b96e43a06688b17c6ee607"
+      "bytes": 2793,
+      "sha256": "5110fcadff6ac32b37a547793740d21d3d8870dc508a5cc0bc790f0c755f9e8b"
     },
     {
       "path": "docs/README.md",
-      "bytes": 4798,
-      "sha256": "1922ddec9ac1429e95a1e401665c51a127054e92933c601273a4f8fc03f1a40a"
+      "bytes": 5284,
+      "sha256": "dc4025e53859f1760d0ca912cddf6fb692336cd303ac43a9b2e1e75944d16d4c"
     },
     {
       "path": "docs/reference/open-questions.md",
@@ -729,8 +779,13 @@
     },
     {
       "path": "metadata/navigation.json",
-      "bytes": 10877,
-      "sha256": "7c6647037ba9542471b64b08dd42ca1a3527647f469f6a7be20cfc901bceda6c"
+      "bytes": 11640,
+      "sha256": "8b0e94cf4748cfcf3d18afd92b10f4899f52ba36e2b3608b7678550a52a05794"
+    },
+    {
+      "path": "metadata/offline-query-pentest-2026-10-31.json",
+      "bytes": 1882,
+      "sha256": "aee9ded160f0a6a7f155de8c2802d47e6afacff2c33675a9d0c7c32b395b323d"
     },
     {
       "path": "metadata/pipeline-knowledge-source-pins.json",
@@ -864,8 +919,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 13393,
-      "sha256": "534f0118b1089a7a34667f37a7a6fd77a635edbfe26844c68e41d0734acd3f25"
+      "bytes": 13989,
+      "sha256": "6b967cabd91a2d0bce370d9443f6c741bad992ac99b4680c44298e5fd46cc5ec"
     },
     {
       "path": "scripts/build_native_pilot.py",

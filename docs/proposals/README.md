@@ -4,6 +4,7 @@
 
 | Chủ đề | Đọc gì | Trạng thái cần nhớ |
 |---|---|---|
+| [Cognitive routing/context](cognitive-routing/README.md) | [Worksheet dùng lại](cognitive-routing/task-worksheet.md), [Paperclip sync](cognitive-routing/paperclip-sync.md), [Cloudflare methods](cognitive-routing/cloudflare.md) | Guide/spec đã review; chưa loader/router/Paperclip runtime. [Local query pentest](../changes/2026-10-31-context-routing-publication.md) không nâng gates |
 | [Input pipeline](input-pipeline/README.md) | Original/provenance, intent/diff, routing/action boundary và [evaluation](input-pipeline/evaluation-plan.md) | Thiết kế toàn sản phẩm DRAFT; [CLI local](input-pipeline/local-runtime-2026-10-24.md) đã kiểm; [native](input-pipeline/native-pilot-research-2026-10-24.md) mới nghiên cứu prerequisite |
 | [Input-support checkpoints](input-support-gates/README.md) | Criteria/status, [thực thi offline](input-support-gates/offline-improvement-2026-10-24.md), [code diffs](input-support-gates/patches/README.md) và [sổ chờ](input-support-gates/checkpoint-roadmap-2026-10-24.md) | [Status v4](input-support-gates/status-v4.json):66,67/50/0/0;17 tiêu chí chưa đóng; checkpoint acceptance pending |
 | [Knowledge foundation](knowledge-foundation/README.md) | Reuse map, operating guide, worksheet và progress | Nền tảng tài liệu; consumer admission/integration chưa hoàn tất |

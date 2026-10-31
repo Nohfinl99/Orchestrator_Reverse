@@ -2,6 +2,8 @@
 
 | Cần biết | Đọc |
 |---|---|
+| Điều hành theo cognitive task, model và context | [Operations](operations/README.md), [CT guide/worksheet](proposals/cognitive-routing/README.md), [current/history index](../context/README.md) |
+| Paperclip, Cloudflare và pentest query local 31/10 | [Sync spec](proposals/cognitive-routing/paperclip-sync.md), [security methods](proposals/cognitive-routing/cloudflare.md), [publication/test summary](changes/2026-10-31-context-routing-publication.md); runtime chưa connected |
 | Chọn proposal theo chủ đề/trạng thái | [Mục lục proposals](proposals/README.md) |
 | Cải tiến từ nền tảng và giao việc cụ thể | [Đề xuất](proposals/knowledge-foundation/README.md), [guide](proposals/knowledge-foundation/operating-guide.md), [worksheet](proposals/knowledge-foundation/packet-template.md), [tiến trình](proposals/knowledge-foundation/progress.md) |
 | Tri thức cần cho input pipeline | [6 tri thức](knowledge/input-pipeline/essentials.md), [nguồn và giới hạn](knowledge/input-pipeline/sources.md) |

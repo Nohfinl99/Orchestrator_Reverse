@@ -12,6 +12,10 @@
 
 ## Bộ đã trích xuất
 
+[Cognitive task/context routing — 31/10](../proposals/cognitive-routing/README.md) dẫn cách chọn owner/model/skill, [Paperclip sync spec](../proposals/cognitive-routing/paperclip-sync.md) và [Cloudflare selection](../proposals/cognitive-routing/cloudflare.md). Graph trích kiến thức họp và read/hash/query CLI ở workspace cha, LOCAL_ONLY; không nằm trong clone public, không admission/ACK.
+
+[Worksheet dùng lại](../proposals/cognitive-routing/task-worksheet.md) giúp soạn một task có selected context, output, reviewer, progress và stop, thay vì lặp toàn bộ stack corpus.
+
 | Bundle | Nội dung | Trạng thái |
 |---|---|---|
 | [Input pipeline — 24/10/2026](input-pipeline/README.md) | [6 tri thức thiết yếu](input-pipeline/essentials.md), [source/page/digest và giới hạn](input-pipeline/sources.md); phân biệt claim tác giả với suy luận thiết kế | CANDIDATE_REFERENCE_NOT_ADMITTED; chưa triển khai pipeline hoặc consumer ACK |
