@@ -34,8 +34,8 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 8773,
-      "sha256": "d502fdfee170a500ad3db0ce613af8d2dd378a7de6eb5feb1af2025181eabcb7"
+      "bytes": 9303,
+      "sha256": "1bd3999bc1e9a117c9cdd5b7378c2277c639f61bb174b72813680ca74e0319e8"
     },
     {
       "path": "CITATION.cff",
@@ -314,8 +314,13 @@
     },
     {
       "path": "docs/operations/README.md",
-      "bytes": 3915,
-      "sha256": "f74fe03505089e3620dbb3b642c621df52174a372685fb3bf5682053ff562e66"
+      "bytes": 4074,
+      "sha256": "bf4a30029226de7447a4244f7880859d031f5d4b23a2d3bfbd4e2bb0ed9382f0"
+    },
+    {
+      "path": "docs/operations/skill-library.md",
+      "bytes": 1941,
+      "sha256": "3b620d3d01ac9bf4203f9dfec4676bcd8f1ce14ea0203f3a0806bc495f826d85"
     },
     {
       "path": "docs/operations/task-execution.md",
@@ -799,8 +804,8 @@
     },
     {
       "path": "metadata/navigation.json",
-      "bytes": 12926,
-      "sha256": "d7e2ec3426df846944e0ae6ce30fa0874d57c81d5dc38da86f4e3f7383cd479a"
+      "bytes": 12983,
+      "sha256": "ed7435287fb17d0b9e070092228ea04c25ef28160264fe87d32e2b6b63f11aae"
     },
     {
       "path": "metadata/offline-query-pentest-2026-10-31.json",
@@ -844,8 +849,8 @@
     },
     {
       "path": "plugins/orchestrator-toolkit/README.md",
-      "bytes": 2393,
-      "sha256": "5c9ec1eb716ecd5e139ce89d3852eebe1472131228fc77d09ba40cfe950d4cec"
+      "bytes": 3755,
+      "sha256": "d6ab6808e0651ee05f914dbc956deeef4736289d9fbd2a5635cfd573d7cd2dda"
     },
     {
       "path": "plugins/orchestrator-toolkit/skills/orch-cua/references/source.md",

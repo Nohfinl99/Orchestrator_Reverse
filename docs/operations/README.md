@@ -1,5 +1,7 @@
 # Điều hành theo tác vụ
 
+[Thư viện skill dùng lại, không cài lại mỗi task](skill-library.md) · [Folder nguồn năm skill](../../plugins/orchestrator-toolkit/README.md).
+
 Đọc [current](../../context/current.md), chọn một mục tiêu và mở đúng nhánh dưới đây. Chỉ nạp protocol/skill phục vụ công việc; không replay toàn bộ lịch sử hoặc gọi đủ sáu role cho mọi task.
 
 | Công việc | Điểm vào | Giới hạn |
