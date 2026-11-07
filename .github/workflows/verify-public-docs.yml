@@ -24,3 +24,5 @@ jobs:
           persist-credentials: false
       - name: Verify document inventory, preservation and navigation
         run: python3 -I -B scripts/verify_ia.py
+      - name: Verify local session, goal visibility and loop guard contracts
+        run: python3 -I -B -m unittest discover -s tests -p 'test_*.py' -v

@@ -1,5 +1,9 @@
 # Bàn giao ngắn và tiếp tục theo task
 
+Bổ sung 06/11: [roadmap sửa điều phối](../docs/planning/orchestration-repair-2026-11-06.md) tập trung bốn vấn đề người dùng nêu. Model nhỏ gom evidence, model lớn thiết kế/review roadmap và kết quả cuối; ghi model quan sát thực. Next atomic: OR-2 bind một caller/send boundary từ projection hiện có, giữ original và trace prompt thực. Phiên roadmap không chạy provider/native hoặc đóng runtime gap. Evidence/review local: `evidence/orchestrator_meetings/20261106_orchestration_repair_01/` ở workspace cha.
+
+Vòng Socratic 02 sau đó: [goal continuity](../docs/operations/goal-continuity.md), [delta](../docs/changes/2026-11-06-goal-continuity.md). Phân biệt assistant decline và platform flag quan sát ở lượt user làm rõ; chưa biết causal trigger. Áp dụng active goal từ original + latest user revisions trong mọi handoff/final. CLI check/report hiển thị goal_review, không tự xác minh cùng nghĩa. Raw unit/replay/biên bản ở `socratic-02/` trong evidence trên. Việc này không hoàn tất mục tiêu B-Shield, nối broker hoặc đóng runtime gates.
+
 Đọc [current](current.md), chọn một objective/caller/output và đúng [cognitive task](../docs/proposals/cognitive-routing/README.md). Tra [source map](../docs/reference/source-map.md) để mở exact revision; chỉ nạp protocol/skill cần dùng.
 
 Ngày 31/10 đã tạo guide chọn CT/owner/model, thiết kế Paperclip projection/outbox và reference Cloudflare chọn lọc. Graph/source manifest và CLI truy xuất giới hạn là LOCAL_ONLY ở workspace cha: `knowledge_graph/`, `scripts/query_knowledge.py`. Biên bản/review local: `evidence/orchestrator_meetings/20261031_context_sync_01/`. Đây là docs/navigation tooling, chưa active loader/Paperclip sync/KB admission hoặc benchmark model. Không tự dispatch proposal từ biên bản.

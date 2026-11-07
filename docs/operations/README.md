@@ -6,6 +6,11 @@
 
 | Công việc | Điểm vào | Giới hạn |
 |---|---|---|
+| Hiểu REA upstream và áp dụng qua các vòng | [Áp dụng REA](rea-application.md) | Toolkit/provider khác pair contract; bundle/snapshot/IDB riêng; không là live provider probe |
+| Không đổi mục tiêu khi từ chối hoặc giao agent | [Goal continuity](goal-continuity.md) | Original + active goal theo user revisions; CLI hiện căn cứ để review, chưa kiểm nghĩa hoặc enforce host |
+| Giữ input, chọn REA/IDA, chốt review và quyết định chung | [Roadmap sửa luồng 06/11](../planning/orchestration-repair-2026-11-06.md) | Procedure phiên đã bổ sung; caller-bound implementation và pilot chưa chạy |
+| Kiểm retry không tiến triển local | [M4 opt-in loop guard](local-loop-guard.md) | Ledger theo lineage; review chưa xác thực, không grant authority hoặc thay RETRY legacy |
+| Ghi task/attempt/result/review local | [Local session controller](local-session-controller.md) | Caller file-only mới; kiểm binding cơ học, không dispatch model/tool hay xác thực reviewer |
 | Chọn cognitive task, owner và model | [CT guide](../proposals/cognitive-routing/README.md) → [worksheet dùng lại](../proposals/cognitive-routing/task-worksheet.md) | Model cao review chuyên môn; Luna hỗ trợ bounded work. Đây chưa là router runtime |
 | Chọn workflow CUA, Strix, D810-ng, MicroSMT hoặc OLLVM research | [Orchestrator Toolkit](../../plugins/orchestrator-toolkit/README.md) → [toolkit use and portability](toolkit.md) | Local exporter kiểm gói; account import, activation và runtime chưa được xác nhận |
 | Nhận việc, giao việc và review đầu ra | [Task execution](task-execution.md) | Workflow phiên agent; không chứng minh broker/runtime đã nối |

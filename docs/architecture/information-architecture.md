@@ -20,7 +20,8 @@ IA tổ chức cách tìm hiểu và tiếp tục project; các nguyên lý, pha
 | `docs/changes/` | Lượt thay đổi nào đã làm gì? | Record theo revision, không thay raw/frozen history |
 | `prompt_stacks/` | Hợp đồng instruction nào? | Giữ nguyên mười stack/protocol, tên và bytes |
 | `metadata/` | File nào có digest và mapping? | Navigation/relocation/custody, không chứng minh semantic support |
-| `scripts/` | Kiểm tài liệu và xuất gói ra sao? | Verifier read/hash; `export_toolkit.py` chỉ đóng gói chỉ dẫn local ra ngoài repo, không gọi runtime upstream |
+| `scripts/` | Kiểm tài liệu, xuất gói và gọi helper local ra sao? | Verifier read/hash; exporter đóng gói; session_task ghi lifecycle file local ngoài repo, không dispatch provider/tool |
+| `orchestrator_session/` | Task/attempt/result/review local được bind ra sao? | Caller additive file-only; kiểm cơ học, không xác thực reviewer hoặc tự hoàn tất ngữ nghĩa |
 
 ## Áp dụng tham chiếu knowledge compiler
 
