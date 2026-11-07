@@ -24,8 +24,8 @@
     },
     {
       "path": ".github/workflows/verify-public-docs.yml",
-      "bytes": 609,
-      "sha256": "dc89e3f45db233ff47f53877b0ac4b3d41484bb437da03183628474b0dda269d"
+      "bytes": 761,
+      "sha256": "9c9de583c7c8be2078685f73c78716c41a143a61d1d77c6d05cb0c61a9a1b103"
     },
     {
       "path": ".gitignore",
@@ -34,8 +34,8 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 9303,
-      "sha256": "1bd3999bc1e9a117c9cdd5b7378c2277c639f61bb174b72813680ca74e0319e8"
+      "bytes": 11194,
+      "sha256": "9a8ac7582ad62a51de7b03944950cd644a7acac41d0b6c5a5d0b14e28278fff9"
     },
     {
       "path": "CITATION.cff",
@@ -49,8 +49,8 @@
     },
     {
       "path": "context/current.md",
-      "bytes": 3314,
-      "sha256": "c02b24895d24057e26478711a9ed2c4384413c4fc9e4fb31c221752ad3f33945"
+      "bytes": 4378,
+      "sha256": "cfc70de6bd47ffdb891dfd58d84a6541c65a62c872cee43da6f18ad6f5b2749b"
     },
     {
       "path": "context/handoff-history-2026-10-24.md",
@@ -59,8 +59,8 @@
     },
     {
       "path": "context/handoff.md",
-      "bytes": 2901,
-      "sha256": "ae28c4e6925034b9547ee251f42f80a29b9eae8a2f6dc63186d8c2fa6d79370f"
+      "bytes": 4060,
+      "sha256": "99b759fd97c3b08f4b1ad2feadaf6e9aa2b7afb66ec70fb02311e6a099665bb4"
     },
     {
       "path": "context/local-pipeline-state.json",
@@ -99,8 +99,8 @@
     },
     {
       "path": "docs/architecture/information-architecture.md",
-      "bytes": 5892,
-      "sha256": "b5d76f01799c4160511937a370ffe9d9ee0d0e21020e512b4304fc01402d4fc1"
+      "bytes": 6110,
+      "sha256": "4637af6a47e4a098466d358ad7e7a3fef8ed2768d1089d89de8299530a919a0a"
     },
     {
       "path": "docs/architecture/system.md",
@@ -208,9 +208,29 @@
       "sha256": "b696e71ea7ad583957404c0059f807d5c87d608e734be34482ff52f920f48001"
     },
     {
+      "path": "docs/changes/2026-11-01-local-loop-guard.md",
+      "bytes": 1163,
+      "sha256": "8cc26e85be2ddbd8a30b0e6c271def5d130829e788fc895ed0ec23d909d748dd"
+    },
+    {
+      "path": "docs/changes/2026-11-01-local-session-controller.md",
+      "bytes": 2545,
+      "sha256": "8caf50cabddde73abfec644865e4191fdecb3dd98f09a4b5d364a400c9f032e1"
+    },
+    {
       "path": "docs/changes/2026-11-01-toolkit-platform-export.md",
       "bytes": 2705,
       "sha256": "0e2398c22d673085b3eb219ad0a2e56ed0b5787490659ae31ddb50eca7e28b68"
+    },
+    {
+      "path": "docs/changes/2026-11-06-goal-continuity.md",
+      "bytes": 2355,
+      "sha256": "11019fb13b058d83ef20e6db6c995967106f97cc15789231d4d4fe6f297b5ae7"
+    },
+    {
+      "path": "docs/changes/2026-11-07-official-goal-rea-publication.md",
+      "bytes": 3063,
+      "sha256": "d26d9fad872f89c22353e698ffb6c06872db15b72cbcddac8a986265c0e2efdc"
     },
     {
       "path": "docs/FINE_TUNING.md",
@@ -313,9 +333,29 @@
       "sha256": "569ef0f7ac8a6c5fc16d089b5f129cf21790040867b4d6e446a2e22d74b40d69"
     },
     {
+      "path": "docs/operations/goal-continuity.md",
+      "bytes": 8605,
+      "sha256": "10119f4d10e2f951fefca7942c3bd0c01afbdb4d690e1855d1334f64346c14df"
+    },
+    {
+      "path": "docs/operations/local-loop-guard.md",
+      "bytes": 3229,
+      "sha256": "c4012a843439988246b7530fe9ea6f3be41cd267bec95b59883d6c2774c2f1a9"
+    },
+    {
+      "path": "docs/operations/local-session-controller.md",
+      "bytes": 5876,
+      "sha256": "3b6f24992bed161db42292019ae402bb7b73ad735545340761114ed33ac7fba4"
+    },
+    {
+      "path": "docs/operations/rea-application.md",
+      "bytes": 6633,
+      "sha256": "47bd7cb9f25ecba802c77a16f5298e84f25fba55ac6b592d65972908ec3784f3"
+    },
+    {
       "path": "docs/operations/README.md",
-      "bytes": 4074,
-      "sha256": "bf4a30029226de7447a4244f7880859d031f5d4b23a2d3bfbd4e2bb0ed9382f0"
+      "bytes": 5121,
+      "sha256": "6f63f99a04c97bbe76ab84e46a02dcf821e5812e9991909ee5bd9b71a2636fa4"
     },
     {
       "path": "docs/operations/skill-library.md",
@@ -324,13 +364,18 @@
     },
     {
       "path": "docs/operations/task-execution.md",
-      "bytes": 3263,
-      "sha256": "fe17cc46bddef63e1cbf8a8d16b2b2ff4ffe73d6affe96b118d908628f1e3513"
+      "bytes": 5791,
+      "sha256": "95eb5f1cf0234ae6f44574f9e4a74908705ad43a16b747b3db89de336084cce4"
     },
     {
       "path": "docs/operations/toolkit.md",
       "bytes": 3621,
       "sha256": "5e35b22d3f9da68564c7837cce48afce094debc209f58aed6d78076e60d5328d"
+    },
+    {
+      "path": "docs/planning/orchestration-repair-2026-11-06.md",
+      "bytes": 12032,
+      "sha256": "813aa547a69faead0652090c8d97043be4dabe345404c4d8c9972b2d5df1b003"
     },
     {
       "path": "docs/planning/phase-map.md",
@@ -749,8 +794,8 @@
     },
     {
       "path": "docs/reference/open-questions.md",
-      "bytes": 10958,
-      "sha256": "e9f0f865cc32f5dd2b5ec1719a6c28711c77dc56e6224a4d6d64bf231ef10a38"
+      "bytes": 12621,
+      "sha256": "16d87a3b4638acf81d00584dca78072165ae77c20e28860d344d018dad7355b7"
     },
     {
       "path": "docs/reference/source-map.md",
@@ -779,8 +824,8 @@
     },
     {
       "path": "GEMINI.md",
-      "bytes": 734,
-      "sha256": "331f66047a070119aa74a71ae0eaaf0c64a1fb0c88ef09257392c7338830b8d5"
+      "bytes": 1311,
+      "sha256": "3f5fba350e1b339d97435662fd083416404d2a47cbed46bd103b4342b1928e6c"
     },
     {
       "path": "LICENSE_STATUS.md",
@@ -804,8 +849,8 @@
     },
     {
       "path": "metadata/navigation.json",
-      "bytes": 12983,
-      "sha256": "ed7435287fb17d0b9e070092228ea04c25ef28160264fe87d32e2b6b63f11aae"
+      "bytes": 14320,
+      "sha256": "3ed55c14bd1a6dc9f3d923529f7584540393ec098f4b1de62f7e513451eb2c33"
     },
     {
       "path": "metadata/offline-query-pentest-2026-10-31.json",
@@ -836,6 +881,31 @@
       "path": "orchestrator_pipeline/core.py",
       "bytes": 17393,
       "sha256": "a9c1e95f8517c3957c7d41cca285238f75d2e524f9d26121ea524281e027e4a7"
+    },
+    {
+      "path": "orchestrator_session/__init__.py",
+      "bytes": 283,
+      "sha256": "047d76e07240d8d5c7cadaf9df62bdc49866d332638b31cb62e7561ea2a16ef4"
+    },
+    {
+      "path": "orchestrator_session/cli.py",
+      "bytes": 3625,
+      "sha256": "0115caf7a7d0decc517c774324d9868899401c85623055abc175aa307743bc01"
+    },
+    {
+      "path": "orchestrator_session/core.py",
+      "bytes": 26972,
+      "sha256": "5ac6e02d29e7cbd28aba74033303ea612f0a3187bcc0c2d3f40624c8af96c78d"
+    },
+    {
+      "path": "orchestrator_session/loop_guard.py",
+      "bytes": 28911,
+      "sha256": "098609fa177d0fa135d724a75d4b74d7a4d7a96f31ad0513751a2634111c8339"
+    },
+    {
+      "path": "orchestrator_session/trace_review.py",
+      "bytes": 3711,
+      "sha256": "1571264e872431e2a3666774b10330c60d6f9311fcbf67cff41b6e0eb3332728"
     },
     {
       "path": "plugins/orchestrator-toolkit/plugin.json",
@@ -1009,8 +1079,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 14315,
-      "sha256": "b1a7abe53c656ad6da7f0d7f9d07011d19425785af76ccb3fe544f102decda67"
+      "bytes": 15803,
+      "sha256": "a768a80d05d206623c0c7afa98a082d52e05649c094d87bc72b1f5a778ccfe2c"
     },
     {
       "path": "scripts/build_native_pilot.py",
@@ -1023,9 +1093,19 @@
       "sha256": "b975e372c2ab4846c718a3b1205ccac201b640661a9892b7e57e6ac6eff76fd2"
     },
     {
+      "path": "scripts/loop_guard.py",
+      "bytes": 2538,
+      "sha256": "74d2135fa6bc653296cb78cc35fe56a18878b739a9586813546f2228e7c67116"
+    },
+    {
       "path": "scripts/prepare_input.py",
       "bytes": 267,
       "sha256": "c462c2d53add76370957abc485db730eade30669254e3e10b4581684c5f285e4"
+    },
+    {
+      "path": "scripts/session_task.py",
+      "bytes": 272,
+      "sha256": "c9a1a38630c118fbfe37eeb1c1b6fd064dc675b3ce3d63431027ccd56453efab"
     },
     {
       "path": "scripts/verify_ia.py",
@@ -1036,6 +1116,21 @@
       "path": "SECURITY.md",
       "bytes": 673,
       "sha256": "9b6e68af774faf8c4a955acf2983b0a8e6fb7e6e46b5b52a84eae16a95fcee66"
+    },
+    {
+      "path": "tests/test_goal_context.py",
+      "bytes": 6161,
+      "sha256": "e67fe778da242f5a9874ad84011ae5b9b1f901a80b90d1322b306d40236f363a"
+    },
+    {
+      "path": "tests/test_loop_guard.py",
+      "bytes": 29112,
+      "sha256": "0c23f84903149ea3b2a0c3cef97be8220b04058deb2075175ad3096159421e1b"
+    },
+    {
+      "path": "tests/test_session_controller.py",
+      "bytes": 23815,
+      "sha256": "849f3b802cb64704e14a4cfcbdcb350449280ba1bc94d450f10b2f881ba870dd"
     }
   ]
 }

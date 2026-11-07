@@ -1,5 +1,9 @@
 # Orchestrator_Reverse
 
+**Điều chỉnh 07/11:** [giữ mục tiêu qua điều phối/review](docs/operations/goal-continuity.md) và [áp dụng REA đúng loại task](docs/operations/rea-application.md) là hướng dẫn hiện hành cho phiên Orchestrator. Active goal theo yêu cầu gốc cùng chỉ thị/làm rõ mới nhất của user; refusal/blocker không tự cho phép đổi outcome. REA upstream là toolkit phân tích MCP/CLI; IDA là một provider native, còn pair contract project được xét riêng theo boundary/applicability. [Phạm vi bản điều chỉnh](docs/changes/2026-11-07-official-goal-rea-publication.md).
+
+CLI local `check/report` hiện original reference cạnh objective/scope/criteria do caller khai để root so sánh. Đây là local visibility/procedure; chưa semantic enforcement, model/tool dispatch hoặc bảo đảm tránh reject.
+
 **Local pilot mới:** [W4 local native](docs/proposals/input-pipeline/local-native-2026-10-24.md) đã có một direct IDA static acquisition được review: PE64 mẫu,hai function,IDB mới. [Guide](docs/guides/native-local-pilot.md) · [state](context/native-local-state.json). Chưa có connected REA–IDA pair hoặc dynamic execution; W4 toàn hệ vẫn blocked. Source/guide/report thuộc gói public; target, IDB và raw giữ local.
 
 Điều phối reverse engineering từ **mục tiêu → task DAG → owner → evidence → review → tiếp tục hoặc dừng**, theo nguyên lý REA–IDA.
@@ -12,8 +16,12 @@
 
 ## Bắt đầu theo nhu cầu
 
+Caller additive mới: [local session controller](docs/operations/local-session-controller.md) ghi task → work packet → result → review qua file và kiểm binding. Agent thực hiện qua phiên host; CLI không tự gọi model/provider/tool và không tự nghiệm thu ngữ nghĩa hoặc nâng gate.
+
 | Nhu cầu | Điểm vào |
 |---|---|
+| Giữ đúng mục tiêu qua agent/review | [Goal continuity](docs/operations/goal-continuity.md) → [task execution](docs/operations/task-execution.md) |
+| Dùng REA và IDA đúng scope | [Áp dụng REA](docs/operations/rea-application.md) → [pair contract project](docs/architecture/system.md) |
 | Chọn đúng owner/model/skill và hạn chế context | [Operations](docs/operations/README.md) → [CT guide](docs/proposals/cognitive-routing/README.md) → [worksheet](docs/proposals/cognitive-routing/task-worksheet.md) |
 | Chọn workflow toolkit theo mục tiêu | [Toolkit](plugins/orchestrator-toolkit/README.md) → [hướng dẫn dùng và portability](docs/operations/toolkit.md) |
 | Hiểu dự án và nguyên lý | [CONTEXT_VI.md](CONTEXT_VI.md) → [kiến trúc](docs/architecture/system.md) |

@@ -84,7 +84,16 @@
     "context_routing_publication": "docs/changes/2026-10-31-context-routing-publication.md",
     "gemini_entry": "GEMINI.md",
     "toolkit_platform_publication": "docs/changes/2026-11-01-toolkit-platform-export.md",
-    "skill_library": "docs/operations/skill-library.md"
+    "skill_library": "docs/operations/skill-library.md",
+    "local_session_controller": "docs/operations/local-session-controller.md",
+    "local_session_controller_change": "docs/changes/2026-11-01-local-session-controller.md",
+    "local_loop_guard": "docs/operations/local-loop-guard.md",
+    "local_loop_guard_change": "docs/changes/2026-11-01-local-loop-guard.md",
+    "orchestration_repair": "docs/planning/orchestration-repair-2026-11-06.md",
+    "goal_continuity": "docs/operations/goal-continuity.md",
+    "goal_continuity_change": "docs/changes/2026-11-06-goal-continuity.md",
+    "rea_application": "docs/operations/rea-application.md",
+    "official_goal_rea_publication": "docs/changes/2026-11-07-official-goal-rea-publication.md"
   },
   "compatibility_routes": {
     "docs/ARCHITECTURE.md": "docs/architecture/system.md",
@@ -252,6 +261,25 @@
       "plugins/orchestrator-toolkit/skills/orch-ollvm-research/references/source.md",
       "docs/operations/toolkit.md",
       "docs/operations/task-execution.md"
+    ],
+    "local_no_progress": [
+      "docs/operations/local-loop-guard.md",
+      "docs/operations/local-session-controller.md"
+    ],
+    "orchestration_repair": [
+      "docs/operations/task-execution.md",
+      "docs/planning/orchestration-repair-2026-11-06.md",
+      "docs/operations/local-session-controller.md"
+    ],
+    "goal_continuity": [
+      "docs/operations/goal-continuity.md",
+      "docs/operations/task-execution.md",
+      "docs/operations/local-session-controller.md"
+    ],
+    "rea_application": [
+      "docs/operations/rea-application.md",
+      "docs/architecture/system.md",
+      "docs/operations/goal-continuity.md"
     ]
   },
   "local_sources": "docs/reference/source-map.md",
